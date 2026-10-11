@@ -1,29 +1,27 @@
 /*
- * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
- * Repeated variable names indicate identical original values; different names of the same type mean different values.
- * IP_1 = IP address; original address hidden
- * UUID_1 = UUID-form identifier; original UUID hidden
- * VALUE_1 = non-UUID sensitive value; original value hidden
- * UUID_2 = UUID-form identifier; original UUID hidden
- * VALUE_2 = non-UUID sensitive value; original value hidden
- * VALUE_3 = non-UUID sensitive value; original value hidden
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_10 = IP address; original address hidden
+ * VALUE_9 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_8 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_50 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
  */
 
 /*
  * Request
  * POST /starwatch/auth/api/v1/auth HTTP/1.1
  * host: <REDACTED_HOST>
- * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
- * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
- * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-real-ip: IP_10 // IP address; variable IP_10 (same token means same original value)
+ * x-forwarded-for: IP_10 // IP address; variable IP_10 (same token means same original value)
+ * remote-host: IP_10 // IP address; variable IP_10 (same token means same original value)
  * x-forwarded-proto: https
  * x-forwarded-port: 443
  * content-length: 419
  * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
- * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * x-session-id: be3d606d-c9e5-4504-b360-a8e51f4150f3 // UUIDv4 replacement; identical original UUIDs share this value globally
  * content-type: application/json
  * trace-id: oE654JC
- * x-sky-build-access-key: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-build-access-key: VALUE_9 // Sensitive value hidden; variable VALUE_9 (same token means same original value)
  * x-sky-level-id: 3526133726
  * 
  * Captured request-body metadata:
@@ -35,13 +33,13 @@
  */
 // Request
 {
-    "apiKey": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "appKey": "8fc3fa4c-4ab9-4ef3-98cb-4c73647a5991",
+    "apiKey": "b2069f11-71ee-431c-8762-72f628a0a473", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "appKey": "40826904-88a9-4ccd-a9e2-b45b715bb6fd", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
     "deviceId": "if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-",
-    "claimedSkyId": "26d915b8-db19-4a54-b91c-58831202e90e",
+    "claimedSkyId": "714a69eb-ebd1-4baa-a7c4-16d60e38beeb", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
     "platform": "win",
     "preferredLanguage": "zh-CN",
-    "sessionToken": "VALUE_2", // Sensitive value hidden; variable VALUE_2 (same token means same original value)
+    "sessionToken": "VALUE_8", // Sensitive value hidden; variable VALUE_8 (same token means same original value)
     "osVersion": "10.0.19045",
     "gameversion": "0.34.5",
     "preferredSupportedLanguage": "zh-Hans"
@@ -73,7 +71,7 @@
     "mqtt": {
         "clientId": "sky-live-game-5NeuJhCi6grGvbtweEyWKY",
         "username": "user::sky-live-game-5NeuJhCi6grGvbtweEyWKY",
-        "password": "VALUE_3", // Sensitive value hidden; variable VALUE_3 (same token means same original value)
+        "password": "VALUE_50", // Sensitive value hidden; variable VALUE_50 (same token means same original value)
         "brokerUrl": "stream.starwatch.ai"
     },
     "settings": {
@@ -97,20 +95,20 @@
     },
     "acls": {
         "publish": [
-            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/26d915b8-db19-4a54-b91c-58831202e90e/event/+",
-            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/26d915b8-db19-4a54-b91c-58831202e90e/remote/prompt",
-            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/26d915b8-db19-4a54-b91c-58831202e90e/challenge/response",
-            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/26d915b8-db19-4a54-b91c-58831202e90e/challenge/event"
+            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/714a69eb-ebd1-4baa-a7c4-16d60e38beeb/event/+", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/714a69eb-ebd1-4baa-a7c4-16d60e38beeb/remote/prompt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/714a69eb-ebd1-4baa-a7c4-16d60e38beeb/challenge/response", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/714a69eb-ebd1-4baa-a7c4-16d60e38beeb/challenge/event" // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
         ],
         "subscribe": [
-            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/26d915b8-db19-4a54-b91c-58831202e90e/remote/submit",
-            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/26d915b8-db19-4a54-b91c-58831202e90e/challenge/submit"
+            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/714a69eb-ebd1-4baa-a7c4-16d60e38beeb/remote/submit", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/714a69eb-ebd1-4baa-a7c4-16d60e38beeb/challenge/submit" // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
         ]
     },
     "ownerId": "sky::live::game::5NeuJhCi6grGvbtweEyWKY",
     "isJwt": true,
     "expiresSeconds": 86400,
-    "starwatchSessionId": "f0a00c8b-0255-4968-94eb-efc6a3b5eb11",
+    "starwatchSessionId": "bb349ee2-4f35-49eb-b1a0-c031ce8b3e16", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
     "serverTime": {
         "requestStartMillis": 1788453558066,
         "requestEndMillis": 1788453558098

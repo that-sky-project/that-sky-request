@@ -1,0 +1,354 @@
+/*
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_2 = IP address; original address hidden
+ * VALUE_6 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ */
+
+/*
+ * Request
+ * POST /account/purchase_generic_shop_item HTTP/1.1
+ * host: live-as-sky-test.xyqaq.cn
+ * x-real-ip: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * x-forwarded-for: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * remote-host: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 212
+ * user-agent: Sky-Live-com.tgc.sky.win/0.32.1.365186 (83DE; win 10.0.22631; zh-Hans)
+ * x-session-id: 18891247-ff05-4fa7-a028-9d615e004730 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * content-type: application/json
+ * trace-id: 93
+ * user-id: 6d4b2006-0b6b-4c2f-8333-9ff544863ddb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * session: VALUE_6 // Sensitive value hidden; variable VALUE_6 (same token means same original value)
+ * x-user-id: 6d4b2006-0b6b-4c2f-8333-9ff544863ddb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * x-session-token: VALUE_6 // Sensitive value hidden; variable VALUE_6 (same token means same original value)
+ * x-sky-level-id: 4044469303
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 212
+ */
+// Request
+{
+    "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "user_id": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "session": "VALUE_6", // Sensitive value hidden; variable VALUE_6 (same token means same original value)
+    "id": 2276397260,
+    "cost": 6,
+    "currency_type": "candles",
+    "currency_count": 67
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 22 Jan 2026 01:38:43 GMT
+ * content-type: application/json
+ * content-length: 3716
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 3716
+ */
+// Response
+{
+    "generic_shop_purchase": "success",
+    "generic_shop_item_tracking_info": [
+        {
+            "id": 2276397260,
+            "count": 1,
+            "ttl": 22876
+        }
+    ],
+    "currency": {
+        "candles": 61,
+        "color_black_wax": 18,
+        "color_blue_wax": 10,
+        "color_cyan_wax": 45,
+        "color_green_wax": 81,
+        "color_magenta_wax": 15,
+        "color_red_wax": 68,
+        "color_white_wax": 16,
+        "color_yellow_wax": 10,
+        "heart": 10,
+        "prestige": 9,
+        "prestige_vip": 77,
+        "prestige_wax": 2,
+        "season_candle": 9,
+        "season_wax": 0,
+        "season_wax_21": 9,
+        "season_wax_23": 6,
+        "season_wax_28": 6,
+        "vip": 1,
+        "wax": 123
+    },
+    "get_consumables": [
+        {
+            "consumable_id": 8361886,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 50358065,
+            "cooldown_until": 0,
+            "quantity": 4
+        },
+        {
+            "consumable_id": 70832281,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 122490389,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 174645709,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 216692626,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 256924066,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 626462085,
+            "cooldown_until": 0,
+            "quantity": 10
+        },
+        {
+            "consumable_id": 645357651,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 701255829,
+            "cooldown_until": 0,
+            "quantity": 9
+        },
+        {
+            "consumable_id": 858950093,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 909608840,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 1080405300,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 1251777503,
+            "cooldown_until": 0,
+            "quantity": 1
+        },
+        {
+            "consumable_id": 1286798698,
+            "cooldown_until": 0,
+            "quantity": 2
+        },
+        {
+            "consumable_id": 1306675982,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 1372838509,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 1440439821,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 1734082606,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 1762827508,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 1782065084,
+            "cooldown_until": 0,
+            "quantity": 11
+        },
+        {
+            "consumable_id": 1909998088,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 1977915294,
+            "cooldown_until": 1769045844,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 2003427470,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 2160270704,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 2202141658,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 2254595829,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 2355347361,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 2416910685,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 2537127836,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 2538766712,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 2664845471,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 2737435224,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 2782560150,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 2885283383,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3055866908,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3086546058,
+            "cooldown_until": 0,
+            "quantity": 1
+        },
+        {
+            "consumable_id": 3250412855,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3317973197,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3354461846,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3363836180,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3379219961,
+            "cooldown_until": 0,
+            "quantity": 2
+        },
+        {
+            "consumable_id": 3381822020,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3391455468,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3492370630,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3510136091,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3522591529,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3523870533,
+            "cooldown_until": 0,
+            "quantity": 7
+        },
+        {
+            "consumable_id": 3578353508,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3805037483,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3914959773,
+            "cooldown_until": 0,
+            "quantity": 4
+        },
+        {
+            "consumable_id": 4233854603,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 4286439346,
+            "cooldown_until": 0,
+            "quantity": 3
+        }
+    ]
+}

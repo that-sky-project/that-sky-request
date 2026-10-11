@@ -1,47 +1,44 @@
 /*
- * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
- * Repeated variable names indicate identical original values; different names of the same type mean different values.
- * IP_1 = IP address; original address hidden
- * UUID_1 = UUID-form identifier; original UUID hidden
- * UUID_2 = UUID-form identifier; original UUID hidden
- * VALUE_1 = non-UUID sensitive value; original value hidden
- * UUID_3 = UUID-form identifier; original UUID hidden
- * UUID_4 = UUID-form identifier; original UUID hidden
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_5 = IP address; original address hidden
+ * VALUE_3 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_12 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
  */
 
 /*
  * Request
  * POST /service/social-feed/api/v2/comments HTTP/1.1
  * host: live-as-sky-test.xyqaq.cn
- * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
- * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
- * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-real-ip: IP_5 // IP address; variable IP_5 (same token means same original value)
+ * x-forwarded-for: IP_5 // IP address; variable IP_5 (same token means same original value)
+ * remote-host: IP_5 // IP address; variable IP_5 (same token means same original value)
  * x-forwarded-proto: https
  * x-forwarded-port: 443
- * content-length: 342
+ * content-length: 346
  * user-agent: Sky-Live-com.tgc.sky.win/0.32.2.365286 (System Product Name; win 10.0.19045; zh-Hans)
- * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * x-session-id: b939a6fa-a6cc-4d87-8aa7-82414d13f5cc // UUIDv4 replacement; identical original UUIDs share this value globally
  * content-type: application/json
- * trace-id: RqDhV08
- * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
- * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
- * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
- * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * trace-id: BJyMhQc
+ * user-id: d2a61425-4a1b-4869-a71f-debb825406e5 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * session: VALUE_3 // Sensitive value hidden; variable VALUE_3 (same token means same original value)
+ * x-user-id: d2a61425-4a1b-4869-a71f-debb825406e5 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * x-session-token: VALUE_3 // Sensitive value hidden; variable VALUE_3 (same token means same original value)
  * x-sky-level-id: 3526133726
  * 
  * Captured request-body metadata:
  * captured body type: json
- * body size: 342
+ * body size: 346
  */
 // Request
 {
-    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
-    "pool_type": "MessageBoat",
+    "user": "d2a61425-4a1b-4869-a71f-debb825406e5", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "user_id": "d2a61425-4a1b-4869-a71f-debb825406e5", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "session": "VALUE_3", // Sensitive value hidden; variable VALUE_3 (same token means same original value)
+    "pool_type": "RecordingCandle",
     "pool_name": "CandleSpace",
-    "social_feed_id": "UUID_3", // UUID-form identifier; variable UUID_3 (same token means same original value)
-    "author_id": "UUID_4", // UUID-form identifier; variable UUID_4 (same token means same original value)
+    "social_feed_id": "0c199971-cf62-4d9d-9463-311d077b3f39", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "author_id": "4964584f-830a-4b6e-ab16-af9ea2c634d9", // UUIDv4 replacement; identical original UUIDs share this value globally
     "page": 0,
     "page_size": 12,
     "unfiltered": true
@@ -50,17 +47,618 @@
 /*
  * Response
  * HTTP/1.1 200 OK
- * date: Mon, 23 Feb 2026 12:00:08 GMT
+ * date: Mon, 23 Feb 2026 12:00:00 GMT
  * content-type: application/json; charset=utf-8
- * content-length: 27
+ * content-length: 12971
  * server: nginx/1.14.2
  * 
  * Captured response-body metadata:
  * captured body type: json
- * body size: 27
+ * body size: 12971
  */
 // Response
 {
     "local": [],
-    "comments": []
+    "comments": [
+        {
+            "social_feed_id": "8cbb374c-c270-4bc9-b986-ada3a8137b89:61663320", // UUIDv4 replacement; original composite suffix retained
+            "user_id": "6cfc6878-70ad-4778-b700-5fb414b5adc7:1add2666", // UUIDv4 replacement; original composite suffix retained
+            "pool_type": "SocialFeedComment",
+            "pool_name": "CandleSpace",
+            "level_id": "CandleSpace",
+            "location_y": 0,
+            "location_xz": [
+                0,
+                0
+            ],
+            "spherical_lon_lat": [
+                0,
+                0
+            ],
+            "create_at": "2026-02-14T19:17:14.451Z",
+            "expire_at": "2026-02-28T19:17:14.447Z",
+            "message": "It's so beautiful✨ 😭 ur morning eyes I can staaree like watching staars",
+            "extra_data": {
+                "chunk_count": 0,
+                "ori": "(0,0,0,1)",
+                "pos": "(0,0,0)",
+                "prompt_used": "",
+                "reply_to": "0c199971-cf62-4d9d-9463-311d077b3f39", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+                "resource_id": "VALUE_12", // Sensitive value hidden; variable VALUE_12 (same token means same original value)
+                "scale": "(1,1,1)",
+                "sub_type": 0,
+                "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
+            },
+            "reactions": {
+                "total_report_count": 0,
+                "total_hide_count": 0,
+                "total_like_count": 42,
+                "total_like_reward_message_id": 0,
+                "total_super_like_count": 0,
+                "total_comment_count": 0,
+                "total_reported_comment_count": 0,
+                "total_attempt_count": 0,
+                "total_succeed_count": 0,
+                "is_poisoned": false,
+                "score": 7
+            },
+            "tags": null,
+            "state": "normal",
+            "comments_enabled": false,
+            "approx_location_x": 0,
+            "approx_location_y": 0,
+            "approx_location_z": 0,
+            "approx_create_at": "2026-02-09T00:00:00Z"
+        },
+        {
+            "social_feed_id": "c39ffa86-6d75-4ece-9b1c-92982abca448:9a759931", // UUIDv4 replacement; original composite suffix retained
+            "user_id": "9bbb2db6-3f24-47ef-9734-9e9362d033f5:386965d1", // UUIDv4 replacement; original composite suffix retained
+            "pool_type": "SocialFeedComment",
+            "pool_name": "CandleSpace",
+            "level_id": "CandleSpace",
+            "location_y": 0,
+            "location_xz": [
+                0,
+                0
+            ],
+            "spherical_lon_lat": [
+                0,
+                0
+            ],
+            "create_at": "2026-02-12T17:57:50.7Z",
+            "expire_at": "2026-02-26T17:57:50.696Z",
+            "message": "so beautiful 💗",
+            "extra_data": {
+                "chunk_count": 0,
+                "ori": "(0,0,0,1)",
+                "pos": "(0,0,0)",
+                "prompt_used": "",
+                "reply_to": "0c199971-cf62-4d9d-9463-311d077b3f39", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+                "resource_id": "VALUE_12", // Sensitive value hidden; variable VALUE_12 (same token means same original value)
+                "scale": "(1,1,1)",
+                "sub_type": 0,
+                "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
+            },
+            "reactions": {
+                "total_report_count": 0,
+                "total_hide_count": 0,
+                "total_like_count": 35,
+                "total_like_reward_message_id": 0,
+                "total_super_like_count": 0,
+                "total_comment_count": 0,
+                "total_reported_comment_count": 0,
+                "total_attempt_count": 0,
+                "total_succeed_count": 0,
+                "is_poisoned": false,
+                "score": 5.833333333333333
+            },
+            "tags": null,
+            "state": "normal",
+            "comments_enabled": false,
+            "approx_location_x": 0,
+            "approx_location_y": 0,
+            "approx_location_z": 0,
+            "approx_create_at": "2026-02-09T00:00:00Z"
+        },
+        {
+            "social_feed_id": "67dad932-c393-48f4-a325-8df811b77811:4b3972e4", // UUIDv4 replacement; original composite suffix retained
+            "user_id": "3b9d8634-b167-461c-9ecb-3af4668eebb3:3ad88b4e", // UUIDv4 replacement; original composite suffix retained
+            "pool_type": "SocialFeedComment",
+            "pool_name": "CandleSpace",
+            "level_id": "CandleSpace",
+            "location_y": 0,
+            "location_xz": [
+                0,
+                0
+            ],
+            "spherical_lon_lat": [
+                0,
+                0
+            ],
+            "create_at": "2026-02-14T15:23:10.576Z",
+            "expire_at": "2026-02-28T15:23:10.573Z",
+            "message": "素敵な曲🎵キレイな音✨",
+            "extra_data": {
+                "chunk_count": 0,
+                "ori": "(0,0,0,1)",
+                "pos": "(0,0,0)",
+                "prompt_used": "",
+                "reply_to": "0c199971-cf62-4d9d-9463-311d077b3f39", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+                "resource_id": "VALUE_12", // Sensitive value hidden; variable VALUE_12 (same token means same original value)
+                "scale": "(1,1,1)",
+                "sub_type": 0,
+                "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
+            },
+            "reactions": {
+                "total_report_count": 0,
+                "total_hide_count": 0,
+                "total_like_count": 33,
+                "total_like_reward_message_id": 0,
+                "total_super_like_count": 0,
+                "total_comment_count": 0,
+                "total_reported_comment_count": 0,
+                "total_attempt_count": 0,
+                "total_succeed_count": 0,
+                "is_poisoned": false,
+                "score": 5.5
+            },
+            "tags": null,
+            "state": "normal",
+            "comments_enabled": false,
+            "approx_location_x": 0,
+            "approx_location_y": 0,
+            "approx_location_z": 0,
+            "approx_create_at": "2026-02-09T00:00:00Z"
+        },
+        {
+            "social_feed_id": "69b0343c-ddc7-46d7-8492-b184f440b952:febb687c", // UUIDv4 replacement; original composite suffix retained
+            "user_id": "1d210628-51ed-49a2-8a71-5180f611ba68:32f8248b", // UUIDv4 replacement; original composite suffix retained
+            "pool_type": "SocialFeedComment",
+            "pool_name": "CandleSpace",
+            "level_id": "CandleSpace",
+            "location_y": 0,
+            "location_xz": [
+                0,
+                0
+            ],
+            "spherical_lon_lat": [
+                0,
+                0
+            ],
+            "create_at": "2026-02-15T01:56:45.779Z",
+            "expire_at": "2026-03-01T01:56:45.775Z",
+            "message": "مُلهم",
+            "extra_data": {
+                "chunk_count": 0,
+                "ori": "(0,0,0,1)",
+                "pos": "(0,0,0)",
+                "prompt_used": "",
+                "reply_to": "0c199971-cf62-4d9d-9463-311d077b3f39", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+                "resource_id": "VALUE_12", // Sensitive value hidden; variable VALUE_12 (same token means same original value)
+                "scale": "(1,1,1)",
+                "sub_type": 0,
+                "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
+            },
+            "reactions": {
+                "total_report_count": 0,
+                "total_hide_count": 0,
+                "total_like_count": 25,
+                "total_like_reward_message_id": 0,
+                "total_super_like_count": 0,
+                "total_comment_count": 0,
+                "total_reported_comment_count": 0,
+                "total_attempt_count": 0,
+                "total_succeed_count": 0,
+                "is_poisoned": false,
+                "score": 4.166666666666666
+            },
+            "tags": null,
+            "state": "normal",
+            "comments_enabled": false,
+            "approx_location_x": 0,
+            "approx_location_y": 0,
+            "approx_location_z": 0,
+            "approx_create_at": "2026-02-09T00:00:00Z"
+        },
+        {
+            "social_feed_id": "a730797d-bad6-4546-b949-c9efe9f57356:02f28567", // UUIDv4 replacement; original composite suffix retained
+            "user_id": "33172ce1-3bf2-4b60-b0ca-35cfc189ace6:e3515549", // UUIDv4 replacement; original composite suffix retained
+            "pool_type": "SocialFeedComment",
+            "pool_name": "CandleSpace",
+            "level_id": "CandleSpace",
+            "location_y": 0,
+            "location_xz": [
+                0,
+                0
+            ],
+            "spherical_lon_lat": [
+                0,
+                0
+            ],
+            "create_at": "2026-02-16T09:23:07.894Z",
+            "expire_at": "2026-03-02T09:23:07.891Z",
+            "message": "Hay thật nhưng nghe xong tưởng tượng như hai người đang ôm lấy chặt nhau đi hết đoạn đường còn lại",
+            "extra_data": {
+                "chunk_count": 0,
+                "ori": "(0,0,0,1)",
+                "pos": "(0,0,0)",
+                "prompt_used": "",
+                "reply_to": "0c199971-cf62-4d9d-9463-311d077b3f39", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+                "resource_id": "VALUE_12", // Sensitive value hidden; variable VALUE_12 (same token means same original value)
+                "scale": "(1,1,1)",
+                "sub_type": 0,
+                "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
+            },
+            "reactions": {
+                "total_report_count": 0,
+                "total_hide_count": 0,
+                "total_like_count": 19,
+                "total_like_reward_message_id": 0,
+                "total_super_like_count": 0,
+                "total_comment_count": 0,
+                "total_reported_comment_count": 0,
+                "total_attempt_count": 0,
+                "total_succeed_count": 0,
+                "is_poisoned": false,
+                "score": 3.1666666666666665
+            },
+            "tags": null,
+            "state": "normal",
+            "comments_enabled": false,
+            "approx_location_x": 0,
+            "approx_location_y": 0,
+            "approx_location_z": 0,
+            "approx_create_at": "2026-02-16T00:00:00Z"
+        },
+        {
+            "social_feed_id": "367fe755-d316-4fc1-9c91-10c6698a9e1d:d48000e4", // UUIDv4 replacement; original composite suffix retained
+            "user_id": "cec3e45c-6449-439b-9b31-97cd6fe213f1:fc2fca94", // UUIDv4 replacement; original composite suffix retained
+            "pool_type": "SocialFeedComment",
+            "pool_name": "CandleSpace",
+            "level_id": "CandleSpace",
+            "location_y": 0,
+            "location_xz": [
+                0,
+                0
+            ],
+            "spherical_lon_lat": [
+                0,
+                0
+            ],
+            "create_at": "2026-02-16T07:01:53.28Z",
+            "expire_at": "2026-03-02T07:01:53.277Z",
+            "message": "とても美しい",
+            "extra_data": {
+                "chunk_count": 0,
+                "ori": "(0,0,0,1)",
+                "pos": "(0,0,0)",
+                "prompt_used": "",
+                "reply_to": "0c199971-cf62-4d9d-9463-311d077b3f39", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+                "resource_id": "VALUE_12", // Sensitive value hidden; variable VALUE_12 (same token means same original value)
+                "scale": "(1,1,1)",
+                "sub_type": 0,
+                "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
+            },
+            "reactions": {
+                "total_report_count": 0,
+                "total_hide_count": 0,
+                "total_like_count": 17,
+                "total_like_reward_message_id": 0,
+                "total_super_like_count": 0,
+                "total_comment_count": 0,
+                "total_reported_comment_count": 0,
+                "total_attempt_count": 0,
+                "total_succeed_count": 0,
+                "is_poisoned": false,
+                "score": 2.833333333333333
+            },
+            "tags": null,
+            "state": "normal",
+            "comments_enabled": false,
+            "approx_location_x": 0,
+            "approx_location_y": 0,
+            "approx_location_z": 0,
+            "approx_create_at": "2026-02-16T00:00:00Z"
+        },
+        {
+            "social_feed_id": "423678a2-0e31-4cbd-85d6-396f01a51e10:9f182b3b", // UUIDv4 replacement; original composite suffix retained
+            "user_id": "2888c7fa-1d2d-41b7-b60d-8f80cfc7385c:a580874f", // UUIDv4 replacement; original composite suffix retained
+            "pool_type": "SocialFeedComment",
+            "pool_name": "CandleSpace",
+            "level_id": "CandleSpace",
+            "location_y": 0,
+            "location_xz": [
+                0,
+                0
+            ],
+            "spherical_lon_lat": [
+                0,
+                0
+            ],
+            "create_at": "2026-02-13T19:50:49.748Z",
+            "expire_at": "2026-02-27T19:50:49.745Z",
+            "message": "Perfect",
+            "extra_data": {
+                "chunk_count": 0,
+                "ori": "(0,0,0,1)",
+                "pos": "(0,0,0)",
+                "prompt_used": "",
+                "reply_to": "0c199971-cf62-4d9d-9463-311d077b3f39", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+                "resource_id": "VALUE_12", // Sensitive value hidden; variable VALUE_12 (same token means same original value)
+                "scale": "(1,1,1)",
+                "sub_type": 0,
+                "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
+            },
+            "reactions": {
+                "total_report_count": 0,
+                "total_hide_count": 0,
+                "total_like_count": 17,
+                "total_like_reward_message_id": 0,
+                "total_super_like_count": 0,
+                "total_comment_count": 0,
+                "total_reported_comment_count": 0,
+                "total_attempt_count": 0,
+                "total_succeed_count": 0,
+                "is_poisoned": false,
+                "score": 2.833333333333333
+            },
+            "tags": null,
+            "state": "normal",
+            "comments_enabled": false,
+            "approx_location_x": 0,
+            "approx_location_y": 0,
+            "approx_location_z": 0,
+            "approx_create_at": "2026-02-09T00:00:00Z"
+        },
+        {
+            "social_feed_id": "bc0bc30e-0d83-480e-ba33-068edbb212ed:c711ae66", // UUIDv4 replacement; original composite suffix retained
+            "user_id": "ee6bf68e-3a7a-4980-9658-043306295776:327077dd", // UUIDv4 replacement; original composite suffix retained
+            "pool_type": "SocialFeedComment",
+            "pool_name": "CandleSpace",
+            "level_id": "CandleSpace",
+            "location_y": 0,
+            "location_xz": [
+                0,
+                0
+            ],
+            "spherical_lon_lat": [
+                0,
+                0
+            ],
+            "create_at": "2026-02-15T12:19:37.47Z",
+            "expire_at": "2026-03-01T12:19:37.467Z",
+            "message": "好聽！",
+            "extra_data": {
+                "chunk_count": 0,
+                "ori": "(0,0,0,1)",
+                "pos": "(0,0,0)",
+                "prompt_used": "",
+                "reply_to": "0c199971-cf62-4d9d-9463-311d077b3f39", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+                "resource_id": "VALUE_12", // Sensitive value hidden; variable VALUE_12 (same token means same original value)
+                "scale": "(1,1,1)",
+                "sub_type": 0,
+                "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
+            },
+            "reactions": {
+                "total_report_count": 0,
+                "total_hide_count": 0,
+                "total_like_count": 16,
+                "total_like_reward_message_id": 0,
+                "total_super_like_count": 0,
+                "total_comment_count": 0,
+                "total_reported_comment_count": 0,
+                "total_attempt_count": 0,
+                "total_succeed_count": 0,
+                "is_poisoned": false,
+                "score": 2.6666666666666665
+            },
+            "tags": null,
+            "state": "normal",
+            "comments_enabled": false,
+            "approx_location_x": 0,
+            "approx_location_y": 0,
+            "approx_location_z": 0,
+            "approx_create_at": "2026-02-09T00:00:00Z"
+        },
+        {
+            "social_feed_id": "f8e74ad5-84fb-425d-a658-556f99b14348:b1f0c86f", // UUIDv4 replacement; original composite suffix retained
+            "user_id": "6ec20f79-7f99-45fa-ae5a-791dc259e14f:eeccfb51", // UUIDv4 replacement; original composite suffix retained
+            "pool_type": "SocialFeedComment",
+            "pool_name": "CandleSpace",
+            "level_id": "CandleSpace",
+            "location_y": 0,
+            "location_xz": [
+                0,
+                0
+            ],
+            "spherical_lon_lat": [
+                0,
+                0
+            ],
+            "create_at": "2026-02-13T02:48:50.149Z",
+            "expire_at": "2026-02-27T02:48:50.146Z",
+            "message": "☀️❤️",
+            "extra_data": {
+                "chunk_count": 0,
+                "ori": "(0,0,0,1)",
+                "pos": "(0,0,0)",
+                "prompt_used": "",
+                "reply_to": "0c199971-cf62-4d9d-9463-311d077b3f39", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+                "resource_id": "VALUE_12", // Sensitive value hidden; variable VALUE_12 (same token means same original value)
+                "scale": "(1,1,1)",
+                "sub_type": 0,
+                "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
+            },
+            "reactions": {
+                "total_report_count": 1,
+                "total_hide_count": 0,
+                "total_like_count": 14,
+                "total_like_reward_message_id": 0,
+                "total_super_like_count": 0,
+                "total_comment_count": 0,
+                "total_reported_comment_count": 0,
+                "total_attempt_count": 0,
+                "total_succeed_count": 0,
+                "is_poisoned": false,
+                "score": 2.333333333333333
+            },
+            "tags": null,
+            "state": "normal",
+            "comments_enabled": false,
+            "approx_location_x": 0,
+            "approx_location_y": 0,
+            "approx_location_z": 0,
+            "approx_create_at": "2026-02-09T00:00:00Z"
+        },
+        {
+            "social_feed_id": "d0054711-5bb1-475e-a65f-be6d839aedeb:9d9addd8", // UUIDv4 replacement; original composite suffix retained
+            "user_id": "755bcd13-6b00-475d-aace-ca468ad58e48:3f3cc4f1", // UUIDv4 replacement; original composite suffix retained
+            "pool_type": "SocialFeedComment",
+            "pool_name": "CandleSpace",
+            "level_id": "CandleSpace",
+            "location_y": 0,
+            "location_xz": [
+                0,
+                0
+            ],
+            "spherical_lon_lat": [
+                0,
+                0
+            ],
+            "create_at": "2026-02-17T13:57:42.043Z",
+            "expire_at": "2026-03-03T13:57:42.04Z",
+            "message": "この曲よくショートで聞くやつ...　案外結構好きなんですよね、、笑笑　聞けてよかったです><",
+            "extra_data": {
+                "chunk_count": 0,
+                "ori": "(0,0,0,1)",
+                "pos": "(0,0,0)",
+                "prompt_used": "",
+                "reply_to": "0c199971-cf62-4d9d-9463-311d077b3f39", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+                "resource_id": "VALUE_12", // Sensitive value hidden; variable VALUE_12 (same token means same original value)
+                "scale": "(1,1,1)",
+                "sub_type": 0,
+                "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
+            },
+            "reactions": {
+                "total_report_count": 0,
+                "total_hide_count": 0,
+                "total_like_count": 13,
+                "total_like_reward_message_id": 0,
+                "total_super_like_count": 0,
+                "total_comment_count": 0,
+                "total_reported_comment_count": 0,
+                "total_attempt_count": 0,
+                "total_succeed_count": 0,
+                "is_poisoned": false,
+                "score": 2.1666666666666665
+            },
+            "tags": null,
+            "state": "normal",
+            "comments_enabled": false,
+            "approx_location_x": 0,
+            "approx_location_y": 0,
+            "approx_location_z": 0,
+            "approx_create_at": "2026-02-16T00:00:00Z"
+        },
+        {
+            "social_feed_id": "4c0d65fd-dc37-4c10-a86f-af3c0c91374d:fec3565b", // UUIDv4 replacement; original composite suffix retained
+            "user_id": "1779bc77-7109-4f15-af35-29b70ca5d450:5f6f6bfc", // UUIDv4 replacement; original composite suffix retained
+            "pool_type": "SocialFeedComment",
+            "pool_name": "CandleSpace",
+            "level_id": "CandleSpace",
+            "location_y": 0,
+            "location_xz": [
+                0,
+                0
+            ],
+            "spherical_lon_lat": [
+                0,
+                0
+            ],
+            "create_at": "2026-02-15T01:43:33.306Z",
+            "expire_at": "2026-03-01T01:43:33.302Z",
+            "message": "It’s so beautiful, I love this ~ 😭✨",
+            "extra_data": {
+                "chunk_count": 0,
+                "ori": "(0,0,0,1)",
+                "pos": "(0,0,0)",
+                "prompt_used": "",
+                "reply_to": "0c199971-cf62-4d9d-9463-311d077b3f39", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+                "resource_id": "VALUE_12", // Sensitive value hidden; variable VALUE_12 (same token means same original value)
+                "scale": "(1,1,1)",
+                "sub_type": 0,
+                "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
+            },
+            "reactions": {
+                "total_report_count": 0,
+                "total_hide_count": 0,
+                "total_like_count": 12,
+                "total_like_reward_message_id": 0,
+                "total_super_like_count": 0,
+                "total_comment_count": 0,
+                "total_reported_comment_count": 0,
+                "total_attempt_count": 0,
+                "total_succeed_count": 0,
+                "is_poisoned": false,
+                "score": 2
+            },
+            "tags": null,
+            "state": "normal",
+            "comments_enabled": false,
+            "approx_location_x": 0,
+            "approx_location_y": 0,
+            "approx_location_z": 0,
+            "approx_create_at": "2026-02-09T00:00:00Z"
+        },
+        {
+            "social_feed_id": "25564456-db40-4065-b769-d1f23e8171cd:94730b7a", // UUIDv4 replacement; original composite suffix retained
+            "user_id": "89d179d1-9eba-44ef-9891-4fccef8af5df:49b93e56", // UUIDv4 replacement; original composite suffix retained
+            "pool_type": "SocialFeedComment",
+            "pool_name": "CandleSpace",
+            "level_id": "CandleSpace",
+            "location_y": 0,
+            "location_xz": [
+                0,
+                0
+            ],
+            "spherical_lon_lat": [
+                0,
+                0
+            ],
+            "create_at": "2026-02-12T15:42:27.982Z",
+            "expire_at": "2026-02-26T15:42:27.979Z",
+            "message": "🤩 ",
+            "extra_data": {
+                "chunk_count": 0,
+                "ori": "(0,0,0,1)",
+                "pos": "(0,0,0)",
+                "prompt_used": "",
+                "reply_to": "0c199971-cf62-4d9d-9463-311d077b3f39", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+                "resource_id": "VALUE_12", // Sensitive value hidden; variable VALUE_12 (same token means same original value)
+                "scale": "(1,1,1)",
+                "sub_type": 0,
+                "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
+            },
+            "reactions": {
+                "total_report_count": 0,
+                "total_hide_count": 0,
+                "total_like_count": 11,
+                "total_like_reward_message_id": 0,
+                "total_super_like_count": 0,
+                "total_comment_count": 0,
+                "total_reported_comment_count": 0,
+                "total_attempt_count": 0,
+                "total_succeed_count": 0,
+                "is_poisoned": false,
+                "score": 1.8333333333333333
+            },
+            "tags": null,
+            "state": "normal",
+            "comments_enabled": false,
+            "approx_location_x": 0,
+            "approx_location_y": 0,
+            "approx_location_z": 0,
+            "approx_create_at": "2026-02-09T00:00:00Z"
+        }
+    ]
 }

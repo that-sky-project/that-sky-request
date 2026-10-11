@@ -1,33 +1,30 @@
 /*
- * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
- * Repeated variable names indicate identical original values; different names of the same type mean different values.
- * IP_1 = IP address; original address hidden
- * UUID_1 = UUID-form identifier; original UUID hidden
- * UUID_2 = UUID-form identifier; original UUID hidden
- * VALUE_1 = non-UUID sensitive value; original value hidden
- * UUID_3 = UUID-form identifier; original UUID hidden
- * VALUE_2 = non-UUID sensitive value; original value hidden
- * VALUE_3 = non-UUID sensitive value; original value hidden
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_13 = IP address; original address hidden
+ * VALUE_24 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_40 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_41 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
  */
 
 /*
  * Request
  * POST /account/join_friend_game HTTP/1.1
  * host: <REDACTED_HOST>
- * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
- * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
- * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-real-ip: IP_13 // IP address; variable IP_13 (same token means same original value)
+ * x-forwarded-for: IP_13 // IP address; variable IP_13 (same token means same original value)
+ * remote-host: IP_13 // IP address; variable IP_13 (same token means same original value)
  * x-forwarded-proto: https
  * x-forwarded-port: 443
  * content-length: 192
  * user-agent: Sky-Live-com.tgc.sky.win/0.34.3.407106 (System Product Name; win 10.0.19045; zh-Hans)
- * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * x-session-id: b939a6fa-a6cc-4d87-8aa7-82414d13f5cc // UUIDv4 replacement; identical original UUIDs share this value globally
  * content-type: application/json
  * trace-id: jqEvIMD
- * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
- * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
- * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
- * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * user-id: d2a61425-4a1b-4869-a71f-debb825406e5 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * session: VALUE_24 // Sensitive value hidden; variable VALUE_24 (same token means same original value)
+ * x-user-id: d2a61425-4a1b-4869-a71f-debb825406e5 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * x-session-token: VALUE_24 // Sensitive value hidden; variable VALUE_24 (same token means same original value)
  * x-sky-level-id: 3526133726
  * 
  * Captured request-body metadata:
@@ -39,10 +36,10 @@
  */
 // Request
 {
-    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
-    "friend_id": "UUID_3" // UUID-form identifier; variable UUID_3 (same token means same original value)
+    "user": "d2a61425-4a1b-4869-a71f-debb825406e5", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "user_id": "d2a61425-4a1b-4869-a71f-debb825406e5", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "session": "VALUE_24", // Sensitive value hidden; variable VALUE_24 (same token means same original value)
+    "friend_id": "5e6630f5-2c52-42f3-9c5a-39a8844c5177" // UUIDv4 replacement; identical original UUIDs share this value globally
 }
 
 /*
@@ -66,9 +63,9 @@
 // Response
 {
     "move_to_game": {
-        "signature": "VALUE_2", // Sensitive value hidden; variable VALUE_2 (same token means same original value)
-        "sig": "VALUE_3", // Sensitive value hidden; variable VALUE_3 (same token means same original value)
-        "target_id": "UUID_3", // UUID-form identifier; variable UUID_3 (same token means same original value)
+        "signature": "VALUE_40", // Sensitive value hidden; variable VALUE_40 (same token means same original value)
+        "sig": "VALUE_41", // Sensitive value hidden; variable VALUE_41 (same token means same original value)
+        "target_id": "5e6630f5-2c52-42f3-9c5a-39a8844c5177", // UUIDv4 replacement; identical original UUIDs share this value globally
         "client_changelist": "407106",
         "ps_only": false,
         "platform_filter": 0,
@@ -79,7 +76,7 @@
         "level_hash": 13606,
         "client_version": 5115,
         "players": [
-            "UUID_3" // UUID-form identifier; variable UUID_3 (same token means same original value)
+            "5e6630f5-2c52-42f3-9c5a-39a8844c5177" // UUIDv4 replacement; identical original UUIDs share this value globally
         ],
         "move_ts": 1786497753061,
         "event_id": 4294967295

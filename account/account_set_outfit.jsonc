@@ -1,30 +1,28 @@
 /*
- * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
- * Repeated variable names indicate identical original values; different names of the same type mean different values.
- * IP_1 = IP address; original address hidden
- * UUID_1 = UUID-form identifier; original UUID hidden
- * UUID_2 = UUID-form identifier; original UUID hidden
- * VALUE_1 = non-UUID sensitive value; original value hidden
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_12 = IP address; original address hidden
+ * VALUE_45 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
  */
 
 /*
  * Request
  * POST /account/set_outfit HTTP/1.1
  * host: live-as-sky-test.xyqaq.cn
- * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
- * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
- * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-real-ip: IP_12 // IP address; variable IP_12 (same token means same original value)
+ * x-forwarded-for: IP_12 // IP address; variable IP_12 (same token means same original value)
+ * remote-host: IP_12 // IP address; variable IP_12 (same token means same original value)
  * x-forwarded-proto: https
  * x-forwarded-port: 443
  * content-length: 950
  * user-agent: Sky-Live-com.tgc.sky.win/0.32.2.365286 (83DE; win 10.0.22631; zh-Hans)
- * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * x-session-id: 18891247-ff05-4fa7-a028-9d615e004730 // UUIDv4 replacement; identical original UUIDs share this value globally
  * content-type: application/json
- * trace-id: suxp2Lf
- * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
- * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
- * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
- * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * trace-id: np7gOJ9
+ * user-id: 6d4b2006-0b6b-4c2f-8333-9ff544863ddb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * session: VALUE_45 // Sensitive value hidden; variable VALUE_45 (same token means same original value)
+ * x-user-id: 6d4b2006-0b6b-4c2f-8333-9ff544863ddb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * x-session-token: VALUE_45 // Sensitive value hidden; variable VALUE_45 (same token means same original value)
  * x-sky-level-id: 3526133726
  * 
  * Captured request-body metadata:
@@ -33,9 +31,9 @@
  */
 // Request
 {
-    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "user_id": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "session": "VALUE_45", // Sensitive value hidden; variable VALUE_45 (same token means same original value)
     "outfit": {
         "body": {
             "id": 3691343236,
@@ -94,7 +92,7 @@
             "dye": "(none,none)"
         },
         "prop": {
-            "id": 2805583371,
+            "id": 3746783511,
             "tex": 0,
             "pat": 0,
             "mask": 0,
@@ -119,14 +117,14 @@
 /*
  * Response
  * HTTP/1.1 200 OK
- * date: Mon, 23 Feb 2026 12:04:20 GMT
+ * date: Mon, 23 Feb 2026 12:03:58 GMT
  * content-type: application/json
- * content-length: 428
+ * content-length: 550
  * server: nginx/1.14.2
  * 
  * Captured response-body metadata:
  * captured body type: json
- * body size: 428
+ * body size: 550
  */
 // Response
 {
@@ -140,7 +138,7 @@
         "scale": -0.04333950038736946,
         "refreshVersion": 0,
         "prop": {
-            "id": 2805583371
+            "id": 3746783511
         },
         "neck": {
             "id": 3800884691
@@ -174,5 +172,9 @@
         "arms": {
             "id": 0
         }
-    }
+    },
+    "placeable_data": {
+        "name": "StoneStool"
+    },
+    "placeable_sig": "216cbb8f35c899844e71430762fa2fb1c3d2022213e1043edf2e2431ba40ee37"
 }

@@ -1,0 +1,518 @@
+/*
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_2 = IP address; original address hidden
+ * VALUE_1 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ */
+
+/*
+ * Request
+ * POST /account/wing_buffs/convert HTTP/1.1
+ * host: live-as-sky.xyqaq.cn
+ * x-real-ip: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * x-forwarded-for: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * remote-host: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 141
+ * user-agent: Sky-Live-com.tgc.sky.win/0.32.1.365186 (83DE; win 10.0.22631; zh-Hans)
+ * x-session-id: 18891247-ff05-4fa7-a028-9d615e004730 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * content-type: application/json
+ * trace-id: 
+ * user-id: 6d4b2006-0b6b-4c2f-8333-9ff544863ddb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: 6d4b2006-0b6b-4c2f-8333-9ff544863ddb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 2251284635
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 141
+ */
+// Request
+{
+    "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "user_id": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "session": "VALUE_1" // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Tue, 20 Jan 2026 03:33:37 GMT
+ * content-type: application/json
+ * content-length: 7211
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 7211
+ */
+// Response
+{
+    "result": "ok",
+    "wing_buffs": [
+        {
+            "name": "l_RainMid_1",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 2147483648,
+            "collected": false
+        },
+        {
+            "name": "l_Sunset_1",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 70368744177664,
+            "collected": false
+        },
+        {
+            "name": "l_Dusk_0",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 562949953421312,
+            "collected": false
+        },
+        {
+            "name": "s_ohno",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 1073741824,
+            "collected": true
+        },
+        {
+            "name": "s_wipe",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 524288,
+            "collected": true
+        },
+        {
+            "name": "l_Night_1",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 4194304,
+            "collected": false
+        },
+        {
+            "name": "s_strong",
+            "deposited": false,
+            "collected": true
+        },
+        {
+            "name": "s_proud",
+            "collected": true
+        },
+        {
+            "name": "s_force",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 4398046511104,
+            "collected": true
+        },
+        {
+            "name": "s_scared",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 2305843009213693952,
+            "collected": true
+        },
+        {
+            "name": "s_backflip",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 144115188075855872,
+            "collected": true
+        },
+        {
+            "name": "l_Dusk_CrabField_1",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 4096,
+            "collected": false
+        },
+        {
+            "name": "s_nothanks",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 16384,
+            "collected": true
+        },
+        {
+            "name": "l_Night_0",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 4503599627370496,
+            "collected": false
+        },
+        {
+            "name": "s_butterfly",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 8796093022208,
+            "collected": true
+        },
+        {
+            "name": "s_shy",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 35184372088832,
+            "collected": true
+        },
+        {
+            "name": "s_pout",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 8388608,
+            "collected": true
+        },
+        {
+            "name": "s_beacon",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 131072,
+            "collected": true
+        },
+        {
+            "name": "s_crabvoice",
+            "collected": true
+        },
+        {
+            "name": "l_Rain_1",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 34359738368,
+            "collected": false
+        },
+        {
+            "name": "l_SunsetEnd_0",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 68719476736,
+            "collected": false
+        },
+        {
+            "name": "s_lookaround",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 33554432,
+            "collected": true
+        },
+        {
+            "name": "l_Prairie_Island_2",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 36028797018963968,
+            "collected": false
+        },
+        {
+            "name": "l_DuskGraveyard_2",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 1125899906842624,
+            "collected": false
+        },
+        {
+            "name": "l_Sunset_2",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 1024,
+            "collected": false
+        },
+        {
+            "name": "l_RainMid_2",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 2199023255552,
+            "collected": false
+        },
+        {
+            "name": "l_Prairie_Island_3",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 2,
+            "collected": false
+        },
+        {
+            "name": "l_Sunset_Theater_0",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 536870912,
+            "collected": false
+        },
+        {
+            "name": "l_Prairie_NestAndKeeper_0",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 4611686018427387904,
+            "collected": false
+        },
+        {
+            "name": "s_seek",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 549755813888,
+            "collected": true
+        },
+        {
+            "name": "s_come",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 288230376151711744,
+            "collected": true
+        },
+        {
+            "name": "l_SunsetEnd2_0",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 4294967296,
+            "collected": false
+        },
+        {
+            "name": "l_Prairie_Island_7",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 67108864,
+            "collected": false
+        },
+        {
+            "name": "s_love",
+            "collected": true
+        },
+        {
+            "name": "l_Sunset_0",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 1099511627776,
+            "collected": false
+        },
+        {
+            "name": "s_cry",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 137438953472,
+            "collected": true
+        },
+        {
+            "name": "l_DuskGraveyard_0",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 281474976710656,
+            "collected": false
+        },
+        {
+            "name": "s_pray",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 1,
+            "collected": true
+        },
+        {
+            "name": "l_RainMid_0",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 72057594037927936,
+            "collected": false
+        },
+        {
+            "name": "s_sorry",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 17179869184,
+            "collected": true
+        },
+        {
+            "name": "s_whale",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 256,
+            "collected": true
+        },
+        {
+            "name": "s_wave",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 268435456,
+            "collected": true
+        },
+        {
+            "name": "l_Dusk_CrabField_0",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 4,
+            "collected": false
+        },
+        {
+            "name": "l_Sunset_Citadel_0",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 17592186044416,
+            "collected": false
+        },
+        {
+            "name": "s_sparkler",
+            "collected": true
+        },
+        {
+            "name": "s_cold",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 64,
+            "collected": true
+        },
+        {
+            "name": "s_die",
+            "deposited": false,
+            "collected": true
+        },
+        {
+            "name": "l_DuskGraveyard_1",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 16777216,
+            "collected": false
+        },
+        {
+            "name": "l_Prairie_Island_1",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 65536,
+            "collected": false
+        },
+        {
+            "name": "l_DuskGraveyard_3",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 2251799813685248,
+            "collected": false
+        },
+        {
+            "name": "s_cheer",
+            "collected": true
+        },
+        {
+            "name": "s_bird",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 512,
+            "collected": true
+        },
+        {
+            "name": "l_Night2_2",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 9007199254740992,
+            "collected": false
+        },
+        {
+            "name": "s_laugh",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 274877906944,
+            "collected": true
+        },
+        {
+            "name": "s_brave",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 8,
+            "collected": true
+        },
+        {
+            "name": "s_thumbsup",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 8192,
+            "collected": true
+        },
+        {
+            "name": "l_Sunset_Citadel_1",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 16,
+            "collected": false
+        },
+        {
+            "name": "l_DuskGraveyard_5",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 8589934592,
+            "collected": false
+        },
+        {
+            "name": "s_point",
+            "last_conversion": 1766154422,
+            "deposited": false,
+            "deposit_id": -9223372036854775808,
+            "collected": true
+        },
+        {
+            "name": "l_DuskGraveyard_4",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 262144,
+            "collected": false
+        },
+        {
+            "name": "l_SunsetVillage_0",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 18014398509481984,
+            "collected": false
+        },
+        {
+            "name": "s_manta",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 32,
+            "collected": true
+        },
+        {
+            "name": "s_yawn",
+            "collected": true
+        },
+        {
+            "name": "s_bow",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 134217728,
+            "collected": true
+        },
+        {
+            "name": "l_Prairie_NestAndKeeper_1",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 2097152,
+            "collected": false
+        },
+        {
+            "name": "l_Dusk_CrabField_2",
+            "last_conversion": 1768880017,
+            "deposited": false,
+            "deposit_id": 2048,
+            "collected": false
+        }
+    ],
+    "currency": {
+        "candles": 86,
+        "color_black_wax": 18,
+        "color_blue_wax": 10,
+        "color_cyan_wax": 45,
+        "color_green_wax": 80,
+        "color_magenta_wax": 15,
+        "color_red_wax": 67,
+        "color_white_wax": 15,
+        "color_yellow_wax": 10,
+        "heart": 0,
+        "prestige": 26,
+        "prestige_vip": 77,
+        "prestige_wax": 2,
+        "season_candle": 5,
+        "season_wax": 0,
+        "season_wax_21": 9,
+        "season_wax_23": 6,
+        "season_wax_28": 6,
+        "vip": 1,
+        "wax": 139
+    }
+}

@@ -1,0 +1,80 @@
+/*
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_9 = IP address; original address hidden
+ * VALUE_44 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ */
+
+/*
+ * Request
+ * POST /account/remove_relationship_hint HTTP/1.1
+ * host: live-as-sky.xyqaq.cn
+ * x-real-ip: IP_9 // IP address; variable IP_9 (same token means same original value)
+ * x-forwarded-for: IP_9 // IP address; variable IP_9 (same token means same original value)
+ * remote-host: IP_9 // IP address; variable IP_9 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 198
+ * user-agent: Sky-Live-com.tgc.sky.win/0.32.1.365186 (System Product Name; win 10.0.19045; zh-Hans)
+ * x-session-id: b939a6fa-a6cc-4d87-8aa7-82414d13f5cc // UUIDv4 replacement; identical original UUIDs share this value globally
+ * content-type: application/json
+ * trace-id: iBaGmNc
+ * user-id: d2a61425-4a1b-4869-a71f-debb825406e5 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * session: VALUE_44 // Sensitive value hidden; variable VALUE_44 (same token means same original value)
+ * x-user-id: d2a61425-4a1b-4869-a71f-debb825406e5 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * x-session-token: VALUE_44 // Sensitive value hidden; variable VALUE_44 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 198
+ */
+// Request
+{
+    "user": "d2a61425-4a1b-4869-a71f-debb825406e5", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "user_id": "d2a61425-4a1b-4869-a71f-debb825406e5", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "session": "VALUE_44", // Sensitive value hidden; variable VALUE_44 (same token means same original value)
+    "friend": "a4fe52b3-c594-4370-b9eb-235eb0d8a6e0", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "hint": 1
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Tue, 20 Jan 2026 01:04:26 GMT
+ * content-type: application/json; charset=utf-8
+ * content-length: 249
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 249
+ */
+// Response
+{
+    "result": true,
+    "update_friends": [
+        {
+            "friend_id": "a4fe52b3-c594-4370-b9eb-235eb0d8a6e0", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "created_at": "2026-01-20T01:04:08.399Z",
+            "abilities": [
+                1,
+                2,
+                9,
+                10,
+                19,
+                4
+            ],
+            "hints": [
+                2,
+                9,
+                10,
+                19,
+                4
+            ],
+            "last_seen_outfit": null,
+            "soft_deleted": false,
+            "they_soft_deleted": false
+        }
+    ]
+}

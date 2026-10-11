@@ -1,37 +1,34 @@
 /*
- * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
- * Repeated variable names indicate identical original values; different names of the same type mean different values.
- * IP_1 = IP address; original address hidden
- * UUID_1 = UUID-form identifier; original UUID hidden
- * VALUE_1 = non-UUID sensitive value; original value hidden
- * VALUE_2 = non-UUID sensitive value; original value hidden
- * UUID_2 = UUID-form identifier; original UUID hidden
- * VALUE_3 = non-UUID sensitive value; original value hidden
- * VALUE_4 = non-UUID sensitive value; original value hidden
- * VALUE_5 = non-UUID sensitive value; original value hidden
- * VALUE_6 = non-UUID sensitive value; original value hidden
- * UUID_3 = UUID-form identifier; original UUID hidden
- * VALUE_7 = non-UUID sensitive value; original value hidden
- * VALUE_8 = non-UUID sensitive value; original value hidden
- * VALUE_9 = non-UUID sensitive value; original value hidden
- * VALUE_10 = non-UUID sensitive value; original value hidden
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_10 = IP address; original address hidden
+ * VALUE_9 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_10 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_11 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_12 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_13 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_14 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_15 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_8 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_16 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_17 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
  */
 
 /*
  * Request
  * POST /account/auth/login HTTP/1.1
  * host: <REDACTED_HOST>
- * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
- * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
- * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-real-ip: IP_10 // IP address; variable IP_10 (same token means same original value)
+ * x-forwarded-for: IP_10 // IP address; variable IP_10 (same token means same original value)
+ * remote-host: IP_10 // IP address; variable IP_10 (same token means same original value)
  * x-forwarded-proto: https
  * x-forwarded-port: 443
  * content-length: 1510
  * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
- * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * x-session-id: be3d606d-c9e5-4504-b360-a8e51f4150f3 // UUIDv4 replacement; identical original UUIDs share this value globally
  * content-type: application/json
  * trace-id: YCPZUt2
- * x-sky-build-access-key: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-build-access-key: VALUE_9 // Sensitive value hidden; variable VALUE_9 (same token means same original value)
  * x-sky-level-id: 3526133726
  * 
  * Captured request-body metadata:
@@ -44,17 +41,17 @@
 // Request
 {
     "type": "Steam",
-    "external_credentials": "VALUE_2", // Sensitive value hidden; variable VALUE_2 (same token means same original value)
-    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "device": "00000000-0000-0000-0000-000000000000",
-    "key": "VALUE_3", // Sensitive value hidden; variable VALUE_3 (same token means same original value)
+    "external_credentials": "VALUE_10", // Sensitive value hidden; variable VALUE_10 (same token means same original value)
+    "user": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "device": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+    "key": "VALUE_11", // Sensitive value hidden; variable VALUE_11 (same token means same original value)
     "device_name": "HTMONKEYG-LAPTO",
-    "device_token": "VALUE_4", // Sensitive value hidden; variable VALUE_4 (same token means same original value)
+    "device_token": "VALUE_12", // Sensitive value hidden; variable VALUE_12 (same token means same original value)
     "production": false,
     "tos_version": 4,
-    "device_key": "VALUE_5", // Sensitive value hidden; variable VALUE_5 (same token means same original value)
+    "device_key": "VALUE_13", // Sensitive value hidden; variable VALUE_13 (same token means same original value)
     "sig_ts": 1788453557,
-    "sig": "VALUE_6", // Sensitive value hidden; variable VALUE_6 (same token means same original value)
+    "sig": "VALUE_14", // Sensitive value hidden; variable VALUE_14 (same token means same original value)
     "hashes": [
         2384841003,
         3472334867,
@@ -121,10 +118,10 @@
 // Response
 {
     "authinfo": {
-        "user": "UUID_3", // UUID-form identifier; variable UUID_3 (same token means same original value)
+        "user": "714a69eb-ebd1-4baa-a7c4-16d60e38beeb", // UUIDv4 replacement; identical original UUIDs share this value globally
         "device": "",
-        "key": "VALUE_7", // Sensitive value hidden; variable VALUE_7 (same token means same original value)
-        "recovery_token": "VALUE_4" // Sensitive value hidden; variable VALUE_4 (same token means same original value)
+        "key": "VALUE_15", // Sensitive value hidden; variable VALUE_15 (same token means same original value)
+        "recovery_token": "VALUE_12" // Sensitive value hidden; variable VALUE_12 (same token means same original value)
     },
     "session": "VALUE_8", // Sensitive value hidden; variable VALUE_8 (same token means same original value)
     "resource_list": [
@@ -179,8 +176,8 @@
     "external_links": [
         {
             "type": "Steam",
-            "player_id": "VALUE_9", // Sensitive value hidden; variable VALUE_9 (same token means same original value)
-            "alias": "VALUE_10" // Sensitive value hidden; variable VALUE_10 (same token means same original value)
+            "player_id": "VALUE_16", // Sensitive value hidden; variable VALUE_16 (same token means same original value)
+            "alias": "VALUE_17" // Sensitive value hidden; variable VALUE_17 (same token means same original value)
         }
     ],
     "player_badge_type": 0

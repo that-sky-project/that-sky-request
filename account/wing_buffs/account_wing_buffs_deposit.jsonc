@@ -1,0 +1,69 @@
+/*
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_2 = IP address; original address hidden
+ * VALUE_2 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ */
+
+/*
+ * Request
+ * POST /account/wing_buffs/deposit HTTP/1.1
+ * host: live-as-sky.xyqaq.cn
+ * x-real-ip: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * x-forwarded-for: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * remote-host: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 207
+ * user-agent: Sky-Live-com.tgc.sky.win/0.32.1.365186 (83DE; win 10.0.22631; zh-Hans)
+ * x-session-id: 18891247-ff05-4fa7-a028-9d615e004730 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * content-type: application/json
+ * trace-id: zR11QHD
+ * user-id: 6d4b2006-0b6b-4c2f-8333-9ff544863ddb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * session: VALUE_2 // Sensitive value hidden; variable VALUE_2 (same token means same original value)
+ * x-user-id: 6d4b2006-0b6b-4c2f-8333-9ff544863ddb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * x-session-token: VALUE_2 // Sensitive value hidden; variable VALUE_2 (same token means same original value)
+ * x-sky-level-id: 3479786579
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 207
+ */
+// Request
+{
+    "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "user_id": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "session": "VALUE_2", // Sensitive value hidden; variable VALUE_2 (same token means same original value)
+    "name_deposit_id_pairs": [
+        [
+            "l_SunsetVillage_0",
+            18014398509481984
+        ]
+    ]
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Tue, 20 Jan 2026 03:19:44 GMT
+ * content-type: application/json
+ * content-length: 161
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 161
+ */
+// Response
+{
+    "result": "ok",
+    "update_wing_buffs": [
+        {
+            "name": "l_SunsetVillage_0",
+            "last_conversion": 1766154422,
+            "deposited": true,
+            "deposit_id": 18014398509481984,
+            "collected": false
+        }
+    ]
+}

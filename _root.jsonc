@@ -1,16 +1,16 @@
 /*
- * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
- * Repeated variable names indicate identical original values; different names of the same type mean different values.
- * IP_1 = IP address; original address hidden
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_7 = IP address; original address hidden
  */
 
 /*
  * Request
  * GET / HTTP/1.1
  * host: <REDACTED_HOST>
- * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
- * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
- * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-real-ip: IP_7 // IP address; variable IP_7 (same token means same original value)
+ * x-forwarded-for: IP_7 // IP address; variable IP_7 (same token means same original value)
+ * remote-host: IP_7 // IP address; variable IP_7 (same token means same original value)
  * x-forwarded-proto: https
  * x-forwarded-port: 443
  * upgrade-insecure-requests: 1

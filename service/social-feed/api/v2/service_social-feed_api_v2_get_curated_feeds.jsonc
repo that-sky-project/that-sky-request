@@ -1,122 +1,29 @@
 /*
- * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
- * Repeated variable names indicate identical original values; different names of the same type mean different values.
- * IP_1 = IP address; original address hidden
- * UUID_1 = UUID-form identifier; original UUID hidden
- * UUID_2 = UUID-form identifier; original UUID hidden
- * VALUE_1 = non-UUID sensitive value; original value hidden
- * UUID_COMPOSITE_1 = UUID-based composite identifier; original value hidden
- * UUID_COMPOSITE_2 = UUID-based composite identifier; original value hidden
- * UUID_3 = UUID-form identifier; original UUID hidden
- * UUID_4 = UUID-form identifier; original UUID hidden
- * UUID_5 = UUID-form identifier; original UUID hidden
- * UUID_6 = UUID-form identifier; original UUID hidden
- * UUID_7 = UUID-form identifier; original UUID hidden
- * UUID_8 = UUID-form identifier; original UUID hidden
- * UUID_9 = UUID-form identifier; original UUID hidden
- * UUID_10 = UUID-form identifier; original UUID hidden
- * UUID_11 = UUID-form identifier; original UUID hidden
- * UUID_COMPOSITE_3 = UUID-based composite identifier; original value hidden
- * UUID_COMPOSITE_4 = UUID-based composite identifier; original value hidden
- * UUID_12 = UUID-form identifier; original UUID hidden
- * UUID_13 = UUID-form identifier; original UUID hidden
- * UUID_14 = UUID-form identifier; original UUID hidden
- * UUID_COMPOSITE_5 = UUID-based composite identifier; original value hidden
- * UUID_COMPOSITE_6 = UUID-based composite identifier; original value hidden
- * UUID_15 = UUID-form identifier; original UUID hidden
- * UUID_16 = UUID-form identifier; original UUID hidden
- * UUID_17 = UUID-form identifier; original UUID hidden
- * UUID_18 = UUID-form identifier; original UUID hidden
- * UUID_19 = UUID-form identifier; original UUID hidden
- * UUID_COMPOSITE_7 = UUID-based composite identifier; original value hidden
- * UUID_COMPOSITE_8 = UUID-based composite identifier; original value hidden
- * UUID_20 = UUID-form identifier; original UUID hidden
- * UUID_21 = UUID-form identifier; original UUID hidden
- * UUID_COMPOSITE_9 = UUID-based composite identifier; original value hidden
- * UUID_COMPOSITE_10 = UUID-based composite identifier; original value hidden
- * UUID_22 = UUID-form identifier; original UUID hidden
- * UUID_23 = UUID-form identifier; original UUID hidden
- * UUID_COMPOSITE_11 = UUID-based composite identifier; original value hidden
- * UUID_COMPOSITE_12 = UUID-based composite identifier; original value hidden
- * UUID_24 = UUID-form identifier; original UUID hidden
- * UUID_25 = UUID-form identifier; original UUID hidden
- * UUID_26 = UUID-form identifier; original UUID hidden
- * UUID_COMPOSITE_13 = UUID-based composite identifier; original value hidden
- * UUID_COMPOSITE_14 = UUID-based composite identifier; original value hidden
- * UUID_27 = UUID-form identifier; original UUID hidden
- * UUID_28 = UUID-form identifier; original UUID hidden
- * UUID_29 = UUID-form identifier; original UUID hidden
- * UUID_30 = UUID-form identifier; original UUID hidden
- * UUID_COMPOSITE_15 = UUID-based composite identifier; original value hidden
- * UUID_COMPOSITE_16 = UUID-based composite identifier; original value hidden
- * UUID_31 = UUID-form identifier; original UUID hidden
- * UUID_32 = UUID-form identifier; original UUID hidden
- * UUID_COMPOSITE_17 = UUID-based composite identifier; original value hidden
- * UUID_COMPOSITE_18 = UUID-based composite identifier; original value hidden
- * UUID_33 = UUID-form identifier; original UUID hidden
- * UUID_34 = UUID-form identifier; original UUID hidden
- * UUID_35 = UUID-form identifier; original UUID hidden
- * UUID_36 = UUID-form identifier; original UUID hidden
- * UUID_COMPOSITE_19 = UUID-based composite identifier; original value hidden
- * UUID_COMPOSITE_20 = UUID-based composite identifier; original value hidden
- * UUID_37 = UUID-form identifier; original UUID hidden
- * UUID_38 = UUID-form identifier; original UUID hidden
- * UUID_39 = UUID-form identifier; original UUID hidden
- * UUID_COMPOSITE_21 = UUID-based composite identifier; original value hidden
- * UUID_COMPOSITE_22 = UUID-based composite identifier; original value hidden
- * UUID_40 = UUID-form identifier; original UUID hidden
- * UUID_41 = UUID-form identifier; original UUID hidden
- * UUID_42 = UUID-form identifier; original UUID hidden
- * UUID_43 = UUID-form identifier; original UUID hidden
- * UUID_44 = UUID-form identifier; original UUID hidden
- * UUID_COMPOSITE_23 = UUID-based composite identifier; original value hidden
- * UUID_COMPOSITE_24 = UUID-based composite identifier; original value hidden
- * UUID_45 = UUID-form identifier; original UUID hidden
- * UUID_46 = UUID-form identifier; original UUID hidden
- * UUID_COMPOSITE_25 = UUID-based composite identifier; original value hidden
- * UUID_COMPOSITE_26 = UUID-based composite identifier; original value hidden
- * UUID_47 = UUID-form identifier; original UUID hidden
- * UUID_48 = UUID-form identifier; original UUID hidden
- * UUID_49 = UUID-form identifier; original UUID hidden
- * UUID_COMPOSITE_27 = UUID-based composite identifier; original value hidden
- * UUID_COMPOSITE_28 = UUID-based composite identifier; original value hidden
- * UUID_50 = UUID-form identifier; original UUID hidden
- * UUID_51 = UUID-form identifier; original UUID hidden
- * UUID_52 = UUID-form identifier; original UUID hidden
- * UUID_53 = UUID-form identifier; original UUID hidden
- * UUID_54 = UUID-form identifier; original UUID hidden
- * UUID_55 = UUID-form identifier; original UUID hidden
- * UUID_COMPOSITE_29 = UUID-based composite identifier; original value hidden
- * UUID_COMPOSITE_30 = UUID-based composite identifier; original value hidden
- * UUID_56 = UUID-form identifier; original UUID hidden
- * UUID_57 = UUID-form identifier; original UUID hidden
- * UUID_58 = UUID-form identifier; original UUID hidden
- * UUID_59 = UUID-form identifier; original UUID hidden
- * UUID_60 = UUID-form identifier; original UUID hidden
- * UUID_COMPOSITE_31 = UUID-based composite identifier; original value hidden
- * UUID_COMPOSITE_32 = UUID-based composite identifier; original value hidden
- * UUID_61 = UUID-form identifier; original UUID hidden
- * UUID_62 = UUID-form identifier; original UUID hidden
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_10 = IP address; original address hidden
+ * VALUE_8 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_48 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
  */
 
 /*
  * Request
  * POST /service/social-feed/api/v2/get_curated_feeds HTTP/1.1
  * host: <REDACTED_HOST>
- * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
- * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
- * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-real-ip: IP_10 // IP address; variable IP_10 (same token means same original value)
+ * x-forwarded-for: IP_10 // IP address; variable IP_10 (same token means same original value)
+ * remote-host: IP_10 // IP address; variable IP_10 (same token means same original value)
  * x-forwarded-proto: https
  * x-forwarded-port: 443
  * content-length: 503
  * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
- * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * x-session-id: be3d606d-c9e5-4504-b360-a8e51f4150f3 // UUIDv4 replacement; identical original UUIDs share this value globally
  * content-type: application/json
  * trace-id: qFvPvGM
- * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
- * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
- * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
- * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * user-id: 714a69eb-ebd1-4baa-a7c4-16d60e38beeb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * session: VALUE_8 // Sensitive value hidden; variable VALUE_8 (same token means same original value)
+ * x-user-id: 714a69eb-ebd1-4baa-a7c4-16d60e38beeb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * x-session-token: VALUE_8 // Sensitive value hidden; variable VALUE_8 (same token means same original value)
  * x-sky-level-id: 372393162
  * 
  * Captured request-body metadata:
@@ -128,9 +35,9 @@
  */
 // Request
 {
-    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "user": "714a69eb-ebd1-4baa-a7c4-16d60e38beeb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "user_id": "714a69eb-ebd1-4baa-a7c4-16d60e38beeb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "session": "VALUE_8", // Sensitive value hidden; variable VALUE_8 (same token means same original value)
     "search_area": {
         "coordinates": "(-2,218,2)",
         "pool_type": "RecordingCandle",
@@ -178,8 +85,8 @@
         "followed": null,
         "public": [
             {
-                "social_feed_id": "UUID_COMPOSITE_1", // UUID-based composite identifier; variable UUID_COMPOSITE_1 (same token means same original value)
-                "user_id": "UUID_COMPOSITE_2", // UUID-based composite identifier; variable UUID_COMPOSITE_2 (same token means same original value)
+                "social_feed_id": "9296cfc5-59ab-4cc1-8c16-36720ec7e298:425560b4", // UUIDv4 replacement; original composite suffix retained
+                "user_id": "383fea76-0ba9-47da-8440-2befbb360b3a:d0c7b9c2", // UUIDv4 replacement; original composite suffix retained
                 "pool_type": "RecordingCandle",
                 "pool_name": "MainStreet_ShopProps",
                 "create_at": "2026-08-31T22:38:34.137Z",
@@ -189,19 +96,19 @@
                 "extra_data": {
                     "chunk_count": 21,
                     "ori": "(0,0.716,0,0.698)",
-                    "p0id": "UUID_3", // UUID-form identifier; variable UUID_3 (same token means same original value)
-                    "p1id": "UUID_4", // UUID-form identifier; variable UUID_4 (same token means same original value)
-                    "p2id": "UUID_5", // UUID-form identifier; variable UUID_5 (same token means same original value)
-                    "p3id": "UUID_6", // UUID-form identifier; variable UUID_6 (same token means same original value)
-                    "p4id": "UUID_7", // UUID-form identifier; variable UUID_7 (same token means same original value)
-                    "p5id": "UUID_8", // UUID-form identifier; variable UUID_8 (same token means same original value)
-                    "p6id": "UUID_9", // UUID-form identifier; variable UUID_9 (same token means same original value)
+                    "p0id": "383fea76-0ba9-47da-8440-2befbb360b3a", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "p1id": "4f898f48-9900-4131-be43-f4805936ff3e", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "p2id": "6fc17174-2776-4207-906c-0b3f2860cd09", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "p3id": "6df17c86-ffd9-4b80-ace5-660dd66c758d", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "p4id": "554b78c9-f7d4-484a-811e-fa9d5c57e51a", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "p5id": "15197e25-7615-411f-bed1-21f5e8c261c7", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "p6id": "1128dc13-53b3-4011-a7f4-bf3fa1169b64", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "pos": "(3.005,215.434,-9.938)",
                     "prompt_used": "",
-                    "resource_id": "UUID_10", // UUID-form identifier; variable UUID_10 (same token means same original value)
+                    "resource_id": "6001d4a4-05ff-4ccd-8e92-4dc0ced651c3", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "scale": "(1,1,1)",
                     "sub_type": 0,
-                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                    "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
                 },
                 "reactions": {
                     "total_report_count": 0,
@@ -222,12 +129,12 @@
                 "children_enabled": true,
                 "local_creation": false,
                 "followed": false,
-                "friend": false,
+                "friend": "VALUE_48", // Sensitive value hidden; variable VALUE_48 (same token means same original value)
                 "boosted": false
             },
             {
-                "social_feed_id": "UUID_COMPOSITE_3", // UUID-based composite identifier; variable UUID_COMPOSITE_3 (same token means same original value)
-                "user_id": "UUID_COMPOSITE_4", // UUID-based composite identifier; variable UUID_COMPOSITE_4 (same token means same original value)
+                "social_feed_id": "5b44021e-92f2-4baa-a331-8cdbee60c58e:edbdbb9b", // UUIDv4 replacement; original composite suffix retained
+                "user_id": "9675917e-c57f-4ad6-9bb5-ac621b90c674:52111ae8", // UUIDv4 replacement; original composite suffix retained
                 "pool_type": "RecordingCandle",
                 "pool_name": "MainStreet_ShopProps",
                 "create_at": "2026-08-24T10:40:52.616Z",
@@ -237,17 +144,17 @@
                 "extra_data": {
                     "chunk_count": 30,
                     "ori": "(0,-0.706,-0,0.709)",
-                    "p0id": "UUID_12", // UUID-form identifier; variable UUID_12 (same token means same original value)
-                    "parent_social_feed_id": "UUID_13", // UUID-form identifier; variable UUID_13 (same token means same original value)
+                    "p0id": "9675917e-c57f-4ad6-9bb5-ac621b90c674", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "parent_social_feed_id": "5b7e0835-8aa6-4321-8e24-c18be070612e", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "parent_social_feed_seq": 9,
                     "parent_social_feed_type": 4,
-                    "parent_user_id": "UUID_12", // UUID-form identifier; variable UUID_12 (same token means same original value)
+                    "parent_user_id": "9675917e-c57f-4ad6-9bb5-ac621b90c674", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "pos": "(2.381,215.434,-8.642)",
                     "prompt_used": "",
-                    "resource_id": "UUID_14", // UUID-form identifier; variable UUID_14 (same token means same original value)
+                    "resource_id": "2fe41545-7db6-41ac-a084-5a99a9ee77ca", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "scale": "(1,1,1)",
                     "sub_type": 0,
-                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                    "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
                 },
                 "reactions": {
                     "total_report_count": 0,
@@ -268,12 +175,12 @@
                 "children_enabled": false,
                 "local_creation": false,
                 "followed": false,
-                "friend": false,
+                "friend": "VALUE_48", // Sensitive value hidden; variable VALUE_48 (same token means same original value)
                 "boosted": false
             },
             {
-                "social_feed_id": "UUID_COMPOSITE_5", // UUID-based composite identifier; variable UUID_COMPOSITE_5 (same token means same original value)
-                "user_id": "UUID_COMPOSITE_6", // UUID-based composite identifier; variable UUID_COMPOSITE_6 (same token means same original value)
+                "social_feed_id": "64d9eec8-023c-4628-84b8-5381707c11cf:8e44e056", // UUIDv4 replacement; original composite suffix retained
+                "user_id": "da1131f1-2fd6-458f-908b-542690ed4df4:0fcfa01b", // UUIDv4 replacement; original composite suffix retained
                 "pool_type": "RecordingCandle",
                 "pool_name": "MainStreet_ShopProps",
                 "create_at": "2026-08-31T22:16:48.002Z",
@@ -283,16 +190,16 @@
                 "extra_data": {
                     "chunk_count": 30,
                     "ori": "(0,0.693,0,0.721)",
-                    "p0id": "UUID_15", // UUID-form identifier; variable UUID_15 (same token means same original value)
-                    "p1id": "UUID_16", // UUID-form identifier; variable UUID_16 (same token means same original value)
-                    "p2id": "UUID_17", // UUID-form identifier; variable UUID_17 (same token means same original value)
-                    "p3id": "UUID_18", // UUID-form identifier; variable UUID_18 (same token means same original value)
+                    "p0id": "da1131f1-2fd6-458f-908b-542690ed4df4", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "p1id": "85ee710f-dacf-491a-831e-d2878ac0cd06", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "p2id": "b16d0313-7475-459f-bc0a-6b110103058c", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "p3id": "e4a50932-fb02-47e7-b8fd-fa70e6228321", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "pos": "(-0.077,215.434,-9.611)",
                     "prompt_used": "",
-                    "resource_id": "UUID_19", // UUID-form identifier; variable UUID_19 (same token means same original value)
+                    "resource_id": "ab3a52db-56ab-4bdb-8190-ee5a7aa125bc", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "scale": "(1,1,1)",
                     "sub_type": 0,
-                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                    "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
                 },
                 "reactions": {
                     "total_report_count": 0,
@@ -313,12 +220,12 @@
                 "children_enabled": true,
                 "local_creation": false,
                 "followed": false,
-                "friend": false,
+                "friend": "VALUE_48", // Sensitive value hidden; variable VALUE_48 (same token means same original value)
                 "boosted": true
             },
             {
-                "social_feed_id": "UUID_COMPOSITE_7", // UUID-based composite identifier; variable UUID_COMPOSITE_7 (same token means same original value)
-                "user_id": "UUID_COMPOSITE_8", // UUID-based composite identifier; variable UUID_COMPOSITE_8 (same token means same original value)
+                "social_feed_id": "233085dd-1793-47c6-8078-698e319e470b:85c693f6", // UUIDv4 replacement; original composite suffix retained
+                "user_id": "1eaafa32-6570-47cd-874f-40b704945850:ecad9397", // UUIDv4 replacement; original composite suffix retained
                 "pool_type": "RecordingCandle",
                 "pool_name": "MainStreet_ShopProps",
                 "create_at": "2026-08-30T00:57:39.436Z",
@@ -328,13 +235,13 @@
                 "extra_data": {
                     "chunk_count": 8,
                     "ori": "(0,-0.691,-0,0.723)",
-                    "p0id": "UUID_20", // UUID-form identifier; variable UUID_20 (same token means same original value)
+                    "p0id": "1eaafa32-6570-47cd-874f-40b704945850", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "pos": "(1.396,215.429,-8.249)",
                     "prompt_used": "",
-                    "resource_id": "UUID_21", // UUID-form identifier; variable UUID_21 (same token means same original value)
+                    "resource_id": "2aa6f1de-2f65-44e3-899e-b4a6f231fc9a", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "scale": "(1,1,1)",
                     "sub_type": 0,
-                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                    "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
                 },
                 "reactions": {
                     "total_report_count": 0,
@@ -355,12 +262,12 @@
                 "children_enabled": true,
                 "local_creation": false,
                 "followed": false,
-                "friend": false,
+                "friend": "VALUE_48", // Sensitive value hidden; variable VALUE_48 (same token means same original value)
                 "boosted": false
             },
             {
-                "social_feed_id": "UUID_COMPOSITE_9", // UUID-based composite identifier; variable UUID_COMPOSITE_9 (same token means same original value)
-                "user_id": "UUID_COMPOSITE_10", // UUID-based composite identifier; variable UUID_COMPOSITE_10 (same token means same original value)
+                "social_feed_id": "b0291ee3-e1a0-43d4-88c8-1ef7bb069dc6:180d83fd", // UUIDv4 replacement; original composite suffix retained
+                "user_id": "2f21e729-039e-494c-affe-d8d86637e638:e9b34b5d", // UUIDv4 replacement; original composite suffix retained
                 "pool_type": "RecordingCandle",
                 "pool_name": "MainStreet_ShopProps",
                 "create_at": "2026-08-22T20:56:54.694Z",
@@ -370,13 +277,13 @@
                 "extra_data": {
                     "chunk_count": 12,
                     "ori": "(0,0.69,0,0.724)",
-                    "p0id": "UUID_22", // UUID-form identifier; variable UUID_22 (same token means same original value)
+                    "p0id": "2f21e729-039e-494c-affe-d8d86637e638", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "pos": "(1.698,215.434,-9.615)",
                     "prompt_used": "",
-                    "resource_id": "UUID_23", // UUID-form identifier; variable UUID_23 (same token means same original value)
+                    "resource_id": "51970e7b-f2f8-4826-b182-a2062efc04ad", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "scale": "(1,1,1)",
                     "sub_type": 0,
-                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                    "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
                 },
                 "reactions": {
                     "total_report_count": 0,
@@ -397,12 +304,12 @@
                 "children_enabled": false,
                 "local_creation": false,
                 "followed": false,
-                "friend": false,
+                "friend": "VALUE_48", // Sensitive value hidden; variable VALUE_48 (same token means same original value)
                 "boosted": false
             },
             {
-                "social_feed_id": "UUID_COMPOSITE_11", // UUID-based composite identifier; variable UUID_COMPOSITE_11 (same token means same original value)
-                "user_id": "UUID_COMPOSITE_12", // UUID-based composite identifier; variable UUID_COMPOSITE_12 (same token means same original value)
+                "social_feed_id": "df653cc4-ea89-49cb-a6fa-a379ca1e3156:5dac36e1", // UUIDv4 replacement; original composite suffix retained
+                "user_id": "b3995331-5716-4dbd-be4c-295c66bff756:c98ca96f", // UUIDv4 replacement; original composite suffix retained
                 "pool_type": "RecordingCandle",
                 "pool_name": "MainStreet_ShopProps",
                 "create_at": "2026-08-30T07:50:22.348Z",
@@ -412,17 +319,17 @@
                 "extra_data": {
                     "chunk_count": 30,
                     "ori": "(0,0.713,0,0.701)",
-                    "p0id": "UUID_24", // UUID-form identifier; variable UUID_24 (same token means same original value)
-                    "parent_social_feed_id": "UUID_25", // UUID-form identifier; variable UUID_25 (same token means same original value)
+                    "p0id": "b3995331-5716-4dbd-be4c-295c66bff756", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "parent_social_feed_id": "f0442f80-0171-453b-b971-e74ce7014c66", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "parent_social_feed_seq": 8,
                     "parent_social_feed_type": 4,
-                    "parent_user_id": "UUID_24", // UUID-form identifier; variable UUID_24 (same token means same original value)
+                    "parent_user_id": "b3995331-5716-4dbd-be4c-295c66bff756", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "pos": "(2.629,215.434,-9.392)",
                     "prompt_used": "",
-                    "resource_id": "UUID_26", // UUID-form identifier; variable UUID_26 (same token means same original value)
+                    "resource_id": "a3785193-9740-4cc8-ba4b-e3112e550beb", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "scale": "(1,1,1)",
                     "sub_type": 0,
-                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                    "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
                 },
                 "reactions": {
                     "total_report_count": 0,
@@ -443,12 +350,12 @@
                 "children_enabled": true,
                 "local_creation": false,
                 "followed": false,
-                "friend": false,
+                "friend": "VALUE_48", // Sensitive value hidden; variable VALUE_48 (same token means same original value)
                 "boosted": true
             },
             {
-                "social_feed_id": "UUID_COMPOSITE_13", // UUID-based composite identifier; variable UUID_COMPOSITE_13 (same token means same original value)
-                "user_id": "UUID_COMPOSITE_14", // UUID-based composite identifier; variable UUID_COMPOSITE_14 (same token means same original value)
+                "social_feed_id": "1ef49a2e-7616-423a-affa-d7db1ae7568d:74a8a2b8", // UUIDv4 replacement; original composite suffix retained
+                "user_id": "08c132fe-0db4-4a3c-8785-1c672bf516c6:5893a8d3", // UUIDv4 replacement; original composite suffix retained
                 "pool_type": "RecordingCandle",
                 "pool_name": "MainStreet_ShopProps",
                 "create_at": "2026-09-03T09:01:51.676Z",
@@ -458,17 +365,17 @@
                 "extra_data": {
                     "chunk_count": 30,
                     "ori": "(0,0.712,0,0.702)",
-                    "p0id": "UUID_27", // UUID-form identifier; variable UUID_27 (same token means same original value)
-                    "parent_social_feed_id": "UUID_28", // UUID-form identifier; variable UUID_28 (same token means same original value)
+                    "p0id": "08c132fe-0db4-4a3c-8785-1c672bf516c6", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "parent_social_feed_id": "2c4a8889-fd3e-4565-a8e3-7358af98ebfc", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "parent_social_feed_seq": 27,
                     "parent_social_feed_type": 4,
-                    "parent_user_id": "UUID_29", // UUID-form identifier; variable UUID_29 (same token means same original value)
+                    "parent_user_id": "c04cbe61-a04c-4574-8db7-d0266ee9b4a1", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "pos": "(4.406,215.442,-9.027)",
                     "prompt_used": "",
-                    "resource_id": "UUID_30", // UUID-form identifier; variable UUID_30 (same token means same original value)
+                    "resource_id": "412cc345-ad55-427f-8ca6-c9820a1548b6", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "scale": "(1,1,1)",
                     "sub_type": 0,
-                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                    "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
                 },
                 "reactions": {
                     "total_report_count": 0,
@@ -489,12 +396,12 @@
                 "children_enabled": true,
                 "local_creation": false,
                 "followed": false,
-                "friend": false,
+                "friend": "VALUE_48", // Sensitive value hidden; variable VALUE_48 (same token means same original value)
                 "boosted": false
             },
             {
-                "social_feed_id": "UUID_COMPOSITE_15", // UUID-based composite identifier; variable UUID_COMPOSITE_15 (same token means same original value)
-                "user_id": "UUID_COMPOSITE_16", // UUID-based composite identifier; variable UUID_COMPOSITE_16 (same token means same original value)
+                "social_feed_id": "bbc6180c-a937-4c3e-adf7-10832c9c1928:858128bd", // UUIDv4 replacement; original composite suffix retained
+                "user_id": "fe6f551f-e69f-4940-9a5a-aa4d97c7d41a:dfc26b13", // UUIDv4 replacement; original composite suffix retained
                 "pool_type": "RecordingCandle",
                 "pool_name": "MainStreet_ShopProps",
                 "create_at": "2026-08-31T06:46:53.053Z",
@@ -504,13 +411,13 @@
                 "extra_data": {
                     "chunk_count": 12,
                     "ori": "(0,0.974,0,-0.226)",
-                    "p0id": "UUID_31", // UUID-form identifier; variable UUID_31 (same token means same original value)
+                    "p0id": "fe6f551f-e69f-4940-9a5a-aa4d97c7d41a", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "pos": "(-2.438,219.393,15.058)",
                     "prompt_used": "",
-                    "resource_id": "UUID_32", // UUID-form identifier; variable UUID_32 (same token means same original value)
+                    "resource_id": "c7bedce7-d9e8-4c91-a5d0-a91daba93ef2", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "scale": "(1,1,1)",
                     "sub_type": 0,
-                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                    "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
                 },
                 "reactions": {
                     "total_report_count": 0,
@@ -531,12 +438,12 @@
                 "children_enabled": true,
                 "local_creation": false,
                 "followed": false,
-                "friend": false,
+                "friend": "VALUE_48", // Sensitive value hidden; variable VALUE_48 (same token means same original value)
                 "boosted": false
             },
             {
-                "social_feed_id": "UUID_COMPOSITE_17", // UUID-based composite identifier; variable UUID_COMPOSITE_17 (same token means same original value)
-                "user_id": "UUID_COMPOSITE_18", // UUID-based composite identifier; variable UUID_COMPOSITE_18 (same token means same original value)
+                "social_feed_id": "796a0a43-d2c0-4d19-93b9-6170dd3e4407:5d286fc1", // UUIDv4 replacement; original composite suffix retained
+                "user_id": "79f38efd-e239-4f2e-9454-4e0da03239af:a0341292", // UUIDv4 replacement; original composite suffix retained
                 "pool_type": "RecordingCandle",
                 "pool_name": "MainStreet_ShopProps",
                 "create_at": "2026-08-27T16:25:47.014Z",
@@ -546,17 +453,17 @@
                 "extra_data": {
                     "chunk_count": 19,
                     "ori": "(0,0.707,0,0.708)",
-                    "p0id": "UUID_33", // UUID-form identifier; variable UUID_33 (same token means same original value)
-                    "parent_social_feed_id": "UUID_34", // UUID-form identifier; variable UUID_34 (same token means same original value)
+                    "p0id": "79f38efd-e239-4f2e-9454-4e0da03239af", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "parent_social_feed_id": "003f6f05-ea27-4146-8086-00888c3d6e47", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "parent_social_feed_seq": 66,
                     "parent_social_feed_type": 4,
-                    "parent_user_id": "UUID_35", // UUID-form identifier; variable UUID_35 (same token means same original value)
+                    "parent_user_id": "73cdcc18-3e3b-4077-a31e-4a7f8798216b", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "pos": "(-0.797,215.424,-8.32)",
                     "prompt_used": "",
-                    "resource_id": "UUID_36", // UUID-form identifier; variable UUID_36 (same token means same original value)
+                    "resource_id": "2b4c8bdb-7de4-447f-9227-80a5c26096ac", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "scale": "(1,1,1)",
                     "sub_type": 0,
-                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                    "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
                 },
                 "reactions": {
                     "total_report_count": 0,
@@ -577,12 +484,12 @@
                 "children_enabled": true,
                 "local_creation": false,
                 "followed": false,
-                "friend": false,
+                "friend": "VALUE_48", // Sensitive value hidden; variable VALUE_48 (same token means same original value)
                 "boosted": true
             },
             {
-                "social_feed_id": "UUID_COMPOSITE_19", // UUID-based composite identifier; variable UUID_COMPOSITE_19 (same token means same original value)
-                "user_id": "UUID_COMPOSITE_20", // UUID-based composite identifier; variable UUID_COMPOSITE_20 (same token means same original value)
+                "social_feed_id": "3cc95823-4d3b-4454-ba85-64629a3295b6:be09bfb5", // UUIDv4 replacement; original composite suffix retained
+                "user_id": "4dd74536-c5fc-4d6d-a627-fa2792af06e8:79ad142e", // UUIDv4 replacement; original composite suffix retained
                 "pool_type": "RecordingCandle",
                 "pool_name": "MainStreet_ShopProps",
                 "create_at": "2026-08-30T02:55:02.411Z",
@@ -592,17 +499,17 @@
                 "extra_data": {
                     "chunk_count": 5,
                     "ori": "(0,0.674,0,0.739)",
-                    "p0id": "UUID_37", // UUID-form identifier; variable UUID_37 (same token means same original value)
-                    "parent_social_feed_id": "UUID_38", // UUID-form identifier; variable UUID_38 (same token means same original value)
+                    "p0id": "4dd74536-c5fc-4d6d-a627-fa2792af06e8", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "parent_social_feed_id": "b1b90ea5-ce25-422f-8a01-fad2a7cfa3d4", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "parent_social_feed_seq": 46,
                     "parent_social_feed_type": 4,
-                    "parent_user_id": "UUID_37", // UUID-form identifier; variable UUID_37 (same token means same original value)
+                    "parent_user_id": "4dd74536-c5fc-4d6d-a627-fa2792af06e8", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "pos": "(0.277,215.428,-8.06)",
                     "prompt_used": "",
-                    "resource_id": "UUID_39", // UUID-form identifier; variable UUID_39 (same token means same original value)
+                    "resource_id": "6ff48df1-9194-48de-a6b6-cfac5d1167e3", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "scale": "(1,1,1)",
                     "sub_type": 0,
-                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                    "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
                 },
                 "reactions": {
                     "total_report_count": 0,
@@ -623,12 +530,12 @@
                 "children_enabled": true,
                 "local_creation": false,
                 "followed": false,
-                "friend": false,
+                "friend": "VALUE_48", // Sensitive value hidden; variable VALUE_48 (same token means same original value)
                 "boosted": false
             },
             {
-                "social_feed_id": "UUID_COMPOSITE_21", // UUID-based composite identifier; variable UUID_COMPOSITE_21 (same token means same original value)
-                "user_id": "UUID_COMPOSITE_22", // UUID-based composite identifier; variable UUID_COMPOSITE_22 (same token means same original value)
+                "social_feed_id": "0c234478-f191-4635-986f-d6ddeccfb33d:7b295db3", // UUIDv4 replacement; original composite suffix retained
+                "user_id": "053ba888-f789-4fc4-b057-2e58bce8c2b6:20431f4d", // UUIDv4 replacement; original composite suffix retained
                 "pool_type": "RecordingCandle",
                 "pool_name": "MainStreet_ShopProps",
                 "create_at": "2026-08-21T16:46:35.548Z",
@@ -638,16 +545,16 @@
                 "extra_data": {
                     "chunk_count": 15,
                     "ori": "(0,0.713,0,0.701)",
-                    "p0id": "UUID_40", // UUID-form identifier; variable UUID_40 (same token means same original value)
-                    "p1id": "UUID_41", // UUID-form identifier; variable UUID_41 (same token means same original value)
-                    "p2id": "UUID_42", // UUID-form identifier; variable UUID_42 (same token means same original value)
-                    "p3id": "UUID_43", // UUID-form identifier; variable UUID_43 (same token means same original value)
+                    "p0id": "053ba888-f789-4fc4-b057-2e58bce8c2b6", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "p1id": "cc2d237d-3dbc-461d-9846-7703afdea4a3", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "p2id": "7d2199c3-677a-4291-906a-d4bc0dd531cf", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "p3id": "6c7247f1-d1ee-4c91-b67d-b90c020de2f6", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "pos": "(2.859,215.434,-9.279)",
                     "prompt_used": "",
-                    "resource_id": "UUID_44", // UUID-form identifier; variable UUID_44 (same token means same original value)
+                    "resource_id": "e4b297ae-3772-4023-8de7-f64826ba9a61", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "scale": "(1,1,1)",
                     "sub_type": 0,
-                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                    "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
                 },
                 "reactions": {
                     "total_report_count": 0,
@@ -668,12 +575,12 @@
                 "children_enabled": false,
                 "local_creation": false,
                 "followed": false,
-                "friend": false,
+                "friend": "VALUE_48", // Sensitive value hidden; variable VALUE_48 (same token means same original value)
                 "boosted": false
             },
             {
-                "social_feed_id": "UUID_COMPOSITE_23", // UUID-based composite identifier; variable UUID_COMPOSITE_23 (same token means same original value)
-                "user_id": "UUID_COMPOSITE_24", // UUID-based composite identifier; variable UUID_COMPOSITE_24 (same token means same original value)
+                "social_feed_id": "86b8838a-1d67-449d-b51a-1da7048d3ef4:9d280de7", // UUIDv4 replacement; original composite suffix retained
+                "user_id": "2c377f71-0514-41ef-b5df-0f043698ce6c:6904b2d3", // UUIDv4 replacement; original composite suffix retained
                 "pool_type": "RecordingCandle",
                 "pool_name": "MainStreet_ShopProps",
                 "create_at": "2026-08-24T04:50:45.271Z",
@@ -683,13 +590,13 @@
                 "extra_data": {
                     "chunk_count": 20,
                     "ori": "(0,0.713,0,0.701)",
-                    "p0id": "UUID_45", // UUID-form identifier; variable UUID_45 (same token means same original value)
+                    "p0id": "2c377f71-0514-41ef-b5df-0f043698ce6c", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "pos": "(1.844,215.434,-9.734)",
                     "prompt_used": "",
-                    "resource_id": "UUID_46", // UUID-form identifier; variable UUID_46 (same token means same original value)
+                    "resource_id": "37790b05-fadd-45b7-ba31-76eafdd9b602", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "scale": "(1,1,1)",
                     "sub_type": 0,
-                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                    "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
                 },
                 "reactions": {
                     "total_report_count": 0,
@@ -710,12 +617,12 @@
                 "children_enabled": false,
                 "local_creation": false,
                 "followed": false,
-                "friend": false,
+                "friend": "VALUE_48", // Sensitive value hidden; variable VALUE_48 (same token means same original value)
                 "boosted": true
             },
             {
-                "social_feed_id": "UUID_COMPOSITE_25", // UUID-based composite identifier; variable UUID_COMPOSITE_25 (same token means same original value)
-                "user_id": "UUID_COMPOSITE_26", // UUID-based composite identifier; variable UUID_COMPOSITE_26 (same token means same original value)
+                "social_feed_id": "ac15a2ad-10a9-4e0f-93d8-18233589743a:a012dd60", // UUIDv4 replacement; original composite suffix retained
+                "user_id": "479f4aa4-6821-45b6-baa6-4c019c1579ba:8707e0f9", // UUIDv4 replacement; original composite suffix retained
                 "pool_type": "RecordingCandle",
                 "pool_name": "MainStreet_ShopProps",
                 "create_at": "2026-08-23T09:44:50.494Z",
@@ -725,17 +632,17 @@
                 "extra_data": {
                     "chunk_count": 23,
                     "ori": "(0,-0.69,-0,0.724)",
-                    "p0id": "UUID_47", // UUID-form identifier; variable UUID_47 (same token means same original value)
-                    "parent_social_feed_id": "UUID_48", // UUID-form identifier; variable UUID_48 (same token means same original value)
+                    "p0id": "479f4aa4-6821-45b6-baa6-4c019c1579ba", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "parent_social_feed_id": "8a087c17-db20-4175-ac70-a3709b93f892", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "parent_social_feed_seq": 3,
                     "parent_social_feed_type": 4,
-                    "parent_user_id": "UUID_47", // UUID-form identifier; variable UUID_47 (same token means same original value)
+                    "parent_user_id": "479f4aa4-6821-45b6-baa6-4c019c1579ba", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "pos": "(2.113,215.434,-8.493)",
                     "prompt_used": "",
-                    "resource_id": "UUID_49", // UUID-form identifier; variable UUID_49 (same token means same original value)
+                    "resource_id": "c41b3b7e-ed36-4c6b-8193-348aa7e59af0", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "scale": "(1,1,1)",
                     "sub_type": 0,
-                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                    "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
                 },
                 "reactions": {
                     "total_report_count": 0,
@@ -756,12 +663,12 @@
                 "children_enabled": false,
                 "local_creation": false,
                 "followed": false,
-                "friend": false,
+                "friend": "VALUE_48", // Sensitive value hidden; variable VALUE_48 (same token means same original value)
                 "boosted": false
             },
             {
-                "social_feed_id": "UUID_COMPOSITE_27", // UUID-based composite identifier; variable UUID_COMPOSITE_27 (same token means same original value)
-                "user_id": "UUID_COMPOSITE_28", // UUID-based composite identifier; variable UUID_COMPOSITE_28 (same token means same original value)
+                "social_feed_id": "20f09fcc-28bc-49c7-aa11-5d988638d331:8c4c3fa3", // UUIDv4 replacement; original composite suffix retained
+                "user_id": "c3397299-a22b-414c-aba9-2b6925883cb0:48b0f605", // UUIDv4 replacement; original composite suffix retained
                 "pool_type": "RecordingCandle",
                 "pool_name": "MainStreet_ShopProps",
                 "create_at": "2026-08-22T22:22:37.121Z",
@@ -771,17 +678,17 @@
                 "extra_data": {
                     "chunk_count": 20,
                     "ori": "(0,0.69,0,0.724)",
-                    "p0id": "UUID_50", // UUID-form identifier; variable UUID_50 (same token means same original value)
-                    "p1id": "UUID_51", // UUID-form identifier; variable UUID_51 (same token means same original value)
-                    "p2id": "UUID_52", // UUID-form identifier; variable UUID_52 (same token means same original value)
-                    "p3id": "UUID_53", // UUID-form identifier; variable UUID_53 (same token means same original value)
-                    "p4id": "UUID_54", // UUID-form identifier; variable UUID_54 (same token means same original value)
+                    "p0id": "c3397299-a22b-414c-aba9-2b6925883cb0", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "p1id": "ea9e1dcb-3bab-4143-851b-9f8a4f0f204a", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "p2id": "9f2f409a-e4f7-4cd2-bef2-10f2b6075e75", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "p3id": "55a50090-d739-4a5c-b943-a1cd9d1446f0", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "p4id": "80ddc75c-ebdf-481b-953c-d6554d2244ae", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "pos": "(2.601,215.434,-9.63)",
                     "prompt_used": "",
-                    "resource_id": "UUID_55", // UUID-form identifier; variable UUID_55 (same token means same original value)
+                    "resource_id": "c858698f-e526-48cb-9a47-eb67ed8af48a", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "scale": "(1,1,1)",
                     "sub_type": 0,
-                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                    "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
                 },
                 "reactions": {
                     "total_report_count": 0,
@@ -802,12 +709,12 @@
                 "children_enabled": false,
                 "local_creation": false,
                 "followed": false,
-                "friend": false,
+                "friend": "VALUE_48", // Sensitive value hidden; variable VALUE_48 (same token means same original value)
                 "boosted": false
             },
             {
-                "social_feed_id": "UUID_COMPOSITE_29", // UUID-based composite identifier; variable UUID_COMPOSITE_29 (same token means same original value)
-                "user_id": "UUID_COMPOSITE_30", // UUID-based composite identifier; variable UUID_COMPOSITE_30 (same token means same original value)
+                "social_feed_id": "e31a0428-63e4-46a6-b1f7-09a3bda5c3bb:00de8adc", // UUIDv4 replacement; original composite suffix retained
+                "user_id": "5704f639-7728-4ce5-9ebb-30431b2add11:73db3433", // UUIDv4 replacement; original composite suffix retained
                 "pool_type": "RecordingCandle",
                 "pool_name": "MainStreet_ShopProps",
                 "create_at": "2026-08-21T16:49:40.028Z",
@@ -817,18 +724,18 @@
                 "extra_data": {
                     "chunk_count": 5,
                     "ori": "(0,0.706,0,0.709)",
-                    "p0id": "UUID_56", // UUID-form identifier; variable UUID_56 (same token means same original value)
-                    "p1id": "UUID_57", // UUID-form identifier; variable UUID_57 (same token means same original value)
-                    "parent_social_feed_id": "UUID_58", // UUID-form identifier; variable UUID_58 (same token means same original value)
+                    "p0id": "5704f639-7728-4ce5-9ebb-30431b2add11", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "p1id": "c39a4446-2369-4c26-9e7d-3ca214153241", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "parent_social_feed_id": "f7855c23-1a34-4c31-a245-de6070334aab", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "parent_social_feed_seq": 1,
                     "parent_social_feed_type": 6,
-                    "parent_user_id": "UUID_59", // UUID-form identifier; variable UUID_59 (same token means same original value)
+                    "parent_user_id": "7b4d42e3-04e2-402a-9e75-35a9a0d25165", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "pos": "(0.528,215.417,-7.975)",
                     "prompt_used": "",
-                    "resource_id": "UUID_60", // UUID-form identifier; variable UUID_60 (same token means same original value)
+                    "resource_id": "ab648bbf-b68a-4918-8981-03794d355553", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "scale": "(1,1,1)",
                     "sub_type": 0,
-                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                    "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
                 },
                 "reactions": {
                     "total_report_count": 0,
@@ -849,12 +756,12 @@
                 "children_enabled": false,
                 "local_creation": false,
                 "followed": false,
-                "friend": false,
+                "friend": "VALUE_48", // Sensitive value hidden; variable VALUE_48 (same token means same original value)
                 "boosted": true
             },
             {
-                "social_feed_id": "UUID_COMPOSITE_31", // UUID-based composite identifier; variable UUID_COMPOSITE_31 (same token means same original value)
-                "user_id": "UUID_COMPOSITE_32", // UUID-based composite identifier; variable UUID_COMPOSITE_32 (same token means same original value)
+                "social_feed_id": "edfff368-ff56-450f-b3ad-f1e6ce335efc:bd9cb885", // UUIDv4 replacement; original composite suffix retained
+                "user_id": "b2a9b86a-ac97-4a92-8721-35e52b9b35b2:7e515cd1", // UUIDv4 replacement; original composite suffix retained
                 "pool_type": "RecordingCandle",
                 "pool_name": "MainStreet_ShopProps",
                 "create_at": "2026-09-01T06:06:48.527Z",
@@ -864,13 +771,13 @@
                 "extra_data": {
                     "chunk_count": 5,
                     "ori": "(0,0.692,0,0.722)",
-                    "p0id": "UUID_61", // UUID-form identifier; variable UUID_61 (same token means same original value)
+                    "p0id": "b2a9b86a-ac97-4a92-8721-35e52b9b35b2", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "pos": "(-0.8,215.434,-9.541)",
                     "prompt_used": "",
-                    "resource_id": "UUID_62", // UUID-form identifier; variable UUID_62 (same token means same original value)
+                    "resource_id": "3b05257e-d758-43ee-80c9-8e1119fc3ba5", // UUIDv4 replacement; identical original UUIDs share this value globally
                     "scale": "(1,1,1)",
                     "sub_type": 0,
-                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                    "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
                 },
                 "reactions": {
                     "total_report_count": 0,
@@ -891,7 +798,7 @@
                 "children_enabled": true,
                 "local_creation": false,
                 "followed": false,
-                "friend": false,
+                "friend": "VALUE_48", // Sensitive value hidden; variable VALUE_48 (same token means same original value)
                 "boosted": false
             }
         ],

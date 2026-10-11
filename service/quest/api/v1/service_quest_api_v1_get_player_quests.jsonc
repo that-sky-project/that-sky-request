@@ -1,30 +1,28 @@
 /*
- * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
- * Repeated variable names indicate identical original values; different names of the same type mean different values.
- * IP_1 = IP address; original address hidden
- * UUID_1 = UUID-form identifier; original UUID hidden
- * UUID_2 = UUID-form identifier; original UUID hidden
- * VALUE_1 = non-UUID sensitive value; original value hidden
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_10 = IP address; original address hidden
+ * VALUE_8 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
  */
 
 /*
  * Request
  * POST /service/quest/api/v1/get_player_quests HTTP/1.1
- * host: live-as-sky-test.xyqaq.cn
- * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
- * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
- * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_10 // IP address; variable IP_10 (same token means same original value)
+ * x-forwarded-for: IP_10 // IP address; variable IP_10 (same token means same original value)
+ * remote-host: IP_10 // IP address; variable IP_10 (same token means same original value)
  * x-forwarded-proto: https
  * x-forwarded-port: 443
  * content-length: 153
- * user-agent: Sky-Live-com.tgc.sky.win/0.34.0.401861 (System Product Name; win 10.0.19045; zh-Hans)
- * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
+ * x-session-id: be3d606d-c9e5-4504-b360-a8e51f4150f3 // UUIDv4 replacement; identical original UUIDs share this value globally
  * content-type: application/json
- * trace-id: aNTiFJf
- * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
- * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
- * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
- * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * trace-id: n25FNsA
+ * user-id: 714a69eb-ebd1-4baa-a7c4-16d60e38beeb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * session: VALUE_8 // Sensitive value hidden; variable VALUE_8 (same token means same original value)
+ * x-user-id: 714a69eb-ebd1-4baa-a7c4-16d60e38beeb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * x-session-token: VALUE_8 // Sensitive value hidden; variable VALUE_8 (same token means same original value)
  * x-sky-level-id: 3526133726
  * 
  * Captured request-body metadata:
@@ -36,25 +34,25 @@
  */
 // Request
 {
-    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "user": "714a69eb-ebd1-4baa-a7c4-16d60e38beeb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "user_id": "714a69eb-ebd1-4baa-a7c4-16d60e38beeb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "session": "VALUE_8", // Sensitive value hidden; variable VALUE_8 (same token means same original value)
     "amount": 30
 }
 
 /*
  * Response
  * HTTP/1.1 200 OK
- * date: Wed, 15 Jul 2026 06:50:17 GMT
+ * date: Thu, 03 Sep 2026 16:39:33 GMT
  * content-type: application/json; charset=utf-8
- * content-length: 12093
+ * content-length: 7721
  * connection: keep-alive
  * server: nginx/1.14.2
  * 
  * Captured response-body metadata:
  * captured body type: json
- * body size: 12093
- * body logged_size: 12093
+ * body size: 7721
+ * body logged_size: 7721
  * body omitted_size: 0
  * body truncated: false
  */
@@ -64,78 +62,24 @@
     "canceled": [],
     "collected": [
         {
-            "quest_name": "forge_a_candle",
-            "quest_id": "6f6a1005-5889-4413-a872-b163e0723fd6",
+            "quest_name": "change_pants",
+            "quest_id": "0ae706ed-ce95-4e07-8e46-0d5ea3fb68df", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "user_data": {
                 "npc_name": ""
             },
-            "start_time": 1775155185,
-            "expiry_time": 1775199599,
+            "start_time": 1775061411,
+            "expiry_time": 1775113199,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "forged_candle_count",
-                        "updated": "2026-02-23T11:59:23Z",
-                        "updated_epoch": 1771847963,
-                        "value": 8
-                    }
-                ],
                 "completion_requirements": [
                     {
-                        "stat_type": "forged_candle_count",
+                        "stat_type": "pants_change_count",
                         "value": 1
                     }
                 ],
                 "target_values": [
                     {
-                        "stat_type": "forged_candle_count",
-                        "value": 9
-                    }
-                ],
-                "most_recent_stats": [
-                    {
-                        "stat_type": "forged_candle_count",
-                        "updated": "2026-04-02T18:41:43Z",
-                        "updated_epoch": 1775155303,
-                        "value": 11
-                    }
-                ]
-            },
-            "status": "collected"
-        },
-        {
-            "quest_name": "cherry_sappling_night_01",
-            "quest_id": "ee6265f5-3945-4d33-850a-cad31b3e49f8",
-            "user_data": {
-                "npc_name": ""
-            },
-            "start_time": 1775155162,
-            "expiry_time": 1775199599,
-            "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "cherry_sappling_night_01_time",
-                        "value": 0
-                    }
-                ],
-                "completion_requirements": [
-                    {
-                        "stat_type": "cherry_sappling_night_01_time",
-                        "value": 60
-                    }
-                ],
-                "target_values": [
-                    {
-                        "stat_type": "cherry_sappling_night_01_time",
-                        "value": 60
-                    }
-                ],
-                "most_recent_stats": [
-                    {
-                        "stat_type": "cherry_sappling_night_01_time",
-                        "updated": "2026-04-02T18:39:32Z",
-                        "updated_epoch": 1775155172,
-                        "value": 60
+                        "stat_type": "pants_change_count",
+                        "value": 16
                     }
                 ]
             },
@@ -143,21 +87,13 @@
         },
         {
             "quest_name": "pickup_30_wax",
-            "quest_id": "762fae0b-fd83-402a-9054-5a749746fc5d",
+            "quest_id": "939b0106-f304-4c30-96f4-4e4f4a099896", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "user_data": {
                 "npc_name": ""
             },
-            "start_time": 1775155162,
-            "expiry_time": 1775199599,
+            "start_time": 1771328884,
+            "expiry_time": 1771401599,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "wax_pickup_count",
-                        "updated": "2026-04-01T17:39:41Z",
-                        "updated_epoch": 1775065181,
-                        "value": 745
-                    }
-                ],
                 "completion_requirements": [
                     {
                         "stat_type": "wax_pickup_count",
@@ -167,162 +103,52 @@
                 "target_values": [
                     {
                         "stat_type": "wax_pickup_count",
-                        "value": 775
-                    }
-                ],
-                "most_recent_stats": [
-                    {
-                        "stat_type": "wax_pickup_count",
-                        "updated": "2026-04-02T18:39:35Z",
-                        "updated_epoch": 1775155175,
-                        "value": 775
+                        "value": 1606
                     }
                 ]
             },
             "status": "collected"
         },
         {
-            "quest_name": "bloom_harvesting",
-            "quest_id": "11348a04-9aa0-40ad-ade4-02c28e58c3c3",
+            "quest_name": "make_a_new_acquaintance",
+            "quest_id": "b76eb19b-3706-4175-9394-4c80a3d9ca9d", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "user_data": {
                 "npc_name": ""
             },
-            "start_time": 1775155161,
-            "expiry_time": 1775199599,
+            "start_time": 1771328884,
+            "expiry_time": 1771401599,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "bloom_harvesting",
-                        "value": 0
-                    }
-                ],
                 "completion_requirements": [
                     {
-                        "stat_type": "bloom_harvesting",
+                        "stat_type": "new_acquaintance_count",
                         "value": 1
                     }
                 ],
                 "target_values": [
                     {
-                        "stat_type": "bloom_harvesting",
-                        "value": 1
-                    }
-                ],
-                "most_recent_stats": [
-                    {
-                        "stat_type": "bloom_harvesting",
-                        "updated": "2026-04-02T18:39:38Z",
-                        "updated_epoch": 1775155178,
-                        "value": 1
+                        "stat_type": "new_acquaintance_count",
+                        "value": 18731
                     }
                 ]
             },
             "status": "collected"
         },
         {
-            "quest_name": "domusic_location5_2",
-            "quest_id": "53ff94b9-f762-4c8c-8662-3cab3aeb8e38",
-            "start_time": 1733280555,
-            "expiry_time": 1733299200,
+            "quest_name": "pickup_30_wax",
+            "quest_id": "9c03a91f-7c90-49fa-9e12-49a2ff864d87", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1763912759,
+            "expiry_time": 1763971199,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "night_collectibles_collected_count",
-                        "value": 0
-                    }
-                ],
                 "completion_requirements": [
                     {
-                        "stat_type": "night_collectibles_collected_count",
-                        "value": 1
+                        "stat_type": "wax_pickup_count",
+                        "value": 30
                     }
                 ],
                 "target_values": [
                     {
-                        "stat_type": "night_collectibles_collected_count",
-                        "value": 1
-                    }
-                ],
-                "most_recent_stats": [
-                    {
-                        "stat_type": "night_collectibles_collected_count",
-                        "updated": "2024-12-04T03:17:42.28Z",
-                        "updated_epoch": 1733282262,
-                        "value": 1
-                    }
-                ]
-            },
-            "status": "collected"
-        },
-        {
-            "quest_name": "save_a_spirit",
-            "quest_id": "aed90b6c-5e12-4397-b171-7f7104df4d18",
-            "start_time": 1733280554,
-            "expiry_time": 1733299200,
-            "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "collectible_count",
-                        "updated": "2023-10-10T11:12:41.24Z",
-                        "updated_epoch": 1696936361,
-                        "value": 1
-                    }
-                ],
-                "completion_requirements": [
-                    {
-                        "stat_type": "collectible_count",
-                        "value": 1
-                    }
-                ],
-                "target_values": [
-                    {
-                        "stat_type": "collectible_count",
-                        "value": 2
-                    }
-                ],
-                "most_recent_stats": [
-                    {
-                        "stat_type": "collectible_count",
-                        "updated": "2024-12-04T03:17:42.28Z",
-                        "updated_epoch": 1733282262,
-                        "value": 2
-                    }
-                ]
-            },
-            "status": "collected"
-        },
-        {
-            "quest_name": "forge_a_candle",
-            "quest_id": "c8bbe854-f7cc-4335-864c-327cca565181",
-            "start_time": 1733280554,
-            "expiry_time": 1733299200,
-            "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "forged_candle_count",
-                        "updated": "2024-04-13T14:54:01.475Z",
-                        "updated_epoch": 1713020041,
-                        "value": 3
-                    }
-                ],
-                "completion_requirements": [
-                    {
-                        "stat_type": "forged_candle_count",
-                        "value": 1
-                    }
-                ],
-                "target_values": [
-                    {
-                        "stat_type": "forged_candle_count",
-                        "value": 4
-                    }
-                ],
-                "most_recent_stats": [
-                    {
-                        "stat_type": "forged_candle_count",
-                        "updated": "2024-12-04T02:49:15.307Z",
-                        "updated_epoch": 1733280555,
-                        "value": 4
+                        "stat_type": "wax_pickup_count",
+                        "value": 1434
                     }
                 ]
             },
@@ -331,55 +157,20 @@
     ],
     "failed": [
         {
-            "quest_name": "melt_10_darkstones",
-            "quest_id": "fced6056-c5fb-4bc5-ba4e-2b900ebd2544",
-            "start_time": 1775939729,
-            "expiry_time": 1775977199,
+            "quest_name": "world_quest_oasis_shrug",
+            "quest_id": "269bb3c5-b3ab-41ab-82a9-d86b7d468060", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1783709020,
+            "expiry_time": 1783753199,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "darkstone_melted_count",
-                        "updated": "2026-03-23T23:59:06Z",
-                        "updated_epoch": 1774310346,
-                        "value": 48
-                    }
-                ],
                 "completion_requirements": [
                     {
-                        "stat_type": "darkstone_melted_count",
-                        "value": 10
-                    }
-                ],
-                "target_values": [
-                    {
-                        "stat_type": "darkstone_melted_count",
-                        "value": 58
-                    }
-                ]
-            },
-            "status": "failed"
-        },
-        {
-            "quest_name": "meditate_dusk_duskmid",
-            "quest_id": "2805b213-b7e0-4b8e-a634-430f542b68db",
-            "start_time": 1775939729,
-            "expiry_time": 1775977199,
-            "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "meditate_dusk_duskmid_count",
-                        "value": 0
-                    }
-                ],
-                "completion_requirements": [
-                    {
-                        "stat_type": "meditate_dusk_duskmid_count",
+                        "stat_type": "world_quest_oasis_shrug_count",
                         "value": 1
                     }
                 ],
                 "target_values": [
                     {
-                        "stat_type": "meditate_dusk_duskmid_count",
+                        "stat_type": "world_quest_oasis_shrug_count",
                         "value": 1
                     }
                 ]
@@ -387,26 +178,20 @@
             "status": "failed"
         },
         {
-            "quest_name": "seen_by_dark_creature",
-            "quest_id": "24ab16b7-7460-4f48-9f20-d165aa4e6423",
-            "start_time": 1775939729,
-            "expiry_time": 1775977199,
+            "quest_name": "visit_rainbow_dusk",
+            "quest_id": "7fa9c048-a7f0-44cd-af08-28327101ac03", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1783709019,
+            "expiry_time": 1783753199,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "seen_by_dark_creature_count",
-                        "value": 0
-                    }
-                ],
                 "completion_requirements": [
                     {
-                        "stat_type": "seen_by_dark_creature_count",
+                        "stat_type": "visit_rainbow_dusk_count",
                         "value": 1
                     }
                 ],
                 "target_values": [
                     {
-                        "stat_type": "seen_by_dark_creature_count",
+                        "stat_type": "visit_rainbow_dusk_count",
                         "value": 1
                     }
                 ]
@@ -414,26 +199,41 @@
             "status": "failed"
         },
         {
-            "quest_name": "world_quest_dusk_lookaround",
-            "quest_id": "caa362d8-fb95-475d-ab30-1c618911bdfd",
-            "start_time": 1775939729,
-            "expiry_time": 1775977199,
+            "quest_name": "cherry_sappling_dusk_01",
+            "quest_id": "a84a48fb-40bd-42f0-96d9-b76f18dabcef", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1783709019,
+            "expiry_time": 1783753199,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "world_quest_dusk_lookaround_count",
-                        "value": 0
-                    }
-                ],
                 "completion_requirements": [
                     {
-                        "stat_type": "world_quest_dusk_lookaround_count",
+                        "stat_type": "cherry_sappling_dusk_01_time",
+                        "value": 60
+                    }
+                ],
+                "target_values": [
+                    {
+                        "stat_type": "cherry_sappling_dusk_01_time",
+                        "value": 60
+                    }
+                ]
+            },
+            "status": "failed"
+        },
+        {
+            "quest_name": "fetchlight_void",
+            "quest_id": "b977dd75-6419-4e7a-b3c5-005893171d5c", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1783709019,
+            "expiry_time": 1783753199,
+            "stats": {
+                "completion_requirements": [
+                    {
+                        "stat_type": "fetchlight_void_count",
                         "value": 1
                     }
                 ],
                 "target_values": [
                     {
-                        "stat_type": "world_quest_dusk_lookaround_count",
+                        "stat_type": "fetchlight_void_count",
                         "value": 1
                     }
                 ]
@@ -441,26 +241,20 @@
             "status": "failed"
         },
         {
-            "quest_name": "visit_rainbow_night",
-            "quest_id": "db059614-26eb-4b58-8110-c79e1ab84e3e",
-            "start_time": 1774310205,
-            "expiry_time": 1774335599,
+            "quest_name": "spirit_musicianrace2",
+            "quest_id": "de82291c-d279-4e62-96f2-3d2ae67c7b00", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1775845126,
+            "expiry_time": 1775890799,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "visit_rainbow_night_count",
-                        "value": 0
-                    }
-                ],
                 "completion_requirements": [
                     {
-                        "stat_type": "visit_rainbow_night_count",
+                        "stat_type": "spirit_musicianrace",
                         "value": 1
                     }
                 ],
                 "target_values": [
                     {
-                        "stat_type": "visit_rainbow_night_count",
+                        "stat_type": "spirit_musicianrace",
                         "value": 1
                     }
                 ]
@@ -468,218 +262,84 @@
             "status": "failed"
         },
         {
-            "quest_name": "world_quest_night_love",
-            "quest_id": "7057fef1-da52-4e9c-ad9e-093d1f292505",
-            "start_time": 1774310205,
-            "expiry_time": 1774335599,
+            "quest_name": "lightseeker3_sunset_yetipark",
+            "quest_id": "f70aa3dd-47b5-41b5-ba77-230486e5359e", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1775845125,
+            "expiry_time": 1775890799,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "world_quest_night_love_count",
-                        "value": 0
-                    }
-                ],
                 "completion_requirements": [
                     {
-                        "stat_type": "world_quest_night_love_count",
-                        "value": 1
+                        "stat_type": "lightseeker_valley_count",
+                        "value": 3
                     }
                 ],
                 "target_values": [
                     {
-                        "stat_type": "world_quest_night_love_count",
-                        "value": 1
+                        "stat_type": "lightseeker_valley_count",
+                        "value": 3
                     }
                 ]
             },
             "status": "failed"
         },
         {
-            "quest_name": "world_quest_night_kungfu",
-            "quest_id": "db4f6632-96a7-44b4-a984-de6d456f0c8a",
-            "start_time": 1774310205,
-            "expiry_time": 1774335599,
+            "quest_name": "rainbow_rainbow_sunset_01",
+            "quest_id": "1c41c2c1-d841-47a5-873b-eae7a013abee", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1775845125,
+            "expiry_time": 1775890799,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "world_quest_night_kungfu_count",
-                        "value": 0
-                    }
-                ],
                 "completion_requirements": [
                     {
-                        "stat_type": "world_quest_night_kungfu_count",
-                        "value": 1
+                        "stat_type": "rainbow_rainbow_sunset_01_time",
+                        "value": 60
                     }
                 ],
                 "target_values": [
                     {
-                        "stat_type": "world_quest_night_kungfu_count",
-                        "value": 1
+                        "stat_type": "rainbow_rainbow_sunset_01_time",
+                        "value": 60
                     }
                 ]
             },
             "status": "failed"
         },
         {
-            "quest_name": "honk_at_players",
-            "quest_id": "74dc7bef-fc4f-4517-9085-27181ba9c4b8",
-            "start_time": 1774310204,
-            "expiry_time": 1774335599,
+            "quest_name": "forge_a_candle",
+            "quest_id": "0bc15579-1d08-43e7-8a06-35158b08c414", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1775845124,
+            "expiry_time": 1775890799,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "honk_at_player_count",
-                        "value": 0
-                    }
-                ],
                 "completion_requirements": [
                     {
-                        "stat_type": "honk_at_player_count",
-                        "value": 5
-                    }
-                ],
-                "target_values": [
-                    {
-                        "stat_type": "honk_at_player_count",
-                        "value": 5
-                    }
-                ]
-            },
-            "status": "failed"
-        },
-        {
-            "quest_name": "spirit_plead1",
-            "quest_id": "04464014-abb1-46e5-a6bb-25063e7fe2ba",
-            "start_time": 1772143802,
-            "expiry_time": 1772179199,
-            "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "spirit_plead",
-                        "value": 0
-                    }
-                ],
-                "completion_requirements": [
-                    {
-                        "stat_type": "spirit_plead",
+                        "stat_type": "forged_candle_count",
                         "value": 1
                     }
                 ],
                 "target_values": [
                     {
-                        "stat_type": "spirit_plead",
-                        "value": 1
+                        "stat_type": "forged_candle_count",
+                        "value": 20
                     }
                 ]
             },
             "status": "failed"
         },
         {
-            "quest_name": "emote_with_players",
-            "quest_id": "be1d9dcf-4519-4e13-bcc2-2fe990713fcd",
-            "start_time": 1772143801,
-            "expiry_time": 1772179199,
+            "quest_name": "spirit_musicianrace1",
+            "quest_id": "60d779d9-5b57-41b0-ac7d-076d49fa761b", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1775401056,
+            "expiry_time": 1775458799,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "emote_with_player_count",
-                        "value": 0
-                    }
-                ],
                 "completion_requirements": [
                     {
-                        "stat_type": "emote_with_player_count",
-                        "value": 6
-                    }
-                ],
-                "target_values": [
-                    {
-                        "stat_type": "emote_with_player_count",
-                        "value": 6
-                    }
-                ]
-            },
-            "status": "failed"
-        },
-        {
-            "quest_name": "pickup_30_wax",
-            "quest_id": "663249ac-a58e-4e0c-891f-543aea0987f4",
-            "start_time": 1772143801,
-            "expiry_time": 1772179199,
-            "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "wax_pickup_count",
-                        "updated": "2026-02-23T08:44:57Z",
-                        "updated_epoch": 1771836297,
-                        "value": 658
-                    }
-                ],
-                "completion_requirements": [
-                    {
-                        "stat_type": "wax_pickup_count",
-                        "value": 30
-                    }
-                ],
-                "target_values": [
-                    {
-                        "stat_type": "wax_pickup_count",
-                        "value": 688
-                    }
-                ]
-            },
-            "status": "failed"
-        },
-        {
-            "quest_name": "lightseeker_vault",
-            "quest_id": "adbc265b-53a9-4c90-b915-e0714de01b28",
-            "start_time": 1772143800,
-            "expiry_time": 1772179199,
-            "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "lightseeker_vault_count",
-                        "value": 0
-                    }
-                ],
-                "completion_requirements": [
-                    {
-                        "stat_type": "lightseeker_vault_count",
+                        "stat_type": "spirit_musicianrace",
                         "value": 1
                     }
                 ],
                 "target_values": [
                     {
-                        "stat_type": "lightseeker_vault_count",
+                        "stat_type": "spirit_musicianrace",
                         "value": 1
-                    }
-                ]
-            },
-            "status": "failed"
-        },
-        {
-            "quest_name": "tidy_rain_grandmatable",
-            "quest_id": "419b4d48-7cd3-4f88-9fae-2f6b619f70a0",
-            "start_time": 1771834858,
-            "expiry_time": 1771919999,
-            "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "tidy_rain_grandmatable_count",
-                        "value": 0
-                    }
-                ],
-                "completion_requirements": [
-                    {
-                        "stat_type": "tidy_rain_grandmatable_count",
-                        "value": 2
-                    }
-                ],
-                "target_values": [
-                    {
-                        "stat_type": "tidy_rain_grandmatable_count",
-                        "value": 2
                     }
                 ]
             },
@@ -687,18 +347,10 @@
         },
         {
             "quest_name": "light_20_candles",
-            "quest_id": "6bee25de-ac32-44f5-b7ee-a220fece27d7",
-            "start_time": 1771834858,
-            "expiry_time": 1771919999,
+            "quest_id": "6a85a2d6-42bc-4c27-96cc-75858a606272", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1775401055,
+            "expiry_time": 1775458799,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "light_candle_count",
-                        "updated": "2026-01-30T08:04:36Z",
-                        "updated_epoch": 1769760276,
-                        "value": 147
-                    }
-                ],
                 "completion_requirements": [
                     {
                         "stat_type": "light_candle_count",
@@ -708,33 +360,48 @@
                 "target_values": [
                     {
                         "stat_type": "light_candle_count",
-                        "value": 167
+                        "value": 255
                     }
                 ]
             },
             "status": "failed"
         },
         {
-            "quest_name": "lightseeker_forest",
-            "quest_id": "2f120036-870f-4750-9bc1-447673959016",
-            "start_time": 1771834857,
-            "expiry_time": 1771919999,
+            "quest_name": "visit_sunset_hotspring",
+            "quest_id": "b3d4aaa5-65eb-4ac6-9955-f9a30b795e18", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1775401055,
+            "expiry_time": 1775458799,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "lightseeker_forest_count",
-                        "value": 0
-                    }
-                ],
                 "completion_requirements": [
                     {
-                        "stat_type": "lightseeker_forest_count",
+                        "stat_type": "visit_sunset_hotspring_time",
+                        "value": 60
+                    }
+                ],
+                "target_values": [
+                    {
+                        "stat_type": "visit_sunset_hotspring_time",
+                        "value": 60
+                    }
+                ]
+            },
+            "status": "failed"
+        },
+        {
+            "quest_name": "world_quest_sunset_juggle",
+            "quest_id": "b1613713-3a7d-4c47-b431-bba902134632", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1775401055,
+            "expiry_time": 1775458799,
+            "stats": {
+                "completion_requirements": [
+                    {
+                        "stat_type": "world_quest_sunset_juggle_count",
                         "value": 1
                     }
                 ],
                 "target_values": [
                     {
-                        "stat_type": "lightseeker_forest_count",
+                        "stat_type": "world_quest_sunset_juggle_count",
                         "value": 1
                     }
                 ]
@@ -742,95 +409,89 @@
             "status": "failed"
         },
         {
-            "quest_name": "make_a_new_acquaintance",
-            "quest_id": "66bada2b-57b1-4a64-8203-88bc246c2bc7",
-            "start_time": 1771834857,
-            "expiry_time": 1771919999,
-            "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "new_acquaintance_count",
-                        "updated": "2026-01-20T01:30:27Z",
-                        "updated_epoch": 1768872627,
-                        "value": 43
-                    }
-                ],
-                "completion_requirements": [
-                    {
-                        "stat_type": "new_acquaintance_count",
-                        "value": 1
-                    }
-                ],
-                "target_values": [
-                    {
-                        "stat_type": "new_acquaintance_count",
-                        "value": 44
-                    }
-                ]
-            },
-            "status": "failed"
-        },
-        {
-            "quest_name": "melt_10_darkstones",
-            "quest_id": "ce42b351-7405-4e3f-9e55-ea10222b4ec6",
+            "quest_name": "forge_a_candle",
+            "quest_id": "4fd07ca7-3b23-4573-b157-cd60c5576f09", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "user_data": {
                 "npc_name": ""
             },
-            "start_time": 1768991389,
-            "expiry_time": 1769068799,
+            "start_time": 1775157699,
+            "expiry_time": 1775199599,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "darkstone_melted_count",
-                        "updated": "2024-12-04T03:26:13Z",
-                        "updated_epoch": 1733282773,
-                        "value": 33
-                    }
-                ],
                 "completion_requirements": [
                     {
-                        "stat_type": "darkstone_melted_count",
-                        "value": 10
+                        "stat_type": "forged_candle_count",
+                        "value": 1
                     }
                 ],
                 "target_values": [
                     {
-                        "stat_type": "darkstone_melted_count",
-                        "value": 43
-                    }
-                ],
-                "most_recent_stats": [
-                    {
-                        "stat_type": "darkstone_melted_count",
-                        "updated": "2026-01-21T10:34:41Z",
-                        "updated_epoch": 1768991681,
-                        "value": 43
+                        "stat_type": "forged_candle_count",
+                        "value": 18
                     }
                 ]
             },
             "status": "failed"
         },
         {
-            "quest_name": "world_quest_oasis_crabwalk",
-            "quest_id": "40639c60-9b63-4209-9369-bb058688b3eb",
-            "start_time": 1768991389,
-            "expiry_time": 1769068799,
+            "quest_name": "cherry_sappling_night_01",
+            "quest_id": "49b7e369-d47f-40dc-ae74-f38d699a5214", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1775157699,
+            "expiry_time": 1775199599,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "world_quest_oasis_crabwalk_count",
-                        "value": 0
-                    }
-                ],
                 "completion_requirements": [
                     {
-                        "stat_type": "world_quest_oasis_crabwalk_count",
+                        "stat_type": "cherry_sappling_night_01_time",
+                        "value": 60
+                    }
+                ],
+                "target_values": [
+                    {
+                        "stat_type": "cherry_sappling_night_01_time",
+                        "value": 60
+                    }
+                ]
+            },
+            "status": "failed"
+        },
+        {
+            "quest_name": "pickup_30_wax",
+            "quest_id": "29e810ff-9b56-4b11-9903-d5941b0d2c41", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "user_data": {
+                "npc_name": ""
+            },
+            "start_time": 1775157699,
+            "expiry_time": 1775199599,
+            "stats": {
+                "completion_requirements": [
+                    {
+                        "stat_type": "wax_pickup_count",
+                        "value": 30
+                    }
+                ],
+                "target_values": [
+                    {
+                        "stat_type": "wax_pickup_count",
+                        "value": 1793
+                    }
+                ]
+            },
+            "status": "failed"
+        },
+        {
+            "quest_name": "bloom_harvesting",
+            "quest_id": "c4b5151d-68a3-486b-bdb1-0744989defb9", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1775157698,
+            "expiry_time": 1775199599,
+            "stats": {
+                "completion_requirements": [
+                    {
+                        "stat_type": "bloom_harvesting",
                         "value": 1
                     }
                 ],
                 "target_values": [
                     {
-                        "stat_type": "world_quest_oasis_crabwalk_count",
+                        "stat_type": "bloom_harvesting",
                         "value": 1
                     }
                 ]
@@ -838,26 +499,20 @@
             "status": "failed"
         },
         {
-            "quest_name": "meditate_dusk_oasis",
-            "quest_id": "4dbf46fa-008a-4a77-a747-358579b4749b",
-            "start_time": 1768991389,
-            "expiry_time": 1769068799,
+            "quest_name": "visit_dusk_spitroast",
+            "quest_id": "b8c06f9f-5f24-4661-b504-a080911a96dd", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1775061411,
+            "expiry_time": 1775113199,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "meditate_dusk_oasis_count",
-                        "value": 0
-                    }
-                ],
                 "completion_requirements": [
                     {
-                        "stat_type": "meditate_dusk_oasis_count",
+                        "stat_type": "visit_dusk_spitroast_count",
                         "value": 1
                     }
                 ],
                 "target_values": [
                     {
-                        "stat_type": "meditate_dusk_oasis_count",
+                        "stat_type": "visit_dusk_spitroast_count",
                         "value": 1
                     }
                 ]
@@ -865,29 +520,63 @@
             "status": "failed"
         },
         {
-            "quest_name": "make_a_new_acquaintance",
-            "quest_id": "b0ddefc9-24cf-4af0-ae1a-9bfd2a26d416",
-            "start_time": 1768991388,
-            "expiry_time": 1769068799,
+            "quest_name": "world_quest_dusk_dontgo",
+            "quest_id": "8a4394f0-c3b0-4d42-8187-fd5a83a09871", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1775061411,
+            "expiry_time": 1775113199,
             "stats": {
-                "init_stats": [
-                    {
-                        "stat_type": "new_acquaintance_count",
-                        "updated": "2026-01-20T01:30:27Z",
-                        "updated_epoch": 1768872627,
-                        "value": 43
-                    }
-                ],
                 "completion_requirements": [
                     {
-                        "stat_type": "new_acquaintance_count",
+                        "stat_type": "world_quest_dusk_dontgo_count",
                         "value": 1
                     }
                 ],
                 "target_values": [
                     {
-                        "stat_type": "new_acquaintance_count",
-                        "value": 44
+                        "stat_type": "world_quest_dusk_dontgo_count",
+                        "value": 1
+                    }
+                ]
+            },
+            "status": "failed"
+        },
+        {
+            "quest_name": "seen_by_dark_creature",
+            "quest_id": "dcc249f1-8973-40f2-96c2-1fded9cb7599", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1775061411,
+            "expiry_time": 1775113199,
+            "stats": {
+                "completion_requirements": [
+                    {
+                        "stat_type": "seen_by_dark_creature_count",
+                        "value": 1
+                    }
+                ],
+                "target_values": [
+                    {
+                        "stat_type": "seen_by_dark_creature_count",
+                        "value": 1
+                    }
+                ]
+            },
+            "status": "failed"
+        },
+        {
+            "quest_name": "lightseeker3_day_birdnest",
+            "quest_id": "2f350225-2167-4b8e-ab16-02d5e4293c17", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "start_time": 1771328884,
+            "expiry_time": 1771401599,
+            "stats": {
+                "completion_requirements": [
+                    {
+                        "stat_type": "lightseeker_prairie_count",
+                        "value": 3
+                    }
+                ],
+                "target_values": [
+                    {
+                        "stat_type": "lightseeker_prairie_count",
+                        "value": 3
                     }
                 ]
             },

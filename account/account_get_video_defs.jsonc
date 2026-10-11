@@ -1,140 +1,28 @@
 /*
- * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
- * Repeated variable names indicate identical original values; different names of the same type mean different values.
- * IP_1 = IP address; original address hidden
- * UUID_1 = UUID-form identifier; original UUID hidden
- * UUID_2 = UUID-form identifier; original UUID hidden
- * VALUE_1 = non-UUID sensitive value; original value hidden
- * UUID_3 = UUID-form identifier; original UUID hidden
- * UUID_4 = UUID-form identifier; original UUID hidden
- * UUID_5 = UUID-form identifier; original UUID hidden
- * UUID_6 = UUID-form identifier; original UUID hidden
- * UUID_7 = UUID-form identifier; original UUID hidden
- * UUID_8 = UUID-form identifier; original UUID hidden
- * UUID_9 = UUID-form identifier; original UUID hidden
- * UUID_10 = UUID-form identifier; original UUID hidden
- * UUID_11 = UUID-form identifier; original UUID hidden
- * UUID_12 = UUID-form identifier; original UUID hidden
- * UUID_13 = UUID-form identifier; original UUID hidden
- * UUID_14 = UUID-form identifier; original UUID hidden
- * UUID_15 = UUID-form identifier; original UUID hidden
- * UUID_16 = UUID-form identifier; original UUID hidden
- * UUID_17 = UUID-form identifier; original UUID hidden
- * UUID_18 = UUID-form identifier; original UUID hidden
- * UUID_19 = UUID-form identifier; original UUID hidden
- * UUID_20 = UUID-form identifier; original UUID hidden
- * UUID_21 = UUID-form identifier; original UUID hidden
- * UUID_22 = UUID-form identifier; original UUID hidden
- * UUID_23 = UUID-form identifier; original UUID hidden
- * UUID_24 = UUID-form identifier; original UUID hidden
- * UUID_25 = UUID-form identifier; original UUID hidden
- * UUID_26 = UUID-form identifier; original UUID hidden
- * UUID_27 = UUID-form identifier; original UUID hidden
- * UUID_28 = UUID-form identifier; original UUID hidden
- * UUID_29 = UUID-form identifier; original UUID hidden
- * UUID_30 = UUID-form identifier; original UUID hidden
- * UUID_31 = UUID-form identifier; original UUID hidden
- * UUID_32 = UUID-form identifier; original UUID hidden
- * UUID_33 = UUID-form identifier; original UUID hidden
- * UUID_34 = UUID-form identifier; original UUID hidden
- * UUID_35 = UUID-form identifier; original UUID hidden
- * UUID_36 = UUID-form identifier; original UUID hidden
- * UUID_37 = UUID-form identifier; original UUID hidden
- * UUID_38 = UUID-form identifier; original UUID hidden
- * UUID_39 = UUID-form identifier; original UUID hidden
- * UUID_40 = UUID-form identifier; original UUID hidden
- * UUID_41 = UUID-form identifier; original UUID hidden
- * UUID_42 = UUID-form identifier; original UUID hidden
- * UUID_43 = UUID-form identifier; original UUID hidden
- * UUID_44 = UUID-form identifier; original UUID hidden
- * UUID_45 = UUID-form identifier; original UUID hidden
- * UUID_46 = UUID-form identifier; original UUID hidden
- * UUID_47 = UUID-form identifier; original UUID hidden
- * UUID_48 = UUID-form identifier; original UUID hidden
- * UUID_49 = UUID-form identifier; original UUID hidden
- * UUID_50 = UUID-form identifier; original UUID hidden
- * UUID_51 = UUID-form identifier; original UUID hidden
- * UUID_52 = UUID-form identifier; original UUID hidden
- * UUID_53 = UUID-form identifier; original UUID hidden
- * UUID_54 = UUID-form identifier; original UUID hidden
- * UUID_55 = UUID-form identifier; original UUID hidden
- * UUID_56 = UUID-form identifier; original UUID hidden
- * UUID_57 = UUID-form identifier; original UUID hidden
- * UUID_58 = UUID-form identifier; original UUID hidden
- * UUID_59 = UUID-form identifier; original UUID hidden
- * UUID_60 = UUID-form identifier; original UUID hidden
- * UUID_61 = UUID-form identifier; original UUID hidden
- * UUID_62 = UUID-form identifier; original UUID hidden
- * UUID_63 = UUID-form identifier; original UUID hidden
- * UUID_64 = UUID-form identifier; original UUID hidden
- * UUID_65 = UUID-form identifier; original UUID hidden
- * UUID_66 = UUID-form identifier; original UUID hidden
- * UUID_67 = UUID-form identifier; original UUID hidden
- * UUID_68 = UUID-form identifier; original UUID hidden
- * UUID_69 = UUID-form identifier; original UUID hidden
- * UUID_70 = UUID-form identifier; original UUID hidden
- * UUID_71 = UUID-form identifier; original UUID hidden
- * UUID_72 = UUID-form identifier; original UUID hidden
- * UUID_73 = UUID-form identifier; original UUID hidden
- * UUID_74 = UUID-form identifier; original UUID hidden
- * UUID_75 = UUID-form identifier; original UUID hidden
- * UUID_76 = UUID-form identifier; original UUID hidden
- * UUID_77 = UUID-form identifier; original UUID hidden
- * UUID_78 = UUID-form identifier; original UUID hidden
- * UUID_79 = UUID-form identifier; original UUID hidden
- * UUID_80 = UUID-form identifier; original UUID hidden
- * UUID_81 = UUID-form identifier; original UUID hidden
- * UUID_82 = UUID-form identifier; original UUID hidden
- * UUID_83 = UUID-form identifier; original UUID hidden
- * UUID_84 = UUID-form identifier; original UUID hidden
- * UUID_85 = UUID-form identifier; original UUID hidden
- * UUID_86 = UUID-form identifier; original UUID hidden
- * UUID_87 = UUID-form identifier; original UUID hidden
- * UUID_88 = UUID-form identifier; original UUID hidden
- * UUID_89 = UUID-form identifier; original UUID hidden
- * UUID_90 = UUID-form identifier; original UUID hidden
- * UUID_91 = UUID-form identifier; original UUID hidden
- * UUID_92 = UUID-form identifier; original UUID hidden
- * UUID_93 = UUID-form identifier; original UUID hidden
- * UUID_94 = UUID-form identifier; original UUID hidden
- * UUID_95 = UUID-form identifier; original UUID hidden
- * UUID_96 = UUID-form identifier; original UUID hidden
- * UUID_97 = UUID-form identifier; original UUID hidden
- * UUID_98 = UUID-form identifier; original UUID hidden
- * UUID_99 = UUID-form identifier; original UUID hidden
- * UUID_100 = UUID-form identifier; original UUID hidden
- * UUID_101 = UUID-form identifier; original UUID hidden
- * UUID_102 = UUID-form identifier; original UUID hidden
- * UUID_103 = UUID-form identifier; original UUID hidden
- * UUID_104 = UUID-form identifier; original UUID hidden
- * UUID_105 = UUID-form identifier; original UUID hidden
- * UUID_106 = UUID-form identifier; original UUID hidden
- * UUID_107 = UUID-form identifier; original UUID hidden
- * UUID_108 = UUID-form identifier; original UUID hidden
- * UUID_109 = UUID-form identifier; original UUID hidden
- * UUID_110 = UUID-form identifier; original UUID hidden
- * UUID_111 = UUID-form identifier; original UUID hidden
- * UUID_112 = UUID-form identifier; original UUID hidden
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_10 = IP address; original address hidden
+ * VALUE_8 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
  */
 
 /*
  * Request
  * POST /account/get_video_defs HTTP/1.1
  * host: <REDACTED_HOST>
- * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
- * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
- * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-real-ip: IP_10 // IP address; variable IP_10 (same token means same original value)
+ * x-forwarded-for: IP_10 // IP address; variable IP_10 (same token means same original value)
+ * remote-host: IP_10 // IP address; variable IP_10 (same token means same original value)
  * x-forwarded-proto: https
  * x-forwarded-port: 443
  * content-length: 141
  * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
- * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * x-session-id: be3d606d-c9e5-4504-b360-a8e51f4150f3 // UUIDv4 replacement; identical original UUIDs share this value globally
  * content-type: application/json
  * trace-id: 2qvfuPY
- * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
- * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
- * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
- * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * user-id: 714a69eb-ebd1-4baa-a7c4-16d60e38beeb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * session: VALUE_8 // Sensitive value hidden; variable VALUE_8 (same token means same original value)
+ * x-user-id: 714a69eb-ebd1-4baa-a7c4-16d60e38beeb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * x-session-token: VALUE_8 // Sensitive value hidden; variable VALUE_8 (same token means same original value)
  * x-sky-level-id: 3526133726
  * 
  * Captured request-body metadata:
@@ -146,9 +34,9 @@
  */
 // Request
 {
-    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "session": "VALUE_1" // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "user": "714a69eb-ebd1-4baa-a7c4-16d60e38beeb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "user_id": "714a69eb-ebd1-4baa-a7c4-16d60e38beeb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "session": "VALUE_8" // Sensitive value hidden; variable VALUE_8 (same token means same original value)
 }
 
 /*
@@ -189,36 +77,36 @@
         {
             "name": "7th_celebration",
             "duration": 397,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/7th_celebration/UUID_3/DOS7_Office_VLS_6m37s_EN_260611/DOS7_Office_VLS_6m37s_EN_260611_tgc.m3u8", // URL contains redacted identifier variables: UUID_3 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/7th_celebration/UUID_4/7thCelebration.vtt", // URL contains redacted identifier variables: UUID_4 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/7th_celebration/be65d874-7f5d-4326-8b71-a37c21ac4c24/DOS7_Office_VLS_6m37s_EN_260611/DOS7_Office_VLS_6m37s_EN_260611_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/7th_celebration/298c8e9d-8916-477e-ba13-4eed774bebf8/7thCelebration.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "Prop_AP27Projector_p1chapters_cc",
             "duration": 4800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/Prop_AP27Projector_p1chapters_cc/UUID_5/EMBER_ChAll&CC_VLS_80m_EN_250828_srgb/EMBER_ChAll&CC_VLS_80m_EN_250828_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_5 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/Prop_AP27Projector_p1chapters_cc/UUID_6/EMBER_ChAll&CC.vtt", // URL contains redacted identifier variables: UUID_6 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/Prop_AP27Projector_p1chapters_cc/ac4a5fa9-d076-46d0-aefb-ea20cd2bfb3c/EMBER_ChAll&CC_VLS_80m_EN_250828_srgb/EMBER_ChAll&CC_VLS_80m_EN_250828_srgb_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/Prop_AP27Projector_p1chapters_cc/091bb233-9220-43b3-81b0-c4765b5bf7d4/EMBER_ChAll&CC.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "activity_kinetic",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/activity_kinetic/UUID_7/SCA26_KineticActivity_VLS_30m_EN_260630/SCA26_KineticActivity_VLS_30m_EN_260630_tgc.m3u8", // URL contains redacted identifier variables: UUID_7 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/activity_kinetic/UUID_8/activity_kinetic.vtt", // URL contains redacted identifier variables: UUID_8 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/activity_kinetic/fc508095-86ed-4a4e-80a0-008d66a29a36/SCA26_KineticActivity_VLS_30m_EN_260630/SCA26_KineticActivity_VLS_30m_EN_260630_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/activity_kinetic/76eb9629-c4b5-4d5a-b822-4898fbc43e00/activity_kinetic.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "activity_remix",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/activity_remix/UUID_9/SCA26_Acti-RemixRev_VLS_30m_260706/SCA26_Acti-RemixRev_VLS_30m_260706_tgc.m3u8", // URL contains redacted identifier variables: UUID_9 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/activity_remix/UUID_10/activity_remix_260708.vtt", // URL contains redacted identifier variables: UUID_10 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/activity_remix/ef184073-f2fd-4fa6-8513-a7d9e7656fa2/SCA26_Acti-RemixRev_VLS_30m_260706/SCA26_Acti-RemixRev_VLS_30m_260706_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/activity_remix/b725a7e5-0a30-42f6-84e7-7cf7394a4e1d/activity_remix_260708.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": false
         },
         {
             "name": "activity_tranquil",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/activity_tranquil/UUID_11/SCA26_TranquilActivity_VLS_30m_260630/SCA26_TranquilActivity_VLS_30m_260630_tgc.m3u8", // URL contains redacted identifier variables: UUID_11 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/activity_tranquil/UUID_12/activity_tranquil.vtt", // URL contains redacted identifier variables: UUID_12 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/activity_tranquil/b4a708e8-c802-433b-9042-4f8a26fdc142/SCA26_TranquilActivity_VLS_30m_260630/SCA26_TranquilActivity_VLS_30m_260630_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/activity_tranquil/e3f9d4d7-23fb-448e-b467-1c90304af59e/activity_tranquil.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
@@ -231,57 +119,57 @@
         {
             "name": "artb2_abyss_ashyui",
             "duration": 110,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_abyss_ashyui/UUID_13/ARTB2_NFC_Abyss_AshYui_VLS_110s_2605/ARTB2_NFC_Abyss_AshYui_VLS_110s_2605_tgc.m3u8", // URL contains redacted identifier variables: UUID_13 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_abyss_ashyui/UUID_14/Abyss/artb2_-nfc-abyss-ash-yui_vls_110s_2605.vtt", // URL contains redacted identifier variables: UUID_14 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_abyss_ashyui/edaf4e45-9564-4283-9703-4bd04efdaeff/ARTB2_NFC_Abyss_AshYui_VLS_110s_2605/ARTB2_NFC_Abyss_AshYui_VLS_110s_2605_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_abyss_ashyui/9e00e1d3-4d8e-420e-af7d-880f1f2d511e/Abyss/artb2_-nfc-abyss-ash-yui_vls_110s_2605.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "artb2_aurora_ashyui",
             "duration": 128,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_aurora_ashyui/UUID_15/ARTB2_NFC_Aurora_AshYui_VLS_128s_2605/ARTB2_NFC_Aurora_AshYui_VLS_128s_2605_tgc.m3u8", // URL contains redacted identifier variables: UUID_15 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_aurora_ashyui/UUID_16/Aurora/artb2_nfc_aurora_ashyui_vls_128s_260521.vtt", // URL contains redacted identifier variables: UUID_16 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_aurora_ashyui/5aef54a0-8254-402f-a38f-f7b4c5eb9b25/ARTB2_NFC_Aurora_AshYui_VLS_128s_2605/ARTB2_NFC_Aurora_AshYui_VLS_128s_2605_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_aurora_ashyui/4d3cee90-9dee-4533-9ef6-17756780a667/Aurora/artb2_nfc_aurora_ashyui_vls_128s_260521.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "artb2_enchantment_ashyui",
             "duration": 115,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_enchantment_ashyui/UUID_17/ARTB2_NFC_Enchantment_AshYui_VLS_115s_2605/ARTB2_NFC_Enchantment_AshYui_VLS_115s_2605_tgc.m3u8", // URL contains redacted identifier variables: UUID_17 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/%20artb2_enchantment_ashyui/UUID_18/Enchantment/artb2_nfc_enchantment_ashyui_vls_115s_2605.vtt", // URL contains redacted identifier variables: UUID_18 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_enchantment_ashyui/6b1509d8-83f7-43ff-9a74-338efec42d12/ARTB2_NFC_Enchantment_AshYui_VLS_115s_2605/ARTB2_NFC_Enchantment_AshYui_VLS_115s_2605_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/%20artb2_enchantment_ashyui/8faff48b-eb60-45b5-9259-f0674b4bf7bc/Enchantment/artb2_nfc_enchantment_ashyui_vls_115s_2605.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "artb2_moments_ashyui",
             "duration": 155,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_moments_ashyui/UUID_19/ARTB2_NFC_Moments_AshYui_VLS_155s_2605/ARTB2_NFC_Moments_AshYui_VLS_155s_2605_tgc.m3u8", // URL contains redacted identifier variables: UUID_19 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_moments_ashyui/UUID_20/Moments/ARTB2_-NFC-Moments-Ash_Yui_VLS_155s_260521.vtt", // URL contains redacted identifier variables: UUID_20 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_moments_ashyui/aec32272-4f02-47a3-a52e-47e06ad75718/ARTB2_NFC_Moments_AshYui_VLS_155s_2605/ARTB2_NFC_Moments_AshYui_VLS_155s_2605_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_moments_ashyui/7a4bdbae-f715-4cc3-a6e5-ef6bb03793be/Moments/ARTB2_-NFC-Moments-Ash_Yui_VLS_155s_260521.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "artb2_prophecy_ashyui",
             "duration": 103,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_prophecy_ashyui/UUID_21/ARTB2_NFC_Prophecy_AshYui_VLS_103s_2605/ARTB2_NFC_Prophecy_AshYui_VLS_103s_2605_tgc.m3u8", // URL contains redacted identifier variables: UUID_21 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_prophecy_ashyui/UUID_22/Prophecy/ARTB2_-NFC-Prophecy-Ash_Yui_VLS_103s_2605.vtt", // URL contains redacted identifier variables: UUID_22 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_prophecy_ashyui/0810acdd-9c66-42f5-a68e-75bf0bdf81d3/ARTB2_NFC_Prophecy_AshYui_VLS_103s_2605/ARTB2_NFC_Prophecy_AshYui_VLS_103s_2605_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_prophecy_ashyui/cbba0dd9-0ac7-4a03-9f00-7edf2c3d88c7/Prophecy/ARTB2_-NFC-Prophecy-Ash_Yui_VLS_103s_2605.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "artb2_revival_ashyui",
             "duration": 188,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_revival_ashyui/UUID_23/ARTB2_NFC_Revival_AshYui_VLS_188s_2605/ARTB2_NFC_Revival_AshYui_VLS_188s_2605_tgc.m3u8", // URL contains redacted identifier variables: UUID_23 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_revival_ashyui/UUID_24/Revival/ARTB2_-NFC-Revival-Ash_Yui_VLS_188s_260521.vtt", // URL contains redacted identifier variables: UUID_24 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_revival_ashyui/8808df63-58ad-40e8-8f1e-d7d8e3bb8b8b/ARTB2_NFC_Revival_AshYui_VLS_188s_2605/ARTB2_NFC_Revival_AshYui_VLS_188s_2605_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_revival_ashyui/f07f81b7-f115-4e75-a326-e03bbdc77f1c/Revival/ARTB2_-NFC-Revival-Ash_Yui_VLS_188s_260521.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "artb2_sanctuary_ashyui",
             "duration": 103,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_sanctuary_ashyui/UUID_25/ARTB2_NFC_Sanctuary_AshYui_VLS_103s_2605/ARTB2_NFC_Sanctuary_AshYui_VLS_103s_2605_tgc.m3u8", // URL contains redacted identifier variables: UUID_25 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_sanctuary_ashyui/UUID_26/Sanctuary/ARTB2_-NFC-Sanctuary-Ash_Yui_VLS_103s_260521.vtt", // URL contains redacted identifier variables: UUID_26 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_sanctuary_ashyui/5a52284d-4549-42f9-bb0b-3e4adda51df1/ARTB2_NFC_Sanctuary_AshYui_VLS_103s_2605/ARTB2_NFC_Sanctuary_AshYui_VLS_103s_2605_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_sanctuary_ashyui/22abfa1b-d28c-418c-987c-9f3a7fe797a1/Sanctuary/ARTB2_-NFC-Sanctuary-Ash_Yui_VLS_103s_260521.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "artb2_tlp_ashyui",
             "duration": 119,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_tlp_ashyui/UUID_27/ARTB2_NFC_TLP_AshYui_VLS_119s_2605/ARTB2_NFC_TLP_AshYui_VLS_119s_2605_tgc.m3u8", // URL contains redacted identifier variables: UUID_27 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_tlp_ashyui/UUID_28/TLP/artb2_nfc_tlp_ashyui_vls_119s_2605.vtt", // URL contains redacted identifier variables: UUID_28 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_tlp_ashyui/ac5772d6-3cf7-4b17-a497-29b98901888f/ARTB2_NFC_TLP_AshYui_VLS_119s_2605/ARTB2_NFC_TLP_AshYui_VLS_119s_2605_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_tlp_ashyui/16264b24-2eec-4d0d-be35-0d8b84afcbe3/TLP/artb2_nfc_tlp_ashyui_vls_119s_2605.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
@@ -301,176 +189,176 @@
         {
             "name": "awd26Locked*_activity_s31teaser",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_activity_s31teaser/UUID_29/SCA26_Acti-S31_VLS_30m_EN_2606/SCA26_Acti-S31_VLS_30m_EN_2606_tgc.m3u8", // URL contains redacted identifier variables: UUID_29 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_activity_s31teaser/UUID_30/activity_s31teaser_260706.vtt", // URL contains redacted identifier variables: UUID_30 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_activity_s31teaser/c11c949a-c62a-4af6-9305-6e31a42aaf64/SCA26_Acti-S31_VLS_30m_EN_2606/SCA26_Acti-S31_VLS_30m_EN_2606_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_activity_s31teaser/3b379374-a870-468a-884b-bf71189e943c/activity_s31teaser_260706.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd26Locked*_show_p1",
             "duration": 1950,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_show_p1/UUID_31/SCA26_AwdCeremony-P1_VLS_32m30s_EN_260706/SCA26_AwdCeremony-P1_VLS_32m30s_EN_260706_tgc.m3u8", // URL contains redacted identifier variables: UUID_31 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/%20awd26Locked*_show_p1/UUID_32/SCA26_Show_P1.vtt", // URL contains redacted identifier variables: UUID_32 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_show_p1/ed3fe817-2aea-44ed-9adf-6cef6cadd75c/SCA26_AwdCeremony-P1_VLS_32m30s_EN_260706/SCA26_AwdCeremony-P1_VLS_32m30s_EN_260706_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/%20awd26Locked*_show_p1/81bd9fb3-4acc-40ae-8e47-462bfe19317c/SCA26_Show_P1.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd26Locked*_show_p1_replay",
             "duration": 1950,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_show_p1_replay/UUID_33/SCA26_AwdCeremony-replay-P1_VLS_32m30_EN_2607/SCA26_AwdCeremony-replay-P1_VLS_32m30_EN_2607_tgc.m3u8", // URL contains redacted identifier variables: UUID_33 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/%20awd26Locked*_show_p1/UUID_32/SCA26_Show_P1.vtt", // URL contains redacted identifier variables: UUID_32 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_show_p1_replay/0fc3a6f8-dd8f-4ec9-ada1-f35ef9987eeb/SCA26_AwdCeremony-replay-P1_VLS_32m30_EN_2607/SCA26_AwdCeremony-replay-P1_VLS_32m30_EN_2607_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/%20awd26Locked*_show_p1/81bd9fb3-4acc-40ae-8e47-462bfe19317c/SCA26_Show_P1.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": false
         },
         {
             "name": "awd26Locked*_show_p2",
             "duration": 1650,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_show_p2/UUID_34/SCA26_AwdCeremony-P2_VLS_27m30s_EN_260706/SCA26_AwdCeremony-P2_VLS_27m30s_EN_260706_tgc.m3u8", // URL contains redacted identifier variables: UUID_34 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/%20awd26Locked*_show_p2/UUID_35/SCA26_Show_P2.vtt", // URL contains redacted identifier variables: UUID_35 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_show_p2/7e5d759e-5a5d-4aa1-bc67-e34c6422e7eb/SCA26_AwdCeremony-P2_VLS_27m30s_EN_260706/SCA26_AwdCeremony-P2_VLS_27m30s_EN_260706_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/%20awd26Locked*_show_p2/60e716fb-9e06-4b20-bcf7-c1b9723faefe/SCA26_Show_P2.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd26Locked*_show_p2_replay",
             "duration": 1650,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_show_p2_replay/UUID_36/SCA26_AwdCeremony-replay-P2_VLS_27m30_EN_2607/SCA26_AwdCeremony-replay-P2_VLS_27m30_EN_2607_tgc.m3u8", // URL contains redacted identifier variables: UUID_36 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/%20awd26Locked*_show_p2/UUID_35/SCA26_Show_P2.vtt", // URL contains redacted identifier variables: UUID_35 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_show_p2_replay/8ff74ef7-b613-4260-9c18-70272b0cd383/SCA26_AwdCeremony-replay-P2_VLS_27m30_EN_2607/SCA26_AwdCeremony-replay-P2_VLS_27m30_EN_2607_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/%20awd26Locked*_show_p2/60e716fb-9e06-4b20-bcf7-c1b9723faefe/SCA26_Show_P2.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": false
         },
         {
             "name": "awd26Locked*_win_a",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_win_a/UUID_37/SCA26_AwdWin-A_VLS_30m_EN_260617/SCA26_AwdWin-A_VLS_30m_EN_260617_tgc.m3u8", // URL contains redacted identifier variables: UUID_37 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_win_a/UUID_38/SCA26_AwdWin-A.vtt", // URL contains redacted identifier variables: UUID_38 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_win_a/9e003b2b-ed3d-44f0-b8d9-2548b4ef22de/SCA26_AwdWin-A_VLS_30m_EN_260617/SCA26_AwdWin-A_VLS_30m_EN_260617_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_win_a/62632ef2-d6f4-4f5f-b7a4-0950e2865319/SCA26_AwdWin-A.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd26Locked*_win_b",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_win_b/UUID_39/SCA26_AwdWin-B_VLS_30m_EN_260617/SCA26_AwdWin-B_VLS_30m_EN_260617_tgc.m3u8", // URL contains redacted identifier variables: UUID_39 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_win_b/UUID_40/SCA26_AwdWin-B.vtt", // URL contains redacted identifier variables: UUID_40 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_win_b/c78e1e1e-ce4f-4171-a0e8-09aca544e3e4/SCA26_AwdWin-B_VLS_30m_EN_260617/SCA26_AwdWin-B_VLS_30m_EN_260617_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_win_b/ce8bd430-27b7-4e23-acdb-22e017bb0c1a/SCA26_AwdWin-B.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd26Locked*_win_c",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_win_c/UUID_41/SCA26_AwdWin-C_VLS_30m_EN_260706/SCA26_AwdWin-C_VLS_30m_EN_260706_tgc.m3u8", // URL contains redacted identifier variables: UUID_41 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_win_c/UUID_42/SCA26_AwdWin-C.vtt", // URL contains redacted identifier variables: UUID_42 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_win_c/ee38e117-84cd-4f5e-8911-2947699179d2/SCA26_AwdWin-C_VLS_30m_EN_260706/SCA26_AwdWin-C_VLS_30m_EN_260706_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_win_c/338e8864-de2f-4819-9a82-58fd59a8c4db/SCA26_AwdWin-C.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd26Locked*_win_d",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_win_d/UUID_43/SCA26_AwdWin-D_VLS_30m_EN_260617/SCA26_AwdWin-D_VLS_30m_EN_260617_tgc.m3u8", // URL contains redacted identifier variables: UUID_43 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_win_d/UUID_44/SCA26_AwdWin-D.vtt", // URL contains redacted identifier variables: UUID_44 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_win_d/3d23f73e-5ea0-4599-a943-31c6eba5e257/SCA26_AwdWin-D_VLS_30m_EN_260617/SCA26_AwdWin-D_VLS_30m_EN_260617_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_win_d/6d5e019e-5716-4d8e-887e-29b07ff4eed6/SCA26_AwdWin-D.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd26Locked*_win_e",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_win_e/UUID_45/SCA26_AwdWin-E_VLS_30m_EN_260706/SCA26_AwdWin-E_VLS_30m_EN_260706_tgc.m3u8", // URL contains redacted identifier variables: UUID_45 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_win_e/UUID_46/SCA26_AwdWin-E.vtt", // URL contains redacted identifier variables: UUID_46 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_win_e/948439d1-c995-4515-bb1f-9c4ea480e382/SCA26_AwdWin-E_VLS_30m_EN_260706/SCA26_AwdWin-E_VLS_30m_EN_260706_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_win_e/14f9da34-b025-4627-896d-c48aa4d22cf7/SCA26_AwdWin-E.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd26_countdown",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26_countdown/UUID_47/SCA26_Countdown_VLS_30m_2604/SCA26_Countdown_VLS_30m_2604_tgc.m3u8", // URL contains redacted identifier variables: UUID_47 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26_countdown/UUID_48/awd26_countdown_0618.vtt", // URL contains redacted identifier variables: UUID_48 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26_countdown/50ce5084-75e4-495a-a302-8e49a4e87d3a/SCA26_Countdown_VLS_30m_2604/SCA26_Countdown_VLS_30m_2604_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26_countdown/342046ef-0363-4822-9aae-951cf581cd58/awd26_countdown_0618.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": false
         },
         {
             "name": "awd26_sel_a",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26_sel_a/UUID_49/SCA26_AwdSel-A_VLS_30m_EN_260623/SCA26_AwdSel-A_VLS_30m_EN_260623_tgc.m3u8", // URL contains redacted identifier variables: UUID_49 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26_sel_a/UUID_50/SCA26_AwdSel-A.vtt", // URL contains redacted identifier variables: UUID_50 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26_sel_a/98459d25-335a-464c-ab61-5114db88227f/SCA26_AwdSel-A_VLS_30m_EN_260623/SCA26_AwdSel-A_VLS_30m_EN_260623_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26_sel_a/40f51417-0db3-402d-a526-96164e30296a/SCA26_AwdSel-A.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd26_sel_b",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26_sel_b/UUID_51/SCA26_AwdSel-B_VLS_30m_EN_260623/SCA26_AwdSel-B_VLS_30m_EN_260623_tgc.m3u8", // URL contains redacted identifier variables: UUID_51 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26_sel_b/UUID_52/%5Ben%5D%20SCA26_AwdSel-B_0701%20(1).vtt", // URL contains redacted identifier variables: UUID_52 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26_sel_b/6c23f2c9-05a4-4cd4-8c9c-0c9e4b1832d3/SCA26_AwdSel-B_VLS_30m_EN_260623/SCA26_AwdSel-B_VLS_30m_EN_260623_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26_sel_b/9b7fff14-3a6b-4527-a5f0-c4baa5d73375/%5Ben%5D%20SCA26_AwdSel-B_0701%20(1).vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd26_sel_c",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26_sel_c/UUID_53/SCA26_AwdSel-C_VLS_30m_EN_260706/SCA26_AwdSel-C_VLS_30m_EN_260706_tgc.m3u8", // URL contains redacted identifier variables: UUID_53 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26_sel_c/UUID_54/SCA26_AwdSel-C.vtt", // URL contains redacted identifier variables: UUID_54 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26_sel_c/0d077059-3840-4677-880e-8f2e020ffae9/SCA26_AwdSel-C_VLS_30m_EN_260706/SCA26_AwdSel-C_VLS_30m_EN_260706_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26_sel_c/c6d6257b-9445-42a7-a8f1-1732cf847b23/SCA26_AwdSel-C.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd26_show_hilite",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26_show_hilite/UUID_55/SCA26_Highlights_VLS_30m_EN_2607/SCA26_Highlights_VLS_30m_EN_2607_tgc.m3u8", // URL contains redacted identifier variables: UUID_55 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26_show_hilite/UUID_56/SCA26_Highlights-ROUGH4_VLS_30m_2607.vtt", // URL contains redacted identifier variables: UUID_56 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26_show_hilite/bda08702-1aeb-4663-a621-1b0f2c6d6b5a/SCA26_Highlights_VLS_30m_EN_2607/SCA26_Highlights_VLS_30m_EN_2607_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26_show_hilite/954030c0-8ac2-407a-867d-5b6635cbb4fa/SCA26_Highlights-ROUGH4_VLS_30m_2607.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd_corner_a",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_corner_a/UUID_57/SCA_AWDCornerA_VLS_30m_EN_250714/SCA_AWDCornerA_VLS_30m_EN_250714_tgc.m3u8", // URL contains redacted identifier variables: UUID_57 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_corner_a/UUID_58/awd_corner_a.vtt", // URL contains redacted identifier variables: UUID_58 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_corner_a/b84e1887-849b-45bb-90d9-fff087444d37/SCA_AWDCornerA_VLS_30m_EN_250714/SCA_AWDCornerA_VLS_30m_EN_250714_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_corner_a/3db24d59-4487-40bb-9f2e-cfb8ad4ad409/awd_corner_a.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd_corner_b",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_corner_b/UUID_59/SCA_AWDCornerB_VLS_30m_EN_250724/SCA_AWDCornerB_VLS_30m_EN_250724_tgc.m3u8", // URL contains redacted identifier variables: UUID_59 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_corner_b/UUID_60/awd_corner_b.vtt", // URL contains redacted identifier variables: UUID_60 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_corner_b/e5c8d444-d1c8-42b8-86b6-10f3ac9117fc/SCA_AWDCornerB_VLS_30m_EN_250724/SCA_AWDCornerB_VLS_30m_EN_250724_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_corner_b/46796bed-7df8-46a9-85f4-2638c1b4c06f/awd_corner_b.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd_countdown",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_countdown/UUID_61/SCA_AwdShow-Countdown_VLS_30m_2507/SCA_AwdShow-Countdown_VLS_30m_2507_tgc.m3u8", // URL contains redacted identifier variables: UUID_61 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_countdown/UUID_62/awd_countdown.vtt", // URL contains redacted identifier variables: UUID_62 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_countdown/1e469e2c-5266-4ea4-9072-8973f0d3b815/SCA_AwdShow-Countdown_VLS_30m_2507/SCA_AwdShow-Countdown_VLS_30m_2507_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_countdown/867ad331-38cf-4ce9-a521-edc7262123fc/awd_countdown.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": false
         },
         {
             "name": "awd_countdown_replay",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_countdown/UUID_61/SCA_AwdShow-Countdown_VLS_30m_2507/SCA_AwdShow-Countdown_VLS_30m_2507_tgc.m3u8", // URL contains redacted identifier variables: UUID_61 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_countdown/UUID_62/awd_countdown.vtt", // URL contains redacted identifier variables: UUID_62 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_countdown/1e469e2c-5266-4ea4-9072-8973f0d3b815/SCA_AwdShow-Countdown_VLS_30m_2507/SCA_AwdShow-Countdown_VLS_30m_2507_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_countdown/867ad331-38cf-4ce9-a521-edc7262123fc/awd_countdown.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": false
         },
         {
             "name": "awd_show_p1",
             "duration": 2940,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_show_p1/UUID_63/awd_show_p1/awd_show_p1_tgc.m3u8", // URL contains redacted identifier variables: UUID_63 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_show_p1/UUID_64/awd_show_p1.vtt", // URL contains redacted identifier variables: UUID_64 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_show_p1/97f515a4-dff0-4152-925d-df06a89cb058/awd_show_p1/awd_show_p1_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_show_p1/56882efc-2b43-4592-a135-d3b6a0275510/awd_show_p1.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd_show_p1_replay",
             "duration": 2940,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_show_p1_replay/UUID_65/SCA_AwdShowReplay-P1_VLS_49m_EN_250821/SCA_AwdShowReplay-P1_VLS_49m_EN_250821_tgc.m3u8", // URL contains redacted identifier variables: UUID_65 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_show_p1/UUID_64/awd_show_p1.vtt", // URL contains redacted identifier variables: UUID_64 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_show_p1_replay/6988ea76-5587-4a02-bdcf-7eb0ec1a5fc6/SCA_AwdShowReplay-P1_VLS_49m_EN_250821/SCA_AwdShowReplay-P1_VLS_49m_EN_250821_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_show_p1/56882efc-2b43-4592-a135-d3b6a0275510/awd_show_p1.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd_show_p2",
             "duration": 2460,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_show_p2/UUID_66/SCA_AwdShow-V2-P2_250811/SCA_AwdShow-V2-P2_250811_tgc.m3u8", // URL contains redacted identifier variables: UUID_66 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_show_p2/UUID_67/awd_show_p2.vtt", // URL contains redacted identifier variables: UUID_67 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_show_p2/16ca0201-92aa-46db-b3cb-9e4abfa031e8/SCA_AwdShow-V2-P2_250811/SCA_AwdShow-V2-P2_250811_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_show_p2/9418ce3f-b654-42b9-88a0-484a177eb8e0/awd_show_p2.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd_show_p2_replay",
             "duration": 2460,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_show_p2_replay/UUID_68/SCA_AwdShowReplay-P2_VLS_41m_EN_250821/SCA_AwdShowReplay-P2_VLS_41m_EN_250821_tgc.m3u8", // URL contains redacted identifier variables: UUID_68 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_show_p2/UUID_67/awd_show_p2.vtt", // URL contains redacted identifier variables: UUID_67 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_show_p2_replay/c24cd4d2-f3d2-4247-aa61-70d9f016613f/SCA_AwdShowReplay-P2_VLS_41m_EN_250821/SCA_AwdShowReplay-P2_VLS_41m_EN_250821_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_show_p2/9418ce3f-b654-42b9-88a0-484a177eb8e0/awd_show_p2.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd_winners_a",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_winners_a/UUID_69/SCA_AWDWinners_A_VLS_30m_EN_250730/SCA_AWDWinners_A_VLS_30m_EN_250730_tgc.m3u8", // URL contains redacted identifier variables: UUID_69 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_winners_a/UUID_70/awd_winners_a.vtt", // URL contains redacted identifier variables: UUID_70 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_winners_a/28ecd784-176e-4846-8619-fa1e40bbb01e/SCA_AWDWinners_A_VLS_30m_EN_250730/SCA_AWDWinners_A_VLS_30m_EN_250730_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_winners_a/34d7ba72-84fd-45a6-a37e-5f8a8a4044b3/awd_winners_a.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "awd_winners_b",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_winners_b/UUID_71/SCA_AWDWinners_B_VLS_30m_EN_250730/SCA_AWDWinners_B_VLS_30m_EN_250730_tgc.m3u8", // URL contains redacted identifier variables: UUID_71 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_winners_b/UUID_72/awd_winners_b.vtt", // URL contains redacted identifier variables: UUID_72 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_winners_b/7d1af3e3-0e46-4344-b863-084bf4fe0dff/SCA_AWDWinners_B_VLS_30m_EN_250730/SCA_AWDWinners_B_VLS_30m_EN_250730_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_winners_b/cbb4e718-d044-443c-b1e5-78fa358f6f3c/awd_winners_b.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
@@ -483,29 +371,29 @@
         {
             "name": "cmty_corner_a",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/cmty_corner_a/UUID_73/SCA_CMTYCornerA_VLS_30m_EN_250708/SCA_CMTYCornerA_VLS_30m_EN_250708_tgc.m3u8", // URL contains redacted identifier variables: UUID_73 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/cmty_corner_a/UUID_73/cmty_corner_a.vtt", // URL contains redacted identifier variables: UUID_73 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/cmty_corner_a/12c8c9a5-7486-4dde-a754-6e48cd38665d/SCA_CMTYCornerA_VLS_30m_EN_250708/SCA_CMTYCornerA_VLS_30m_EN_250708_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/cmty_corner_a/12c8c9a5-7486-4dde-a754-6e48cd38665d/cmty_corner_a.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "cmty_corner_b",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/cmty_corner_b/UUID_74/SCA_CMTYCornerB-MM_VLS_30m_EN_250716/SCA_CMTYCornerB-MM_VLS_30m_EN_250716_tgc.m3u8", // URL contains redacted identifier variables: UUID_74 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/cmty_corner_b/UUID_74/cmty_corner_b.vtt", // URL contains redacted identifier variables: UUID_74 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/cmty_corner_b/81b5d422-33c2-4535-8f97-10078e43772a/SCA_CMTYCornerB-MM_VLS_30m_EN_250716/SCA_CMTYCornerB-MM_VLS_30m_EN_250716_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/cmty_corner_b/81b5d422-33c2-4535-8f97-10078e43772a/cmty_corner_b.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "cmty_corner_c",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/cmty_corner_c/UUID_75/SCA_CMTYCornerC_VLS_30m_EN_250721/SCA_CMTYCornerC_VLS_30m_EN_250721_tgc.m3u8", // URL contains redacted identifier variables: UUID_75 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/cmty_corner_c/UUID_76/cmty_corner_c.vtt", // URL contains redacted identifier variables: UUID_76 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/cmty_corner_c/f52bf7cb-af1d-41b2-9be6-a3e127a023f8/SCA_CMTYCornerC_VLS_30m_EN_250721/SCA_CMTYCornerC_VLS_30m_EN_250721_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/cmty_corner_c/a2c67c3d-51e7-4eb4-a060-f6417dedac43/cmty_corner_c.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "cmty_corner_d",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/cmty_corner_d/UUID_77/SCA_CMTYCornerD-MM_VLS_30m_EN_250711/SCA_CMTYCornerD-MM_VLS_30m_EN_250711_tgc.m3u8", // URL contains redacted identifier variables: UUID_77 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/cmty_corner_d/UUID_77/cmty_corner_d.vtt", // URL contains redacted identifier variables: UUID_77 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/cmty_corner_d/281a8063-190b-43f0-a820-3aa78da666f4/SCA_CMTYCornerD-MM_VLS_30m_EN_250711/SCA_CMTYCornerD-MM_VLS_30m_EN_250711_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/cmty_corner_d/281a8063-190b-43f0-a820-3aa78da666f4/cmty_corner_d.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
@@ -518,78 +406,78 @@
         {
             "name": "creator_const_a",
             "duration": 900,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/creator_const_a/UUID_78/SCA26_CC-A_VLS_30m_EN_2606/SCA26_CC-A_VLS_30m_EN_2606_tgc.m3u8", // URL contains redacted identifier variables: UUID_78 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/creator_const_a/UUID_79/SCA26_CC-A.vtt", // URL contains redacted identifier variables: UUID_79 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/creator_const_a/992d4bdd-9316-465a-95cf-fac86f6b4e70/SCA26_CC-A_VLS_30m_EN_2606/SCA26_CC-A_VLS_30m_EN_2606_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/creator_const_a/24d7da75-cfdb-4c15-9d96-2fc3a4b39122/SCA26_CC-A.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "creator_const_b",
             "duration": 900,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/creator_const_b/UUID_80/SCA26_CC-B_VLS_30m_EN_2606/SCA26_CC-B_VLS_30m_EN_2606_tgc.m3u8", // URL contains redacted identifier variables: UUID_80 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/creator_const_b/UUID_81/SCA26_CC-B.vtt", // URL contains redacted identifier variables: UUID_81 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/creator_const_b/c1d747d3-858d-48a9-8372-43ae68ad9775/SCA26_CC-B_VLS_30m_EN_2606/SCA26_CC-B_VLS_30m_EN_2606_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/creator_const_b/53d25759-0f87-4276-892a-0d1bc1385968/SCA26_CC-B.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "dev_corner_a",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/dev_corner_a/UUID_82/SCA_DevCornerA_VLS_30m_EN_250721/SCA_DevCornerA_VLS_30m_EN_250721_tgc.m3u8", // URL contains redacted identifier variables: UUID_82 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/dev_corner_a/UUID_83/dev_corner_a.vtt", // URL contains redacted identifier variables: UUID_83 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/dev_corner_a/f46ab5fe-0934-4aaa-b24f-8833df680031/SCA_DevCornerA_VLS_30m_EN_250721/SCA_DevCornerA_VLS_30m_EN_250721_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/dev_corner_a/9028f925-30f4-44f0-93a4-634dc81cf82f/dev_corner_a.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "dev_corner_b",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/dev_corner_b/UUID_84/SCA_DevCornerB_VLS_30m_EN_250721/SCA_DevCornerB_VLS_30m_EN_250721_tgc.m3u8", // URL contains redacted identifier variables: UUID_84 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/dev_corner_b_0730/UUID_85/dev_corner_b_0730.vtt", // URL contains redacted identifier variables: UUID_85 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/dev_corner_b/525dcd71-80e6-4f45-b816-4353696b8f18/SCA_DevCornerB_VLS_30m_EN_250721/SCA_DevCornerB_VLS_30m_EN_250721_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/dev_corner_b_0730/13d57d91-270e-4c74-a102-b568ae96a644/dev_corner_b_0730.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "dev_corner_c",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/dev_corner_c/UUID_86/SCA_DevCornerC_VLS_30m_EN_250721/SCA_DevCornerC_VLS_30m_EN_250721_tgc.m3u8", // URL contains redacted identifier variables: UUID_86 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/dev_corner_c_0730/UUID_87/dev_corner_c_0730.vtt", // URL contains redacted identifier variables: UUID_87 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/dev_corner_c/49781866-64a3-4e58-ab55-271b52caf6a2/SCA_DevCornerC_VLS_30m_EN_250721/SCA_DevCornerC_VLS_30m_EN_250721_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/dev_corner_c_0730/536e5a53-b1d2-4e57-a052-36ee2624e9b5/dev_corner_c_0730.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "dev_corner_d",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/dev_corner_d/UUID_88/SCA_DevCornerD_VLS_30m_EN_250714/SCA_DevCornerD_VLS_30m_EN_250714_tgc.m3u8", // URL contains redacted identifier variables: UUID_88 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/dev_corner_d/UUID_89/dev_corner_d.vtt", // URL contains redacted identifier variables: UUID_89 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/dev_corner_d/8d8f5095-2bae-41b6-9be3-85dad8128d59/SCA_DevCornerD_VLS_30m_EN_250714/SCA_DevCornerD_VLS_30m_EN_250714_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/dev_corner_d/4c778172-77b0-4910-9457-9cfe0592334e/dev_corner_d.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "ember_ch_1",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/ember_ch_1/UUID_90/SCA_Ember-Ch1_VLS_30m_EN_250724_felix_srgb/SCA_Ember-Ch1_VLS_30m_EN_250724_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_90 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/ember_ch_1/UUID_91/ember_ch_1_0804.vtt", // URL contains redacted identifier variables: UUID_91 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/ember_ch_1/88fcb0a5-5be8-462c-94bd-9b1df811408f/SCA_Ember-Ch1_VLS_30m_EN_250724_felix_srgb/SCA_Ember-Ch1_VLS_30m_EN_250724_felix_srgb_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/ember_ch_1/7d34ea83-6f62-4676-8fba-0bb00a704abb/ember_ch_1_0804.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "ember_ch_2",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/ember_ch_2/UUID_92/SCA_Ember-Ch2_VLS_30m_EN_250724_felix_srgb/SCA_Ember-Ch2_VLS_30m_EN_250724_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_92 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/ember_ch_2/UUID_93/ember_ch_2_0804.vtt", // URL contains redacted identifier variables: UUID_93 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/ember_ch_2/34ecd175-24e6-44a9-871b-f57dfb511cc0/SCA_Ember-Ch2_VLS_30m_EN_250724_felix_srgb/SCA_Ember-Ch2_VLS_30m_EN_250724_felix_srgb_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/ember_ch_2/588e295b-8b42-4c5a-b43c-721670e2081e/ember_ch_2_0804.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "ember_ch_3",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/ember_ch_3/UUID_94/SCA_Ember-Ch3_VLS_30m_EN_250729_felix_srgb/SCA_Ember-Ch3_VLS_30m_EN_250729_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_94 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/ember_ch_3/UUID_95/ember_ch_3_0804.vtt", // URL contains redacted identifier variables: UUID_95 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/ember_ch_3/05e888c5-1891-4bc4-a788-a06ea43ad951/SCA_Ember-Ch3_VLS_30m_EN_250729_felix_srgb/SCA_Ember-Ch3_VLS_30m_EN_250729_felix_srgb_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/ember_ch_3/b6295180-6e61-4895-92bc-b937ad8018ca/ember_ch_3_0804.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "ember_ch_4",
             "duration": 1800,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/ember_ch_4/UUID_96/SCA_Ember-Ch4_VLS_30m_EN_250729_felix_srgb/SCA_Ember-Ch4_VLS_30m_EN_250729_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_96 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/ember_ch_4/UUID_97/ember_ch_4_0804.vtt", // URL contains redacted identifier variables: UUID_97 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/ember_ch_4/5b29eba0-4bd5-4146-8855-751dae447a26/SCA_Ember-Ch4_VLS_30m_EN_250729_felix_srgb/SCA_Ember-Ch4_VLS_30m_EN_250729_felix_srgb_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/ember_ch_4/2727a9fa-6253-45f3-9ef8-71b85c658424/ember_ch_4_0804.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "ember_ch_all",
             "duration": 3600,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/ember_ch_all/UUID_98/SCA_Ember-ChAll_VLS_30m_EN_250731_felix_srgb/SCA_Ember-ChAll_VLS_30m_EN_250731_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_98 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/ember_ch_all/UUID_99/ember_ch_all.vtt", // URL contains redacted identifier variables: UUID_99 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/ember_ch_all/23a9bfff-423a-4884-953c-2d8abf395165/SCA_Ember-ChAll_VLS_30m_EN_250731_felix_srgb/SCA_Ember-ChAll_VLS_30m_EN_250731_felix_srgb_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/ember_ch_all/86a18182-a405-483b-a1ec-9196a23be2cc/ember_ch_all.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
@@ -609,7 +497,7 @@
         {
             "name": "hoc_tcp_logo",
             "duration": 900,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/hoc_tcp_logo/UUID_100/HOC_TCP-logo_VLS_15m_2607/HOC_TCP-logo_VLS_15m_2607_tgc.m3u8", // URL contains redacted identifier variables: UUID_100 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/hoc_tcp_logo/5fdb8e27-9ec3-41ce-a17b-6a66d6ee0235/HOC_TCP-logo_VLS_15m_2607/HOC_TCP-logo_VLS_15m_2607_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "subtitle_base": "",
             "has_translations": false
         },
@@ -630,29 +518,29 @@
         {
             "name": "medpad_ch_1",
             "duration": 1200,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/medpad_ch_1/UUID_101/S27_MedPad-Ch1_VLS_20m_EN_250729-001_felix_srgb/S27_MedPad-Ch1_VLS_20m_EN_250729-001_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_101 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/medpad_ch_1/UUID_102/medpad_ch_1_0804.vtt", // URL contains redacted identifier variables: UUID_102 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/medpad_ch_1/2a6e286d-f0d5-4d43-98f9-a63886a3f545/S27_MedPad-Ch1_VLS_20m_EN_250729-001_felix_srgb/S27_MedPad-Ch1_VLS_20m_EN_250729-001_felix_srgb_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/medpad_ch_1/e10bb4cc-a8f8-4a90-be78-763a4053e461/medpad_ch_1_0804.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "medpad_ch_2",
             "duration": 1200,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/medpad_ch_2/UUID_103/S27_MedPad-Ch2_VLS_20m_EN_250729-004_felix_srgb/S27_MedPad-Ch2_VLS_20m_EN_250729-004_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_103 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/medpad_ch_2/UUID_104/medpad_ch_2_0804.vtt", // URL contains redacted identifier variables: UUID_104 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/medpad_ch_2/212c04c9-396e-4fa2-a5c6-de1668263814/S27_MedPad-Ch2_VLS_20m_EN_250729-004_felix_srgb/S27_MedPad-Ch2_VLS_20m_EN_250729-004_felix_srgb_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/medpad_ch_2/74131482-cec7-4c4e-855b-43c8dec52aa6/medpad_ch_2_0804.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "medpad_ch_3",
             "duration": 1200,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/medpad_ch_3/UUID_105/S27_MedPad-Ch3_VLS_20m_EN_250729-002_felix_srgb/S27_MedPad-Ch3_VLS_20m_EN_250729-002_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_105 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/medpad_ch_3/UUID_106/medpad_ch_3_0804.vtt", // URL contains redacted identifier variables: UUID_106 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/medpad_ch_3/598eb96a-ebfa-40cb-91fd-be2091f27dcb/S27_MedPad-Ch3_VLS_20m_EN_250729-002_felix_srgb/S27_MedPad-Ch3_VLS_20m_EN_250729-002_felix_srgb_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/medpad_ch_3/a8ec0465-7ed9-423f-a3b2-3bce21cbcc57/medpad_ch_3_0804.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "medpad_ch_4",
             "duration": 1200,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/medpad_ch_4/UUID_107/S27_MedPad-Ch4_VLS_20m_EN_250729-003_felix_srgb/S27_MedPad-Ch4_VLS_20m_EN_250729-003_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_107 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/medpad_ch_4/UUID_108/medpad_ch_4_0804.vtt", // URL contains redacted identifier variables: UUID_108 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/medpad_ch_4/7389e958-e532-4a6e-a5b9-6f1a4bef0fa9/S27_MedPad-Ch4_VLS_20m_EN_250729-003_felix_srgb/S27_MedPad-Ch4_VLS_20m_EN_250729-003_felix_srgb_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/medpad_ch_4/80fc0218-b617-4d23-891a-b570edcec599/medpad_ch_4_0804.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
@@ -728,15 +616,15 @@
         {
             "name": "studio_stories_a",
             "duration": 900,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/studio_stories_a/UUID_109/SCA26_SS-A_VLS_30m_EN_260630/SCA26_SS-A_VLS_30m_EN_260630_tgc.m3u8", // URL contains redacted identifier variables: UUID_109 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/studio_stories_a/UUID_110/SCA26_SS-A.vtt", // URL contains redacted identifier variables: UUID_110 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/studio_stories_a/e130bfba-6fe1-4b7e-93e2-624fbd2d5048/SCA26_SS-A_VLS_30m_EN_260630/SCA26_SS-A_VLS_30m_EN_260630_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/studio_stories_a/5e108b55-4adf-4233-a1c1-de26101d7430/SCA26_SS-A.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {
             "name": "studio_stories_b",
             "duration": 900,
-            "location": "https://video.cdn.thatgamecompany.com/encoded/studio_stories_b/UUID_111/SCA26_SS-B_VLS_30m_EN_260630/SCA26_SS-B_VLS_30m_EN_260630_tgc.m3u8", // URL contains redacted identifier variables: UUID_111 (same tokens retain equality)
-            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/studio_stories_b/UUID_112/SCA26_SS-B.vtt", // URL contains redacted identifier variables: UUID_112 (same tokens retain equality)
+            "location": "https://video.cdn.thatgamecompany.com/encoded/studio_stories_b/ed2005b8-5d16-444c-a4f3-0edf85ded99a/SCA26_SS-B_VLS_30m_EN_260630/SCA26_SS-B_VLS_30m_EN_260630_tgc.m3u8", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/studio_stories_b/7bc64798-c059-4423-8633-540f2db6114d/SCA26_SS-B.vtt", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
             "has_translations": true
         },
         {

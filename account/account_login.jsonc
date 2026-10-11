@@ -1,0 +1,74 @@
+/*
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_14 = IP address; original address hidden
+ * VALUE_42 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_29 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_43 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ */
+
+/*
+ * Request
+ * POST /account/login HTTP/1.1
+ * host: live-as-sky.xyqaq.cn
+ * x-real-ip: IP_14 // IP address; variable IP_14 (same token means same original value)
+ * x-forwarded-for: IP_14 // IP address; variable IP_14 (same token means same original value)
+ * remote-host: IP_14 // IP address; variable IP_14 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 579
+ * user-agent: Sky-Live-com.tgc.sky.android/0.12.2.160278 (Xiaomi 2201122G; android 35.0.0; zh)
+ * x-session-id: b7250eb4-14d0-422f-b47a-6469241980e0 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 579
+ */
+// Request
+{
+    "user": "20f146f5-e84a-4059-9848-9fe378fbcfec", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "device": "47d42675-6cb1-4189-a65f-75d39139ed50", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+    "key": "VALUE_42", // Sensitive value hidden; variable VALUE_42 (same token means same original value)
+    "language": "zh",
+    "tos_version": 4,
+    "device_key": "VALUE_29", // Sensitive value hidden; variable VALUE_29 (same token means same original value)
+    "sig_ts": 1768887128,
+    "sig": "VALUE_43", // Sensitive value hidden; variable VALUE_43 (same token means same original value)
+    "hashes": [
+        3858080788,
+        1986399102,
+        3430580226,
+        2069921943,
+        2954226198,
+        1246829562,
+        1019125871,
+        3062676827,
+        2766223387,
+        1315643022,
+        1343257052,
+        3785980971,
+        208793002,
+        2869127289,
+        675306265,
+        3745140589
+    ],
+    "": false
+}
+
+/*
+ * Response
+ * HTTP/1.1 404 Not Found
+ * date: Tue, 20 Jan 2026 05:32:08 GMT
+ * content-length: 0
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: empty
+ * body size: 0
+ */
+// Response
+{
+    "type": "empty",
+    "data": null,
+    "size": 0
+}

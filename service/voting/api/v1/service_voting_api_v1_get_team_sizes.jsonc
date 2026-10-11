@@ -1,30 +1,28 @@
 /*
- * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
- * Repeated variable names indicate identical original values; different names of the same type mean different values.
- * IP_1 = IP address; original address hidden
- * UUID_1 = UUID-form identifier; original UUID hidden
- * UUID_2 = UUID-form identifier; original UUID hidden
- * VALUE_1 = non-UUID sensitive value; original value hidden
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_17 = IP address; original address hidden
+ * VALUE_36 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
  */
 
 /*
  * Request
  * POST /service/voting/api/v1/get_team_sizes HTTP/1.1
  * host: live-as-sky-test.xyqaq.cn
- * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
- * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
- * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-real-ip: IP_17 // IP address; variable IP_17 (same token means same original value)
+ * x-forwarded-for: IP_17 // IP address; variable IP_17 (same token means same original value)
+ * remote-host: IP_17 // IP address; variable IP_17 (same token means same original value)
  * x-forwarded-proto: https
  * x-forwarded-port: 443
  * content-length: 183
  * user-agent: Sky-Live-com.tgc.sky.win/0.32.9.381093 (System Product Name; win 10.0.19045; zh-Hans)
- * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * x-session-id: b939a6fa-a6cc-4d87-8aa7-82414d13f5cc // UUIDv4 replacement; identical original UUIDs share this value globally
  * content-type: application/json
  * trace-id: UAMyfaj
- * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
- * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
- * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
- * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * user-id: d2a61425-4a1b-4869-a71f-debb825406e5 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * session: VALUE_36 // Sensitive value hidden; variable VALUE_36 (same token means same original value)
+ * x-user-id: d2a61425-4a1b-4869-a71f-debb825406e5 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * x-session-token: VALUE_36 // Sensitive value hidden; variable VALUE_36 (same token means same original value)
  * x-sky-level-id: 3057325709
  * 
  * Captured request-body metadata:
@@ -33,9 +31,9 @@
  */
 // Request
 {
-    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "user": "d2a61425-4a1b-4869-a71f-debb825406e5", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "user_id": "d2a61425-4a1b-4869-a71f-debb825406e5", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "session": "VALUE_36", // Sensitive value hidden; variable VALUE_36 (same token means same original value)
     "vote_groups": [
         "donature_sculpture_2026"
     ]

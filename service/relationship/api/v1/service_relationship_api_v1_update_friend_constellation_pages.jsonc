@@ -1,0 +1,101 @@
+/*
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_9 = IP address; original address hidden
+ * VALUE_7 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ */
+
+/*
+ * Request
+ * POST /service/relationship/api/v1/update_friend_constellation_pages HTTP/1.1
+ * host: live-as-sky-test.xyqaq.cn
+ * x-real-ip: IP_9 // IP address; variable IP_9 (same token means same original value)
+ * x-forwarded-for: IP_9 // IP address; variable IP_9 (same token means same original value)
+ * remote-host: IP_9 // IP address; variable IP_9 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 482
+ * user-agent: Sky-Live-com.tgc.sky.win/0.32.1.365186 (System Product Name; win 10.0.19045; zh-Hans)
+ * x-session-id: b939a6fa-a6cc-4d87-8aa7-82414d13f5cc // UUIDv4 replacement; identical original UUIDs share this value globally
+ * content-type: application/json
+ * trace-id: 4
+ * user-id: d2a61425-4a1b-4869-a71f-debb825406e5 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * session: VALUE_7 // Sensitive value hidden; variable VALUE_7 (same token means same original value)
+ * x-user-id: d2a61425-4a1b-4869-a71f-debb825406e5 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * x-session-token: VALUE_7 // Sensitive value hidden; variable VALUE_7 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 482
+ */
+// Request
+{
+    "user": "d2a61425-4a1b-4869-a71f-debb825406e5", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "user_id": "d2a61425-4a1b-4869-a71f-debb825406e5", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "session": "VALUE_7", // Sensitive value hidden; variable VALUE_7 (same token means same original value)
+    "pages": [
+        {
+            "name": "",
+            "friends": [
+                {
+                    "friend_id": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+                    "constellation_node_index": 0
+                }
+            ]
+        },
+        {
+            "name": "",
+            "friends": []
+        },
+        {
+            "name": "",
+            "friends": []
+        },
+        {
+            "name": "",
+            "friends": []
+        },
+        {
+            "name": "",
+            "friends": []
+        },
+        {
+            "name": "",
+            "friends": []
+        },
+        {
+            "name": "",
+            "friends": []
+        },
+        {
+            "name": "",
+            "friends": []
+        },
+        {
+            "name": "",
+            "friends": []
+        },
+        {
+            "name": "",
+            "friends": []
+        }
+    ]
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Wed, 21 Jan 2026 06:14:18 GMT
+ * content-type: application/json; charset=utf-8
+ * content-length: 16
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 16
+ */
+// Response
+{
+    "status": "OK"
+}

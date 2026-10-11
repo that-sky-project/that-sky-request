@@ -1,0 +1,74 @@
+/*
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_2 = IP address; original address hidden
+ * VALUE_6 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ */
+
+/*
+ * Request
+ * POST /service/social-feed/api/v1/create HTTP/1.1
+ * host: live-as-sky-test.xyqaq.cn
+ * x-real-ip: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * x-forwarded-for: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * remote-host: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 565
+ * user-agent: Sky-Live-com.tgc.sky.win/0.32.1.365186 (83DE; win 10.0.22631; zh-Hans)
+ * x-session-id: 18891247-ff05-4fa7-a028-9d615e004730 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * content-type: application/json
+ * trace-id: 3M6TufV
+ * user-id: 6d4b2006-0b6b-4c2f-8333-9ff544863ddb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * session: VALUE_6 // Sensitive value hidden; variable VALUE_6 (same token means same original value)
+ * x-user-id: 6d4b2006-0b6b-4c2f-8333-9ff544863ddb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * x-session-token: VALUE_6 // Sensitive value hidden; variable VALUE_6 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 565
+ */
+// Request
+{
+    "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "user_id": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "session": "VALUE_6", // Sensitive value hidden; variable VALUE_6 (same token means same original value)
+    "pool_type": "RecordingCandle",
+    "pool_name": "CandleSpace",
+    "message": "标题",
+    "private": false,
+    "comments_enabled": true,
+    "tags": [
+        "none"
+    ],
+    "extra_data": {
+        "pos": "(17.22,0.135,-8.212)",
+        "ori": "(0,-0.711,0,0.703)",
+        "scale": "(1,1,1)",
+        "resource_id": "dd60a855-64c2-46ab-9d39-cd4d62f1879d", // UUIDv4 replacement; identical original UUIDs share this value globally
+        "prompt_used": "",
+        "sub_type": 0,
+        "chunk_count": 15,
+        "player_0_uuid": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+        "user_id": "e4a4f491-5275-40cf-8cc3-9b287c8cbd9e" // UUIDv4 replacement; identical original UUIDs share this value globally
+    }
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 22 Jan 2026 01:36:53 GMT
+ * content-type: text/plain; charset=utf-8
+ * content-length: 86
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 86
+ */
+// Response
+{
+    "result": "success",
+    "social_feed_id": "105fd240-f6f9-4f84-9074-c6ccc2a765e8:297aeafa" // UUIDv4 replacement; original composite suffix retained
+}

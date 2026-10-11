@@ -1,0 +1,160 @@
+/*
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_11 = IP address; original address hidden
+ * VALUE_18 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_12 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_19 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_20 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_15 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_21 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_22 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ */
+
+/*
+ * Request
+ * POST /account/auth/create HTTP/1.1
+ * host: live-as-sky-test.xyqaq.cn
+ * x-real-ip: IP_11 // IP address; variable IP_11 (same token means same original value)
+ * x-forwarded-for: IP_11 // IP address; variable IP_11 (same token means same original value)
+ * remote-host: IP_11 // IP address; variable IP_11 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 739
+ * user-agent: Sky-Live-com.tgc.sky.android/0.32.2.365939 (OPPO PJG110; android 34.0.0; zh)
+ * x-session-id: 0bc70337-0971-4238-ac85-c59953fcc1d7 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * content-type: application/json
+ * trace-id: LRrGrAT
+ * x-sky-install-source: com.android.vending
+ * x-sky-build-access-key: VALUE_18 // Sensitive value hidden; variable VALUE_18 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 739
+ */
+// Request
+{
+    "install_license": "",
+    "type": "Local",
+    "device_name": "小雨Oppo",
+    "device_token": "VALUE_12", // Sensitive value hidden; variable VALUE_12 (same token means same original value)
+    "production": false,
+    "tos_version": 4,
+    "device_key": "VALUE_19", // Sensitive value hidden; variable VALUE_19 (same token means same original value)
+    "sig_ts": 1770922053,
+    "sig": "VALUE_20", // Sensitive value hidden; variable VALUE_20 (same token means same original value)
+    "request_recovery_token": true,
+    "hashes": [
+        1135420871,
+        3278488245,
+        3343069416,
+        697052631,
+        2084101456,
+        3230520735,
+        2862836767,
+        2800003423,
+        1631895066,
+        4115622663,
+        3482958274,
+        2755794839,
+        2261054885,
+        997608129,
+        4289683175,
+        2093290016,
+        985236781,
+        4081232643,
+        1796835836,
+        3163265594,
+        1238400182,
+        1683264279,
+        4116407909,
+        3239572463,
+        1810499009,
+        360214524,
+        3661381049,
+        2387379720,
+        1550689788,
+        494663582,
+        2954385764,
+        178158103,
+        2207902296,
+        2365512913,
+        2808461692
+    ],
+    "integrity": true
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 12 Feb 2026 18:47:35 GMT
+ * content-type: application/json
+ * content-length: 1093
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 1093
+ */
+// Response
+{
+    "authinfo": {
+        "user": "75923f6f-5c30-4c17-a21b-6e03c9e52217", // UUIDv4 replacement; identical original UUIDs share this value globally
+        "device": "71de2cb8-b679-4536-b990-66eebaa0807b", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+        "key": "VALUE_15", // Sensitive value hidden; variable VALUE_15 (same token means same original value)
+        "recovery_token": "VALUE_21" // Sensitive value hidden; variable VALUE_21 (same token means same original value)
+    },
+    "session": "VALUE_22", // Sensitive value hidden; variable VALUE_22 (same token means same original value)
+    "resource_list": [
+        "device_capabilities",
+        "userdata",
+        "set_friends",
+        "set_friend_statues",
+        "online_friends",
+        "set_rank",
+        "currency",
+        "forge_rates",
+        "motd",
+        "outfit_defs",
+        "achievements",
+        "achievement_stats",
+        "relationship_defs",
+        "questionnaires",
+        "event_schedule",
+        "set_world_quests",
+        "iap_list",
+        "invite_list",
+        "unlocks",
+        "get_shop",
+        "spirit_shops",
+        "collectibles",
+        "wing_buffs",
+        "gift_messages",
+        "set_app_badge_number",
+        "get_consumable_defs",
+        "get_consumables",
+        "get_buff_defs",
+        "get_buffs",
+        "get_lootboxes",
+        "checkpoints",
+        "generic_shop_defs",
+        "external_account_friends",
+        "serendipity_matches",
+        "get_star_tag_defs",
+        "status_unlocks",
+        "free_gifts",
+        "get_map_defs",
+        "achievement_defs",
+        "achievement_stats_tracking",
+        "event_currency_defs",
+        "infractions",
+        "get_user_profile",
+        "emote_sequences",
+        "video_defs",
+        "radiance_spawn_defs",
+        "messages"
+    ],
+    "external_links": [],
+    "player_badge_type": -1
+}

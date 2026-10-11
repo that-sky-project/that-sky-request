@@ -1,78 +1,71 @@
 /*
- * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
- * Repeated variable names indicate identical original values; different names of the same type mean different values.
- * IP_1 = IP address; original address hidden
- * UUID_1 = UUID-form identifier; original UUID hidden
- * UUID_2 = UUID-form identifier; original UUID hidden
- * VALUE_1 = non-UUID sensitive value; original value hidden
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_12 = IP address; original address hidden
+ * VALUE_45 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
  */
 
 /*
  * Request
  * POST /account/set_checkpoint HTTP/1.1
  * host: live-as-sky-test.xyqaq.cn
- * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
- * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
- * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-real-ip: IP_12 // IP address; variable IP_12 (same token means same original value)
+ * x-forwarded-for: IP_12 // IP address; variable IP_12 (same token means same original value)
+ * remote-host: IP_12 // IP address; variable IP_12 (same token means same original value)
  * x-forwarded-proto: https
  * x-forwarded-port: 443
- * content-length: 204
- * user-agent: Sky-Live-com.tgc.sky.win/0.32.9.381093 (System Product Name; win 10.0.19045; zh-Hans)
- * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-length: 243
+ * user-agent: Sky-Live-com.tgc.sky.win/0.32.2.365286 (83DE; win 10.0.22631; zh-Hans)
+ * x-session-id: 18891247-ff05-4fa7-a028-9d615e004730 // UUIDv4 replacement; identical original UUIDs share this value globally
  * content-type: application/json
- * trace-id: GUcF82T
- * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
- * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
- * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
- * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
- * x-sky-level-id: 3057325709
+ * trace-id: V1jPwPr
+ * user-id: 6d4b2006-0b6b-4c2f-8333-9ff544863ddb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * session: VALUE_45 // Sensitive value hidden; variable VALUE_45 (same token means same original value)
+ * x-user-id: 6d4b2006-0b6b-4c2f-8333-9ff544863ddb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * x-session-token: VALUE_45 // Sensitive value hidden; variable VALUE_45 (same token means same original value)
+ * x-sky-level-id: 2477345666
  * 
  * Captured request-body metadata:
  * captured body type: json
- * body size: 204
+ * body size: 243
  */
 // Request
 {
-    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
-    "level_id": 3057325709,
-    "level_hash": 8719,
-    "bst_id": 0,
-    "states": []
+    "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "user_id": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "session": "VALUE_45", // Sensitive value hidden; variable VALUE_45 (same token means same original value)
+    "level_id": 2477345666,
+    "level_hash": 28809,
+    "bst_id": 1828,
+    "states": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+    ]
 }
 
 /*
  * Response
  * HTTP/1.1 200 OK
- * date: Sat, 11 Apr 2026 20:35:39 GMT
+ * date: Mon, 23 Feb 2026 12:08:02 GMT
  * content-type: application/json; charset=utf-8
- * content-length: 2239
- * connection: keep-alive
+ * content-length: 11502
  * server: nginx/1.14.2
  * 
  * Captured response-body metadata:
  * captured body type: json
- * body size: 2239
+ * body size: 11502
  */
 // Response
 {
     "checkpoints": [
         {
-            "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-            "level_id": 3057325709,
-            "level_hash": 8719,
-            "bst_id": 0,
-            "states": [],
-            "updated_at": "2026-04-11T20:35:39.228Z",
-            "updated_ts": 1775939739,
-            "is_furthest": false,
-            "arc_order": 22
-        },
-        {
-            "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
             "level_id": 2477345666,
-            "level_hash": 11,
+            "level_hash": 28809,
             "bst_id": 1828,
             "states": [
                 false,
@@ -82,69 +75,315 @@
                 false,
                 false
             ],
-            "updated_at": "2026-04-02T19:30:53.005Z",
-            "updated_ts": 1775158253,
             "is_furthest": false,
-            "arc_order": 19
+            "arc_order": 18
         },
         {
-            "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-            "level_id": 2358907137,
-            "level_hash": 46677,
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 1759178769,
+            "level_hash": 6115,
+            "bst_id": 2797,
+            "states": [
+                true,
+                true,
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 42
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 1638008359,
+            "level_hash": 5673,
             "bst_id": 0,
             "states": [
                 false,
-                false,
-                false,
-                false,
-                false,
-                false,
                 false
             ],
-            "updated_at": "2026-04-02T19:29:58.844Z",
-            "updated_ts": 1775158198,
+            "is_furthest": false,
+            "arc_order": 35
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 3526133726,
+            "level_hash": 0,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 0
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 1012996619,
+            "level_hash": 30940,
+            "bst_id": 0,
+            "states": [],
             "is_furthest": true,
-            "arc_order": 69
+            "arc_order": 99
         },
         {
-            "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-            "level_id": 2350532176,
-            "level_hash": 61965,
-            "bst_id": 3103,
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 263580627,
+            "level_hash": 14111,
+            "bst_id": 4760,
             "states": [
                 false,
+                false,
+                false,
+                true
+            ],
+            "is_furthest": false,
+            "arc_order": 40
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2179549040,
+            "level_hash": 21976,
+            "bst_id": 1005,
+            "states": [
                 false,
                 false,
                 false,
                 false
             ],
-            "updated_at": "2026-03-23T23:58:38.372Z",
-            "updated_ts": 1774310318,
             "is_furthest": false,
-            "arc_order": 23
+            "arc_order": 37
         },
         {
-            "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2720691892,
+            "level_hash": 10338,
+            "bst_id": 807,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 29
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
             "level_id": 2839585646,
-            "level_hash": 1392,
-            "bst_id": 474,
+            "level_hash": 8348,
+            "bst_id": 141,
+            "states": [
+                true,
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 27
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 164626931,
+            "level_hash": 1858,
+            "bst_id": 87,
+            "states": [
+                false,
+                true,
+                false,
+                false,
+                false,
+                false,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "is_furthest": false,
+            "arc_order": 26
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 1323747701,
+            "level_hash": 44590,
+            "bst_id": 252,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 44
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2920756220,
+            "level_hash": 13029,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 53
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 817373972,
+            "level_hash": 13719,
+            "bst_id": 177,
+            "states": [
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 54
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 649101397,
+            "level_hash": 26014,
+            "bst_id": 455,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 45
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 507487826,
+            "level_hash": 46712,
+            "bst_id": 89,
+            "states": [
+                false,
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 41
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 530831471,
+            "level_hash": 62079,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 82
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 1612139937,
+            "level_hash": 44579,
+            "bst_id": 2526,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 43
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 3203226771,
+            "level_hash": 45086,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 89
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 4182564783,
+            "level_hash": 33224,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 88
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 748712866,
+            "level_hash": 52161,
+            "bst_id": 513,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 3
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 1887730855,
+            "level_hash": 47323,
+            "bst_id": 260,
+            "states": [
+                true,
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                true
+            ],
+            "is_furthest": false,
+            "arc_order": 5
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2050064391,
+            "level_hash": 29261,
+            "bst_id": 226,
+            "states": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 6
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 3884142720,
+            "level_hash": 50622,
+            "bst_id": 17,
             "states": [
                 true,
                 true,
                 true,
-                false,
-                false
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
             ],
-            "updated_at": "2024-12-04T03:26:51.825Z",
-            "updated_ts": 1733282811,
             "is_furthest": false,
-            "arc_order": 28
+            "arc_order": 4
         },
         {
-            "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-            "level_id": 164626931,
-            "level_hash": 5887,
-            "bst_id": 1225,
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 1241316521,
+            "level_hash": 41480,
+            "bst_id": 225,
             "states": [
                 true,
                 true,
@@ -159,15 +398,129 @@
                 true,
                 true
             ],
-            "updated_at": "2024-12-04T03:24:45.838Z",
-            "updated_ts": 1733282685,
             "is_furthest": false,
-            "arc_order": 27
+            "arc_order": 7
         },
         {
-            "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-            "level_id": 1190972738,
-            "level_hash": 42201,
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 1649439303,
+            "level_hash": 56321,
+            "bst_id": 2704,
+            "states": [
+                true,
+                true,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 1
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 261807733,
+            "level_hash": 64312,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 98
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2251284635,
+            "level_hash": 49056,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 97
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 567986524,
+            "level_hash": 64297,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 96
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 3437135515,
+            "level_hash": 55906,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 95
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 3479786579,
+            "level_hash": 19123,
+            "bst_id": 292,
+            "states": [
+                true,
+                false,
+                true,
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 94
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 1705189686,
+            "level_hash": 23103,
+            "bst_id": 37,
+            "states": [
+                false,
+                true,
+                true
+            ],
+            "is_furthest": false,
+            "arc_order": 93
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 3110721718,
+            "level_hash": 47979,
+            "bst_id": 529,
+            "states": [
+                true,
+                false,
+                true
+            ],
+            "is_furthest": false,
+            "arc_order": 92
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2307461961,
+            "level_hash": 65141,
             "bst_id": 0,
             "states": [
                 false,
@@ -177,16 +530,14 @@
                 false,
                 false
             ],
-            "updated_at": "2023-12-15T00:43:53.18Z",
-            "updated_ts": 1702601033,
             "is_furthest": false,
-            "arc_order": 26
+            "arc_order": 74
         },
         {
-            "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-            "level_id": 1649439303,
-            "level_hash": 35588,
-            "bst_id": 2418,
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2358907137,
+            "level_hash": 46677,
+            "bst_id": 82,
             "states": [
                 true,
                 true,
@@ -194,34 +545,416 @@
                 true,
                 true,
                 true,
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 68
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 864432821,
+            "level_hash": 1745,
+            "bst_id": 341,
+            "states": [
                 true,
                 true,
                 false,
-                true,
+                true
+            ],
+            "is_furthest": false,
+            "arc_order": 59
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 1147491976,
+            "level_hash": 44559,
+            "bst_id": 315,
+            "states": [
                 true,
                 false,
-                true,
-                true,
-                true,
-                true,
                 true,
                 false
             ],
-            "updated_at": "2023-10-10T11:18:43.235Z",
-            "updated_ts": 1696936723,
             "is_furthest": false,
-            "arc_order": 1
+            "arc_order": 55
         },
         {
-            "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
-            "level_id": 3526133726,
-            "level_hash": 56006,
-            "bst_id": 792,
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 3057325709,
+            "level_hash": 20623,
+            "bst_id": 3358,
             "states": [],
-            "updated_at": "2023-10-10T11:01:44.286Z",
-            "updated_ts": 1696935704,
             "is_furthest": false,
-            "arc_order": 0
+            "arc_order": 21
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 312004957,
+            "level_hash": 32660,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 20
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2350532176,
+            "level_hash": 10471,
+            "bst_id": 1143,
+            "states": [
+                true,
+                false,
+                false,
+                false,
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 22
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 3244931597,
+            "level_hash": 47596,
+            "bst_id": 0,
+            "states": [
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 19
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2159642775,
+            "level_hash": 30719,
+            "bst_id": 873,
+            "states": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 28
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 417578099,
+            "level_hash": 34734,
+            "bst_id": 11,
+            "states": [
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 52
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 4158956653,
+            "level_hash": 8866,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 65
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 1597085778,
+            "level_hash": 16790,
+            "bst_id": 218,
+            "states": [
+                true,
+                false,
+                true
+            ],
+            "is_furthest": false,
+            "arc_order": 61
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2650921869,
+            "level_hash": 8768,
+            "bst_id": 487,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 60
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2360310676,
+            "level_hash": 8695,
+            "bst_id": 32,
+            "states": [
+                false,
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 39
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 1844499196,
+            "level_hash": 56149,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 38
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 571720490,
+            "level_hash": 26307,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 36
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 1104763408,
+            "level_hash": 41815,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 17
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 3317260872,
+            "level_hash": 59362,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 32
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 3429122502,
+            "level_hash": 43675,
+            "bst_id": 1416,
+            "states": [
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 23
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 170656205,
+            "level_hash": 62182,
+            "bst_id": 0,
+            "states": [
+                false,
+                false,
+                false,
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 58
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2081768701,
+            "level_hash": 8454,
+            "bst_id": 2008,
+            "states": [
+                false,
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 34
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2899790755,
+            "level_hash": 15371,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 81
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2518601,
+            "level_hash": 58837,
+            "bst_id": 0,
+            "states": [
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 69
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 128844448,
+            "level_hash": 52244,
+            "bst_id": 407,
+            "states": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                true
+            ],
+            "is_furthest": false,
+            "arc_order": 33
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 4070111637,
+            "level_hash": 32328,
+            "bst_id": 269,
+            "states": [
+                true
+            ],
+            "is_furthest": false,
+            "arc_order": 56
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 4133595729,
+            "level_hash": 6925,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 31
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2418094228,
+            "level_hash": 29139,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 73
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 3082753918,
+            "level_hash": 29556,
+            "bst_id": 0,
+            "states": [
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 72
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2060214456,
+            "level_hash": 63265,
+            "bst_id": 1006,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 76
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2394719185,
+            "level_hash": 39761,
+            "bst_id": 167,
+            "states": [
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 24
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 295816905,
+            "level_hash": 34509,
+            "bst_id": 43,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 70
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 3051518728,
+            "level_hash": 51969,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 78
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 3516048122,
+            "level_hash": 386,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 57
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 1190972738,
+            "level_hash": 30214,
+            "bst_id": 0,
+            "states": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "is_furthest": false,
+            "arc_order": 25
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 214074919,
+            "level_hash": 38241,
+            "bst_id": 0,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 79
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 1694829989,
+            "level_hash": 6843,
+            "bst_id": 110,
+            "states": [],
+            "is_furthest": false,
+            "arc_order": 83
+        },
+        {
+            "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+            "level_id": 2267185542,
+            "level_hash": 19315,
+            "bst_id": 156,
+            "states": [
+                true,
+                true,
+                true,
+                true
+            ],
+            "is_furthest": false,
+            "arc_order": 75
         }
     ]
 }

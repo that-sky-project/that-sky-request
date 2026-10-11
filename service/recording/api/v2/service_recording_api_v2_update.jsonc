@@ -1,0 +1,510 @@
+/*
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_2 = IP address; original address hidden
+ * VALUE_6 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ */
+
+/*
+ * Request
+ * POST /service/recording/api/v2/update HTTP/1.1
+ * host: live-as-sky-test.xyqaq.cn
+ * x-real-ip: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * x-forwarded-for: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * remote-host: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 3486
+ * user-agent: Sky-Live-com.tgc.sky.win/0.32.1.365186 (83DE; win 10.0.22631; zh-Hans)
+ * x-session-id: 18891247-ff05-4fa7-a028-9d615e004730 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * content-type: application/json
+ * trace-id: 2h73X0p
+ * user-id: 6d4b2006-0b6b-4c2f-8333-9ff544863ddb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * session: VALUE_6 // Sensitive value hidden; variable VALUE_6 (same token means same original value)
+ * x-user-id: 6d4b2006-0b6b-4c2f-8333-9ff544863ddb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * x-session-token: VALUE_6 // Sensitive value hidden; variable VALUE_6 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 3486
+ */
+// Request
+{
+    "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "user_id": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "session": "VALUE_6", // Sensitive value hidden; variable VALUE_6 (same token means same original value)
+    "chunk": 11,
+    "recording_id": "dd60a855-64c2-46ab-9d39-cd4d62f1879d", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "recording_data": {
+        "ver": 1,
+        "stid": "6c96a625-6d02-45b4-bab5-e916888330fd", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+        "ssu": "",
+        "ppsp": "(0,0.135,0)",
+        "chln": 4,
+        "chet": 48.04229,
+        "stfs": [
+            "ps",
+            "or",
+            "tor",
+            "v",
+            "hd",
+            "rv",
+            "fv",
+            "fp",
+            "gl",
+            "rs",
+            "glo",
+            "crp",
+            "rnp",
+            "sfp",
+            "post",
+            "co",
+            "cs",
+            "pa",
+            "pst",
+            "pest",
+            "fop",
+            "fl",
+            "fr",
+            "ta",
+            "bid0",
+            "bid1",
+            "bid2",
+            "bc",
+            "mel",
+            "gmi",
+            "gmsi",
+            "igk",
+            "ig",
+            "isf",
+            "ifbs",
+            "it",
+            "oslsa",
+            "oslsb",
+            "oslsc",
+            "oslsd",
+            "oslse",
+            "oslsf",
+            "oslsg",
+            "oslsh",
+            "oslsi",
+            "oslsj"
+        ],
+        "strs": [
+            "",
+            "ModifyReactionCape01",
+            "AnticipationR",
+            "LeapFromRunR1",
+            "JumpDescendR1",
+            "JumpLandR",
+            "LeapFromRunL1"
+        ],
+        "plyr": [
+            {
+                "phdr": {
+                    "twbc": 151,
+                    "wbc": 49,
+                    "ecm": 1,
+                    "ec": 6,
+                    "e": 6,
+                    "it": 255,
+                    "in": 0,
+                    "iss": false,
+                    "sn": 0,
+                    "vip": 0,
+                    "csp": -1,
+                    "id": "4d1170f1-99ba-44ff-872a-b32da8460711" // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+                },
+                "sts": [
+                    [
+                        4111,
+                        "22.12,0.75,-14.52",
+                        "2.38,-0.01,0",
+                        "2.38,-0.01,0",
+                        "0.2,-0.05,-0.97",
+                        1
+                    ],
+                    [
+                        15,
+                        "0.02,-0.04,-0.1",
+                        "-0.24,0.01,-0",
+                        "-0.24,0.01,0",
+                        "0,-0.59,0"
+                    ],
+                    [
+                        15,
+                        "0.05,-0.09,-0.19",
+                        "-0.55,0.01,-0",
+                        "-0.55,0.01,0",
+                        "0.38,0.13,0.24"
+                    ],
+                    [
+                        15,
+                        "0.14,0.03,-0.23",
+                        "-0.74,0.01,-0",
+                        "-0.74,0.01,0",
+                        "0.74,1.02,0.84"
+                    ],
+                    [
+                        15,
+                        "0.25,0.08,-0.23",
+                        "-0.68,0.01,-0",
+                        "-0.68,0.01,0",
+                        "1.08,0.17,1.04"
+                    ],
+                    [
+                        15,
+                        "0.42,0.09,-0.24",
+                        "-0.55,0.01,-0",
+                        "-0.55,0.01,0",
+                        "1.8,0.14,0.46"
+                    ],
+                    [
+                        15,
+                        "0.6,0.09,-0.3",
+                        "-0.43,0.01,-0",
+                        "-0.43,0.01,0",
+                        "1.28,0.02,0.43"
+                    ],
+                    [
+                        15,
+                        "0.66,0.09,-0.33",
+                        "-0.38,0.01,-0",
+                        "-0.38,0.01,0",
+                        "-0.2,0.05,0.97"
+                    ],
+                    [
+                        1,
+                        "0.65,0.08,-0.32"
+                    ],
+                    [
+                        1,
+                        "0.66,0.08,-0.33"
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        4096,
+                        -0.08
+                    ],
+                    [
+                        4096,
+                        -0.28
+                    ],
+                    [
+                        4096,
+                        -0.5
+                    ],
+                    [
+                        4096,
+                        -0.7
+                    ],
+                    [
+                        4096,
+                        -0.9
+                    ],
+                    [
+                        4104,
+                        "-0.35,0.69,1.07",
+                        0
+                    ],
+                    [
+                        15,
+                        "0.6,0.08,-0.28",
+                        "-0.46,0.01,-0",
+                        "-0.46,0.01,0",
+                        "-1.18,0.1,1.7"
+                    ],
+                    [
+                        15,
+                        "0.46,0.08,-0.18",
+                        "-1.02,0.01,-0",
+                        "-1.02,0.01,0",
+                        "-1.73,-0.02,2.1"
+                    ],
+                    [
+                        15,
+                        "0.32,0.08,-0.06",
+                        "-1.57,0.01,-0",
+                        "-1.57,0.01,0",
+                        "-1.24,-0.01,2.17"
+                    ],
+                    [
+                        15,
+                        "0.23,0.07,0.1",
+                        "-1.92,0.01,-0",
+                        "-1.92,0.01,0",
+                        "-0.92,0,2.74"
+                    ],
+                    [
+                        15,
+                        "0.17,0.01,0.29",
+                        "-2.13,0.01,-0",
+                        "-2.13,0.01,0",
+                        "-0.74,-1.41,3.07"
+                    ],
+                    [
+                        15,
+                        "0.12,-0.16,0.53",
+                        "-2.15,-0,-0",
+                        "-2.15,-0,0",
+                        "-0.75,-0.1,3.43"
+                    ],
+                    [
+                        15,
+                        "0.06,0.01,0.87",
+                        "-2.17,0,-0",
+                        "-2.17,0,0",
+                        "-0.85,1.51,4.42"
+                    ],
+                    [
+                        15,
+                        "0.01,0.12,1.22",
+                        "-2.1,0.01,-0",
+                        "-2.1,0.01,0",
+                        "-0.26,0.92,4.42"
+                    ],
+                    [
+                        15,
+                        "0.05,0.18,1.55",
+                        "-1.98,0.01,-0",
+                        "-1.98,0.01,0",
+                        "0.44,0.33,4.3"
+                    ],
+                    [
+                        15,
+                        "0.13,0.17,1.88",
+                        "-1.92,0.01,-0",
+                        "-1.92,0.01,0",
+                        "0.84,-0.25,4.16"
+                    ],
+                    [
+                        9,
+                        "0.25,0.11,2.19",
+                        "1.03,-0.84,4.08"
+                    ],
+                    [
+                        9,
+                        "0.37,0.03,2.5",
+                        "0.89,0.25,4.02"
+                    ],
+                    [
+                        15,
+                        "0.48,0.03,2.83",
+                        "-2.1,-0.14,-0.01",
+                        "-2.1,-0.14,0",
+                        "0.75,-0.15,4.39"
+                    ],
+                    [
+                        15,
+                        "0.53,-0.03,3.17",
+                        "-2.51,-0.16,-0.05",
+                        "-2.51,-0.16,0",
+                        "-0.92,-0.59,1.44"
+                    ],
+                    [
+                        15,
+                        "0.43,-0.12,3.13",
+                        "-2.95,-0.07,-0.04",
+                        "-2.95,-0.07,0",
+                        "-1.33,-1.08,0.87"
+                    ],
+                    [
+                        15,
+                        "0.27,-0.17,3.18",
+                        "-3.21,-0.02,-0.02",
+                        "-3.21,-0.02,0",
+                        "-2.29,-0.19,1.77"
+                    ],
+                    [
+                        15,
+                        "0.06,-0.21,3.32",
+                        "-3.02,-0.07,0",
+                        "-3.02,-0.07,0",
+                        "-1.87,-0.24,2.94"
+                    ],
+                    [
+                        15,
+                        "-0.06,-0.25,3.55",
+                        "-2.66,-0.1,0.02",
+                        "-2.66,-0.1,0",
+                        "-1.03,-0.38,3.36"
+                    ],
+                    [
+                        15,
+                        "-0.08,-0.31,3.78",
+                        "-2.22,-0.14,0.04",
+                        "-2.22,-0.14,0",
+                        "0.11,-0.74,3.33"
+                    ],
+                    [
+                        15,
+                        "-0.02,-0.36,3.94",
+                        "-1.65,-0.06,0.04",
+                        "-1.65,-0.06,0",
+                        "0.69,-0.19,1.99"
+                    ],
+                    [
+                        15,
+                        "0.11,-0.37,4.01",
+                        "-1.25,-0.02,0.02",
+                        "-1.25,-0.02,0",
+                        "1.34,-0.01,1.49"
+                    ],
+                    [
+                        15,
+                        "0.32,-0.3,4.02",
+                        "-1.09,-0,0.01",
+                        "-1.09,-0,0",
+                        "2.84,2.24,0.51"
+                    ],
+                    [
+                        15,
+                        "0.63,-0.12,3.98",
+                        "-1.02,0,0",
+                        "-1.02,0,0",
+                        "2.84,1.66,0.51"
+                    ]
+                ],
+                "anms": [
+                    [
+                        25,
+                        0.26,
+                        1,
+                        true
+                    ],
+                    [
+                        19,
+                        0.81,
+                        1,
+                        false
+                    ],
+                    [
+                        3,
+                        1.97,
+                        2
+                    ],
+                    [
+                        3,
+                        2.05,
+                        3
+                    ],
+                    [
+                        3,
+                        2.52,
+                        4
+                    ],
+                    [
+                        3,
+                        2.62,
+                        5
+                    ],
+                    [
+                        3,
+                        3.62,
+                        6
+                    ]
+                ],
+                "ofts": [
+                    [
+                        2345624805942,
+                        -3,
+                        -0.04,
+                        3,
+                        3691343236,
+                        4290017146,
+                        1229053584,
+                        2954671753,
+                        3800884691,
+                        1532093990,
+                        3680499229,
+                        3599986885,
+                        2805583371,
+                        1470462579
+                    ],
+                    [
+                        513,
+                        1.1,
+                        2245279351
+                    ],
+                    [
+                        513,
+                        0.41,
+                        4290017146
+                    ]
+                ]
+            }
+        ]
+    }
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 22 Jan 2026 01:36:27 GMT
+ * content-type: text/plain; charset=utf-8
+ * content-length: 590
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 590
+ */
+// Response
+{
+    "status": "OK",
+    "recording_id": "dd60a855-64c2-46ab-9d39-cd4d62f1879d", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "link": "s3://live.radiance.thatgamecompany.com/ugc/6d4b2006-0b6b-4c2f-8333-9ff544863ddb/dd60a855-64c2-46ab-9d39-cd4d62f1879d.ndjson", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+    "seek_table": {
+        "0": {
+            "end": 836,
+            "start": 0
+        },
+        "1": {
+            "end": 1684,
+            "start": 838
+        },
+        "10": {
+            "end": 29301,
+            "start": 26685
+        },
+        "11": {
+            "end": 32480,
+            "start": 29303
+        },
+        "2": {
+            "end": 5883,
+            "start": 1686
+        },
+        "3": {
+            "end": 9304,
+            "start": 5885
+        },
+        "4": {
+            "end": 12208,
+            "start": 9306
+        },
+        "5": {
+            "end": 15198,
+            "start": 12210
+        },
+        "6": {
+            "end": 18813,
+            "start": 15200
+        },
+        "7": {
+            "end": 21164,
+            "start": 18815
+        },
+        "8": {
+            "end": 23590,
+            "start": 21166
+        },
+        "9": {
+            "end": 26683,
+            "start": 23592
+        }
+    }
+}

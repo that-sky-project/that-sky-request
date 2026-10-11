@@ -1,0 +1,56 @@
+/*
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_6 = IP address; original address hidden
+ * VALUE_4 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ */
+
+/*
+ * Request
+ * POST /service/social-feed/api/v2/get_daily_free HTTP/1.1
+ * host: live-as-sky-test.xyqaq.cn
+ * x-real-ip: IP_6 // IP address; variable IP_6 (same token means same original value)
+ * x-forwarded-for: IP_6 // IP address; variable IP_6 (same token means same original value)
+ * remote-host: IP_6 // IP address; variable IP_6 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 173
+ * user-agent: Sky-Live-com.tgc.sky.win/0.32.5.370662 (System Product Name; win 10.0.19045; zh-Hans)
+ * x-session-id: b939a6fa-a6cc-4d87-8aa7-82414d13f5cc // UUIDv4 replacement; identical original UUIDs share this value globally
+ * content-type: application/json
+ * trace-id: exRCPN
+ * user-id: d2a61425-4a1b-4869-a71f-debb825406e5 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * session: VALUE_4 // Sensitive value hidden; variable VALUE_4 (same token means same original value)
+ * x-user-id: d2a61425-4a1b-4869-a71f-debb825406e5 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * x-session-token: VALUE_4 // Sensitive value hidden; variable VALUE_4 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 173
+ */
+// Request
+{
+    "user": "d2a61425-4a1b-4869-a71f-debb825406e5", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "user_id": "d2a61425-4a1b-4869-a71f-debb825406e5", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "session": "VALUE_4", // Sensitive value hidden; variable VALUE_4 (same token means same original value)
+    "pool_type": "SharedSpaceCandle"
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Mon, 23 Mar 2026 23:56:53 GMT
+ * content-type: application/json; charset=utf-8
+ * content-length: 39
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 39
+ */
+// Response
+{
+    "result": "success",
+    "time_til_next": 0
+}

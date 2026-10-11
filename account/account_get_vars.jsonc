@@ -1,26 +1,25 @@
 /*
- * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
- * Repeated variable names indicate identical original values; different names of the same type mean different values.
- * IP_1 = IP address; original address hidden
- * UUID_1 = UUID-form identifier; original UUID hidden
- * VALUE_1 = non-UUID sensitive value; original value hidden
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_10 = IP address; original address hidden
+ * VALUE_9 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
  */
 
 /*
  * Request
  * POST /account/get_vars HTTP/1.1
  * host: <REDACTED_HOST>
- * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
- * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
- * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-real-ip: IP_10 // IP address; variable IP_10 (same token means same original value)
+ * x-forwarded-for: IP_10 // IP address; variable IP_10 (same token means same original value)
+ * remote-host: IP_10 // IP address; variable IP_10 (same token means same original value)
  * x-forwarded-proto: https
  * x-forwarded-port: 443
  * content-length: 2
  * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
- * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * x-session-id: be3d606d-c9e5-4504-b360-a8e51f4150f3 // UUIDv4 replacement; identical original UUIDs share this value globally
  * content-type: application/json
  * trace-id: luMmO1H
- * x-sky-build-access-key: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-build-access-key: VALUE_9 // Sensitive value hidden; variable VALUE_9 (same token means same original value)
  * x-sky-level-id: 3526133726
  * 
  * Captured request-body metadata:
@@ -70,7 +69,7 @@
         "beta_mode": 0,
         "c_max_friend_pages": 6,
         "candle_forge_cost": 150,
-        "carl": "06609880-a195-44c1-81f9-7958e0199efa",
+        "carl": "633a142e-1d13-400f-96e2-c9db8551c06b", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
         "challenge_attempts_to_rank": 10,
         "challenge_reward_easy": 13,
         "challenge_reward_hard": 90,
@@ -92,7 +91,7 @@
         "color_large_plants_wax_count": 26,
         "color_medium_plants_wax_count": 10,
         "color_small_plants_wax_count": 3,
-        "dailyquestgiver": "472f7381-4a46-4c05-84d8-66a777556066",
+        "dailyquestgiver": "a2134a37-d8e8-482a-8050-75dca9b788a2", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
         "diving_time": 60,
         "dye_menu_scroll_increments": 1,
         "dye_pickup_cap": 3960,
@@ -235,6 +234,6 @@
         "trust_validate_level": 1,
         "video_afk_time": 2400,
         "websocket_enabled": 1,
-        "welcome": "8d1a1882-cfb8-4c00-a134-daa449388799"
+        "welcome": "7c698874-8cfc-4fbf-92a1-9505b4687866" // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
     }
 }

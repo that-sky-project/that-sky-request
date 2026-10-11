@@ -1,0 +1,284 @@
+/*
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_2 = IP address; original address hidden
+ * VALUE_6 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_12 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ */
+
+/*
+ * Request
+ * POST /service/recording/api/v2/create HTTP/1.1
+ * host: live-as-sky-test.xyqaq.cn
+ * x-real-ip: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * x-forwarded-for: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * remote-host: IP_2 // IP address; variable IP_2 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 1163
+ * user-agent: Sky-Live-com.tgc.sky.win/0.32.1.365186 (83DE; win 10.0.22631; zh-Hans)
+ * x-session-id: 18891247-ff05-4fa7-a028-9d615e004730 // UUIDv4 replacement; identical original UUIDs share this value globally
+ * content-type: application/json
+ * trace-id: Gw6Tkas
+ * user-id: 6d4b2006-0b6b-4c2f-8333-9ff544863ddb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * session: VALUE_6 // Sensitive value hidden; variable VALUE_6 (same token means same original value)
+ * x-user-id: 6d4b2006-0b6b-4c2f-8333-9ff544863ddb // UUIDv4 replacement; identical original UUIDs share this value globally
+ * x-session-token: VALUE_6 // Sensitive value hidden; variable VALUE_6 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 1163
+ */
+// Request
+{
+    "user": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "user_id": "6d4b2006-0b6b-4c2f-8333-9ff544863ddb", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "session": "VALUE_6", // Sensitive value hidden; variable VALUE_6 (same token means same original value)
+    "recording_id": "VALUE_12", // Sensitive value hidden; variable VALUE_12 (same token means same original value)
+    "level_id": "CandleSpace",
+    "pool_type": "RecordingCandle",
+    "recording_data": {
+        "ver": 1,
+        "stid": "6c96a625-6d02-45b4-bab5-e916888330fd", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+        "ssu": "",
+        "ppsp": "(0,0.135,0)",
+        "chln": 4,
+        "chet": 4.0005713,
+        "stfs": [
+            "ps",
+            "or",
+            "tor",
+            "v",
+            "hd",
+            "rv",
+            "fv",
+            "fp",
+            "gl",
+            "rs",
+            "glo",
+            "crp",
+            "rnp",
+            "sfp",
+            "post",
+            "co",
+            "cs",
+            "pa",
+            "pst",
+            "pest",
+            "fop",
+            "fl",
+            "fr",
+            "ta",
+            "bid0",
+            "bid1",
+            "bid2",
+            "bc",
+            "mel",
+            "gmi",
+            "gmsi",
+            "igk",
+            "ig",
+            "isf",
+            "ifbs",
+            "it",
+            "oslsa",
+            "oslsb",
+            "oslsc",
+            "oslsd",
+            "oslse",
+            "oslsf",
+            "oslsg",
+            "oslsh",
+            "oslsi",
+            "oslsj"
+        ],
+        "strs": [],
+        "plyr": [
+            {
+                "phdr": {
+                    "twbc": 151,
+                    "wbc": 49,
+                    "ecm": 1,
+                    "ec": 6,
+                    "e": 6,
+                    "it": 255,
+                    "in": 0,
+                    "iss": false,
+                    "sn": 0,
+                    "vip": 0,
+                    "csp": -1,
+                    "id": "4d1170f1-99ba-44ff-872a-b32da8460711" // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+                },
+                "sts": [
+                    [
+                        7,
+                        "17.22,0.37,-8.21",
+                        "-1.19,-0,-0",
+                        "-1.19,-0,0"
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ],
+                    [
+                        0
+                    ]
+                ],
+                "ofts": [
+                    [
+                        2345624805942,
+                        -3,
+                        -0.04,
+                        3,
+                        3691343236,
+                        4290017146,
+                        1229053584,
+                        2954671753,
+                        3800884691,
+                        1532093990,
+                        3680499229,
+                        3599986885,
+                        2805583371,
+                        1470462579
+                    ]
+                ]
+            }
+        ]
+    }
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 22 Jan 2026 01:35:38 GMT
+ * content-type: text/plain; charset=utf-8
+ * content-length: 244
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 244
+ */
+// Response
+{
+    "status": "OK",
+    "recording_id": "dd60a855-64c2-46ab-9d39-cd4d62f1879d", // UUIDv4 replacement; identical original UUIDs share this value globally
+    "link": "s3://live.radiance.thatgamecompany.com/ugc/6d4b2006-0b6b-4c2f-8333-9ff544863ddb/dd60a855-64c2-46ab-9d39-cd4d62f1879d.ndjson", // Embedded UUIDs regenerated; matching originals keep the same UUIDv4 globally
+    "seek_table": {
+        "0": {
+            "end": 836,
+            "start": 0
+        }
+    }
+}

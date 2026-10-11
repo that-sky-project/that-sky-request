@@ -1,26 +1,24 @@
 /*
- * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
- * Repeated variable names indicate identical original values; different names of the same type mean different values.
- * IP_1 = IP address; original address hidden
- * UUID_1 = UUID-form identifier; original UUID hidden
- * UUID_2 = UUID-form identifier; original UUID hidden
- * VALUE_1 = non-UUID sensitive value; original value hidden
- * VALUE_2 = non-UUID sensitive value; original value hidden
- * VALUE_3 = non-UUID sensitive value; original value hidden
+ * Opaque aliases are shared across all generated files in this conversion run; original sensitive values are omitted.
+ * Repeated alias names indicate identical original values across files.
+ * IP_10 = IP address; original address hidden
+ * VALUE_8 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_31 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
+ * VALUE_32 = non-UUID sensitive value alias; original value hidden and alias reused across the conversion run
  */
 
 /*
  * Request
  * POST /account/find_previous_or_empty HTTP/1.1
  * host: <REDACTED_HOST>
- * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
- * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
- * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-real-ip: IP_10 // IP address; variable IP_10 (same token means same original value)
+ * x-forwarded-for: IP_10 // IP address; variable IP_10 (same token means same original value)
+ * remote-host: IP_10 // IP address; variable IP_10 (same token means same original value)
  * x-forwarded-proto: https
  * x-forwarded-port: 443
  * content-length: 258
  * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
- * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * x-session-id: be3d606d-c9e5-4504-b360-a8e51f4150f3 // UUIDv4 replacement; identical original UUIDs share this value globally
  * 
  * Captured request-body metadata:
  * captured body type: binary
@@ -33,7 +31,7 @@
 // Request
 {
     "type": "binary",
-    "data": "eyJ1c2VyIjoiVVVJRF8yIiwic2Vzc2lvbiI6IlZBTFVFXzEiLCJzZXJ2ZXJfdmVyc2lvbiI6NDM4LCJjbGllbnRfdmVyc2lvbiI6NTExOSwiZm9yY2VfZW1wdHkiOmZhbHNlLCJuZXRfZmxhZ3MiOjAsIm5ldF9leGNsdXNpdmVfZmxhZ3MiOjAsImxldmVsX2hhc2giOjQ0MDEyLCJxdWlja19yZWpvaW5fcGxheWVycyI6W10sInJlY2VudF9wbGF5ZXJzIjpbXX0=", // Base64 JSON payload sanitized and re-encoded
+    "data": "eyJ1c2VyIjoiNzE0YTY5ZWItZWJkMS00YmFhLWE3YzQtMTZkNjBlMzhiZWViIiwic2Vzc2lvbiI6IlZBTFVFXzgiLCJzZXJ2ZXJfdmVyc2lvbiI6NDM4LCJjbGllbnRfdmVyc2lvbiI6NTExOSwiZm9yY2VfZW1wdHkiOmZhbHNlLCJuZXRfZmxhZ3MiOjAsIm5ldF9leGNsdXNpdmVfZmxhZ3MiOjAsImxldmVsX2hhc2giOjQ0MDEyLCJxdWlja19yZWpvaW5fcGxheWVycyI6W10sInJlY2VudF9wbGF5ZXJzIjpbXX0=", // Base64 JSON payload sanitized and re-encoded
     "size": 258,
     "logged_size": 258,
     "truncated": false,
@@ -62,8 +60,8 @@
 {
     "uri": "129.146.120.185:5887",
     "move_ts": 1788453573,
-    "signature": "VALUE_2", // Sensitive value hidden; variable VALUE_2 (same token means same original value)
-    "sig": "VALUE_3", // Sensitive value hidden; variable VALUE_3 (same token means same original value)
+    "signature": "VALUE_31", // Sensitive value hidden; variable VALUE_31 (same token means same original value)
+    "sig": "VALUE_32", // Sensitive value hidden; variable VALUE_32 (same token means same original value)
     "ps_only": false,
     "platform_filter": 0
 }
