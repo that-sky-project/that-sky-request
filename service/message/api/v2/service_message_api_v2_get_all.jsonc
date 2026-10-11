@@ -68,7 +68,7 @@
                     "id": "6a7a9cae4a87829ec239ebc5",
                     "type": "update",
                     "from": "44e9f7e2-c9fb-4328-87d4-3544221856ce",
-                    "to": "ef20bad5-b52a-4e8f-9c7c-7537d9941d08",
+                    "to": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
                     "sent_at": 1786420398,
                     "seen_at": 1786496761,
                     "received_at": 1786420406,
@@ -88,7 +88,7 @@
                     "id": "6a7a9cae4a87829ec239ebc4",
                     "type": "event",
                     "from": "44e9f7e2-c9fb-4328-87d4-3544221856ce",
-                    "to": "ef20bad5-b52a-4e8f-9c7c-7537d9941d08",
+                    "to": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
                     "sent_at": 1786420398,
                     "seen_at": 1786496758,
                     "received_at": 1786420406,
@@ -108,7 +108,7 @@
                     "id": "6a7a9cae4a87829ec239ebc3",
                     "type": "event",
                     "from": "44e9f7e2-c9fb-4328-87d4-3544221856ce",
-                    "to": "ef20bad5-b52a-4e8f-9c7c-7537d9941d08",
+                    "to": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
                     "sent_at": 1786420398,
                     "seen_at": 1786496755,
                     "received_at": 1786420406,
@@ -128,7 +128,7 @@
                     "id": "6a7a9cae4a87829ec239ebc2",
                     "type": "misc",
                     "from": "44e9f7e2-c9fb-4328-87d4-3544221856ce",
-                    "to": "ef20bad5-b52a-4e8f-9c7c-7537d9941d08",
+                    "to": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
                     "has_attachments": true,
                     "sent_at": 1786420398,
                     "seen_at": 1786496737,
@@ -150,7 +150,7 @@
                     "id": "6a7a9cae4a87829ec239ebc1",
                     "type": "misc",
                     "from": "44e9f7e2-c9fb-4328-87d4-3544221856ce",
-                    "to": "ef20bad5-b52a-4e8f-9c7c-7537d9941d08",
+                    "to": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
                     "has_attachments": true,
                     "sent_at": 1786420398,
                     "seen_at": 1786496746,
