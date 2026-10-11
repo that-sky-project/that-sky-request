@@ -1,0 +1,138 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /account/trust/get_trust_group_defs HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 141
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: N7MJoXZ
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 141
+ * body logged_size: 141
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1" // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 03 Sep 2026 16:39:34 GMT
+ * content-type: text/plain; charset=utf-8
+ * content-length: 1166
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * cache-control: max-age=0, private, must-revalidate
+ * x-request-id: GNHdDPSMV6CNO90BwdiB
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 1166
+ * body logged_size: 1166
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "get_trust_group_defs": [
+        {
+            "activity_group": "player_eden_run_symmetric",
+            "category": "weekly",
+            "max": 200,
+            "global_max": 2500,
+            "multiplier": 0.5,
+            "cap_cadence": "weekly"
+        },
+        {
+            "activity_group": "player_gift",
+            "category": "immediate",
+            "max": -1,
+            "global_max": -1,
+            "multiplier": 1,
+            "cap_cadence": "uncapped"
+        },
+        {
+            "activity_group": "player_interaction",
+            "category": "daily",
+            "max": 250,
+            "global_max": 300,
+            "multiplier": 1,
+            "cap_cadence": "daily"
+        },
+        {
+            "activity_group": "player_unlock",
+            "category": "immediate",
+            "max": -1,
+            "global_max": -1,
+            "multiplier": 1,
+            "cap_cadence": "uncapped"
+        },
+        {
+            "activity_group": "spirit_companion",
+            "category": "immediate",
+            "max": 100,
+            "global_max": 100,
+            "multiplier": 1,
+            "cap_cadence": "daily"
+        },
+        {
+            "activity_group": "spirit_interaction",
+            "category": "daily",
+            "max": 5,
+            "global_max": 10,
+            "multiplier": 1,
+            "cap_cadence": "daily"
+        },
+        {
+            "activity_group": "spirit_quest_complete",
+            "category": "immediate",
+            "max": 500,
+            "global_max": 800,
+            "multiplier": 1,
+            "cap_cadence": "daily"
+        },
+        {
+            "activity_group": "spirit_unlock",
+            "category": "immediate",
+            "max": -1,
+            "global_max": -1,
+            "multiplier": 1,
+            "cap_cadence": "uncapped"
+        },
+        {
+            "activity_group": "zero_trust_group",
+            "category": "immediate",
+            "max": 0,
+            "global_max": 0,
+            "multiplier": 1,
+            "cap_cadence": "uncapped"
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /service/message/api/v1/mark_received HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 324
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.3.407106 (System Product Name; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: 
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 1509719447
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 324
+ * body logged_size: 324
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "messages": [
+        {
+            "id": "6a7a9cae4a87829ec239ebc5"
+        },
+        {
+            "id": "6a7a9cae4a87829ec239ebc4"
+        },
+        {
+            "id": "6a7a9cae4a87829ec239ebc3"
+        },
+        {
+            "id": "6a7a9cae4a87829ec239ebc2"
+        },
+        {
+            "id": "6a7a9cae4a87829ec239ebc1"
+        }
+    ]
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Tue, 11 Aug 2026 03:53:26 GMT
+ * content-type: application/json; charset=utf-8
+ * content-length: 444
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 444
+ * body logged_size: 444
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "status": "OK",
+    "messages": [
+        {
+            "payload": {
+                "headers": {
+                    "id": "6a7a9cae4a87829ec239ebc5",
+                    "received_at": 1786420406
+                }
+            }
+        },
+        {
+            "payload": {
+                "headers": {
+                    "id": "6a7a9cae4a87829ec239ebc4",
+                    "received_at": 1786420406
+                }
+            }
+        },
+        {
+            "payload": {
+                "headers": {
+                    "id": "6a7a9cae4a87829ec239ebc3",
+                    "received_at": 1786420406
+                }
+            }
+        },
+        {
+            "payload": {
+                "headers": {
+                    "id": "6a7a9cae4a87829ec239ebc2",
+                    "received_at": 1786420406
+                }
+            }
+        },
+        {
+            "payload": {
+                "headers": {
+                    "id": "6a7a9cae4a87829ec239ebc1",
+                    "received_at": 1786420406
+                }
+            }
+        }
+    ]
+}

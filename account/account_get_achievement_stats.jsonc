@@ -1,0 +1,329 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /account/get_achievement_stats HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 141
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: a
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 141
+ * body logged_size: 141
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1" // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 03 Sep 2026 16:39:21 GMT
+ * content-type: application/json; charset=utf-8
+ * content-length: 3440
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 3440
+ * body logged_size: 3440
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "achievement_stats": [
+        {
+            "type": "cape_change_count",
+            "value": 270,
+            "update": 1784306456
+        },
+        {
+            "type": "non_unique_high_five_count",
+            "value": 1,
+            "update": 1748432524
+        },
+        {
+            "type": "best_friend_count",
+            "value": 1,
+            "update": 1775065150
+        },
+        {
+            "type": "deepest_dive_depth",
+            "value": 1,
+            "update": 1779430568
+        },
+        {
+            "type": "visit_dawn_temple_exit",
+            "value": 1,
+            "update": 1750916651
+        },
+        {
+            "type": "neck_change_count",
+            "value": 211,
+            "update": 1765695586
+        },
+        {
+            "type": "avatar_charge_count",
+            "value": 40444.367,
+            "update": 1771328727
+        },
+        {
+            "type": "non_unique_hand_hold_count",
+            "value": 6,
+            "update": 1748433034
+        },
+        {
+            "type": "engine_activated_count",
+            "value": 3,
+            "update": 1751709589
+        },
+        {
+            "type": "wax_pickup_count",
+            "value": 2012,
+            "update": 1783709143
+        },
+        {
+            "type": "dawn_collectibles_collected_count",
+            "value": 2,
+            "update": 1748433693
+        },
+        {
+            "type": "highest_friendship_level",
+            "value": 1,
+            "update": 1750938240
+        },
+        {
+            "type": "fly_continuously_1_minute_count",
+            "value": 5,
+            "update": 1755370077
+        },
+        {
+            "type": "join_2_players_count",
+            "value": 156,
+            "update": 1775065360
+        },
+        {
+            "type": "emotes_used_count",
+            "value": 5,
+            "update": 1750938417
+        },
+        {
+            "type": "use_teleport_to_home_count",
+            "value": 41,
+            "update": 1775157959
+        },
+        {
+            "type": "hat_change_count",
+            "value": 18,
+            "update": 1765695586
+        },
+        {
+            "type": "join_6_players_count",
+            "value": 1,
+            "update": 1760357204
+        },
+        {
+            "type": "mask_change_count",
+            "value": 14,
+            "update": 1765695586
+        },
+        {
+            "type": "highest_carry_stack_count",
+            "value": 3,
+            "update": 1788189981
+        },
+        {
+            "type": "feet_change_count",
+            "value": 214,
+            "update": 1765695586
+        },
+        {
+            "type": "collectible_count",
+            "value": 8,
+            "update": 1751709345
+        },
+        {
+            "type": "hair_change_count",
+            "value": 176,
+            "update": 1771328941
+        },
+        {
+            "type": "horn_change_count",
+            "value": 214,
+            "update": 1765695586
+        },
+        {
+            "type": "light_candle_count",
+            "value": 255,
+            "update": 1783709040
+        },
+        {
+            "type": "join_1_player_count",
+            "value": 560,
+            "update": 1784306488
+        },
+        {
+            "type": "emotes_collected_count",
+            "value": 9,
+            "update": 1751709345
+        },
+        {
+            "type": "day_collectibles_collected_count",
+            "value": 4,
+            "update": 1750938104
+        },
+        {
+            "type": "prop_change_count",
+            "value": 225,
+            "update": 1775588647
+        },
+        {
+            "type": "non_unique_hug_count",
+            "value": 4,
+            "update": 1771399636
+        },
+        {
+            "type": "pants_change_count",
+            "value": 17,
+            "update": 1775061436
+        },
+        {
+            "type": "remote_avatar_charge_count",
+            "value": 15093.362,
+            "update": 1775065416
+        },
+        {
+            "type": "join_3_players_count",
+            "value": 31,
+            "update": 1775065150
+        },
+        {
+            "type": "dusk_collectibles_collected_count",
+            "value": 1,
+            "update": 1751709345
+        },
+        {
+            "type": "jellyfish_charge_count",
+            "value": 2,
+            "update": 1751779939
+        },
+        {
+            "type": "emote_with_player_count",
+            "value": 24,
+            "update": 1775845357
+        },
+        {
+            "type": "received_gift_count",
+            "value": 1,
+            "update": 1775845305
+        },
+        {
+            "type": "highest_flight_altitude",
+            "value": 1391.3861,
+            "update": 1770496820
+        },
+        {
+            "type": "forged_candle_count",
+            "value": 19,
+            "update": 1775588647
+        },
+        {
+            "type": "highest_cape_level",
+            "value": 4,
+            "update": 1751709445
+        },
+        {
+            "type": "join_5_players_count",
+            "value": 4,
+            "update": 1760357204
+        },
+        {
+            "type": "rain_collectibles_collected_count",
+            "value": 1,
+            "update": 1750938949
+        },
+        {
+            "type": "shoute_at_crab_count",
+            "value": 12,
+            "update": 1751709272
+        },
+        {
+            "type": "fly_continuously_2_minute_count",
+            "value": 2,
+            "update": 1755370136
+        },
+        {
+            "type": "rebirth_count",
+            "value": 1,
+            "update": 1751710767
+        },
+        {
+            "type": "darkstone_melted_count",
+            "value": 100,
+            "update": 1750938914
+        },
+        {
+            "type": "new_acquaintance_count",
+            "value": 18741,
+            "update": 1775845370
+        },
+        {
+            "type": "visit_stormy_event_count",
+            "value": 1,
+            "update": 1750937652
+        },
+        {
+            "type": "visit_day_koi_pond_count",
+            "value": 1,
+            "update": 1750938203
+        },
+        {
+            "type": "join_4_players_count",
+            "value": 18,
+            "update": 1775053590
+        },
+        {
+            "type": "fly_500_units_high_count",
+            "value": 1,
+            "update": 1751780022
+        },
+        {
+            "type": "bird_attach_count",
+            "value": 676,
+            "update": 1751780067
+        },
+        {
+            "type": "friend_count",
+            "value": 2,
+            "update": 1775065150
+        }
+    ]
+}

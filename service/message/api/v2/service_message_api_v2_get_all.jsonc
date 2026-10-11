@@ -1,0 +1,170 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /service/message/api/v2/get_all HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 156
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.3.407106 (System Product Name; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: 7ps9ulv
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 156
+ * body logged_size: 156
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "max_count": 32
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Wed, 12 Aug 2026 01:53:37 GMT
+ * content-type: application/json; charset=utf-8
+ * content-length: 1907
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 1907
+ * body logged_size: 1907
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "status": "OK",
+    "messages": [
+        {
+            "payload": {
+                "headers": {
+                    "id": "6a7a9cae4a87829ec239ebc5",
+                    "type": "update",
+                    "from": "44e9f7e2-c9fb-4328-87d4-3544221856ce",
+                    "to": "ef20bad5-b52a-4e8f-9c7c-7537d9941d08",
+                    "sent_at": 1786420398,
+                    "seen_at": 1786496761,
+                    "received_at": 1786420406,
+                    "expires_at": 1787641140
+                },
+                "subject": "34.0版本更新",
+                "properties": {
+                    "HasCurrencies": false,
+                    "HasLinks": false,
+                    "HasUnlocks": false
+                }
+            }
+        },
+        {
+            "payload": {
+                "headers": {
+                    "id": "6a7a9cae4a87829ec239ebc4",
+                    "type": "event",
+                    "from": "44e9f7e2-c9fb-4328-87d4-3544221856ce",
+                    "to": "ef20bad5-b52a-4e8f-9c7c-7537d9941d08",
+                    "sent_at": 1786420398,
+                    "seen_at": 1786496758,
+                    "received_at": 1786420406,
+                    "expires_at": 1787295540
+                },
+                "subject": "阳光节的湖畔时光",
+                "properties": {
+                    "HasCurrencies": false,
+                    "HasLinks": false,
+                    "HasUnlocks": false
+                }
+            }
+        },
+        {
+            "payload": {
+                "headers": {
+                    "id": "6a7a9cae4a87829ec239ebc3",
+                    "type": "event",
+                    "from": "44e9f7e2-c9fb-4328-87d4-3544221856ce",
+                    "to": "ef20bad5-b52a-4e8f-9c7c-7537d9941d08",
+                    "sent_at": 1786420398,
+                    "seen_at": 1786496755,
+                    "received_at": 1786420406,
+                    "expires_at": 1790924340
+                },
+                "subject": "致梵高",
+                "properties": {
+                    "HasCurrencies": false,
+                    "HasLinks": false,
+                    "HasUnlocks": false
+                }
+            }
+        },
+        {
+            "payload": {
+                "headers": {
+                    "id": "6a7a9cae4a87829ec239ebc2",
+                    "type": "misc",
+                    "from": "44e9f7e2-c9fb-4328-87d4-3544221856ce",
+                    "to": "ef20bad5-b52a-4e8f-9c7c-7537d9941d08",
+                    "has_attachments": true,
+                    "sent_at": 1786420398,
+                    "seen_at": 1786496737,
+                    "received_at": 1786420406,
+                    "redeemed_at": 1786496741,
+                    "expires_at": 1787036340
+                },
+                "subject": "已知问题",
+                "properties": {
+                    "HasCurrencies": true,
+                    "HasLinks": false,
+                    "HasUnlocks": false
+                }
+            }
+        },
+        {
+            "payload": {
+                "headers": {
+                    "id": "6a7a9cae4a87829ec239ebc1",
+                    "type": "misc",
+                    "from": "44e9f7e2-c9fb-4328-87d4-3544221856ce",
+                    "to": "ef20bad5-b52a-4e8f-9c7c-7537d9941d08",
+                    "has_attachments": true,
+                    "sent_at": 1786420398,
+                    "seen_at": 1786496746,
+                    "received_at": 1786420406,
+                    "redeemed_at": 1786496750,
+                    "expires_at": 1787986740
+                },
+                "subject": "感谢您的耐心等待",
+                "properties": {
+                    "HasCurrencies": true,
+                    "HasLinks": false,
+                    "HasUnlocks": false
+                }
+            }
+        }
+    ]
+}

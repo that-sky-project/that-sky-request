@@ -1,0 +1,1108 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ * UUID_3 = UUID-form identifier; original UUID hidden
+ * UUID_4 = UUID-form identifier; original UUID hidden
+ * UUID_5 = UUID-form identifier; original UUID hidden
+ * UUID_6 = UUID-form identifier; original UUID hidden
+ * UUID_7 = UUID-form identifier; original UUID hidden
+ * UUID_8 = UUID-form identifier; original UUID hidden
+ * UUID_9 = UUID-form identifier; original UUID hidden
+ * UUID_10 = UUID-form identifier; original UUID hidden
+ * UUID_11 = UUID-form identifier; original UUID hidden
+ * UUID_12 = UUID-form identifier; original UUID hidden
+ * UUID_13 = UUID-form identifier; original UUID hidden
+ * UUID_14 = UUID-form identifier; original UUID hidden
+ * UUID_15 = UUID-form identifier; original UUID hidden
+ * UUID_16 = UUID-form identifier; original UUID hidden
+ * UUID_17 = UUID-form identifier; original UUID hidden
+ * UUID_18 = UUID-form identifier; original UUID hidden
+ * UUID_19 = UUID-form identifier; original UUID hidden
+ * UUID_20 = UUID-form identifier; original UUID hidden
+ * UUID_21 = UUID-form identifier; original UUID hidden
+ * UUID_22 = UUID-form identifier; original UUID hidden
+ * UUID_23 = UUID-form identifier; original UUID hidden
+ * UUID_24 = UUID-form identifier; original UUID hidden
+ * UUID_25 = UUID-form identifier; original UUID hidden
+ * UUID_26 = UUID-form identifier; original UUID hidden
+ * UUID_27 = UUID-form identifier; original UUID hidden
+ * UUID_28 = UUID-form identifier; original UUID hidden
+ * UUID_29 = UUID-form identifier; original UUID hidden
+ * UUID_30 = UUID-form identifier; original UUID hidden
+ * UUID_31 = UUID-form identifier; original UUID hidden
+ * UUID_32 = UUID-form identifier; original UUID hidden
+ * UUID_33 = UUID-form identifier; original UUID hidden
+ * UUID_34 = UUID-form identifier; original UUID hidden
+ * UUID_35 = UUID-form identifier; original UUID hidden
+ * UUID_36 = UUID-form identifier; original UUID hidden
+ * UUID_37 = UUID-form identifier; original UUID hidden
+ * UUID_38 = UUID-form identifier; original UUID hidden
+ * UUID_39 = UUID-form identifier; original UUID hidden
+ * UUID_40 = UUID-form identifier; original UUID hidden
+ * UUID_41 = UUID-form identifier; original UUID hidden
+ * UUID_42 = UUID-form identifier; original UUID hidden
+ * UUID_43 = UUID-form identifier; original UUID hidden
+ * UUID_44 = UUID-form identifier; original UUID hidden
+ * UUID_45 = UUID-form identifier; original UUID hidden
+ * UUID_46 = UUID-form identifier; original UUID hidden
+ * UUID_47 = UUID-form identifier; original UUID hidden
+ * UUID_48 = UUID-form identifier; original UUID hidden
+ * UUID_49 = UUID-form identifier; original UUID hidden
+ * UUID_50 = UUID-form identifier; original UUID hidden
+ * UUID_51 = UUID-form identifier; original UUID hidden
+ * UUID_52 = UUID-form identifier; original UUID hidden
+ * UUID_53 = UUID-form identifier; original UUID hidden
+ * UUID_54 = UUID-form identifier; original UUID hidden
+ * UUID_55 = UUID-form identifier; original UUID hidden
+ * UUID_56 = UUID-form identifier; original UUID hidden
+ * UUID_57 = UUID-form identifier; original UUID hidden
+ * UUID_58 = UUID-form identifier; original UUID hidden
+ * UUID_59 = UUID-form identifier; original UUID hidden
+ * UUID_60 = UUID-form identifier; original UUID hidden
+ * UUID_61 = UUID-form identifier; original UUID hidden
+ * UUID_62 = UUID-form identifier; original UUID hidden
+ * UUID_63 = UUID-form identifier; original UUID hidden
+ * UUID_64 = UUID-form identifier; original UUID hidden
+ * UUID_65 = UUID-form identifier; original UUID hidden
+ * UUID_66 = UUID-form identifier; original UUID hidden
+ * UUID_67 = UUID-form identifier; original UUID hidden
+ * UUID_68 = UUID-form identifier; original UUID hidden
+ * UUID_69 = UUID-form identifier; original UUID hidden
+ * UUID_70 = UUID-form identifier; original UUID hidden
+ * UUID_71 = UUID-form identifier; original UUID hidden
+ * UUID_72 = UUID-form identifier; original UUID hidden
+ * UUID_73 = UUID-form identifier; original UUID hidden
+ * UUID_74 = UUID-form identifier; original UUID hidden
+ * UUID_75 = UUID-form identifier; original UUID hidden
+ * UUID_76 = UUID-form identifier; original UUID hidden
+ * UUID_77 = UUID-form identifier; original UUID hidden
+ * UUID_78 = UUID-form identifier; original UUID hidden
+ * UUID_79 = UUID-form identifier; original UUID hidden
+ * UUID_80 = UUID-form identifier; original UUID hidden
+ * UUID_81 = UUID-form identifier; original UUID hidden
+ * UUID_82 = UUID-form identifier; original UUID hidden
+ * UUID_83 = UUID-form identifier; original UUID hidden
+ * UUID_84 = UUID-form identifier; original UUID hidden
+ * UUID_85 = UUID-form identifier; original UUID hidden
+ * UUID_86 = UUID-form identifier; original UUID hidden
+ * UUID_87 = UUID-form identifier; original UUID hidden
+ * UUID_88 = UUID-form identifier; original UUID hidden
+ * UUID_89 = UUID-form identifier; original UUID hidden
+ * UUID_90 = UUID-form identifier; original UUID hidden
+ * UUID_91 = UUID-form identifier; original UUID hidden
+ * UUID_92 = UUID-form identifier; original UUID hidden
+ * UUID_93 = UUID-form identifier; original UUID hidden
+ * UUID_94 = UUID-form identifier; original UUID hidden
+ * UUID_95 = UUID-form identifier; original UUID hidden
+ * UUID_96 = UUID-form identifier; original UUID hidden
+ * UUID_97 = UUID-form identifier; original UUID hidden
+ * UUID_98 = UUID-form identifier; original UUID hidden
+ * UUID_99 = UUID-form identifier; original UUID hidden
+ * UUID_100 = UUID-form identifier; original UUID hidden
+ * UUID_101 = UUID-form identifier; original UUID hidden
+ * UUID_102 = UUID-form identifier; original UUID hidden
+ * UUID_103 = UUID-form identifier; original UUID hidden
+ * UUID_104 = UUID-form identifier; original UUID hidden
+ * UUID_105 = UUID-form identifier; original UUID hidden
+ * UUID_106 = UUID-form identifier; original UUID hidden
+ * UUID_107 = UUID-form identifier; original UUID hidden
+ * UUID_108 = UUID-form identifier; original UUID hidden
+ * UUID_109 = UUID-form identifier; original UUID hidden
+ * UUID_110 = UUID-form identifier; original UUID hidden
+ * UUID_111 = UUID-form identifier; original UUID hidden
+ * UUID_112 = UUID-form identifier; original UUID hidden
+ */
+
+/*
+ * Request
+ * POST /account/get_video_defs HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 141
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: 2qvfuPY
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 141
+ * body logged_size: 141
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1" // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 03 Sep 2026 16:39:32 GMT
+ * content-type: text/plain; charset=utf-8
+ * content-length: 36226
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * cache-control: max-age=0, private, must-revalidate
+ * x-request-id: GNHdDHfDfzQypG0IgAuB
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 36226
+ * body logged_size: 36226
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "video_defs": [
+        {
+            "name": "295filler",
+            "duration": 3600,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/295filler/SCA_295Filler_VLS_60m_EN_250521/SCA_295Filler_VLS_60m_EN_250521_tgc.m3u8",
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/295filler/SCA_295Filler_VLS_60m_EN_250520.mp4.vtt",
+            "has_translations": true
+        },
+        {
+            "name": "6yrsofsky",
+            "duration": 3600,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/6yrsofsky/SCA_6YrsOfSky_VLS_60m_EN_250521/SCA_6YrsOfSky_VLS_60m_EN_250521_tgc.m3u8",
+            "subtitle_base": "",
+            "has_translations": false
+        },
+        {
+            "name": "7th_celebration",
+            "duration": 397,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/7th_celebration/UUID_3/DOS7_Office_VLS_6m37s_EN_260611/DOS7_Office_VLS_6m37s_EN_260611_tgc.m3u8", // URL contains redacted identifier variables: UUID_3 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/7th_celebration/UUID_4/7thCelebration.vtt", // URL contains redacted identifier variables: UUID_4 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "Prop_AP27Projector_p1chapters_cc",
+            "duration": 4800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/Prop_AP27Projector_p1chapters_cc/UUID_5/EMBER_ChAll&CC_VLS_80m_EN_250828_srgb/EMBER_ChAll&CC_VLS_80m_EN_250828_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_5 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/Prop_AP27Projector_p1chapters_cc/UUID_6/EMBER_ChAll&CC.vtt", // URL contains redacted identifier variables: UUID_6 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "activity_kinetic",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/activity_kinetic/UUID_7/SCA26_KineticActivity_VLS_30m_EN_260630/SCA26_KineticActivity_VLS_30m_EN_260630_tgc.m3u8", // URL contains redacted identifier variables: UUID_7 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/activity_kinetic/UUID_8/activity_kinetic.vtt", // URL contains redacted identifier variables: UUID_8 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "activity_remix",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/activity_remix/UUID_9/SCA26_Acti-RemixRev_VLS_30m_260706/SCA26_Acti-RemixRev_VLS_30m_260706_tgc.m3u8", // URL contains redacted identifier variables: UUID_9 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/activity_remix/UUID_10/activity_remix_260708.vtt", // URL contains redacted identifier variables: UUID_10 (same tokens retain equality)
+            "has_translations": false
+        },
+        {
+            "name": "activity_tranquil",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/activity_tranquil/UUID_11/SCA26_TranquilActivity_VLS_30m_260630/SCA26_TranquilActivity_VLS_30m_260630_tgc.m3u8", // URL contains redacted identifier variables: UUID_11 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/activity_tranquil/UUID_12/activity_tranquil.vtt", // URL contains redacted identifier variables: UUID_12 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "art_of_sky_gallery",
+            "duration": 672,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/gallery2/DOS5_ArtGalleryInGame_K_240424/DOS5_ArtGalleryInGame_K_240424_tgc.m3u8",
+            "subtitle_base": "",
+            "has_translations": false
+        },
+        {
+            "name": "artb2_abyss_ashyui",
+            "duration": 110,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_abyss_ashyui/UUID_13/ARTB2_NFC_Abyss_AshYui_VLS_110s_2605/ARTB2_NFC_Abyss_AshYui_VLS_110s_2605_tgc.m3u8", // URL contains redacted identifier variables: UUID_13 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_abyss_ashyui/UUID_14/Abyss/artb2_-nfc-abyss-ash-yui_vls_110s_2605.vtt", // URL contains redacted identifier variables: UUID_14 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "artb2_aurora_ashyui",
+            "duration": 128,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_aurora_ashyui/UUID_15/ARTB2_NFC_Aurora_AshYui_VLS_128s_2605/ARTB2_NFC_Aurora_AshYui_VLS_128s_2605_tgc.m3u8", // URL contains redacted identifier variables: UUID_15 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_aurora_ashyui/UUID_16/Aurora/artb2_nfc_aurora_ashyui_vls_128s_260521.vtt", // URL contains redacted identifier variables: UUID_16 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "artb2_enchantment_ashyui",
+            "duration": 115,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_enchantment_ashyui/UUID_17/ARTB2_NFC_Enchantment_AshYui_VLS_115s_2605/ARTB2_NFC_Enchantment_AshYui_VLS_115s_2605_tgc.m3u8", // URL contains redacted identifier variables: UUID_17 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/%20artb2_enchantment_ashyui/UUID_18/Enchantment/artb2_nfc_enchantment_ashyui_vls_115s_2605.vtt", // URL contains redacted identifier variables: UUID_18 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "artb2_moments_ashyui",
+            "duration": 155,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_moments_ashyui/UUID_19/ARTB2_NFC_Moments_AshYui_VLS_155s_2605/ARTB2_NFC_Moments_AshYui_VLS_155s_2605_tgc.m3u8", // URL contains redacted identifier variables: UUID_19 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_moments_ashyui/UUID_20/Moments/ARTB2_-NFC-Moments-Ash_Yui_VLS_155s_260521.vtt", // URL contains redacted identifier variables: UUID_20 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "artb2_prophecy_ashyui",
+            "duration": 103,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_prophecy_ashyui/UUID_21/ARTB2_NFC_Prophecy_AshYui_VLS_103s_2605/ARTB2_NFC_Prophecy_AshYui_VLS_103s_2605_tgc.m3u8", // URL contains redacted identifier variables: UUID_21 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_prophecy_ashyui/UUID_22/Prophecy/ARTB2_-NFC-Prophecy-Ash_Yui_VLS_103s_2605.vtt", // URL contains redacted identifier variables: UUID_22 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "artb2_revival_ashyui",
+            "duration": 188,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_revival_ashyui/UUID_23/ARTB2_NFC_Revival_AshYui_VLS_188s_2605/ARTB2_NFC_Revival_AshYui_VLS_188s_2605_tgc.m3u8", // URL contains redacted identifier variables: UUID_23 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_revival_ashyui/UUID_24/Revival/ARTB2_-NFC-Revival-Ash_Yui_VLS_188s_260521.vtt", // URL contains redacted identifier variables: UUID_24 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "artb2_sanctuary_ashyui",
+            "duration": 103,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_sanctuary_ashyui/UUID_25/ARTB2_NFC_Sanctuary_AshYui_VLS_103s_2605/ARTB2_NFC_Sanctuary_AshYui_VLS_103s_2605_tgc.m3u8", // URL contains redacted identifier variables: UUID_25 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_sanctuary_ashyui/UUID_26/Sanctuary/ARTB2_-NFC-Sanctuary-Ash_Yui_VLS_103s_260521.vtt", // URL contains redacted identifier variables: UUID_26 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "artb2_tlp_ashyui",
+            "duration": 119,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/artb2_tlp_ashyui/UUID_27/ARTB2_NFC_TLP_AshYui_VLS_119s_2605/ARTB2_NFC_TLP_AshYui_VLS_119s_2605_tgc.m3u8", // URL contains redacted identifier variables: UUID_27 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/artb2_tlp_ashyui/UUID_28/TLP/artb2_nfc_tlp_ashyui_vls_119s_2605.vtt", // URL contains redacted identifier variables: UUID_28 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "artbook_signing",
+            "duration": 47,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/ArtBookSigning_VLS_47s_EN_2406/ArtBookSigning_VLS_47s_EN_2406_tgc.m3u8",
+            "subtitle_base": "",
+            "has_translations": false
+        },
+        {
+            "name": "aurora_concert_thank_you",
+            "duration": 60,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/aurora_concert_thank_you/ARTO_AuroraIntro_VLS_60s_2505/ARTO_AuroraIntro_VLS_60s_2505_tgc.m3u8",
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/aurora_concert_thank_you/AuroraIntro/ARTO_AuroraIntro_VLS_60s_2505.mp4.vtt",
+            "has_translations": true
+        },
+        {
+            "name": "awd26Locked*_activity_s31teaser",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_activity_s31teaser/UUID_29/SCA26_Acti-S31_VLS_30m_EN_2606/SCA26_Acti-S31_VLS_30m_EN_2606_tgc.m3u8", // URL contains redacted identifier variables: UUID_29 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_activity_s31teaser/UUID_30/activity_s31teaser_260706.vtt", // URL contains redacted identifier variables: UUID_30 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd26Locked*_show_p1",
+            "duration": 1950,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_show_p1/UUID_31/SCA26_AwdCeremony-P1_VLS_32m30s_EN_260706/SCA26_AwdCeremony-P1_VLS_32m30s_EN_260706_tgc.m3u8", // URL contains redacted identifier variables: UUID_31 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/%20awd26Locked*_show_p1/UUID_32/SCA26_Show_P1.vtt", // URL contains redacted identifier variables: UUID_32 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd26Locked*_show_p1_replay",
+            "duration": 1950,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_show_p1_replay/UUID_33/SCA26_AwdCeremony-replay-P1_VLS_32m30_EN_2607/SCA26_AwdCeremony-replay-P1_VLS_32m30_EN_2607_tgc.m3u8", // URL contains redacted identifier variables: UUID_33 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/%20awd26Locked*_show_p1/UUID_32/SCA26_Show_P1.vtt", // URL contains redacted identifier variables: UUID_32 (same tokens retain equality)
+            "has_translations": false
+        },
+        {
+            "name": "awd26Locked*_show_p2",
+            "duration": 1650,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_show_p2/UUID_34/SCA26_AwdCeremony-P2_VLS_27m30s_EN_260706/SCA26_AwdCeremony-P2_VLS_27m30s_EN_260706_tgc.m3u8", // URL contains redacted identifier variables: UUID_34 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/%20awd26Locked*_show_p2/UUID_35/SCA26_Show_P2.vtt", // URL contains redacted identifier variables: UUID_35 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd26Locked*_show_p2_replay",
+            "duration": 1650,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_show_p2_replay/UUID_36/SCA26_AwdCeremony-replay-P2_VLS_27m30_EN_2607/SCA26_AwdCeremony-replay-P2_VLS_27m30_EN_2607_tgc.m3u8", // URL contains redacted identifier variables: UUID_36 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/%20awd26Locked*_show_p2/UUID_35/SCA26_Show_P2.vtt", // URL contains redacted identifier variables: UUID_35 (same tokens retain equality)
+            "has_translations": false
+        },
+        {
+            "name": "awd26Locked*_win_a",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_win_a/UUID_37/SCA26_AwdWin-A_VLS_30m_EN_260617/SCA26_AwdWin-A_VLS_30m_EN_260617_tgc.m3u8", // URL contains redacted identifier variables: UUID_37 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_win_a/UUID_38/SCA26_AwdWin-A.vtt", // URL contains redacted identifier variables: UUID_38 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd26Locked*_win_b",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_win_b/UUID_39/SCA26_AwdWin-B_VLS_30m_EN_260617/SCA26_AwdWin-B_VLS_30m_EN_260617_tgc.m3u8", // URL contains redacted identifier variables: UUID_39 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_win_b/UUID_40/SCA26_AwdWin-B.vtt", // URL contains redacted identifier variables: UUID_40 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd26Locked*_win_c",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_win_c/UUID_41/SCA26_AwdWin-C_VLS_30m_EN_260706/SCA26_AwdWin-C_VLS_30m_EN_260706_tgc.m3u8", // URL contains redacted identifier variables: UUID_41 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_win_c/UUID_42/SCA26_AwdWin-C.vtt", // URL contains redacted identifier variables: UUID_42 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd26Locked*_win_d",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_win_d/UUID_43/SCA26_AwdWin-D_VLS_30m_EN_260617/SCA26_AwdWin-D_VLS_30m_EN_260617_tgc.m3u8", // URL contains redacted identifier variables: UUID_43 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_win_d/UUID_44/SCA26_AwdWin-D.vtt", // URL contains redacted identifier variables: UUID_44 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd26Locked*_win_e",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26Locked*_win_e/UUID_45/SCA26_AwdWin-E_VLS_30m_EN_260706/SCA26_AwdWin-E_VLS_30m_EN_260706_tgc.m3u8", // URL contains redacted identifier variables: UUID_45 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26Locked*_win_e/UUID_46/SCA26_AwdWin-E.vtt", // URL contains redacted identifier variables: UUID_46 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd26_countdown",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26_countdown/UUID_47/SCA26_Countdown_VLS_30m_2604/SCA26_Countdown_VLS_30m_2604_tgc.m3u8", // URL contains redacted identifier variables: UUID_47 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26_countdown/UUID_48/awd26_countdown_0618.vtt", // URL contains redacted identifier variables: UUID_48 (same tokens retain equality)
+            "has_translations": false
+        },
+        {
+            "name": "awd26_sel_a",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26_sel_a/UUID_49/SCA26_AwdSel-A_VLS_30m_EN_260623/SCA26_AwdSel-A_VLS_30m_EN_260623_tgc.m3u8", // URL contains redacted identifier variables: UUID_49 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26_sel_a/UUID_50/SCA26_AwdSel-A.vtt", // URL contains redacted identifier variables: UUID_50 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd26_sel_b",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26_sel_b/UUID_51/SCA26_AwdSel-B_VLS_30m_EN_260623/SCA26_AwdSel-B_VLS_30m_EN_260623_tgc.m3u8", // URL contains redacted identifier variables: UUID_51 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26_sel_b/UUID_52/%5Ben%5D%20SCA26_AwdSel-B_0701%20(1).vtt", // URL contains redacted identifier variables: UUID_52 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd26_sel_c",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26_sel_c/UUID_53/SCA26_AwdSel-C_VLS_30m_EN_260706/SCA26_AwdSel-C_VLS_30m_EN_260706_tgc.m3u8", // URL contains redacted identifier variables: UUID_53 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26_sel_c/UUID_54/SCA26_AwdSel-C.vtt", // URL contains redacted identifier variables: UUID_54 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd26_show_hilite",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd26_show_hilite/UUID_55/SCA26_Highlights_VLS_30m_EN_2607/SCA26_Highlights_VLS_30m_EN_2607_tgc.m3u8", // URL contains redacted identifier variables: UUID_55 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd26_show_hilite/UUID_56/SCA26_Highlights-ROUGH4_VLS_30m_2607.vtt", // URL contains redacted identifier variables: UUID_56 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd_corner_a",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_corner_a/UUID_57/SCA_AWDCornerA_VLS_30m_EN_250714/SCA_AWDCornerA_VLS_30m_EN_250714_tgc.m3u8", // URL contains redacted identifier variables: UUID_57 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_corner_a/UUID_58/awd_corner_a.vtt", // URL contains redacted identifier variables: UUID_58 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd_corner_b",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_corner_b/UUID_59/SCA_AWDCornerB_VLS_30m_EN_250724/SCA_AWDCornerB_VLS_30m_EN_250724_tgc.m3u8", // URL contains redacted identifier variables: UUID_59 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_corner_b/UUID_60/awd_corner_b.vtt", // URL contains redacted identifier variables: UUID_60 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd_countdown",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_countdown/UUID_61/SCA_AwdShow-Countdown_VLS_30m_2507/SCA_AwdShow-Countdown_VLS_30m_2507_tgc.m3u8", // URL contains redacted identifier variables: UUID_61 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_countdown/UUID_62/awd_countdown.vtt", // URL contains redacted identifier variables: UUID_62 (same tokens retain equality)
+            "has_translations": false
+        },
+        {
+            "name": "awd_countdown_replay",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_countdown/UUID_61/SCA_AwdShow-Countdown_VLS_30m_2507/SCA_AwdShow-Countdown_VLS_30m_2507_tgc.m3u8", // URL contains redacted identifier variables: UUID_61 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_countdown/UUID_62/awd_countdown.vtt", // URL contains redacted identifier variables: UUID_62 (same tokens retain equality)
+            "has_translations": false
+        },
+        {
+            "name": "awd_show_p1",
+            "duration": 2940,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_show_p1/UUID_63/awd_show_p1/awd_show_p1_tgc.m3u8", // URL contains redacted identifier variables: UUID_63 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_show_p1/UUID_64/awd_show_p1.vtt", // URL contains redacted identifier variables: UUID_64 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd_show_p1_replay",
+            "duration": 2940,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_show_p1_replay/UUID_65/SCA_AwdShowReplay-P1_VLS_49m_EN_250821/SCA_AwdShowReplay-P1_VLS_49m_EN_250821_tgc.m3u8", // URL contains redacted identifier variables: UUID_65 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_show_p1/UUID_64/awd_show_p1.vtt", // URL contains redacted identifier variables: UUID_64 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd_show_p2",
+            "duration": 2460,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_show_p2/UUID_66/SCA_AwdShow-V2-P2_250811/SCA_AwdShow-V2-P2_250811_tgc.m3u8", // URL contains redacted identifier variables: UUID_66 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_show_p2/UUID_67/awd_show_p2.vtt", // URL contains redacted identifier variables: UUID_67 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd_show_p2_replay",
+            "duration": 2460,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_show_p2_replay/UUID_68/SCA_AwdShowReplay-P2_VLS_41m_EN_250821/SCA_AwdShowReplay-P2_VLS_41m_EN_250821_tgc.m3u8", // URL contains redacted identifier variables: UUID_68 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_show_p2/UUID_67/awd_show_p2.vtt", // URL contains redacted identifier variables: UUID_67 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd_winners_a",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_winners_a/UUID_69/SCA_AWDWinners_A_VLS_30m_EN_250730/SCA_AWDWinners_A_VLS_30m_EN_250730_tgc.m3u8", // URL contains redacted identifier variables: UUID_69 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_winners_a/UUID_70/awd_winners_a.vtt", // URL contains redacted identifier variables: UUID_70 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "awd_winners_b",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/awd_winners_b/UUID_71/SCA_AWDWinners_B_VLS_30m_EN_250730/SCA_AWDWinners_B_VLS_30m_EN_250730_tgc.m3u8", // URL contains redacted identifier variables: UUID_71 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/awd_winners_b/UUID_72/awd_winners_b.vtt", // URL contains redacted identifier variables: UUID_72 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "cinema_trailer",
+            "duration": 47,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/SKYF_CinemaTrailer-Socials_VLS_47s_EN_2406/SKYF_CinemaTrailer-Socials_VLS_47s_EN_2406_tgc.m3u8",
+            "subtitle_base": "",
+            "has_translations": false
+        },
+        {
+            "name": "cmty_corner_a",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/cmty_corner_a/UUID_73/SCA_CMTYCornerA_VLS_30m_EN_250708/SCA_CMTYCornerA_VLS_30m_EN_250708_tgc.m3u8", // URL contains redacted identifier variables: UUID_73 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/cmty_corner_a/UUID_73/cmty_corner_a.vtt", // URL contains redacted identifier variables: UUID_73 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "cmty_corner_b",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/cmty_corner_b/UUID_74/SCA_CMTYCornerB-MM_VLS_30m_EN_250716/SCA_CMTYCornerB-MM_VLS_30m_EN_250716_tgc.m3u8", // URL contains redacted identifier variables: UUID_74 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/cmty_corner_b/UUID_74/cmty_corner_b.vtt", // URL contains redacted identifier variables: UUID_74 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "cmty_corner_c",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/cmty_corner_c/UUID_75/SCA_CMTYCornerC_VLS_30m_EN_250721/SCA_CMTYCornerC_VLS_30m_EN_250721_tgc.m3u8", // URL contains redacted identifier variables: UUID_75 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/cmty_corner_c/UUID_76/cmty_corner_c.vtt", // URL contains redacted identifier variables: UUID_76 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "cmty_corner_d",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/cmty_corner_d/UUID_77/SCA_CMTYCornerD-MM_VLS_30m_EN_250711/SCA_CMTYCornerD-MM_VLS_30m_EN_250711_tgc.m3u8", // URL contains redacted identifier variables: UUID_77 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/cmty_corner_d/UUID_77/cmty_corner_d.vtt", // URL contains redacted identifier variables: UUID_77 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "cocowoll_skyfest_animation",
+            "duration": 210,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/Cocowoll_SkyFest_Animation/Cocowoll_SkyFest_Animation_tgc.m3u8",
+            "subtitle_base": "",
+            "has_translations": false
+        },
+        {
+            "name": "creator_const_a",
+            "duration": 900,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/creator_const_a/UUID_78/SCA26_CC-A_VLS_30m_EN_2606/SCA26_CC-A_VLS_30m_EN_2606_tgc.m3u8", // URL contains redacted identifier variables: UUID_78 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/creator_const_a/UUID_79/SCA26_CC-A.vtt", // URL contains redacted identifier variables: UUID_79 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "creator_const_b",
+            "duration": 900,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/creator_const_b/UUID_80/SCA26_CC-B_VLS_30m_EN_2606/SCA26_CC-B_VLS_30m_EN_2606_tgc.m3u8", // URL contains redacted identifier variables: UUID_80 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/creator_const_b/UUID_81/SCA26_CC-B.vtt", // URL contains redacted identifier variables: UUID_81 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "dev_corner_a",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/dev_corner_a/UUID_82/SCA_DevCornerA_VLS_30m_EN_250721/SCA_DevCornerA_VLS_30m_EN_250721_tgc.m3u8", // URL contains redacted identifier variables: UUID_82 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/dev_corner_a/UUID_83/dev_corner_a.vtt", // URL contains redacted identifier variables: UUID_83 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "dev_corner_b",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/dev_corner_b/UUID_84/SCA_DevCornerB_VLS_30m_EN_250721/SCA_DevCornerB_VLS_30m_EN_250721_tgc.m3u8", // URL contains redacted identifier variables: UUID_84 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/dev_corner_b_0730/UUID_85/dev_corner_b_0730.vtt", // URL contains redacted identifier variables: UUID_85 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "dev_corner_c",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/dev_corner_c/UUID_86/SCA_DevCornerC_VLS_30m_EN_250721/SCA_DevCornerC_VLS_30m_EN_250721_tgc.m3u8", // URL contains redacted identifier variables: UUID_86 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/dev_corner_c_0730/UUID_87/dev_corner_c_0730.vtt", // URL contains redacted identifier variables: UUID_87 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "dev_corner_d",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/dev_corner_d/UUID_88/SCA_DevCornerD_VLS_30m_EN_250714/SCA_DevCornerD_VLS_30m_EN_250714_tgc.m3u8", // URL contains redacted identifier variables: UUID_88 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/dev_corner_d/UUID_89/dev_corner_d.vtt", // URL contains redacted identifier variables: UUID_89 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "ember_ch_1",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/ember_ch_1/UUID_90/SCA_Ember-Ch1_VLS_30m_EN_250724_felix_srgb/SCA_Ember-Ch1_VLS_30m_EN_250724_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_90 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/ember_ch_1/UUID_91/ember_ch_1_0804.vtt", // URL contains redacted identifier variables: UUID_91 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "ember_ch_2",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/ember_ch_2/UUID_92/SCA_Ember-Ch2_VLS_30m_EN_250724_felix_srgb/SCA_Ember-Ch2_VLS_30m_EN_250724_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_92 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/ember_ch_2/UUID_93/ember_ch_2_0804.vtt", // URL contains redacted identifier variables: UUID_93 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "ember_ch_3",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/ember_ch_3/UUID_94/SCA_Ember-Ch3_VLS_30m_EN_250729_felix_srgb/SCA_Ember-Ch3_VLS_30m_EN_250729_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_94 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/ember_ch_3/UUID_95/ember_ch_3_0804.vtt", // URL contains redacted identifier variables: UUID_95 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "ember_ch_4",
+            "duration": 1800,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/ember_ch_4/UUID_96/SCA_Ember-Ch4_VLS_30m_EN_250729_felix_srgb/SCA_Ember-Ch4_VLS_30m_EN_250729_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_96 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/ember_ch_4/UUID_97/ember_ch_4_0804.vtt", // URL contains redacted identifier variables: UUID_97 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "ember_ch_all",
+            "duration": 3600,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/ember_ch_all/UUID_98/SCA_Ember-ChAll_VLS_30m_EN_250731_felix_srgb/SCA_Ember-ChAll_VLS_30m_EN_250731_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_98 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/ember_ch_all/UUID_99/ember_ch_all.vtt", // URL contains redacted identifier variables: UUID_99 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "fifth_anniversary_trailer",
+            "duration": 61,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/DOS5_Trailer_Socials_VLS_60s_EN_2406/DOS5_Trailer_Socials_VLS_60s_EN_2406_tgc.m3u8",
+            "subtitle_base": "",
+            "has_translations": false
+        },
+        {
+            "name": "history_of_sky_gallery",
+            "duration": 492,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/gallery2/DOS5_HistoryOfSkyInGame_K_240502/DOS5_HistoryOfSkyInGame_K_240502_tgc.m3u8",
+            "subtitle_base": "",
+            "has_translations": false
+        },
+        {
+            "name": "hoc_tcp_logo",
+            "duration": 900,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/hoc_tcp_logo/UUID_100/HOC_TCP-logo_VLS_15m_2607/HOC_TCP-logo_VLS_15m_2607_tgc.m3u8", // URL contains redacted identifier variables: UUID_100 (same tokens retain equality)
+            "subtitle_base": "",
+            "has_translations": false
+        },
+        {
+            "name": "jenova_dev_talk",
+            "duration": 3392,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/DOS5_GDC-Jenova_VLS_56m_EN_240726/DOS5_GDC-Jenova_VLS_56m_EN_240726_tgc.m3u8",
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt-sf24/Jenova_Dev_Talk_Revised/DOS5_GDC-Jenova_VLS_58m_EN_240516.mp4.vtt",
+            "has_translations": true
+        },
+        {
+            "name": "jenova_keynote",
+            "duration": 2347,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/DOS5_InGame-Jenova-KeyN_VLS_39m7s_EN_240708c/DOS5_InGame-Jenova-KeyN_VLS_39m7s_EN_240708c_tgc.m3u8",
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt-sf24/Jenova_Keynote_Global/Jenova_Keynote_Global.mp4.vtt",
+            "has_translations": true
+        },
+        {
+            "name": "medpad_ch_1",
+            "duration": 1200,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/medpad_ch_1/UUID_101/S27_MedPad-Ch1_VLS_20m_EN_250729-001_felix_srgb/S27_MedPad-Ch1_VLS_20m_EN_250729-001_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_101 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/medpad_ch_1/UUID_102/medpad_ch_1_0804.vtt", // URL contains redacted identifier variables: UUID_102 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "medpad_ch_2",
+            "duration": 1200,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/medpad_ch_2/UUID_103/S27_MedPad-Ch2_VLS_20m_EN_250729-004_felix_srgb/S27_MedPad-Ch2_VLS_20m_EN_250729-004_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_103 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/medpad_ch_2/UUID_104/medpad_ch_2_0804.vtt", // URL contains redacted identifier variables: UUID_104 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "medpad_ch_3",
+            "duration": 1200,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/medpad_ch_3/UUID_105/S27_MedPad-Ch3_VLS_20m_EN_250729-002_felix_srgb/S27_MedPad-Ch3_VLS_20m_EN_250729-002_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_105 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/medpad_ch_3/UUID_106/medpad_ch_3_0804.vtt", // URL contains redacted identifier variables: UUID_106 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "medpad_ch_4",
+            "duration": 1200,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/medpad_ch_4/UUID_107/S27_MedPad-Ch4_VLS_20m_EN_250729-003_felix_srgb/S27_MedPad-Ch4_VLS_20m_EN_250729-003_felix_srgb_tgc.m3u8", // URL contains redacted identifier variables: UUID_107 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/medpad_ch_4/UUID_108/medpad_ch_4_0804.vtt", // URL contains redacted identifier variables: UUID_108 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "nic_dev_talk",
+            "duration": 3235,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/DOS5_GDC-Nic_VLS_54m_EN_240521/DOS5_GDC-Nic_VLS_54m_EN_240521_tgc.m3u8",
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt-sf24/Nic_Dev_Talk/DOS5_GDC-Nic_VLS_54m_EN_240521.mp4.vtt",
+            "has_translations": true
+        },
+        {
+            "name": "recruitment_amelia",
+            "duration": 105,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/Recrui_Amelia/Recrui_Amelia_tgc.m3u8",
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt-sf24/Recruitment_Videos/Amelia_Razinha/Recrui_Amelia_Razinha.mp4.vtt",
+            "has_translations": true
+        },
+        {
+            "name": "recruitment_dylan",
+            "duration": 83,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/Recrui_Dylan/Recrui_Dylan_tgc.m3u8",
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt-sf24/Recruitment_Videos/Dylan_Faust/Recrui_Dylan.mp4.vtt",
+            "has_translations": true
+        },
+        {
+            "name": "recruitment_jeremy",
+            "duration": 113,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/Recrui_Jeremy/Recrui_Jeremy_tgc.m3u8",
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt-sf24/Recruitment_Videos/Jeremy_Simpson/Recrui_Jeremy.mp4.vtt",
+            "has_translations": true
+        },
+        {
+            "name": "recruitment_kyle",
+            "duration": 95,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/Recrui_Kyle_0202/Recrui_Kyle_0202_tgc.m3u8",
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt-sf24/Recruitment_Videos/Kyle_Holdwick/Recrui_Kyle_0202.mp4.vtt",
+            "has_translations": true
+        },
+        {
+            "name": "recruitment_nick",
+            "duration": 93,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/Recrui_Nic_0926/Recrui_Nic_0926_tgc.m3u8",
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt-sf24/Recruitment_Videos/Nic_Oueijan/Recrui_Nic_0926.mp4.vtt",
+            "has_translations": true
+        },
+        {
+            "name": "recruitment_reika",
+            "duration": 93,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/Recrui_Reika_0214/Recrui_Reika_0214_tgc.m3u8",
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt-sf24/Recruitment_Videos/Reika_Yoshino/Recrui_Reika_0214.mp4.vtt",
+            "has_translations": true
+        },
+        {
+            "name": "recruitment_sam",
+            "duration": 115,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/Recrui_Sam_0609/Recrui_Sam_0609_tgc.m3u8",
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt-sf24/Recruitment_Videos/Sam_McGrath/Recrui_Sam_0609.mp4.vtt",
+            "has_translations": true
+        },
+        {
+            "name": "recruitment_samantha",
+            "duration": 96,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/Recrui_Samantha_0216/Recrui_Samantha_0216_tgc.m3u8",
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt-sf24/Recruitment_Videos/Samantha_Cruse/Recrui_Samantha_0216.mp4.vtt",
+            "has_translations": true
+        },
+        {
+            "name": "sam_dev_talk",
+            "duration": 3027,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/DOS5_GDC-Sam_VLS_50m_EN_240516/DOS5_GDC-Sam_VLS_50m_EN_240516_tgc.m3u8",
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt-sf24/Sam_Dev_Talk/Sam_GDC_Talk.vtt",
+            "has_translations": true
+        },
+        {
+            "name": "studio_stories_a",
+            "duration": 900,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/studio_stories_a/UUID_109/SCA26_SS-A_VLS_30m_EN_260630/SCA26_SS-A_VLS_30m_EN_260630_tgc.m3u8", // URL contains redacted identifier variables: UUID_109 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/studio_stories_a/UUID_110/SCA26_SS-A.vtt", // URL contains redacted identifier variables: UUID_110 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "studio_stories_b",
+            "duration": 900,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/studio_stories_b/UUID_111/SCA26_SS-B_VLS_30m_EN_260630/SCA26_SS-B_VLS_30m_EN_260630_tgc.m3u8", // URL contains redacted identifier variables: UUID_111 (same tokens retain equality)
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt/studio_stories_b/UUID_112/SCA26_SS-B.vtt", // URL contains redacted identifier variables: UUID_112 (same tokens retain equality)
+            "has_translations": true
+        },
+        {
+            "name": "yui_dev_talk",
+            "duration": 1870,
+            "location": "https://video.cdn.thatgamecompany.com/encoded/skyfest24/DOS5_InGame-YuiKeyN_VLS_31m12s_240524/DOS5_InGame-YuiKeyN_VLS_31m12s_240524_tgc.m3u8",
+            "subtitle_base": "https://video.cdn.thatgamecompany.com/vtt-sf24/Yui_Art_Talk/DOS5_InGame-YuiKeyN_VLS_31m12s_240524.mp4.vtt",
+            "has_translations": true
+        }
+    ],
+    "video_schedule": [
+        {
+            "channel": "aurora",
+            "event": "aurora_minigame_5",
+            "preshow_seconds": 0,
+            "playlist": [
+                "aurora_concert_thank_you"
+            ],
+            "loop": false,
+            "gap_seconds": 30,
+            "postshow_seconds": 10,
+            "silence_please": true
+        },
+        {
+            "channel": "cinema",
+            "event": "skyfest2026_awardshowday",
+            "preshow_seconds": 0,
+            "playlist": [
+                "awd26_sel_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26_sel_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26_sel_c",
+                "activity_tranquil",
+                "awd26_sel_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26_sel_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26_sel_c",
+                "activity_kinetic",
+                "awd26_sel_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26_sel_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26_sel_c",
+                "activity_tranquil",
+                "awd26_sel_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26_sel_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26_sel_c",
+                "activity_kinetic",
+                "awd26_sel_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26_sel_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26_sel_c",
+                "activity_tranquil",
+                "awd26_sel_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26_sel_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26_sel_c",
+                "activity_kinetic",
+                "awd26_sel_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26_sel_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26_sel_c",
+                "activity_tranquil",
+                "awd26_sel_a",
+                "awd26_sel_b",
+                "awd26_sel_c",
+                "awd26_countdown",
+                "awd26Locked*_show_p1",
+                "awd26Locked*_show_p2"
+            ],
+            "loop": false,
+            "gap_seconds": 0,
+            "postshow_seconds": 0,
+            "silence_please": false
+        },
+        {
+            "channel": "cinema",
+            "event": "skyfest2026_postshowday",
+            "preshow_seconds": 0,
+            "playlist": [
+                "awd26Locked*_activity_s31teaser",
+                "activity_remix",
+                "awd26Locked*_win_a",
+                "awd26Locked*_win_b",
+                "awd26Locked*_win_c",
+                "activity_tranquil",
+                "awd26Locked*_win_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26Locked*_win_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26Locked*_win_c",
+                "activity_kinetic",
+                "awd26Locked*_win_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26Locked*_win_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26Locked*_win_c",
+                "activity_tranquil",
+                "awd26Locked*_win_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26Locked*_win_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26Locked*_win_c",
+                "activity_kinetic",
+                "awd26Locked*_win_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26Locked*_win_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26Locked*_win_c",
+                "activity_tranquil",
+                "awd26Locked*_win_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26Locked*_win_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26Locked*_win_c",
+                "activity_kinetic",
+                "awd26Locked*_win_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26Locked*_win_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26Locked*_win_c",
+                "activity_tranquil",
+                "awd26Locked*_win_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26Locked*_win_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26Locked*_win_c",
+                "activity_kinetic"
+            ],
+            "loop": false,
+            "gap_seconds": 0,
+            "postshow_seconds": 0,
+            "silence_please": false
+        },
+        {
+            "channel": "cinema",
+            "event": "skyfest2026_w1",
+            "preshow_seconds": 0,
+            "playlist": [
+                "awd26_sel_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26_sel_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26_sel_c",
+                "activity_tranquil",
+                "awd26_sel_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26_sel_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26_sel_c",
+                "activity_kinetic"
+            ],
+            "loop": true,
+            "gap_seconds": 0,
+            "postshow_seconds": 0,
+            "silence_please": false
+        },
+        {
+            "channel": "cinema",
+            "event": "skyfest2026_w2",
+            "preshow_seconds": 0,
+            "playlist": [
+                "awd26Locked*_win_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26Locked*_win_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26Locked*_win_c",
+                "activity_tranquil",
+                "awd26Locked*_win_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26Locked*_win_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26Locked*_win_c",
+                "activity_kinetic"
+            ],
+            "loop": true,
+            "gap_seconds": 0,
+            "postshow_seconds": 0,
+            "silence_please": false
+        },
+        {
+            "channel": "cinema",
+            "event": "skyfest2026_w3",
+            "preshow_seconds": 0,
+            "playlist": [
+                "activity_tranquil",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26Locked*_win_d",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26Locked*_show_p1_replay",
+                "awd26Locked*_show_p2_replay",
+                "activity_kinetic",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26Locked*_win_e",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26Locked*_show_p1_replay",
+                "awd26Locked*_show_p2_replay"
+            ],
+            "loop": true,
+            "gap_seconds": 0,
+            "postshow_seconds": 0,
+            "silence_please": false
+        },
+        {
+            "channel": "creator",
+            "event": "creativehall_loop1",
+            "preshow_seconds": 0,
+            "playlist": [
+                "awd26Locked*_win_a",
+                "studio_stories_a",
+                "creator_const_a",
+                "awd26Locked*_win_b",
+                "studio_stories_b",
+                "creator_const_b",
+                "awd26Locked*_win_c",
+                "awd26_show_hilite",
+                "hoc_tcp_logo",
+                "hoc_tcp_logo",
+                "hoc_tcp_logo",
+                "hoc_tcp_logo",
+                "hoc_tcp_logo",
+                "hoc_tcp_logo",
+                "hoc_tcp_logo",
+                "hoc_tcp_logo",
+                "hoc_tcp_logo",
+                "hoc_tcp_logo",
+                "hoc_tcp_logo",
+                "hoc_tcp_logo"
+            ],
+            "loop": true,
+            "gap_seconds": 0,
+            "postshow_seconds": 0,
+            "silence_please": false
+        },
+        {
+            "channel": "projector_ember_p1",
+            "event": "projector_ember_p1",
+            "preshow_seconds": 0,
+            "playlist": [
+                "Prop_AP27Projector_p1chapters_cc"
+            ],
+            "loop": true,
+            "gap_seconds": 0,
+            "postshow_seconds": 10,
+            "silence_please": false
+        },
+        {
+            "channel": "te_ep_1_loop",
+            "event": "te_ep_1",
+            "preshow_seconds": 0,
+            "playlist": [
+                "medpad_ch_1"
+            ],
+            "loop": true,
+            "gap_seconds": 15,
+            "postshow_seconds": 0,
+            "silence_please": true
+        },
+        {
+            "channel": "te_ep_2_loop",
+            "event": "te_ep_2",
+            "preshow_seconds": 0,
+            "playlist": [
+                "medpad_ch_2"
+            ],
+            "loop": true,
+            "gap_seconds": 15,
+            "postshow_seconds": 0,
+            "silence_please": true
+        },
+        {
+            "channel": "te_ep_3_loop",
+            "event": "te_ep_3",
+            "preshow_seconds": 0,
+            "playlist": [
+                "medpad_ch_3"
+            ],
+            "loop": true,
+            "gap_seconds": 15,
+            "postshow_seconds": 0,
+            "silence_please": true
+        },
+        {
+            "channel": "te_ep_4_loop",
+            "event": "te_ep_4",
+            "preshow_seconds": 0,
+            "playlist": [
+                "medpad_ch_4"
+            ],
+            "loop": true,
+            "gap_seconds": 15,
+            "postshow_seconds": 0,
+            "silence_please": true
+        },
+        {
+            "channel": "thankyou",
+            "event": "anniversary_office_video_thankyou",
+            "preshow_seconds": 10,
+            "playlist": [
+                "7th_celebration"
+            ],
+            "loop": false,
+            "gap_seconds": 15,
+            "postshow_seconds": 10,
+            "silence_please": false
+        },
+        {
+            "channel": "twinribbon",
+            "event": "twinribbon_concert",
+            "preshow_seconds": 40,
+            "playlist": [
+                "twinribbon_test_1",
+                "twinribbon_test_2",
+                "twinribbon_test_3"
+            ],
+            "loop": false,
+            "gap_seconds": 0,
+            "postshow_seconds": 0,
+            "silence_please": false
+        }
+    ]
+}

@@ -1,0 +1,347 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /account/get_level_pickups HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 160
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: uFOS5TH
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 160
+ * body logged_size: 160
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "level": 3526133726
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 03 Sep 2026 16:39:33 GMT
+ * content-type: text/plain; charset=utf-8
+ * content-length: 3708
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * cache-control: max-age=0, private, must-revalidate
+ * x-request-id: GNHdDJa9WHi6okMIgCyB
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 3708
+ * body logged_size: 3708
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "level": 3526133726,
+    "pickups": [],
+    "global_pickups": [],
+    "pickup_emitters": [
+        {
+            "emitter_name": "CandlespaceBlizz",
+            "events": [
+                {
+                    "preactive_duration": 0,
+                    "pool_name": "social_blizzard",
+                    "pool_amount": 1000,
+                    "last_chunk_seq": -1,
+                    "event_name": "social_blizz_sm",
+                    "emit_interval": 6,
+                    "currency_type": "wax",
+                    "collected": 0,
+                    "chunks_per_emit": 1,
+                    "chunk_size_likelihood": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "chunk_size_amount": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "active_duration": 1439
+                },
+                {
+                    "preactive_duration": 0,
+                    "pool_name": "social_blizzard",
+                    "pool_amount": 1000,
+                    "last_chunk_seq": -1,
+                    "event_name": "social_blizz_lg",
+                    "emit_interval": 4,
+                    "currency_type": "wax",
+                    "collected": 0,
+                    "chunks_per_emit": 1,
+                    "chunk_size_likelihood": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "chunk_size_amount": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "active_duration": 1439
+                }
+            ]
+        },
+        {
+            "emitter_name": "CandlespaceSnowHutFire",
+            "events": [
+                {
+                    "preactive_duration": 0,
+                    "pool_name": "social_blizzard",
+                    "pool_amount": 1000,
+                    "last_chunk_seq": -1,
+                    "event_name": "social_snowhutfire_sm",
+                    "emit_interval": 6,
+                    "currency_type": "wax",
+                    "collected": 0,
+                    "chunks_per_emit": 1,
+                    "chunk_size_likelihood": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "chunk_size_amount": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "active_duration": 1439
+                },
+                {
+                    "preactive_duration": 0,
+                    "pool_name": "social_blizzard",
+                    "pool_amount": 1000,
+                    "last_chunk_seq": -1,
+                    "event_name": "social_snowhutfire_lg",
+                    "emit_interval": 4,
+                    "currency_type": "wax",
+                    "collected": 0,
+                    "chunks_per_emit": 1,
+                    "chunk_size_likelihood": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "chunk_size_amount": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "active_duration": 1439
+                }
+            ]
+        },
+        {
+            "emitter_name": "RainbowEvent",
+            "events": [
+                {
+                    "preactive_duration": 0,
+                    "pool_name": "event_rainbow",
+                    "pool_amount": 500,
+                    "last_chunk_seq": -1,
+                    "event_name": "social_rainbow_on",
+                    "emit_interval": 6,
+                    "currency_type": "wax",
+                    "collected": 0,
+                    "chunks_per_emit": 2,
+                    "chunk_size_likelihood": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "chunk_size_amount": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "active_duration": 20160
+                }
+            ]
+        },
+        {
+            "emitter_name": "SakuraEmitterBlooming",
+            "events": [
+                {
+                    "preactive_duration": 0,
+                    "pool_name": "event_bloom_2022",
+                    "pool_amount": 1000,
+                    "last_chunk_seq": -1,
+                    "event_name": "global_bloom_sakura_bloom_wax02",
+                    "emit_interval": 12,
+                    "currency_type": "wax",
+                    "collected": 0,
+                    "chunks_per_emit": 1,
+                    "chunk_size_likelihood": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "chunk_size_amount": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "active_duration": 4320
+                },
+                {
+                    "preactive_duration": 0,
+                    "pool_name": "event_bloom_2022",
+                    "pool_amount": 1000,
+                    "last_chunk_seq": -1,
+                    "event_name": "global_bloom_sakura_bloom_wax01",
+                    "emit_interval": 36,
+                    "currency_type": "wax",
+                    "collected": 0,
+                    "chunks_per_emit": 1,
+                    "chunk_size_likelihood": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "chunk_size_amount": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "active_duration": 4320
+                }
+            ]
+        },
+        {
+            "emitter_name": "SakuraEmitterFalling",
+            "events": [
+                {
+                    "preactive_duration": 0,
+                    "pool_name": "event_bloom_2022",
+                    "pool_amount": 1000,
+                    "last_chunk_seq": -1,
+                    "event_name": "global_bloom_sakura_fall_wax02",
+                    "emit_interval": 6,
+                    "currency_type": "wax",
+                    "collected": 0,
+                    "chunks_per_emit": 1,
+                    "chunk_size_likelihood": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "chunk_size_amount": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "active_duration": 8640
+                },
+                {
+                    "preactive_duration": 0,
+                    "pool_name": "event_bloom_2022",
+                    "pool_amount": 1000,
+                    "last_chunk_seq": -1,
+                    "event_name": "global_bloom_sakura_fall_wax01",
+                    "emit_interval": 9,
+                    "currency_type": "wax",
+                    "collected": 0,
+                    "chunks_per_emit": 1,
+                    "chunk_size_likelihood": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "chunk_size_amount": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "active_duration": 4320
+                }
+            ]
+        },
+        {
+            "emitter_name": "SocialFeedChallenge",
+            "events": [
+                {
+                    "preactive_duration": 0,
+                    "pool_name": "anylevel_social_feed_challenge",
+                    "pool_amount": 2000,
+                    "last_chunk_seq": -1,
+                    "event_name": "global_daily_reset_time",
+                    "emit_interval": 1,
+                    "currency_type": "wax",
+                    "collected": 0,
+                    "chunks_per_emit": 1,
+                    "chunk_size_likelihood": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "chunk_size_amount": [
+                        5,
+                        0,
+                        0
+                    ],
+                    "active_duration": 1440
+                }
+            ]
+        },
+        {
+            "emitter_name": "TreasureShovel",
+            "events": [
+                {
+                    "preactive_duration": 0,
+                    "pool_name": "anylevel_social_feed_challenge",
+                    "pool_amount": 2000,
+                    "last_chunk_seq": -1,
+                    "event_name": "global_daily_reset_time",
+                    "emit_interval": 1,
+                    "currency_type": "wax",
+                    "collected": 0,
+                    "chunks_per_emit": 1,
+                    "chunk_size_likelihood": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "chunk_size_amount": [
+                        5,
+                        0,
+                        0
+                    ],
+                    "active_duration": 1440
+                }
+            ]
+        }
+    ]
+}

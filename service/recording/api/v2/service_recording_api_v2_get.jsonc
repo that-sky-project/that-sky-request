@@ -1,0 +1,127 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ * UUID_3 = UUID-form identifier; original UUID hidden
+ * UUID_4 = UUID-form identifier; original UUID hidden
+ */
+
+/*
+ * Request
+ * POST /service/recording/api/v2/get HTTP/1.1
+ * host: live-as-sky-test.xyqaq.cn
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 269
+ * user-agent: Sky-Live-com.tgc.sky.win/0.32.2.365286 (System Product Name; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: Y2MwnwH
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 269
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_3", // UUID-form identifier; variable UUID_3 (same token means same original value)
+    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "recording_id": "UUID_4", // UUID-form identifier; variable UUID_4 (same token means same original value)
+    "level_id": "CandleSpace"
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Mon, 23 Feb 2026 12:00:00 GMT
+ * content-type: text/plain; charset=utf-8
+ * content-length: 798
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 798
+ */
+// Response
+{
+    "MongoID": "698de7f1bdf9bfe551db7a34",
+    "status": "OK",
+    "recording_id": "UUID_4", // UUID-form identifier; variable UUID_4 (same token means same original value)
+    "seek_table": {
+        "0": {
+            "end": 1464,
+            "start": 0
+        },
+        "1": {
+            "end": 3089,
+            "start": 1466
+        },
+        "10": {
+            "end": 16955,
+            "start": 15449
+        },
+        "11": {
+            "end": 18529,
+            "start": 16957
+        },
+        "12": {
+            "end": 19924,
+            "start": 18531
+        },
+        "13": {
+            "end": 21507,
+            "start": 19926
+        },
+        "14": {
+            "end": 23019,
+            "start": 21509
+        },
+        "2": {
+            "end": 4533,
+            "start": 3091
+        },
+        "3": {
+            "end": 6088,
+            "start": 4535
+        },
+        "4": {
+            "end": 7689,
+            "start": 6090
+        },
+        "5": {
+            "end": 9215,
+            "start": 7691
+        },
+        "6": {
+            "end": 10705,
+            "start": 9217
+        },
+        "7": {
+            "end": 12244,
+            "start": 10707
+        },
+        "8": {
+            "end": 13763,
+            "start": 12246
+        },
+        "9": {
+            "end": 15447,
+            "start": 13765
+        }
+    },
+    "link": "s3://live.radiance.thatgamecompany.com/ugc/UUID_3/UUID_4.ndjson", // URL contains redacted identifier variables: UUID_3, UUID_4 (same tokens retain equality)
+    "user_id": "UUID_3", // UUID-form identifier; variable UUID_3 (same token means same original value)
+    "level_id": "CandleSpace"
+}

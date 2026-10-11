@@ -1,0 +1,79 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ * UUID_3 = UUID-form identifier; original UUID hidden
+ * UUID_4 = UUID-form identifier; original UUID hidden
+ */
+
+/*
+ * Request
+ * POST /service/social-feed/api/v1/get_reactions HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 248
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: bJp6A6j
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 1509719447
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 248
+ * body logged_size: 248
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "social_feed_id": "UUID_3", // UUID-form identifier; variable UUID_3 (same token means same original value)
+    "author_id": "UUID_4" // UUID-form identifier; variable UUID_4 (same token means same original value)
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 03 Sep 2026 16:39:57 GMT
+ * content-type: application/json; charset=utf-8
+ * content-length: 301
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 301
+ * body logged_size: 301
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "reactions": {
+        "total_report_count": 1,
+        "total_hide_count": 0,
+        "total_like_count": 797,
+        "total_like_reward_message_id": 0,
+        "total_super_like_count": 5,
+        "total_comment_count": 63,
+        "total_reported_comment_count": 2,
+        "total_attempt_count": 6412,
+        "total_succeed_count": 2611,
+        "is_poisoned": true,
+        "score": 185.33333333333331
+    }
+}

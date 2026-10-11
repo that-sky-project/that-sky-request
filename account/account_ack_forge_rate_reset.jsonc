@@ -1,0 +1,79 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /account/ack_forge_rate_reset HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 158
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: dOo821f
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 158
+ * body logged_size: 158
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "currency": "wax"
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 03 Sep 2026 16:39:38 GMT
+ * content-type: text/plain; charset=utf-8
+ * content-length: 224
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * cache-control: max-age=0, private, must-revalidate
+ * x-request-id: GNHdDeeWZHzzK3ga_X6D
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 224
+ * body logged_size: 224
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "result": "ok",
+    "update_forge_rates": [
+        {
+            "source_type": "wax",
+            "current_tier": 26,
+            "current_level": 4,
+            "tier_completion": 0,
+            "level_completion": 0,
+            "level_tier_index": 0,
+            "level_tier_count": 5,
+            "reset_acknowledged": true,
+            "enabled": true
+        }
+    ]
+}

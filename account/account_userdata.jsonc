@@ -1,0 +1,70 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /account/userdata HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 1701
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: jmK
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 1701
+ * body logged_size: 1701
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "time": 1779430592,
+    "version": 3,
+    "data": "eyJtaXNjIjp7InN1Ym1pdFR1dG9yaWFsRXZlbnRzIjpmYWxzZSwicHJlZmVycmVkSG9tZUxldmVsIjoxLCJzaGFyZWRNZW1vcnlSZWNvcmRNb2RlIjoyNTV9LCJ0dXRvcmlhbCI6eyJsYXN0VGVsZXBvcnRIb21lVGltZSI6MTMzNjQyNDc1MiwibGFzdEpvaW5SYW5kb21HYW1lVGltZSI6Mzc5Nzg5NTI4LCJmb3JnZSI6MywibWVudSI6Miwic2hvdXQiOjEsInNob3AiOjAsImJ1ZGR5UmVxIjoxLCJkaXZlIjowLCJicmVhdGgiOjEsImRpdmVNb3ZlIjoyLCJmZiI6ZmFsc2UsImVkaXRtb2RlIjowLCJ3ZWJSZW1vdGUiOjAsIm1lbW9yeVNwZWxsc1ZpZXdlZCI6MTQsIm1lbW9yeVNocmluZXNWaWV3ZWQiOjAsInNwYWNlU3BlbGxzVmlld2VkIjoyLCJzcGFjZVNocmluZXNWaWV3ZWQiOjJ9LCJtZW51Ijp7ImVtb3RlX2dyb3VwcyI6W3siZW1vdGVzIjpbeyJ0eXBlIjoxLCJpZCI6MjI1MzkzMzgyNCwibGV2ZWwiOjF9LHsidHlwZSI6MSwiaWQiOjMzMjUwMzQ4NDcsImxldmVsIjoxfSx7InR5cGUiOjAsImlkIjowLCJsZXZlbCI6MH0seyJ0eXBlIjoxLCJpZCI6MzUzNjM3MjM2NiwibGV2ZWwiOjF9LHsidHlwZSI6MSwiaWQiOjY0MzM4Mjc2LCJsZXZlbCI6MX0seyJ0eXBlIjowLCJpZCI6MCwibGV2ZWwiOjB9LHsidHlwZSI6MCwiaWQiOjAsImxldmVsIjowfSx7InR5cGUiOjAsImlkIjowLCJsZXZlbCI6MH1dLCJuYW1lIjoiRmF2b3JpdGVzIiwidXNlckVkaXRlZCI6dHJ1ZX1dLCJmcmllbmRDb25zdGVsbGF0aW9uUHJlZmVycmVkIjp0cnVlLCJuZXN0V2VsY29tZUxldmVsIjowfSwiYWNoaWV2ZW1lbnRzIjp7ImRhaWx5X3F1ZXN0c19hY3RpdmF0ZWQiOltmYWxzZSxmYWxzZSxmYWxzZSxmYWxzZV0sImRhaWx5X3F1ZXN0c19yZXdhcmRfZ2l2ZW4iOltmYWxzZSxmYWxzZSxmYWxzZSxmYWxzZV19LCJyZWNlbnRfY29sbGVjdGlibGVzIjpbMjg1MTA4NDI0NCw2NDMzODI3NiwzMzI1MDM0ODQ3LDQxNDA4NDI0MSwzMDYzMjcwNTkwLDM5MzAzODE1ODNdLCJlbGRlcl9pdGVtX2lkcyI6Wzg1MDE1NTg5Myw3NzY5NDQxOTcsNDI0Nzg3ODAwOSwxMjg1MDAyMzA0LDI2NjQzNzA5OTVdLCJlbGRlcl9pdGVtX2hwcyI6WzQsMyw0LDQsNF0sInJldmVhbGVkUXVlc3RUaW1lcyI6WzAsMCwwLDBdLCJsYXN0X3Byb2plY3QiOjB9AA=="
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 03 Sep 2026 16:39:20 GMT
+ * content-type: application/json; charset=utf-8
+ * content-length: 1571
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 1571
+ * body logged_size: 1571
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "userdata": {
+        "time": 1779430592,
+        "version": 3,
+        "data": "eyJhY2hpZXZlbWVudHMiOnsiZGFpbHlfcXVlc3RzX2FjdGl2YXRlZCI6W2ZhbHNlLGZhbHNlLGZhbHNlLGZhbHNlXSwiZGFpbHlfcXVlc3RzX3Jld2FyZF9naXZlbiI6W2ZhbHNlLGZhbHNlLGZhbHNlLGZhbHNlXX0sImVsZGVyX2l0ZW1faHBzIjpbNCwzLDQsNCw0XSwiZWxkZXJfaXRlbV9pZHMiOls4NTAxNTU4OTMsNzc2OTQ0MTk3LDQyNDc4NzgwMDksMTI4NTAwMjMwNCwyNjY0MzcwOTk1XSwibGFzdF9wcm9qZWN0IjowLCJtZW51Ijp7ImVtb3RlX2dyb3VwcyI6W3siZW1vdGVzIjpbeyJpZCI6MjI1MzkzMzgyNCwibGV2ZWwiOjEsInR5cGUiOjF9LHsiaWQiOjMzMjUwMzQ4NDcsImxldmVsIjoxLCJ0eXBlIjoxfSx7ImlkIjowLCJsZXZlbCI6MCwidHlwZSI6MH0seyJpZCI6MzUzNjM3MjM2NiwibGV2ZWwiOjEsInR5cGUiOjF9LHsiaWQiOjY0MzM4Mjc2LCJsZXZlbCI6MSwidHlwZSI6MX0seyJpZCI6MCwibGV2ZWwiOjAsInR5cGUiOjB9LHsiaWQiOjAsImxldmVsIjowLCJ0eXBlIjowfSx7ImlkIjowLCJsZXZlbCI6MCwidHlwZSI6MH1dLCJuYW1lIjoiRmF2b3JpdGVzIiwidXNlckVkaXRlZCI6dHJ1ZX1dLCJmcmllbmRDb25zdGVsbGF0aW9uUHJlZmVycmVkIjp0cnVlLCJuZXN0V2VsY29tZUxldmVsIjowfSwibWlzYyI6eyJwcmVmZXJyZWRIb21lTGV2ZWwiOjEsInNoYXJlZE1lbW9yeVJlY29yZE1vZGUiOjI1NSwic3VibWl0VHV0b3JpYWxFdmVudHMiOmZhbHNlfSwicmVjZW50X2NvbGxlY3RpYmxlcyI6WzI4NTEwODQyNDQsNjQzMzgyNzYsMzMyNTAzNDg0Nyw0MTQwODQyNDEsMzA2MzI3MDU5MCwzOTMwMzgxNTgzXSwicmV2ZWFsZWRRdWVzdFRpbWVzIjpbMCwwLDAsMF0sInR1dG9yaWFsIjp7ImJyZWF0aCI6MSwiYnVkZHlSZXEiOjEsImRpdmUiOjAsImRpdmVNb3ZlIjoyLCJlZGl0bW9kZSI6MCwiZmYiOmZhbHNlLCJmb3JnZSI6MywibGFzdEpvaW5SYW5kb21HYW1lVGltZSI6Mzc5Nzg5NTI4LCJsYXN0VGVsZXBvcnRIb21lVGltZSI6MTMzNjQyNDc1MiwibWVtb3J5U2hyaW5lc1ZpZXdlZCI6MCwibWVtb3J5U3BlbGxzVmlld2VkIjoxNCwibWVudSI6Miwic2hvcCI6MCwic2hvdXQiOjEsInNwYWNlU2hyaW5lc1ZpZXdlZCI6Miwic3BhY2VTcGVsbHNWaWV3ZWQiOjIsIndlYlJlbW90ZSI6MH19"
+    }
+}

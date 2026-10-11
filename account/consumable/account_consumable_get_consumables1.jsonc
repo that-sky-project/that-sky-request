@@ -1,0 +1,156 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /account/consumable/get_consumables1 HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 141
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: bDOu9rJ
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 141
+ * body logged_size: 141
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1" // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 03 Sep 2026 16:39:30 GMT
+ * content-type: text/plain; charset=utf-8
+ * content-length: 1122
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * cache-control: max-age=0, private, must-revalidate
+ * x-request-id: GNHdC--J6_PDDxkZkjWB
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 1122
+ * body logged_size: 1122
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "get_consumables": [
+        {
+            "consumable_id": 43899279,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 303877523,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 543964677,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 867223032,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 942365523,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 1064080243,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 1403584133,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 2199218135,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 2204281107,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 2961402756,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 2967026773,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3149562608,
+            "cooldown_until": 0,
+            "quantity": 2
+        },
+        {
+            "consumable_id": 3250412855,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3272928723,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3356388791,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3379219961,
+            "cooldown_until": 1760363973,
+            "quantity": 2
+        },
+        {
+            "consumable_id": 3742860429,
+            "cooldown_until": 0,
+            "quantity": 3
+        },
+        {
+            "consumable_id": 3932609525,
+            "cooldown_until": 0,
+            "quantity": 3
+        }
+    ]
+}

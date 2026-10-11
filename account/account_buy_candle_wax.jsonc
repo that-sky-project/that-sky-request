@@ -1,0 +1,180 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /account/buy_candle_wax HTTP/1.1
+ * host: live-as-sky-test.xyqaq.cn
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 206
+ * user-agent: Sky-Live-com.tgc.sky.win/0.32.2.365286 (System Product Name; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: SSJ5ueL
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 206
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "currency": "candles",
+    "forge_currency": "wax",
+    "count": 1,
+    "cost": 150
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Mon, 23 Feb 2026 11:59:23 GMT
+ * content-type: application/json
+ * content-length: 2142
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 2142
+ */
+// Response
+{
+    "result": "ok",
+    "currency": {
+        "candles": 31,
+        "heart_wax": 25,
+        "prestige": 5,
+        "season_candle": 0,
+        "vip": 3,
+        "wax": 38
+    },
+    "update_forge_rates": [
+        {
+            "source_type": "wax",
+            "current_tier": 26,
+            "current_level": 4,
+            "tier_completion": 0.3510540146380663,
+            "level_completion": 0.07021080292761325,
+            "level_tier_index": 0,
+            "level_tier_count": 5,
+            "reset_acknowledged": true,
+            "enabled": true
+        },
+        {
+            "source_type": "event_candle_days_of_fortune_wax",
+            "current_tier": 6,
+            "current_level": 1,
+            "tier_completion": 0.0,
+            "level_completion": 0.0,
+            "level_tier_index": 0,
+            "level_tier_count": 5,
+            "reset_acknowledged": false,
+            "enabled": true
+        },
+        {
+            "source_type": "color_yellow_wax",
+            "current_tier": 4,
+            "current_level": 1,
+            "tier_completion": 0.0,
+            "level_completion": 0.0,
+            "level_tier_index": 0,
+            "level_tier_count": 3,
+            "reset_acknowledged": false,
+            "enabled": true
+        },
+        {
+            "source_type": "color_white_wax",
+            "current_tier": 2,
+            "current_level": 1,
+            "tier_completion": 0.0,
+            "level_completion": 0.0,
+            "level_tier_index": 0,
+            "level_tier_count": 1,
+            "reset_acknowledged": false,
+            "enabled": true
+        },
+        {
+            "source_type": "color_red_wax",
+            "current_tier": 5,
+            "current_level": 1,
+            "tier_completion": 0.0,
+            "level_completion": 0.0,
+            "level_tier_index": 0,
+            "level_tier_count": 4,
+            "reset_acknowledged": false,
+            "enabled": true
+        },
+        {
+            "source_type": "color_magenta_wax",
+            "current_tier": 4,
+            "current_level": 1,
+            "tier_completion": 0.0,
+            "level_completion": 0.0,
+            "level_tier_index": 0,
+            "level_tier_count": 3,
+            "reset_acknowledged": false,
+            "enabled": true
+        },
+        {
+            "source_type": "color_green_wax",
+            "current_tier": 5,
+            "current_level": 1,
+            "tier_completion": 0.0,
+            "level_completion": 0.0,
+            "level_tier_index": 0,
+            "level_tier_count": 4,
+            "reset_acknowledged": false,
+            "enabled": true
+        },
+        {
+            "source_type": "color_cyan_wax",
+            "current_tier": 4,
+            "current_level": 1,
+            "tier_completion": 0.0,
+            "level_completion": 0.0,
+            "level_tier_index": 0,
+            "level_tier_count": 3,
+            "reset_acknowledged": false,
+            "enabled": true
+        },
+        {
+            "source_type": "color_blue_wax",
+            "current_tier": 5,
+            "current_level": 1,
+            "tier_completion": 0.0,
+            "level_completion": 0.0,
+            "level_tier_index": 0,
+            "level_tier_count": 4,
+            "reset_acknowledged": false,
+            "enabled": true
+        },
+        {
+            "source_type": "color_black_wax",
+            "current_tier": 2,
+            "current_level": 1,
+            "tier_completion": 0.0,
+            "level_completion": 0.0,
+            "level_tier_index": 0,
+            "level_tier_count": 1,
+            "reset_acknowledged": false,
+            "enabled": true
+        }
+    ]
+}

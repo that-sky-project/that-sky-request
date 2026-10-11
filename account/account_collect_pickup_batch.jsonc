@@ -1,0 +1,349 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /account/collect_pickup_batch HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 402
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.3.407106 (System Product Name; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: 9h7pQE7
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 402
+ * body logged_size: 402
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "level_id": 3526133726,
+    "pickup_ids": [
+        2060386486,
+        2060386488,
+        2060386388,
+        2060386489,
+        2060386485,
+        2060386468,
+        2060386387,
+        2060386307,
+        2060386305,
+        2060386306,
+        2060386356,
+        2060386353,
+        2060386355,
+        2060386474,
+        2060386475,
+        2060386390,
+        2060386389
+    ],
+    "global_pickup_ids": [],
+    "emitters": []
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Wed, 12 Aug 2026 01:21:14 GMT
+ * content-type: text/plain; charset=utf-8
+ * content-length: 3327
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * cache-control: max-age=0, private, must-revalidate
+ * x-request-id: GMrqK2lxRisCfXoGK1mC
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 3327
+ * body logged_size: 3327
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "batch_results": [
+        {
+            "w": 20326,
+            "r": "ok",
+            "id": 2060386305,
+            "ct": "wax",
+            "cid": "",
+            "cc": 1
+        },
+        {
+            "w": 20326,
+            "r": "ok",
+            "id": 2060386306,
+            "ct": "wax",
+            "cid": "",
+            "cc": 1
+        },
+        {
+            "w": 20326,
+            "r": "ok",
+            "id": 2060386307,
+            "ct": "wax",
+            "cid": "",
+            "cc": 1
+        },
+        {
+            "w": 20326,
+            "r": "ok",
+            "id": 2060386353,
+            "ct": "wax",
+            "cid": "",
+            "cc": 1
+        },
+        {
+            "w": 20326,
+            "r": "ok",
+            "id": 2060386355,
+            "ct": "wax",
+            "cid": "",
+            "cc": 1
+        },
+        {
+            "w": 20326,
+            "r": "ok",
+            "id": 2060386356,
+            "ct": "wax",
+            "cid": "",
+            "cc": 1
+        },
+        {
+            "w": 20326,
+            "r": "ok",
+            "id": 2060386387,
+            "ct": "wax",
+            "cid": "",
+            "cc": 1
+        },
+        {
+            "w": 20326,
+            "r": "ok",
+            "id": 2060386388,
+            "ct": "wax",
+            "cid": "",
+            "cc": 1
+        },
+        {
+            "w": 20326,
+            "r": "ok",
+            "id": 2060386389,
+            "ct": "wax",
+            "cid": "",
+            "cc": 1
+        },
+        {
+            "w": 20326,
+            "r": "ok",
+            "id": 2060386390,
+            "ct": "wax",
+            "cid": "",
+            "cc": 1
+        },
+        {
+            "w": 20326,
+            "r": "ok",
+            "id": 2060386468,
+            "ct": "wax",
+            "cid": "",
+            "cc": 1
+        },
+        {
+            "w": 20326,
+            "r": "ok",
+            "id": 2060386474,
+            "ct": "wax",
+            "cid": "",
+            "cc": 1
+        },
+        {
+            "w": 20326,
+            "r": "ok",
+            "id": 2060386475,
+            "ct": "wax",
+            "cid": "",
+            "cc": 1
+        },
+        {
+            "w": 20326,
+            "r": "ok",
+            "id": 2060386485,
+            "ct": "wax",
+            "cid": "",
+            "cc": 1
+        },
+        {
+            "w": 20326,
+            "r": "ok",
+            "id": 2060386486,
+            "ct": "wax",
+            "cid": "",
+            "cc": 1
+        },
+        {
+            "w": 20326,
+            "r": "ok",
+            "id": 2060386488,
+            "ct": "wax",
+            "cid": "",
+            "cc": 1
+        },
+        {
+            "w": 20326,
+            "r": "ok",
+            "id": 2060386489,
+            "ct": "wax",
+            "cid": "",
+            "cc": 1
+        }
+    ],
+    "currency": {
+        "candles": 80,
+        "color_red_wax": 6,
+        "color_yellow_wax": 3,
+        "heart": 7,
+        "heart_wax": 45,
+        "prestige": 23,
+        "prestige_vip": 15,
+        "season_candle": 4,
+        "vip": 3,
+        "wax": 148
+    },
+    "update_forge_rates": [
+        {
+            "source_type": "wax",
+            "current_tier": 26,
+            "current_level": 4,
+            "tier_completion": 0.24467401020228863,
+            "level_completion": 0.04893480204045773,
+            "level_tier_index": 0,
+            "level_tier_count": 5,
+            "reset_acknowledged": true,
+            "enabled": true
+        },
+        {
+            "source_type": "event_candle_days_of_sunlight_wax",
+            "current_tier": 6,
+            "current_level": 1,
+            "tier_completion": 0,
+            "level_completion": 0,
+            "level_tier_index": 0,
+            "level_tier_count": 5,
+            "reset_acknowledged": false,
+            "enabled": true
+        },
+        {
+            "source_type": "color_yellow_wax",
+            "current_tier": 4,
+            "current_level": 1,
+            "tier_completion": 0,
+            "level_completion": 0,
+            "level_tier_index": 0,
+            "level_tier_count": 3,
+            "reset_acknowledged": false,
+            "enabled": true
+        },
+        {
+            "source_type": "color_white_wax",
+            "current_tier": 2,
+            "current_level": 1,
+            "tier_completion": 0,
+            "level_completion": 0,
+            "level_tier_index": 0,
+            "level_tier_count": 1,
+            "reset_acknowledged": false,
+            "enabled": true
+        },
+        {
+            "source_type": "color_red_wax",
+            "current_tier": 5,
+            "current_level": 1,
+            "tier_completion": 0,
+            "level_completion": 0,
+            "level_tier_index": 0,
+            "level_tier_count": 4,
+            "reset_acknowledged": false,
+            "enabled": true
+        },
+        {
+            "source_type": "color_magenta_wax",
+            "current_tier": 4,
+            "current_level": 1,
+            "tier_completion": 0,
+            "level_completion": 0,
+            "level_tier_index": 0,
+            "level_tier_count": 3,
+            "reset_acknowledged": false,
+            "enabled": true
+        },
+        {
+            "source_type": "color_green_wax",
+            "current_tier": 5,
+            "current_level": 1,
+            "tier_completion": 0,
+            "level_completion": 0,
+            "level_tier_index": 0,
+            "level_tier_count": 4,
+            "reset_acknowledged": false,
+            "enabled": true
+        },
+        {
+            "source_type": "color_cyan_wax",
+            "current_tier": 4,
+            "current_level": 1,
+            "tier_completion": 0,
+            "level_completion": 0,
+            "level_tier_index": 0,
+            "level_tier_count": 3,
+            "reset_acknowledged": false,
+            "enabled": true
+        },
+        {
+            "source_type": "color_blue_wax",
+            "current_tier": 5,
+            "current_level": 1,
+            "tier_completion": 0,
+            "level_completion": 0,
+            "level_tier_index": 0,
+            "level_tier_count": 4,
+            "reset_acknowledged": false,
+            "enabled": true
+        },
+        {
+            "source_type": "color_black_wax",
+            "current_tier": 2,
+            "current_level": 1,
+            "tier_completion": 0,
+            "level_completion": 0,
+            "level_tier_index": 0,
+            "level_tier_count": 1,
+            "reset_acknowledged": false,
+            "enabled": true
+        }
+    ],
+    "level_id": 3526133726
+}

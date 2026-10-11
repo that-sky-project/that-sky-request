@@ -1,0 +1,441 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /service/quest/api/v1/check_for_previous_completion HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 1857
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: 6YswADM
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 1857
+ * body logged_size: 1857
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "quest_names": [
+        "ap28_fetch_01",
+        "fetchlight_void",
+        "ap29_fetch_01",
+        "companion_cuteclap_spend_time_medium",
+        "ap30_fetch_01",
+        "companion_slowwalk_spend_time_medium",
+        "ap31_fetch_01",
+        "seen_by_dark_creature",
+        "spirit_angler1",
+        "trust_moment_breakdance",
+        "companion_flag_spend_time_medium",
+        "companion_airplanearms_spend_time_medium",
+        "trust_moment_secrethandshake",
+        "companion_jellydance_spend_time_medium",
+        "companion_dizzy_spend_time_medium",
+        "pickup_30_wax",
+        "make_a_new_acquaintance",
+        "companion_lighthorn_spend_time_medium",
+        "forge_a_candle",
+        "trust_moment_jellydance",
+        "companion_revolvingdance_spend_time_medium",
+        "companion_secrethandshake_spend_time_medium",
+        "companion_draw_spend_time_medium",
+        "companion_whisper_spend_time_medium",
+        "visit_rainbow_dusk",
+        "trust_moment_dizzy",
+        "companion_balltrick_spend_time_medium",
+        "spirit_musicianrace2",
+        "companion_breakdance_spend_time_medium",
+        "companion_approve_spend_time_medium",
+        "change_pants",
+        "spirit_musicianrace1",
+        "companion_write_spend_time_medium",
+        "world_quest_oasis_shrug",
+        "companion_frustration_spend_time_medium",
+        "companion_bask_spend_time_medium",
+        "meditate_night_main2",
+        "trust_moment_whisper",
+        "pick_up_1_crab",
+        "fetchlight_mind",
+        "rainbow_rainbow_dusk_01",
+        "tot_cutscene_daily_results",
+        "light_20_candles",
+        "world_quest_night_wise",
+        "trust_moment_balltrick",
+        "world_quest_sunset_juggle",
+        "bloom_harvesting",
+        "trust_moment_write",
+        "trust_moment_cuteclap",
+        "trust_moment_flag",
+        "trust_moment_revolvingdance",
+        "trust_moment_airplanearms",
+        "trust_moment_approve",
+        "trust_moment_lighthorn",
+        "cherry_sappling_dusk_01",
+        "lightseeker3_sunset_yetipark",
+        "rainbow_rainbow_sunset_01",
+        "visit_sunset_hotspring",
+        "cherry_sappling_night_01",
+        "lightseeker3_day_birdnest",
+        "visit_dusk_spitroast",
+        "world_quest_dusk_dontgo"
+    ]
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 03 Sep 2026 16:39:38 GMT
+ * content-type: application/json; charset=utf-8
+ * content-length: 6050
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 6050
+ * body logged_size: 6050
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "results": [
+        {
+            "quest_name": "ap28_fetch_01",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "fetchlight_void",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "ap29_fetch_01",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "companion_cuteclap_spend_time_medium",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "ap30_fetch_01",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "companion_slowwalk_spend_time_medium",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "ap31_fetch_01",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "seen_by_dark_creature",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "spirit_angler1",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "trust_moment_breakdance",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "companion_flag_spend_time_medium",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "companion_airplanearms_spend_time_medium",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "trust_moment_secrethandshake",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "companion_jellydance_spend_time_medium",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "companion_dizzy_spend_time_medium",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "pickup_30_wax",
+            "previously_completed": true,
+            "most_recent_completion_date": 1771399587,
+            "completed_today": false
+        },
+        {
+            "quest_name": "make_a_new_acquaintance",
+            "previously_completed": true,
+            "most_recent_completion_date": 1771328959,
+            "completed_today": false
+        },
+        {
+            "quest_name": "companion_lighthorn_spend_time_medium",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "forge_a_candle",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "trust_moment_jellydance",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "companion_revolvingdance_spend_time_medium",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "companion_secrethandshake_spend_time_medium",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "companion_draw_spend_time_medium",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "companion_whisper_spend_time_medium",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "visit_rainbow_dusk",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "trust_moment_dizzy",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "companion_balltrick_spend_time_medium",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "spirit_musicianrace2",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "companion_breakdance_spend_time_medium",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "companion_approve_spend_time_medium",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "change_pants",
+            "previously_completed": true,
+            "most_recent_completion_date": 1775061604,
+            "completed_today": false
+        },
+        {
+            "quest_name": "spirit_musicianrace1",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "companion_write_spend_time_medium",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "world_quest_oasis_shrug",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "companion_frustration_spend_time_medium",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "companion_bask_spend_time_medium",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "meditate_night_main2",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "trust_moment_whisper",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "pick_up_1_crab",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "fetchlight_mind",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "rainbow_rainbow_dusk_01",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "tot_cutscene_daily_results",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "light_20_candles",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "world_quest_night_wise",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "trust_moment_balltrick",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "world_quest_sunset_juggle",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "bloom_harvesting",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "trust_moment_write",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "trust_moment_cuteclap",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "trust_moment_flag",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "trust_moment_revolvingdance",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "trust_moment_airplanearms",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "trust_moment_approve",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "trust_moment_lighthorn",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "cherry_sappling_dusk_01",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "lightseeker3_sunset_yetipark",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "rainbow_rainbow_sunset_01",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "visit_sunset_hotspring",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "cherry_sappling_night_01",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "lightseeker3_day_birdnest",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "visit_dusk_spitroast",
+            "previously_completed": false,
+            "completed_today": false
+        },
+        {
+            "quest_name": "world_quest_dusk_dontgo",
+            "previously_completed": false,
+            "completed_today": false
+        }
+    ]
+}

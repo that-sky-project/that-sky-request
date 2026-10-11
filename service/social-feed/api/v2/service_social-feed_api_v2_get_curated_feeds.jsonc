@@ -1,0 +1,904 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ * UUID_COMPOSITE_1 = UUID-based composite identifier; original value hidden
+ * UUID_COMPOSITE_2 = UUID-based composite identifier; original value hidden
+ * UUID_3 = UUID-form identifier; original UUID hidden
+ * UUID_4 = UUID-form identifier; original UUID hidden
+ * UUID_5 = UUID-form identifier; original UUID hidden
+ * UUID_6 = UUID-form identifier; original UUID hidden
+ * UUID_7 = UUID-form identifier; original UUID hidden
+ * UUID_8 = UUID-form identifier; original UUID hidden
+ * UUID_9 = UUID-form identifier; original UUID hidden
+ * UUID_10 = UUID-form identifier; original UUID hidden
+ * UUID_11 = UUID-form identifier; original UUID hidden
+ * UUID_COMPOSITE_3 = UUID-based composite identifier; original value hidden
+ * UUID_COMPOSITE_4 = UUID-based composite identifier; original value hidden
+ * UUID_12 = UUID-form identifier; original UUID hidden
+ * UUID_13 = UUID-form identifier; original UUID hidden
+ * UUID_14 = UUID-form identifier; original UUID hidden
+ * UUID_COMPOSITE_5 = UUID-based composite identifier; original value hidden
+ * UUID_COMPOSITE_6 = UUID-based composite identifier; original value hidden
+ * UUID_15 = UUID-form identifier; original UUID hidden
+ * UUID_16 = UUID-form identifier; original UUID hidden
+ * UUID_17 = UUID-form identifier; original UUID hidden
+ * UUID_18 = UUID-form identifier; original UUID hidden
+ * UUID_19 = UUID-form identifier; original UUID hidden
+ * UUID_COMPOSITE_7 = UUID-based composite identifier; original value hidden
+ * UUID_COMPOSITE_8 = UUID-based composite identifier; original value hidden
+ * UUID_20 = UUID-form identifier; original UUID hidden
+ * UUID_21 = UUID-form identifier; original UUID hidden
+ * UUID_COMPOSITE_9 = UUID-based composite identifier; original value hidden
+ * UUID_COMPOSITE_10 = UUID-based composite identifier; original value hidden
+ * UUID_22 = UUID-form identifier; original UUID hidden
+ * UUID_23 = UUID-form identifier; original UUID hidden
+ * UUID_COMPOSITE_11 = UUID-based composite identifier; original value hidden
+ * UUID_COMPOSITE_12 = UUID-based composite identifier; original value hidden
+ * UUID_24 = UUID-form identifier; original UUID hidden
+ * UUID_25 = UUID-form identifier; original UUID hidden
+ * UUID_26 = UUID-form identifier; original UUID hidden
+ * UUID_COMPOSITE_13 = UUID-based composite identifier; original value hidden
+ * UUID_COMPOSITE_14 = UUID-based composite identifier; original value hidden
+ * UUID_27 = UUID-form identifier; original UUID hidden
+ * UUID_28 = UUID-form identifier; original UUID hidden
+ * UUID_29 = UUID-form identifier; original UUID hidden
+ * UUID_30 = UUID-form identifier; original UUID hidden
+ * UUID_COMPOSITE_15 = UUID-based composite identifier; original value hidden
+ * UUID_COMPOSITE_16 = UUID-based composite identifier; original value hidden
+ * UUID_31 = UUID-form identifier; original UUID hidden
+ * UUID_32 = UUID-form identifier; original UUID hidden
+ * UUID_COMPOSITE_17 = UUID-based composite identifier; original value hidden
+ * UUID_COMPOSITE_18 = UUID-based composite identifier; original value hidden
+ * UUID_33 = UUID-form identifier; original UUID hidden
+ * UUID_34 = UUID-form identifier; original UUID hidden
+ * UUID_35 = UUID-form identifier; original UUID hidden
+ * UUID_36 = UUID-form identifier; original UUID hidden
+ * UUID_COMPOSITE_19 = UUID-based composite identifier; original value hidden
+ * UUID_COMPOSITE_20 = UUID-based composite identifier; original value hidden
+ * UUID_37 = UUID-form identifier; original UUID hidden
+ * UUID_38 = UUID-form identifier; original UUID hidden
+ * UUID_39 = UUID-form identifier; original UUID hidden
+ * UUID_COMPOSITE_21 = UUID-based composite identifier; original value hidden
+ * UUID_COMPOSITE_22 = UUID-based composite identifier; original value hidden
+ * UUID_40 = UUID-form identifier; original UUID hidden
+ * UUID_41 = UUID-form identifier; original UUID hidden
+ * UUID_42 = UUID-form identifier; original UUID hidden
+ * UUID_43 = UUID-form identifier; original UUID hidden
+ * UUID_44 = UUID-form identifier; original UUID hidden
+ * UUID_COMPOSITE_23 = UUID-based composite identifier; original value hidden
+ * UUID_COMPOSITE_24 = UUID-based composite identifier; original value hidden
+ * UUID_45 = UUID-form identifier; original UUID hidden
+ * UUID_46 = UUID-form identifier; original UUID hidden
+ * UUID_COMPOSITE_25 = UUID-based composite identifier; original value hidden
+ * UUID_COMPOSITE_26 = UUID-based composite identifier; original value hidden
+ * UUID_47 = UUID-form identifier; original UUID hidden
+ * UUID_48 = UUID-form identifier; original UUID hidden
+ * UUID_49 = UUID-form identifier; original UUID hidden
+ * UUID_COMPOSITE_27 = UUID-based composite identifier; original value hidden
+ * UUID_COMPOSITE_28 = UUID-based composite identifier; original value hidden
+ * UUID_50 = UUID-form identifier; original UUID hidden
+ * UUID_51 = UUID-form identifier; original UUID hidden
+ * UUID_52 = UUID-form identifier; original UUID hidden
+ * UUID_53 = UUID-form identifier; original UUID hidden
+ * UUID_54 = UUID-form identifier; original UUID hidden
+ * UUID_55 = UUID-form identifier; original UUID hidden
+ * UUID_COMPOSITE_29 = UUID-based composite identifier; original value hidden
+ * UUID_COMPOSITE_30 = UUID-based composite identifier; original value hidden
+ * UUID_56 = UUID-form identifier; original UUID hidden
+ * UUID_57 = UUID-form identifier; original UUID hidden
+ * UUID_58 = UUID-form identifier; original UUID hidden
+ * UUID_59 = UUID-form identifier; original UUID hidden
+ * UUID_60 = UUID-form identifier; original UUID hidden
+ * UUID_COMPOSITE_31 = UUID-based composite identifier; original value hidden
+ * UUID_COMPOSITE_32 = UUID-based composite identifier; original value hidden
+ * UUID_61 = UUID-form identifier; original UUID hidden
+ * UUID_62 = UUID-form identifier; original UUID hidden
+ */
+
+/*
+ * Request
+ * POST /service/social-feed/api/v2/get_curated_feeds HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 503
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: qFvPvGM
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 372393162
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 503
+ * body logged_size: 503
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "search_area": {
+        "coordinates": "(-2,218,2)",
+        "pool_type": "RecordingCandle",
+        "pool_name": "MainStreet_ShopProps",
+        "level_id": "MainStreet_ShopProps",
+        "inner_radius": 10,
+        "outer_radius": -1,
+        "vertical_radius": 24
+    },
+    "amounts_returned": {
+        "inner_ring": {
+            "local": 0,
+            "friends": 16,
+            "followed": 16,
+            "public": 16,
+            "exact_amount": true
+        }
+    },
+    "page": 0,
+    "random_seed": 20699000,
+    "get_full_documents": true
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 03 Sep 2026 16:40:07 GMT
+ * content-type: application/json; charset=utf-8
+ * content-length: 18810
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 18810
+ * body logged_size: 18810
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "inner_ring": {
+        "local": null,
+        "friends": null,
+        "followed": null,
+        "public": [
+            {
+                "social_feed_id": "UUID_COMPOSITE_1", // UUID-based composite identifier; variable UUID_COMPOSITE_1 (same token means same original value)
+                "user_id": "UUID_COMPOSITE_2", // UUID-based composite identifier; variable UUID_COMPOSITE_2 (same token means same original value)
+                "pool_type": "RecordingCandle",
+                "pool_name": "MainStreet_ShopProps",
+                "create_at": "2026-08-31T22:38:34.137Z",
+                "expire_at": "2026-09-14T22:38:34.135Z",
+                "message": ":(😭",
+                "tags": null,
+                "extra_data": {
+                    "chunk_count": 21,
+                    "ori": "(0,0.716,0,0.698)",
+                    "p0id": "UUID_3", // UUID-form identifier; variable UUID_3 (same token means same original value)
+                    "p1id": "UUID_4", // UUID-form identifier; variable UUID_4 (same token means same original value)
+                    "p2id": "UUID_5", // UUID-form identifier; variable UUID_5 (same token means same original value)
+                    "p3id": "UUID_6", // UUID-form identifier; variable UUID_6 (same token means same original value)
+                    "p4id": "UUID_7", // UUID-form identifier; variable UUID_7 (same token means same original value)
+                    "p5id": "UUID_8", // UUID-form identifier; variable UUID_8 (same token means same original value)
+                    "p6id": "UUID_9", // UUID-form identifier; variable UUID_9 (same token means same original value)
+                    "pos": "(3.005,215.434,-9.938)",
+                    "prompt_used": "",
+                    "resource_id": "UUID_10", // UUID-form identifier; variable UUID_10 (same token means same original value)
+                    "scale": "(1,1,1)",
+                    "sub_type": 0,
+                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                },
+                "reactions": {
+                    "total_report_count": 0,
+                    "total_hide_count": 0,
+                    "total_like_count": 0,
+                    "total_like_reward_message_id": 0,
+                    "total_super_like_count": 0,
+                    "total_comment_count": 0,
+                    "total_reported_comment_count": 0,
+                    "total_attempt_count": 0,
+                    "total_succeed_count": 0,
+                    "is_poisoned": false,
+                    "score": 0
+                },
+                "state": "normal",
+                "comments_enabled": true,
+                "parent_feeds": null,
+                "children_enabled": true,
+                "local_creation": false,
+                "followed": false,
+                "friend": false,
+                "boosted": false
+            },
+            {
+                "social_feed_id": "UUID_COMPOSITE_3", // UUID-based composite identifier; variable UUID_COMPOSITE_3 (same token means same original value)
+                "user_id": "UUID_COMPOSITE_4", // UUID-based composite identifier; variable UUID_COMPOSITE_4 (same token means same original value)
+                "pool_type": "RecordingCandle",
+                "pool_name": "MainStreet_ShopProps",
+                "create_at": "2026-08-24T10:40:52.616Z",
+                "expire_at": "2026-09-07T10:40:52.613Z",
+                "message": "𝓢𝓲𝓹 𝓼𝓹𝓻𝓲𝓷𝓰 𝓽𝓮𝓪 𝓪𝓶𝓲𝓭 𝓹𝓸𝓷𝓭 𝓫𝓵𝓸𝓼𝓼𝓸𝓶𝓼",
+                "tags": null,
+                "extra_data": {
+                    "chunk_count": 30,
+                    "ori": "(0,-0.706,-0,0.709)",
+                    "p0id": "UUID_12", // UUID-form identifier; variable UUID_12 (same token means same original value)
+                    "parent_social_feed_id": "UUID_13", // UUID-form identifier; variable UUID_13 (same token means same original value)
+                    "parent_social_feed_seq": 9,
+                    "parent_social_feed_type": 4,
+                    "parent_user_id": "UUID_12", // UUID-form identifier; variable UUID_12 (same token means same original value)
+                    "pos": "(2.381,215.434,-8.642)",
+                    "prompt_used": "",
+                    "resource_id": "UUID_14", // UUID-form identifier; variable UUID_14 (same token means same original value)
+                    "scale": "(1,1,1)",
+                    "sub_type": 0,
+                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                },
+                "reactions": {
+                    "total_report_count": 0,
+                    "total_hide_count": 0,
+                    "total_like_count": 5,
+                    "total_like_reward_message_id": 0,
+                    "total_super_like_count": 0,
+                    "total_comment_count": 0,
+                    "total_reported_comment_count": 0,
+                    "total_attempt_count": 0,
+                    "total_succeed_count": 0,
+                    "is_poisoned": false,
+                    "score": 0.8333333333333333
+                },
+                "state": "normal",
+                "comments_enabled": true,
+                "parent_feeds": null,
+                "children_enabled": false,
+                "local_creation": false,
+                "followed": false,
+                "friend": false,
+                "boosted": false
+            },
+            {
+                "social_feed_id": "UUID_COMPOSITE_5", // UUID-based composite identifier; variable UUID_COMPOSITE_5 (same token means same original value)
+                "user_id": "UUID_COMPOSITE_6", // UUID-based composite identifier; variable UUID_COMPOSITE_6 (same token means same original value)
+                "pool_type": "RecordingCandle",
+                "pool_name": "MainStreet_ShopProps",
+                "create_at": "2026-08-31T22:16:48.002Z",
+                "expire_at": "2026-09-14T22:16:48Z",
+                "message": "Kksksks",
+                "tags": null,
+                "extra_data": {
+                    "chunk_count": 30,
+                    "ori": "(0,0.693,0,0.721)",
+                    "p0id": "UUID_15", // UUID-form identifier; variable UUID_15 (same token means same original value)
+                    "p1id": "UUID_16", // UUID-form identifier; variable UUID_16 (same token means same original value)
+                    "p2id": "UUID_17", // UUID-form identifier; variable UUID_17 (same token means same original value)
+                    "p3id": "UUID_18", // UUID-form identifier; variable UUID_18 (same token means same original value)
+                    "pos": "(-0.077,215.434,-9.611)",
+                    "prompt_used": "",
+                    "resource_id": "UUID_19", // UUID-form identifier; variable UUID_19 (same token means same original value)
+                    "scale": "(1,1,1)",
+                    "sub_type": 0,
+                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                },
+                "reactions": {
+                    "total_report_count": 0,
+                    "total_hide_count": 0,
+                    "total_like_count": 0,
+                    "total_like_reward_message_id": 0,
+                    "total_super_like_count": 0,
+                    "total_comment_count": 0,
+                    "total_reported_comment_count": 0,
+                    "total_attempt_count": 0,
+                    "total_succeed_count": 0,
+                    "is_poisoned": false,
+                    "score": 0
+                },
+                "state": "normal",
+                "comments_enabled": true,
+                "parent_feeds": null,
+                "children_enabled": true,
+                "local_creation": false,
+                "followed": false,
+                "friend": false,
+                "boosted": true
+            },
+            {
+                "social_feed_id": "UUID_COMPOSITE_7", // UUID-based composite identifier; variable UUID_COMPOSITE_7 (same token means same original value)
+                "user_id": "UUID_COMPOSITE_8", // UUID-based composite identifier; variable UUID_COMPOSITE_8 (same token means same original value)
+                "pool_type": "RecordingCandle",
+                "pool_name": "MainStreet_ShopProps",
+                "create_at": "2026-08-30T00:57:39.436Z",
+                "expire_at": "2026-09-13T00:57:39.432Z",
+                "message": "POV: I become an Ikmen 😈~Moth",
+                "tags": null,
+                "extra_data": {
+                    "chunk_count": 8,
+                    "ori": "(0,-0.691,-0,0.723)",
+                    "p0id": "UUID_20", // UUID-form identifier; variable UUID_20 (same token means same original value)
+                    "pos": "(1.396,215.429,-8.249)",
+                    "prompt_used": "",
+                    "resource_id": "UUID_21", // UUID-form identifier; variable UUID_21 (same token means same original value)
+                    "scale": "(1,1,1)",
+                    "sub_type": 0,
+                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                },
+                "reactions": {
+                    "total_report_count": 0,
+                    "total_hide_count": 0,
+                    "total_like_count": 2,
+                    "total_like_reward_message_id": 0,
+                    "total_super_like_count": 0,
+                    "total_comment_count": 1,
+                    "total_reported_comment_count": 0,
+                    "total_attempt_count": 0,
+                    "total_succeed_count": 0,
+                    "is_poisoned": false,
+                    "score": 1.1666666666666667
+                },
+                "state": "normal",
+                "comments_enabled": true,
+                "parent_feeds": null,
+                "children_enabled": true,
+                "local_creation": false,
+                "followed": false,
+                "friend": false,
+                "boosted": false
+            },
+            {
+                "social_feed_id": "UUID_COMPOSITE_9", // UUID-based composite identifier; variable UUID_COMPOSITE_9 (same token means same original value)
+                "user_id": "UUID_COMPOSITE_10", // UUID-based composite identifier; variable UUID_COMPOSITE_10 (same token means same original value)
+                "pool_type": "RecordingCandle",
+                "pool_name": "MainStreet_ShopProps",
+                "create_at": "2026-08-22T20:56:54.694Z",
+                "expire_at": "2026-09-05T20:56:54.691Z",
+                "message": "music",
+                "tags": null,
+                "extra_data": {
+                    "chunk_count": 12,
+                    "ori": "(0,0.69,0,0.724)",
+                    "p0id": "UUID_22", // UUID-form identifier; variable UUID_22 (same token means same original value)
+                    "pos": "(1.698,215.434,-9.615)",
+                    "prompt_used": "",
+                    "resource_id": "UUID_23", // UUID-form identifier; variable UUID_23 (same token means same original value)
+                    "scale": "(1,1,1)",
+                    "sub_type": 0,
+                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                },
+                "reactions": {
+                    "total_report_count": 0,
+                    "total_hide_count": 0,
+                    "total_like_count": 0,
+                    "total_like_reward_message_id": 0,
+                    "total_super_like_count": 0,
+                    "total_comment_count": 0,
+                    "total_reported_comment_count": 0,
+                    "total_attempt_count": 0,
+                    "total_succeed_count": 0,
+                    "is_poisoned": false,
+                    "score": 0
+                },
+                "state": "normal",
+                "comments_enabled": true,
+                "parent_feeds": null,
+                "children_enabled": false,
+                "local_creation": false,
+                "followed": false,
+                "friend": false,
+                "boosted": false
+            },
+            {
+                "social_feed_id": "UUID_COMPOSITE_11", // UUID-based composite identifier; variable UUID_COMPOSITE_11 (same token means same original value)
+                "user_id": "UUID_COMPOSITE_12", // UUID-based composite identifier; variable UUID_COMPOSITE_12 (same token means same original value)
+                "pool_type": "RecordingCandle",
+                "pool_name": "MainStreet_ShopProps",
+                "create_at": "2026-08-30T07:50:22.348Z",
+                "expire_at": "2026-09-13T07:50:22.346Z",
+                "message": "我錄好玩用的：P",
+                "tags": null,
+                "extra_data": {
+                    "chunk_count": 30,
+                    "ori": "(0,0.713,0,0.701)",
+                    "p0id": "UUID_24", // UUID-form identifier; variable UUID_24 (same token means same original value)
+                    "parent_social_feed_id": "UUID_25", // UUID-form identifier; variable UUID_25 (same token means same original value)
+                    "parent_social_feed_seq": 8,
+                    "parent_social_feed_type": 4,
+                    "parent_user_id": "UUID_24", // UUID-form identifier; variable UUID_24 (same token means same original value)
+                    "pos": "(2.629,215.434,-9.392)",
+                    "prompt_used": "",
+                    "resource_id": "UUID_26", // UUID-form identifier; variable UUID_26 (same token means same original value)
+                    "scale": "(1,1,1)",
+                    "sub_type": 0,
+                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                },
+                "reactions": {
+                    "total_report_count": 0,
+                    "total_hide_count": 0,
+                    "total_like_count": 0,
+                    "total_like_reward_message_id": 0,
+                    "total_super_like_count": 0,
+                    "total_comment_count": 0,
+                    "total_reported_comment_count": 0,
+                    "total_attempt_count": 0,
+                    "total_succeed_count": 0,
+                    "is_poisoned": false,
+                    "score": 0
+                },
+                "state": "normal",
+                "comments_enabled": true,
+                "parent_feeds": null,
+                "children_enabled": true,
+                "local_creation": false,
+                "followed": false,
+                "friend": false,
+                "boosted": true
+            },
+            {
+                "social_feed_id": "UUID_COMPOSITE_13", // UUID-based composite identifier; variable UUID_COMPOSITE_13 (same token means same original value)
+                "user_id": "UUID_COMPOSITE_14", // UUID-based composite identifier; variable UUID_COMPOSITE_14 (same token means same original value)
+                "pool_type": "RecordingCandle",
+                "pool_name": "MainStreet_ShopProps",
+                "create_at": "2026-09-03T09:01:51.676Z",
+                "expire_at": "2026-09-17T09:01:51.674Z",
+                "message": "Music aurora 💕do you like a Aroura and please li",
+                "tags": null,
+                "extra_data": {
+                    "chunk_count": 30,
+                    "ori": "(0,0.712,0,0.702)",
+                    "p0id": "UUID_27", // UUID-form identifier; variable UUID_27 (same token means same original value)
+                    "parent_social_feed_id": "UUID_28", // UUID-form identifier; variable UUID_28 (same token means same original value)
+                    "parent_social_feed_seq": 27,
+                    "parent_social_feed_type": 4,
+                    "parent_user_id": "UUID_29", // UUID-form identifier; variable UUID_29 (same token means same original value)
+                    "pos": "(4.406,215.442,-9.027)",
+                    "prompt_used": "",
+                    "resource_id": "UUID_30", // UUID-form identifier; variable UUID_30 (same token means same original value)
+                    "scale": "(1,1,1)",
+                    "sub_type": 0,
+                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                },
+                "reactions": {
+                    "total_report_count": 0,
+                    "total_hide_count": 0,
+                    "total_like_count": 0,
+                    "total_like_reward_message_id": 0,
+                    "total_super_like_count": 0,
+                    "total_comment_count": 0,
+                    "total_reported_comment_count": 0,
+                    "total_attempt_count": 0,
+                    "total_succeed_count": 0,
+                    "is_poisoned": false,
+                    "score": 0
+                },
+                "state": "normal",
+                "comments_enabled": true,
+                "parent_feeds": null,
+                "children_enabled": true,
+                "local_creation": false,
+                "followed": false,
+                "friend": false,
+                "boosted": false
+            },
+            {
+                "social_feed_id": "UUID_COMPOSITE_15", // UUID-based composite identifier; variable UUID_COMPOSITE_15 (same token means same original value)
+                "user_id": "UUID_COMPOSITE_16", // UUID-based composite identifier; variable UUID_COMPOSITE_16 (same token means same original value)
+                "pool_type": "RecordingCandle",
+                "pool_name": "MainStreet_ShopProps",
+                "create_at": "2026-08-31T06:46:53.053Z",
+                "expire_at": "2026-09-14T06:46:53.044Z",
+                "message": "Loz ",
+                "tags": null,
+                "extra_data": {
+                    "chunk_count": 12,
+                    "ori": "(0,0.974,0,-0.226)",
+                    "p0id": "UUID_31", // UUID-form identifier; variable UUID_31 (same token means same original value)
+                    "pos": "(-2.438,219.393,15.058)",
+                    "prompt_used": "",
+                    "resource_id": "UUID_32", // UUID-form identifier; variable UUID_32 (same token means same original value)
+                    "scale": "(1,1,1)",
+                    "sub_type": 0,
+                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                },
+                "reactions": {
+                    "total_report_count": 0,
+                    "total_hide_count": 0,
+                    "total_like_count": 0,
+                    "total_like_reward_message_id": 0,
+                    "total_super_like_count": 0,
+                    "total_comment_count": 0,
+                    "total_reported_comment_count": 0,
+                    "total_attempt_count": 0,
+                    "total_succeed_count": 0,
+                    "is_poisoned": false,
+                    "score": 0
+                },
+                "state": "normal",
+                "comments_enabled": true,
+                "parent_feeds": null,
+                "children_enabled": true,
+                "local_creation": false,
+                "followed": false,
+                "friend": false,
+                "boosted": false
+            },
+            {
+                "social_feed_id": "UUID_COMPOSITE_17", // UUID-based composite identifier; variable UUID_COMPOSITE_17 (same token means same original value)
+                "user_id": "UUID_COMPOSITE_18", // UUID-based composite identifier; variable UUID_COMPOSITE_18 (same token means same original value)
+                "pool_type": "RecordingCandle",
+                "pool_name": "MainStreet_ShopProps",
+                "create_at": "2026-08-27T16:25:47.014Z",
+                "expire_at": "2026-09-10T16:25:47.012Z",
+                "message": "First day of playing two music",
+                "tags": null,
+                "extra_data": {
+                    "chunk_count": 19,
+                    "ori": "(0,0.707,0,0.708)",
+                    "p0id": "UUID_33", // UUID-form identifier; variable UUID_33 (same token means same original value)
+                    "parent_social_feed_id": "UUID_34", // UUID-form identifier; variable UUID_34 (same token means same original value)
+                    "parent_social_feed_seq": 66,
+                    "parent_social_feed_type": 4,
+                    "parent_user_id": "UUID_35", // UUID-form identifier; variable UUID_35 (same token means same original value)
+                    "pos": "(-0.797,215.424,-8.32)",
+                    "prompt_used": "",
+                    "resource_id": "UUID_36", // UUID-form identifier; variable UUID_36 (same token means same original value)
+                    "scale": "(1,1,1)",
+                    "sub_type": 0,
+                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                },
+                "reactions": {
+                    "total_report_count": 0,
+                    "total_hide_count": 0,
+                    "total_like_count": 0,
+                    "total_like_reward_message_id": 0,
+                    "total_super_like_count": 0,
+                    "total_comment_count": 0,
+                    "total_reported_comment_count": 0,
+                    "total_attempt_count": 1,
+                    "total_succeed_count": 0,
+                    "is_poisoned": false,
+                    "score": 0
+                },
+                "state": "normal",
+                "comments_enabled": true,
+                "parent_feeds": null,
+                "children_enabled": true,
+                "local_creation": false,
+                "followed": false,
+                "friend": false,
+                "boosted": true
+            },
+            {
+                "social_feed_id": "UUID_COMPOSITE_19", // UUID-based composite identifier; variable UUID_COMPOSITE_19 (same token means same original value)
+                "user_id": "UUID_COMPOSITE_20", // UUID-based composite identifier; variable UUID_COMPOSITE_20 (same token means same original value)
+                "pool_type": "RecordingCandle",
+                "pool_name": "MainStreet_ShopProps",
+                "create_at": "2026-08-30T02:55:02.411Z",
+                "expire_at": "2026-09-13T02:55:02.408Z",
+                "message": "comment if you disagree",
+                "tags": null,
+                "extra_data": {
+                    "chunk_count": 5,
+                    "ori": "(0,0.674,0,0.739)",
+                    "p0id": "UUID_37", // UUID-form identifier; variable UUID_37 (same token means same original value)
+                    "parent_social_feed_id": "UUID_38", // UUID-form identifier; variable UUID_38 (same token means same original value)
+                    "parent_social_feed_seq": 46,
+                    "parent_social_feed_type": 4,
+                    "parent_user_id": "UUID_37", // UUID-form identifier; variable UUID_37 (same token means same original value)
+                    "pos": "(0.277,215.428,-8.06)",
+                    "prompt_used": "",
+                    "resource_id": "UUID_39", // UUID-form identifier; variable UUID_39 (same token means same original value)
+                    "scale": "(1,1,1)",
+                    "sub_type": 0,
+                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                },
+                "reactions": {
+                    "total_report_count": 0,
+                    "total_hide_count": 0,
+                    "total_like_count": 2,
+                    "total_like_reward_message_id": 0,
+                    "total_super_like_count": 0,
+                    "total_comment_count": 0,
+                    "total_reported_comment_count": 0,
+                    "total_attempt_count": 0,
+                    "total_succeed_count": 0,
+                    "is_poisoned": false,
+                    "score": 0.3333333333333333
+                },
+                "state": "normal",
+                "comments_enabled": true,
+                "parent_feeds": null,
+                "children_enabled": true,
+                "local_creation": false,
+                "followed": false,
+                "friend": false,
+                "boosted": false
+            },
+            {
+                "social_feed_id": "UUID_COMPOSITE_21", // UUID-based composite identifier; variable UUID_COMPOSITE_21 (same token means same original value)
+                "user_id": "UUID_COMPOSITE_22", // UUID-based composite identifier; variable UUID_COMPOSITE_22 (same token means same original value)
+                "pool_type": "RecordingCandle",
+                "pool_name": "MainStreet_ShopProps",
+                "create_at": "2026-08-21T16:46:35.548Z",
+                "expire_at": "2026-09-04T16:46:35.543Z",
+                "message": ".",
+                "tags": null,
+                "extra_data": {
+                    "chunk_count": 15,
+                    "ori": "(0,0.713,0,0.701)",
+                    "p0id": "UUID_40", // UUID-form identifier; variable UUID_40 (same token means same original value)
+                    "p1id": "UUID_41", // UUID-form identifier; variable UUID_41 (same token means same original value)
+                    "p2id": "UUID_42", // UUID-form identifier; variable UUID_42 (same token means same original value)
+                    "p3id": "UUID_43", // UUID-form identifier; variable UUID_43 (same token means same original value)
+                    "pos": "(2.859,215.434,-9.279)",
+                    "prompt_used": "",
+                    "resource_id": "UUID_44", // UUID-form identifier; variable UUID_44 (same token means same original value)
+                    "scale": "(1,1,1)",
+                    "sub_type": 0,
+                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                },
+                "reactions": {
+                    "total_report_count": 0,
+                    "total_hide_count": 0,
+                    "total_like_count": 4,
+                    "total_like_reward_message_id": 0,
+                    "total_super_like_count": 1,
+                    "total_comment_count": 0,
+                    "total_reported_comment_count": 0,
+                    "total_attempt_count": 0,
+                    "total_succeed_count": 0,
+                    "is_poisoned": false,
+                    "score": 0.6666666666666666
+                },
+                "state": "normal",
+                "comments_enabled": true,
+                "parent_feeds": null,
+                "children_enabled": false,
+                "local_creation": false,
+                "followed": false,
+                "friend": false,
+                "boosted": false
+            },
+            {
+                "social_feed_id": "UUID_COMPOSITE_23", // UUID-based composite identifier; variable UUID_COMPOSITE_23 (same token means same original value)
+                "user_id": "UUID_COMPOSITE_24", // UUID-based composite identifier; variable UUID_COMPOSITE_24 (same token means same original value)
+                "pool_type": "RecordingCandle",
+                "pool_name": "MainStreet_ShopProps",
+                "create_at": "2026-08-24T04:50:45.271Z",
+                "expire_at": "2026-09-07T04:50:45.269Z",
+                "message": "Ляля в комнате",
+                "tags": null,
+                "extra_data": {
+                    "chunk_count": 20,
+                    "ori": "(0,0.713,0,0.701)",
+                    "p0id": "UUID_45", // UUID-form identifier; variable UUID_45 (same token means same original value)
+                    "pos": "(1.844,215.434,-9.734)",
+                    "prompt_used": "",
+                    "resource_id": "UUID_46", // UUID-form identifier; variable UUID_46 (same token means same original value)
+                    "scale": "(1,1,1)",
+                    "sub_type": 0,
+                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                },
+                "reactions": {
+                    "total_report_count": 0,
+                    "total_hide_count": 0,
+                    "total_like_count": 0,
+                    "total_like_reward_message_id": 0,
+                    "total_super_like_count": 0,
+                    "total_comment_count": 0,
+                    "total_reported_comment_count": 0,
+                    "total_attempt_count": 0,
+                    "total_succeed_count": 0,
+                    "is_poisoned": false,
+                    "score": 0
+                },
+                "state": "normal",
+                "comments_enabled": true,
+                "parent_feeds": null,
+                "children_enabled": false,
+                "local_creation": false,
+                "followed": false,
+                "friend": false,
+                "boosted": true
+            },
+            {
+                "social_feed_id": "UUID_COMPOSITE_25", // UUID-based composite identifier; variable UUID_COMPOSITE_25 (same token means same original value)
+                "user_id": "UUID_COMPOSITE_26", // UUID-based composite identifier; variable UUID_COMPOSITE_26 (same token means same original value)
+                "pool_type": "RecordingCandle",
+                "pool_name": "MainStreet_ShopProps",
+                "create_at": "2026-08-23T09:44:50.494Z",
+                "expire_at": "2026-09-06T09:44:50.49Z",
+                "message": "Is a princess castle!😍",
+                "tags": null,
+                "extra_data": {
+                    "chunk_count": 23,
+                    "ori": "(0,-0.69,-0,0.724)",
+                    "p0id": "UUID_47", // UUID-form identifier; variable UUID_47 (same token means same original value)
+                    "parent_social_feed_id": "UUID_48", // UUID-form identifier; variable UUID_48 (same token means same original value)
+                    "parent_social_feed_seq": 3,
+                    "parent_social_feed_type": 4,
+                    "parent_user_id": "UUID_47", // UUID-form identifier; variable UUID_47 (same token means same original value)
+                    "pos": "(2.113,215.434,-8.493)",
+                    "prompt_used": "",
+                    "resource_id": "UUID_49", // UUID-form identifier; variable UUID_49 (same token means same original value)
+                    "scale": "(1,1,1)",
+                    "sub_type": 0,
+                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                },
+                "reactions": {
+                    "total_report_count": 0,
+                    "total_hide_count": 0,
+                    "total_like_count": 2,
+                    "total_like_reward_message_id": 0,
+                    "total_super_like_count": 0,
+                    "total_comment_count": 0,
+                    "total_reported_comment_count": 0,
+                    "total_attempt_count": 0,
+                    "total_succeed_count": 0,
+                    "is_poisoned": false,
+                    "score": 0.3333333333333333
+                },
+                "state": "normal",
+                "comments_enabled": true,
+                "parent_feeds": null,
+                "children_enabled": false,
+                "local_creation": false,
+                "followed": false,
+                "friend": false,
+                "boosted": false
+            },
+            {
+                "social_feed_id": "UUID_COMPOSITE_27", // UUID-based composite identifier; variable UUID_COMPOSITE_27 (same token means same original value)
+                "user_id": "UUID_COMPOSITE_28", // UUID-based composite identifier; variable UUID_COMPOSITE_28 (same token means same original value)
+                "pool_type": "RecordingCandle",
+                "pool_name": "MainStreet_ShopProps",
+                "create_at": "2026-08-22T22:22:37.121Z",
+                "expire_at": "2026-09-05T22:22:37.116Z",
+                "message": "Bink’s Sake(One Piece)-Pastel ft The Free Birds!",
+                "tags": null,
+                "extra_data": {
+                    "chunk_count": 20,
+                    "ori": "(0,0.69,0,0.724)",
+                    "p0id": "UUID_50", // UUID-form identifier; variable UUID_50 (same token means same original value)
+                    "p1id": "UUID_51", // UUID-form identifier; variable UUID_51 (same token means same original value)
+                    "p2id": "UUID_52", // UUID-form identifier; variable UUID_52 (same token means same original value)
+                    "p3id": "UUID_53", // UUID-form identifier; variable UUID_53 (same token means same original value)
+                    "p4id": "UUID_54", // UUID-form identifier; variable UUID_54 (same token means same original value)
+                    "pos": "(2.601,215.434,-9.63)",
+                    "prompt_used": "",
+                    "resource_id": "UUID_55", // UUID-form identifier; variable UUID_55 (same token means same original value)
+                    "scale": "(1,1,1)",
+                    "sub_type": 0,
+                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                },
+                "reactions": {
+                    "total_report_count": 0,
+                    "total_hide_count": 0,
+                    "total_like_count": 52,
+                    "total_like_reward_message_id": 0,
+                    "total_super_like_count": 2,
+                    "total_comment_count": 14,
+                    "total_reported_comment_count": 0,
+                    "total_attempt_count": 0,
+                    "total_succeed_count": 0,
+                    "is_poisoned": false,
+                    "score": 20.333333333333336
+                },
+                "state": "normal",
+                "comments_enabled": true,
+                "parent_feeds": null,
+                "children_enabled": false,
+                "local_creation": false,
+                "followed": false,
+                "friend": false,
+                "boosted": false
+            },
+            {
+                "social_feed_id": "UUID_COMPOSITE_29", // UUID-based composite identifier; variable UUID_COMPOSITE_29 (same token means same original value)
+                "user_id": "UUID_COMPOSITE_30", // UUID-based composite identifier; variable UUID_COMPOSITE_30 (same token means same original value)
+                "pool_type": "RecordingCandle",
+                "pool_name": "MainStreet_ShopProps",
+                "create_at": "2026-08-21T16:49:40.028Z",
+                "expire_at": "2026-09-04T16:49:40.024Z",
+                "message": "Tak",
+                "tags": null,
+                "extra_data": {
+                    "chunk_count": 5,
+                    "ori": "(0,0.706,0,0.709)",
+                    "p0id": "UUID_56", // UUID-form identifier; variable UUID_56 (same token means same original value)
+                    "p1id": "UUID_57", // UUID-form identifier; variable UUID_57 (same token means same original value)
+                    "parent_social_feed_id": "UUID_58", // UUID-form identifier; variable UUID_58 (same token means same original value)
+                    "parent_social_feed_seq": 1,
+                    "parent_social_feed_type": 6,
+                    "parent_user_id": "UUID_59", // UUID-form identifier; variable UUID_59 (same token means same original value)
+                    "pos": "(0.528,215.417,-7.975)",
+                    "prompt_used": "",
+                    "resource_id": "UUID_60", // UUID-form identifier; variable UUID_60 (same token means same original value)
+                    "scale": "(1,1,1)",
+                    "sub_type": 0,
+                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                },
+                "reactions": {
+                    "total_report_count": 0,
+                    "total_hide_count": 0,
+                    "total_like_count": 0,
+                    "total_like_reward_message_id": 0,
+                    "total_super_like_count": 0,
+                    "total_comment_count": 0,
+                    "total_reported_comment_count": 0,
+                    "total_attempt_count": 1,
+                    "total_succeed_count": 0,
+                    "is_poisoned": false,
+                    "score": 0
+                },
+                "state": "normal",
+                "comments_enabled": true,
+                "parent_feeds": null,
+                "children_enabled": false,
+                "local_creation": false,
+                "followed": false,
+                "friend": false,
+                "boosted": true
+            },
+            {
+                "social_feed_id": "UUID_COMPOSITE_31", // UUID-based composite identifier; variable UUID_COMPOSITE_31 (same token means same original value)
+                "user_id": "UUID_COMPOSITE_32", // UUID-based composite identifier; variable UUID_COMPOSITE_32 (same token means same original value)
+                "pool_type": "RecordingCandle",
+                "pool_name": "MainStreet_ShopProps",
+                "create_at": "2026-09-01T06:06:48.527Z",
+                "expire_at": "2026-09-15T06:06:48.524Z",
+                "message": "What ",
+                "tags": null,
+                "extra_data": {
+                    "chunk_count": 5,
+                    "ori": "(0,0.692,0,0.722)",
+                    "p0id": "UUID_61", // UUID-form identifier; variable UUID_61 (same token means same original value)
+                    "pos": "(-0.8,215.434,-9.541)",
+                    "prompt_used": "",
+                    "resource_id": "UUID_62", // UUID-form identifier; variable UUID_62 (same token means same original value)
+                    "scale": "(1,1,1)",
+                    "sub_type": 0,
+                    "user_id": "UUID_11" // UUID-form identifier; variable UUID_11 (same token means same original value)
+                },
+                "reactions": {
+                    "total_report_count": 0,
+                    "total_hide_count": 0,
+                    "total_like_count": 0,
+                    "total_like_reward_message_id": 0,
+                    "total_super_like_count": 0,
+                    "total_comment_count": 0,
+                    "total_reported_comment_count": 0,
+                    "total_attempt_count": 0,
+                    "total_succeed_count": 0,
+                    "is_poisoned": false,
+                    "score": 0
+                },
+                "state": "normal",
+                "comments_enabled": true,
+                "parent_feeds": null,
+                "children_enabled": true,
+                "local_creation": false,
+                "followed": false,
+                "friend": false,
+                "boosted": false
+            }
+        ],
+        "boosted": null,
+        "total_friends": 0,
+        "total_followed": 0,
+        "total_available_results": 167
+    },
+    "outer_ring": null
+}

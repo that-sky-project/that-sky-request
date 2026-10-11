@@ -1,0 +1,72 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ */
+
+/*
+ * Request
+ * GET / HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * upgrade-insecure-requests: 1
+ * user-agent: Mozilla/5.0 (Linux; Android 11; Redmi Note 8 Pro Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.72 MQQBrowser/6.2 TBS/045913 Mobile Safari/537.36 V1_AND_SQ_8.8.68_2538_YYB_D A_8086800 QQ/8.8.68.7265 NetType/WIFI WebP/0.3.0 Pixel/1080 StatusBarHeight/76 SimpleUISwitch/1 QQTheme/2971 InMagicWin/0 StudyMode/0 CurrentMode/1 CurrentFontScale/1.0 GlobalDensityScale/0.9818182 AppId/537112567 Edg/98.0.4758.102
+ * accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,* /*;q=0.8,application/signed-exchange;v=b3;q=0.7
+ * sec-fetch-site: none
+ * sec-fetch-mode: navigate
+ * sec-fetch-user: ?1
+ * sec-fetch-dest: document
+ * sec-ch-ua: "Not/A)Brand";v="99", "Google Chrome";v="116", "Chromium";v="116"
+ * sec-ch-ua-mobile: ?1
+ * sec-ch-ua-platform: "Android"
+ * accept-encoding: gzip, deflate, br
+ * 
+ * Captured request-body metadata:
+ * captured body type: empty
+ * body size: 0
+ * body logged_size: 0
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "type": "empty",
+    "data": null,
+    "size": 0,
+    "logged_size": 0,
+    "truncated": false,
+    "omitted_size": 0
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 03 Sep 2026 18:34:24 GMT
+ * content-type: text/html
+ * content-length: 76
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * last-modified: Tue, 11 Mar 2025 17:59:50 GMT
+ * etag: "67d07a16-4c"
+ * accept-ranges: bytes
+ * 
+ * Captured response-body metadata:
+ * captured body type: text
+ * body size: 76
+ * body logged_size: 76
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "type": "text",
+    "data": "<!DOCTYPE html>\n<html>\n<head><title>.</title></head>\n<body>.</body>\n</html>\n",
+    "size": 76,
+    "logged_size": 76,
+    "truncated": false,
+    "omitted_size": 0
+}

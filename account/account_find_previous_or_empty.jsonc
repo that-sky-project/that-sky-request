@@ -1,0 +1,69 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ * VALUE_2 = non-UUID sensitive value; original value hidden
+ * VALUE_3 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /account/find_previous_or_empty HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 258
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * 
+ * Captured request-body metadata:
+ * captured body type: binary
+ * body size: 258
+ * body logged_size: 258
+ * body omitted_size: 0
+ * body truncated: false
+ * Base64 JSON request payload decoded, sensitive fields redacted, and re-encoded. Capture metadata reflects the original payload.
+ */
+// Request
+{
+    "type": "binary",
+    "data": "eyJ1c2VyIjoiVVVJRF8yIiwic2Vzc2lvbiI6IlZBTFVFXzEiLCJzZXJ2ZXJfdmVyc2lvbiI6NDM4LCJjbGllbnRfdmVyc2lvbiI6NTExOSwiZm9yY2VfZW1wdHkiOmZhbHNlLCJuZXRfZmxhZ3MiOjAsIm5ldF9leGNsdXNpdmVfZmxhZ3MiOjAsImxldmVsX2hhc2giOjQ0MDEyLCJxdWlja19yZWpvaW5fcGxheWVycyI6W10sInJlY2VudF9wbGF5ZXJzIjpbXX0=", // Base64 JSON payload sanitized and re-encoded
+    "size": 258,
+    "logged_size": 258,
+    "truncated": false,
+    "omitted_size": 0
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 03 Sep 2026 16:39:33 GMT
+ * content-type: text/plain; charset=utf-8
+ * content-length: 239
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * cache-control: max-age=0, private, must-revalidate
+ * x-request-id: GNHdDKUPyCPms4UZkqmB
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 239
+ * body logged_size: 239
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "uri": "129.146.120.185:5887",
+    "move_ts": 1788453573,
+    "signature": "VALUE_2", // Sensitive value hidden; variable VALUE_2 (same token means same original value)
+    "sig": "VALUE_3", // Sensitive value hidden; variable VALUE_3 (same token means same original value)
+    "ps_only": false,
+    "platform_filter": 0
+}

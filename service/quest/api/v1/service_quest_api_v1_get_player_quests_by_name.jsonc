@@ -1,0 +1,110 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /service/quest/api/v1/get_player_quests_by_name HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 1445
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: yUJ
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 1445
+ * body logged_size: 1445
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "quest_names": [
+        "trust_moment_whisper",
+        "meditate_night_main2",
+        "pick_up_1_crab",
+        "fetchlight_mind",
+        "companion_lighthorn_spend_time_medium",
+        "make_a_new_acquaintance",
+        "tot_cutscene_daily_results",
+        "rainbow_rainbow_dusk_01",
+        "trust_moment_breakdance",
+        "companion_flag_spend_time_medium",
+        "spirit_angler1",
+        "light_20_candles",
+        "ap31_fetch_04",
+        "world_quest_night_wise",
+        "companion_slowwalk_spend_time_medium",
+        "ap31_fetch_01",
+        "ap31_fetch_02",
+        "trust_moment_balltrick",
+        "ap31_fetch_03",
+        "ap31_fetch_05",
+        "trust_moment_write",
+        "ap31_fetch_06",
+        "companion_secrethandshake_spend_time_medium",
+        "companion_airplanearms_spend_time_medium",
+        "companion_approve_spend_time_medium",
+        "trust_moment_dizzy",
+        "companion_balltrick_spend_time_medium",
+        "companion_bask_spend_time_medium",
+        "companion_breakdance_spend_time_medium",
+        "companion_cuteclap_spend_time_medium",
+        "companion_dizzy_spend_time_medium",
+        "companion_whisper_spend_time_medium",
+        "companion_draw_spend_time_medium",
+        "companion_frustration_spend_time_medium",
+        "trust_moment_secrethandshake",
+        "companion_jellydance_spend_time_medium",
+        "trust_moment_jellydance",
+        "companion_revolvingdance_spend_time_medium",
+        "companion_write_spend_time_medium",
+        "trust_moment_cuteclap",
+        "trust_moment_flag",
+        "trust_moment_revolvingdance",
+        "trust_moment_airplanearms",
+        "trust_moment_approve",
+        "trust_moment_lighthorn"
+    ]
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 03 Sep 2026 16:39:36 GMT
+ * content-type: application/json; charset=utf-8
+ * content-length: 15
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 15
+ * body logged_size: 15
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "results": {}
+}

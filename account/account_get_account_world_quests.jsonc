@@ -1,0 +1,586 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /account/get_account_world_quests HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 141
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.3.407106 (System Product Name; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: GSPYCWT
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 141
+ * body logged_size: 141
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1" // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Wed, 12 Aug 2026 01:53:30 GMT
+ * content-type: text/plain; charset=utf-8
+ * content-length: 10063
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * cache-control: max-age=0, private, must-revalidate
+ * x-request-id: GMrr7h3wqdVzMAUvSRSB
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 10063
+ * body logged_size: 10063
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "set_world_quests": [
+        {
+            "world_quest_def_id": "ap27_fq5_memory1",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap27_fq5_memory2",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap27_fq5_memory3",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap27_fq5_memory4",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap28_fetch_01_bells",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap28_fetch_02_bells",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap28_fetch_03_bells",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap28_fetch_04_bells",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap28_fetch_05_bells",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap28_fetch_06_bells",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap28_fetch_07_bells",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap28_fetch_08_bells",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap28_fetch_09_bells",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap28_fetch_10_bells",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap29_fetch_01_revolvingdance",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap29_fetch_02_revolvingdance",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap29_fetch_03_revolvingdance",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap29_fetch_04_cuteclap",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap29_fetch_05_cuteclap",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap29_fetch_06_cuteclap",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap29_fetch_07_secret",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap29_fetch_08_secret",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap29_fetch_09_secret",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap29_fetch_10_whisper",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap29_fetch_11_whisper",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap29_fetch_12_whisper",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap30_fetch_01_challenge",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap30_fetch_02_challenge",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap30_fetch_03_challenge",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap30_fetch_04_challenge",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "ap30_fetch_05_challenge",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "cafe_photobooth",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "cafe_serving",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "competition_cloudcollect",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "competition_flyrace",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "competition_sliderace",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "competition_speedskate",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "competition_voidcollect",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "dawn_balance",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "dawn_carry",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "dawn_chestpound",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "dawn_come",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "dawn_deepbreath",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "dawn_dustoff",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "dawn_first_wingbuff",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "dawn_hackysack",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "dawn_loopdance",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "dawn_mope",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "dawn_nothanks",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "dawn_point",
+            "cooldown_over_time": 1697007600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "dawn_sass",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "dawn_temple",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "dusk_die",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "dusk_lookaround",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "dusk_salute",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "mainstreet_hypedance",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "night_beckon",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "night_cuteclap",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "night_ghost",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "night_gloat",
+            "cooldown_over_time": 1733299200,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "night_grief",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "night_love",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "night_princesscarry",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "night_whistle",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "night_wise",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "oasis_nod",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "oasis_shrug",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "prairie_bird",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "prairie_doublefive",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "prairie_gratitude",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "prairie_grumpy",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "prairie_nightbird",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "prairie_rally",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "prairie_wave",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "prairie_windpose",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "prairie_yawn",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "prefab_quest_test",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "rain_marching",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "rain_whale",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "scavenger_spirit_beachday1",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "scavenger_spirit_beachday2",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "scavenger_spirit_rockcollection1",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "skyway_pointup",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "skyway_voila",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "summer_photo",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "summer_photo2",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "summer_photo3",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "sunset_duetdance",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "sunset_flyrace",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "sunset_handstand",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "sunset_race",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "sunset_tripleaxel",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "sunset_village_bearhug",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "sunset_yeti_race",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "test_event",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "tgc_office_aaron",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "tgc_office_atlas",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "tgc_office_don",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "tgc_office_jenova",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "tgc_office_scott",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "tgc_office_skidmore",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "tgc_office_travis",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "tgc_office_vince",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        },
+        {
+            "world_quest_def_id": "tgc_office_yui",
+            "cooldown_over_time": 1775199600,
+            "ever_completed": true
+        }
+    ]
+}

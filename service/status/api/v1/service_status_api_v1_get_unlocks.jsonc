@@ -1,0 +1,1694 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /service/status/api/v1/get_unlocks HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 162
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.3.407106 (System Product Name; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: QHocVn7
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 162
+ * body logged_size: 162
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "l": 1000,
+    "o": 0,
+    "v": 0
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Wed, 12 Aug 2026 01:53:36 GMT
+ * content-type: application/json; charset=utf-8
+ * content-length: 22449
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 22449
+ * body logged_size: 22449
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "status_unlocks": [
+        {
+            "name": "first_loaded_Dawn",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1696935856
+        },
+        {
+            "name": "first_loaded_CandleSpace",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1696935649
+        },
+        {
+            "name": "FinishedIntro",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1696935688
+        },
+        {
+            "name": "FirstSpiritGained",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1696936371
+        },
+        {
+            "name": "LearnedResume",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1702592549
+        },
+        {
+            "name": "DayStatueForm",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1702593270
+        },
+        {
+            "name": "DayHub",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1702600428
+        },
+        {
+            "name": "first_loaded_Prairie_ButterflyFields",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1702600431
+        },
+        {
+            "name": "tutorial_shop",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1702600433
+        },
+        {
+            "name": "first_loaded_Rain",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1702601027
+        },
+        {
+            "name": "first_loaded_Prairie_Village",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1702600521
+        },
+        {
+            "name": "PrairieVillageIntro",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1702600537
+        },
+        {
+            "name": "AP20IntroBeginning",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1702601229
+        },
+        {
+            "name": "RainStatueForm",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1702601053
+        },
+        {
+            "name": "AP20Unlock",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1702601232
+        },
+        {
+            "name": "first_loaded_DayEnd",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1702600833
+        },
+        {
+            "name": "first_loaded_MainStreet",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1702602326
+        },
+        {
+            "name": "PlayedFlyingIntro",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1702602327
+        },
+        {
+            "name": "help_howtoplay_currency",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1702606137
+        },
+        {
+            "name": "AP24Intro_01",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1733200741
+        },
+        {
+            "name": "first_loaded_Night",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1733200746
+        },
+        {
+            "name": "AP24Unlock",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1733201525
+        },
+        {
+            "name": "first_loaded_NightDesert",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1733281549
+        },
+        {
+            "name": "DoMintro",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1733282348
+        },
+        {
+            "name": "RainIntroSequence",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1733282506
+        },
+        {
+            "name": "first_loaded_RainForest",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1733282690
+        },
+        {
+            "name": "help_ap_promo_test",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1768975922
+        },
+        {
+            "name": "first_loaded_Event_Personality",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1768979967
+        },
+        {
+            "name": "ap06unlock_ap20_fetch_01_quest_started",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1768991646
+        },
+        {
+            "name": "first_loaded_MainStreet_ShopOutfits",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1768991714
+        },
+        {
+            "name": "UiSocialFeedCreateMenuOpened",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1774310298
+        },
+        {
+            "name": "MapAnywhereFirstTutorialPlayed",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155301
+        },
+        {
+            "name": "MapAnywhereSecondTutorialPlayed",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155307
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_01",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155152
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_01_claimFx",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155152
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_01_quest_started",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155152
+        },
+        {
+            "name": "AviaryVillage_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155153
+        },
+        {
+            "name": "OnboardedInMainstreet",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155154
+        },
+        {
+            "name": "UiMapTutorialPlayed",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155154
+        },
+        {
+            "name": "MainstreetFinishedOnboarding",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155154
+        },
+        {
+            "name": "MainstreetFinishedStorm",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155154
+        },
+        {
+            "name": "ap06unlock_ap20_fetch_02_quest_done",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155155
+        },
+        {
+            "name": "ap06unlock_ap20_fetch_01_quest_done",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155155
+        },
+        {
+            "name": "ap06unlock_ap20_fetch_01_claimFx",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155155
+        },
+        {
+            "name": "ap06unlock_ap20_fetch_01",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155155
+        },
+        {
+            "name": "ap06unlock_ap20_fetch_03_claimFx",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155156
+        },
+        {
+            "name": "ap06unlock_ap20_fetch_02_quest_started",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155156
+        },
+        {
+            "name": "ap06unlock_ap20_fetch_03_quest_done",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155156
+        },
+        {
+            "name": "ap06unlock_ap20_fetch_03",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155156
+        },
+        {
+            "name": "ap06unlock_ap20_fetch_04_claimFx",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155157
+        },
+        {
+            "name": "ap06unlock_ap20_fetch_04_quest_started",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155157
+        },
+        {
+            "name": "ap06unlock_ap20_fetch_03_quest_started",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155157
+        },
+        {
+            "name": "ap06unlock_ap20_fetch_04",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155157
+        },
+        {
+            "name": "ap06unlock_ap20_fetch_04_quest_done",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155157
+        },
+        {
+            "name": "teleport_to_questap09",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155158
+        },
+        {
+            "name": "relationship_ability_ap06unlock_ap20_hug",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155158
+        },
+        {
+            "name": "ap06unlock_ap20_fetch_05_quest_started",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155158
+        },
+        {
+            "name": "first_loaded_MainStreetFlyingIntro",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155159
+        },
+        {
+            "name": "mainstreetRevealedMural",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155159
+        },
+        {
+            "name": "first_loaded_MainStreet_ShopSpells",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155159
+        },
+        {
+            "name": "sheet03",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155165
+        },
+        {
+            "name": "sheet01",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155166
+        },
+        {
+            "name": "sheet05",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155166
+        },
+        {
+            "name": "sheet04",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155166
+        },
+        {
+            "name": "sheet08",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155167
+        },
+        {
+            "name": "sheet06",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155167
+        },
+        {
+            "name": "sheet02",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155167
+        },
+        {
+            "name": "sheet07",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155167
+        },
+        {
+            "name": "sheet10",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155168
+        },
+        {
+            "name": "sheet12",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155168
+        },
+        {
+            "name": "sheet09",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155168
+        },
+        {
+            "name": "sheet11",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155168
+        },
+        {
+            "name": "sheet13quad",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155168
+        },
+        {
+            "name": "sheet14quad",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155169
+        },
+        {
+            "name": "sheet15quad",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155169
+        },
+        {
+            "name": "sheet16",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155169
+        },
+        {
+            "name": "sheet17",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155169
+        },
+        {
+            "name": "sheet19",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155170
+        },
+        {
+            "name": "sheet18",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155170
+        },
+        {
+            "name": "sheet21",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155170
+        },
+        {
+            "name": "sheet20",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155170
+        },
+        {
+            "name": "sheet25",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155171
+        },
+        {
+            "name": "sheet22",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155171
+        },
+        {
+            "name": "sheet23",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155171
+        },
+        {
+            "name": "sheet27",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155171
+        },
+        {
+            "name": "sheet24",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155171
+        },
+        {
+            "name": "sheet28",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155172
+        },
+        {
+            "name": "sheet29",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155172
+        },
+        {
+            "name": "sheet33",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155173
+        },
+        {
+            "name": "sheet30",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155173
+        },
+        {
+            "name": "sheet31",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155173
+        },
+        {
+            "name": "sheet32",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155173
+        },
+        {
+            "name": "sheet36",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155174
+        },
+        {
+            "name": "sheet34",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155174
+        },
+        {
+            "name": "sheet35",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155174
+        },
+        {
+            "name": "sheet37",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155174
+        },
+        {
+            "name": "sheet40",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155175
+        },
+        {
+            "name": "sheet39",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155175
+        },
+        {
+            "name": "sheet44",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155176
+        },
+        {
+            "name": "sheet43",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155176
+        },
+        {
+            "name": "sheet41",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155176
+        },
+        {
+            "name": "sheet45",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155177
+        },
+        {
+            "name": "sheet47",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155177
+        },
+        {
+            "name": "sheet48",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155178
+        },
+        {
+            "name": "sheet38",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155178
+        },
+        {
+            "name": "sheet49",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155178
+        },
+        {
+            "name": "sheetMiniK0",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155179
+        },
+        {
+            "name": "sheetMiniK1",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155179
+        },
+        {
+            "name": "sheetMiniK2",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155179
+        },
+        {
+            "name": "sheetMiniK3",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155179
+        },
+        {
+            "name": "sheet26",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155180
+        },
+        {
+            "name": "sheetHappyBirthday",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155180
+        },
+        {
+            "name": "sheet46",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155180
+        },
+        {
+            "name": "sheet42",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155180
+        },
+        {
+            "name": "AP23QuestSheet1noClick",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155181
+        },
+        {
+            "name": "AP14QuestSheet",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155181
+        },
+        {
+            "name": "AP23QuestSheet1",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155181
+        },
+        {
+            "name": "sheet42light",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155181
+        },
+        {
+            "name": "AP23QuestSheet5Harp",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155182
+        },
+        {
+            "name": "AP23QuestSheet2",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155182
+        },
+        {
+            "name": "AP23QuestSheet4",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155182
+        },
+        {
+            "name": "AP23QuestSheet3",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155182
+        },
+        {
+            "name": "sheetTest1",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155183
+        },
+        {
+            "name": "AP23QuestSheet5",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155183
+        },
+        {
+            "name": "ap06unlock_ap08_fetch_01_quest_started",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155183
+        },
+        {
+            "name": "sheetBlank",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155183
+        },
+        {
+            "name": "ap06unlock_ap08_fetch_01",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155184
+        },
+        {
+            "name": "ap06unlock_ap08_fetch_01_claimFx",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155184
+        },
+        {
+            "name": "Prairie_ButterflyFields_Town_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155184
+        },
+        {
+            "name": "Dawn_Shrine_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155185
+        },
+        {
+            "name": "Prairie_ButterflyFields_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155185
+        },
+        {
+            "name": "Dawn_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155185
+        },
+        {
+            "name": "DayHubCave_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155186
+        },
+        {
+            "name": "Dawn_TrialsWater_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155187
+        },
+        {
+            "name": "Dawn_Plateau_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155187
+        },
+        {
+            "name": "DawnCave_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155187
+        },
+        {
+            "name": "Prairie_Island_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155188
+        },
+        {
+            "name": "Dawn_TrialsAir_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155188
+        },
+        {
+            "name": "Dawn_TrialsFire_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155188
+        },
+        {
+            "name": "Dawn_TrialsEarth_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155188
+        },
+        {
+            "name": "Prairie_NestAndKeeper_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155188
+        },
+        {
+            "name": "CandleSpace_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155189
+        },
+        {
+            "name": "Prairie_Village_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155189
+        },
+        {
+            "name": "Prairie_WildLifePark_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155189
+        },
+        {
+            "name": "Prairie_Cave_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155189
+        },
+        {
+            "name": "Rain_Town_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155190
+        },
+        {
+            "name": "Skyway_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155190
+        },
+        {
+            "name": "Prairie_Village_Shrine_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155190
+        },
+        {
+            "name": "Rain_BaseCamp_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155190
+        },
+        {
+            "name": "Rain_Cave_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155191
+        },
+        {
+            "name": "Rain_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155191
+        },
+        {
+            "name": "RainForest_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155191
+        },
+        {
+            "name": "RainShelter_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155191
+        },
+        {
+            "name": "RainMid_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155191
+        },
+        {
+            "name": "Sunset_Town_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155192
+        },
+        {
+            "name": "RainEnd_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155192
+        },
+        {
+            "name": "Sunset_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155192
+        },
+        {
+            "name": "RainEnd_Pond_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155192
+        },
+        {
+            "name": "SunsetColosseum_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155193
+        },
+        {
+            "name": "Sunset_Citadel_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155193
+        },
+        {
+            "name": "Sunset_Theater_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155193
+        },
+        {
+            "name": "SunsetRace_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155193
+        },
+        {
+            "name": "Sunset_FlyRace_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155193
+        },
+        {
+            "name": "Sunset_YetiPark_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155194
+        },
+        {
+            "name": "SunsetVillage_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155194
+        },
+        {
+            "name": "DuskStart_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155194
+        },
+        {
+            "name": "SunsetVillage_MusicShop_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155194
+        },
+        {
+            "name": "DuskGraveyard_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155195
+        },
+        {
+            "name": "DuskOasis_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155195
+        },
+        {
+            "name": "Dusk_CrabField_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155195
+        },
+        {
+            "name": "Dusk_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155195
+        },
+        {
+            "name": "Dusk_Triangle_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155195
+        },
+        {
+            "name": "DuskMid_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155196
+        },
+        {
+            "name": "DuskEnd_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155196
+        },
+        {
+            "name": "Night_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155196
+        },
+        {
+            "name": "NightArchive_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155196
+        },
+        {
+            "name": "Night_IPHallway_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155197
+        },
+        {
+            "name": "Night_Shelter_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155197
+        },
+        {
+            "name": "NightDesert_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155197
+        },
+        {
+            "name": "Night2_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155197
+        },
+        {
+            "name": "Night_ThirdFloor_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155197
+        },
+        {
+            "name": "Night2_SecondFloor_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155198
+        },
+        {
+            "name": "CandleSpaceEnd_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155198
+        },
+        {
+            "name": "Night_PaintedWorld_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155198
+        },
+        {
+            "name": "TGCOffice_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155199
+        },
+        {
+            "name": "StormEnd_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155199
+        },
+        {
+            "name": "Night_StoryBook_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155199
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_02_quest_started",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155199
+        },
+        {
+            "name": "ap06unlock_ap08_fetch_02_quest_started",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155200
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_02_claimFx",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155200
+        },
+        {
+            "name": "ap06unlock_ap08_fetch_02_claimFx",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155200
+        },
+        {
+            "name": "ap06unlock_ap08_fetch_02",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155200
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_02",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155200
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_03",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155201
+        },
+        {
+            "name": "ap06unlock_ap08_fetch_03_quest_started",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155201
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_03_quest_started",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155201
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_03_claimFx",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155201
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_04_claimFx",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155202
+        },
+        {
+            "name": "ap06unlock_ap08_fetch_03_claimFx",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155202
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_04_quest_started",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155202
+        },
+        {
+            "name": "ap06unlock_ap08_fetch_03",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155202
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_04",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155203
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_05_quest_started",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155203
+        },
+        {
+            "name": "ap06unlock_ap08_fetch_04_claimFx",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155203
+        },
+        {
+            "name": "ap06unlock_ap08_fetch_04",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155203
+        },
+        {
+            "name": "ap06unlock_ap08_fetch_04_quest_started",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155203
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_06_quest_started",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155204
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_05",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155204
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_06_claimFx",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155204
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_05_claimFx",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155204
+        },
+        {
+            "name": "ap06unlock_ap07_fetch_06",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155205
+        },
+        {
+            "name": "first_loaded_CandleSpaceEnd",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1775155535
+        },
+        {
+            "name": "first_loaded_Storm",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1775155545
+        },
+        {
+            "name": "mainstreetGuideFreed_Dreams",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1775157266
+        },
+        {
+            "name": "UiEmoteFavoritesUnlockedMessageSeen",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775158201
+        },
+        {
+            "name": "UiEmoteFavoritesTappedEdit",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775158210
+        },
+        {
+            "name": "DawnStatueForm",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775157976
+        },
+        {
+            "name": "NightStatueForm",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775157977
+        },
+        {
+            "name": "DuskStatueForm",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775157977
+        },
+        {
+            "name": "StormStatueForm",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775157977
+        },
+        {
+            "name": "UiEmoteFavoritesTutorialCompleted",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775158221
+        },
+        {
+            "name": "AP29Intro_01",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1775158007
+        },
+        {
+            "name": "AP29Unlock",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775158034
+        },
+        {
+            "name": "completed_constellation_tut",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1775772868
+        },
+        {
+            "name": "first_loaded_Prairie_Island",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1775939739
+        },
+        {
+            "name": "AP30Intro_01_CS",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1776660112
+        },
+        {
+            "name": "AP30Intro_01",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1776660130
+        },
+        {
+            "name": "first_loaded_MainStreet_FunArmada",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1776660140
+        },
+        {
+            "name": "AP30Unlock",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1776660195
+        },
+        {
+            "name": "first_loaded_DuskStart",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1777146462
+        },
+        {
+            "name": "DuskLanded",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1777146464
+        },
+        {
+            "name": "first_loaded_Dusk_Triangle",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1777146519
+        },
+        {
+            "name": "SunsetStatueForm",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775157977
+        },
+        {
+            "name": "daysub1",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1702600430
+        },
+        {
+            "name": "Dawn_Start_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155185
+        },
+        {
+            "name": "StormLight_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155184
+        },
+        {
+            "name": "StormStart_found",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1775155198
+        },
+        {
+            "name": "OpenedCinema",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1783758913
+        },
+        {
+            "name": "first_loaded_Event_Cinema",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1783758914
+        },
+        {
+            "name": "CleanedCinema",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1783758994
+        },
+        {
+            "name": "AP31Intro_01_CS",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1786420419
+        },
+        {
+            "name": "AP31Intro_01",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1786496636
+        },
+        {
+            "name": "first_loaded_Night_GO_Island",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 1786496645
+        },
+        {
+            "name": "AP31Unlock",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1786496694
+        },
+        {
+            "name": "TrustHasSeenEmoteLvlsPlayed",
+            "type": "level",
+            "ack": true,
+            "unlocked_at": 1786499419
+        },
+        {
+            "name": "timeline:dusk_triangle:1293287646",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet:2279669815",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet:2529558989",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet:3384672450",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet:3384672589",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet:3384672829",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet:3384672888",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet:3384673134",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet:3384673228",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet:3384673251",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet:3384673255",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet:3384673264",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet:3384673273",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet:3384673285",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet:3384673286",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet:344523931",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet:344525468",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet_funarmada:1317993724",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet_shopoutfits:3384672268",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet_shopoutfits:3384672278",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet_shopoutfits:3480027169",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet_shopspells:2017395093",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet_shopspells:2017395193",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet_shopspells:3384672262",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:mainstreet_shopspells:344522893",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        },
+        {
+            "name": "timeline:rain:37",
+            "type": "level",
+            "ack": false,
+            "unlocked_at": 0
+        }
+    ],
+    "status_unlocks_total_count": 271
+}

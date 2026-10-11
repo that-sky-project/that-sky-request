@@ -1,0 +1,90 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /service/message/api/v1/get HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 188
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.3.407106 (System Product Name; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: CcPrkOQ
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 188
+ * body logged_size: 188
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "messages": [
+        {
+            "id": "6a7a9cae4a87829ec239ebc5"
+        }
+    ]
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Wed, 12 Aug 2026 01:06:01 GMT
+ * content-type: application/json; charset=utf-8
+ * content-length: 1762
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 1762
+ * body logged_size: 1762
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "status": "OK",
+    "update_messages": [
+        {
+            "payload": {
+                "headers": {
+                    "id": "6a7a9cae4a87829ec239ebc5",
+                    "type": "update",
+                    "from": "44e9f7e2-c9fb-4328-87d4-3544221856ce",
+                    "to": "ef20bad5-b52a-4e8f-9c7c-7537d9941d08",
+                    "sent_at": 1786420398,
+                    "received_at": 1786420406,
+                    "expires_at": 1787641140
+                },
+                "subject": "34.0版本更新",
+                "body": "冒险者们，你们好！\n\n34.0版本现已上线，有如此之多的新内容等待你们来探索，其中包括：\n\n<b>新的联动季入口</b>\n为了方便玩家访问《Sky光·遇》联动季，我们新增了一个充满氛围感的关卡，入口就设在云巢里。玩家将可以直接通过此类传送门体验这些精彩绝伦的故事。\n\n<b>测试功能：表情分类</b>\n在本次更新中，我们新推出了一项名为“表情分类”的测试功能。广大玩家曾通过反馈意见向我们表示，他们收集了大量的表情，查找起来颇为不便。希望通过这一全新的布局选项，玩家们可以更轻松地找到心仪的特定表情。\n\n<b>致梵高</b>\n自7月17日起，步入《Sky光·遇》“致梵高”充满活力的世界。在这个独特的季节里，你将见证一段极具个人色彩的叙事，亲身体验文森特·梵高的杰作与情感世界。\n\n<b>阳光节</b>\n7月31日至8月20日，与先灵们共度美好时光，和他们一起在树林高处的湖畔享受阳光，或者重返禁阁的夜色沙滩。有哪些新奇的冒险正在等待着你？\n\n如需了解有关本次更新的更多内容，你还可以阅读补丁说明，方法是：轻触“设置”菜单中的“新闻”按钮，或查看云巢中的活动公告板。\n\n我们天上见！\n\n\n~thatgamecompany",
+                "properties": {
+                    "HasCurrencies": false,
+                    "HasLinks": false,
+                    "HasUnlocks": false
+                }
+            }
+        }
+    ]
+}

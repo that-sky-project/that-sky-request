@@ -1,0 +1,118 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_2 = non-UUID sensitive value; original value hidden
+ * VALUE_3 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /starwatch/auth/api/v1/auth HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 419
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: oE654JC
+ * x-sky-build-access-key: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 419
+ * body logged_size: 419
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "apiKey": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "appKey": "8fc3fa4c-4ab9-4ef3-98cb-4c73647a5991",
+    "deviceId": "if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-",
+    "claimedSkyId": "26d915b8-db19-4a54-b91c-58831202e90e",
+    "platform": "win",
+    "preferredLanguage": "zh-CN",
+    "sessionToken": "VALUE_2", // Sensitive value hidden; variable VALUE_2 (same token means same original value)
+    "osVersion": "10.0.19045",
+    "gameversion": "0.34.5",
+    "preferredSupportedLanguage": "zh-Hans"
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 03 Sep 2026 16:39:18 GMT
+ * content-type: application/json; charset=utf-8
+ * content-length: 3458
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * x-powered-by: Express
+ * access-control-allow-origin: *
+ * etag: W/"d82-HNjeRM1VGGPYYseqmKPqq/BjYvc"
+ * via: 1.1 google
+ * alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 3458
+ * body logged_size: 3458
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "mqtt": {
+        "clientId": "sky-live-game-5NeuJhCi6grGvbtweEyWKY",
+        "username": "user::sky-live-game-5NeuJhCi6grGvbtweEyWKY",
+        "password": "VALUE_3", // Sensitive value hidden; variable VALUE_3 (same token means same original value)
+        "brokerUrl": "stream.starwatch.ai"
+    },
+    "settings": {
+        "enableEventPublishing": true,
+        "blockedEvents": [
+            "account_resource_waiting",
+            "candle_accepted_cost",
+            "checkpoint",
+            "dayhm_manta_count_03",
+            "debug_trace",
+            "find_prev_game_request",
+            "match_joined",
+            "net_game_connect_attempt",
+            "net_game_move_timeout",
+            "sync_user_data",
+            "*_loaded",
+            "loaded_*",
+            "player_nearby",
+            "player_nearby_left"
+        ]
+    },
+    "acls": {
+        "publish": [
+            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/26d915b8-db19-4a54-b91c-58831202e90e/event/+",
+            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/26d915b8-db19-4a54-b91c-58831202e90e/remote/prompt",
+            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/26d915b8-db19-4a54-b91c-58831202e90e/challenge/response",
+            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/26d915b8-db19-4a54-b91c-58831202e90e/challenge/event"
+        ],
+        "subscribe": [
+            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/26d915b8-db19-4a54-b91c-58831202e90e/remote/submit",
+            "sky/live/device/if3wunlqhbiucv3iobdui2lykzgdqqzrojxs63sshfchksshknyggnlpji2giwcxgfygcui-/user/26d915b8-db19-4a54-b91c-58831202e90e/challenge/submit"
+        ]
+    },
+    "ownerId": "sky::live::game::5NeuJhCi6grGvbtweEyWKY",
+    "isJwt": true,
+    "expiresSeconds": 86400,
+    "starwatchSessionId": "f0a00c8b-0255-4968-94eb-efc6a3b5eb11",
+    "serverTime": {
+        "requestStartMillis": 1788453558066,
+        "requestEndMillis": 1788453558098
+    }
+}

@@ -1,0 +1,194 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /account/get_unlocks HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 162
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: RQEbyfE
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 162
+ * body logged_size: 162
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "l": 1000,
+    "o": 0,
+    "v": 0
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 03 Sep 2026 16:39:23 GMT
+ * content-type: application/json; charset=utf-8
+ * content-length: 1919
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 1919
+ * body logged_size: 1919
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "unlocks": [
+        {
+            "name": "ap06unlock_ap20_fetch_01",
+            "type": "spiritshop",
+            "ack": false,
+            "created_at": 1748432541
+        },
+        {
+            "name": "ap06unlock_ap20_fetch_03",
+            "type": "spiritshop",
+            "ack": false,
+            "created_at": 1748432775
+        },
+        {
+            "name": "emote_upgrade_come_01",
+            "type": "spiritshop",
+            "ack": false,
+            "created_at": 1750916612
+        },
+        {
+            "name": "CharSkyKid_Hair_BraidSide",
+            "type": "spiritshop",
+            "ack": true,
+            "created_at": 1750916614
+        },
+        {
+            "name": "emote_upgrade_point_01",
+            "type": "spiritshop",
+            "ack": false,
+            "created_at": 1750916621
+        },
+        {
+            "name": "CharSkyKid_Hair_TopSharp",
+            "type": "spiritshop",
+            "ack": true,
+            "created_at": 1750916622
+        },
+        {
+            "name": "emote_upgrade_yawn_01",
+            "type": "spiritshop",
+            "ack": false,
+            "created_at": 1750938395
+        },
+        {
+            "name": "emote_upgrade_wave_01",
+            "type": "spiritshop",
+            "ack": false,
+            "created_at": 1750938398
+        },
+        {
+            "name": "emote_upgrade_laugh_01",
+            "type": "spiritshop",
+            "ack": false,
+            "created_at": 1750938401
+        },
+        {
+            "name": "emote_upgrade_butterfly_01",
+            "type": "spiritshop",
+            "ack": false,
+            "created_at": 1750938405
+        },
+        {
+            "name": "CharSkyKid_Prop_AP19Camera",
+            "type": "spiritshop",
+            "ack": true,
+            "created_at": 1750939144
+        },
+        {
+            "name": "emote_upgrade_scared_01",
+            "type": "spiritshop",
+            "ack": false,
+            "created_at": 1751709735
+        },
+        {
+            "name": "ap06unlock_ap20_fetch_04",
+            "type": "spiritshop",
+            "ack": false,
+            "created_at": 1751710784
+        },
+        {
+            "name": "teleport_to_questap26",
+            "type": "spiritshop",
+            "ack": false,
+            "created_at": 1751822730
+        },
+        {
+            "name": "season_finish_26",
+            "type": "season",
+            "ack": false,
+            "created_at": 1751879364
+        },
+        {
+            "name": "relationship_ability_ap06unlock_ap20_hug",
+            "type": "spiritshop",
+            "ack": false,
+            "created_at": 1752431085
+        },
+        {
+            "name": "season_finish_27",
+            "type": "season",
+            "ack": false,
+            "created_at": 1759738688
+        },
+        {
+            "name": "season_finish_28",
+            "type": "season",
+            "ack": false,
+            "created_at": 1770496821
+        },
+        {
+            "name": "timeline_questlove",
+            "type": "spiritshop",
+            "ack": false,
+            "created_at": 1771329012
+        },
+        {
+            "name": "lootbox_epic_questlove_01",
+            "type": "spiritshop",
+            "ack": false,
+            "created_at": 1771329037
+        },
+        {
+            "name": "season_finish_29",
+            "type": "season",
+            "ack": false,
+            "created_at": 1775400967
+        }
+    ],
+    "unlocks_total_count": 21
+}

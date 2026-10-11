@@ -1,0 +1,187 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ * VALUE_2 = non-UUID sensitive value; original value hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_3 = non-UUID sensitive value; original value hidden
+ * VALUE_4 = non-UUID sensitive value; original value hidden
+ * VALUE_5 = non-UUID sensitive value; original value hidden
+ * VALUE_6 = non-UUID sensitive value; original value hidden
+ * UUID_3 = UUID-form identifier; original UUID hidden
+ * VALUE_7 = non-UUID sensitive value; original value hidden
+ * VALUE_8 = non-UUID sensitive value; original value hidden
+ * VALUE_9 = non-UUID sensitive value; original value hidden
+ * VALUE_10 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /account/auth/login HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 1510
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.5.410941 (P16 TA 24; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: YCPZUt2
+ * x-sky-build-access-key: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 1510
+ * body logged_size: 1510
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "type": "Steam",
+    "external_credentials": "VALUE_2", // Sensitive value hidden; variable VALUE_2 (same token means same original value)
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "device": "00000000-0000-0000-0000-000000000000",
+    "key": "VALUE_3", // Sensitive value hidden; variable VALUE_3 (same token means same original value)
+    "device_name": "HTMONKEYG-LAPTO",
+    "device_token": "VALUE_4", // Sensitive value hidden; variable VALUE_4 (same token means same original value)
+    "production": false,
+    "tos_version": 4,
+    "device_key": "VALUE_5", // Sensitive value hidden; variable VALUE_5 (same token means same original value)
+    "sig_ts": 1788453557,
+    "sig": "VALUE_6", // Sensitive value hidden; variable VALUE_6 (same token means same original value)
+    "hashes": [
+        2384841003,
+        3472334867,
+        4032487087,
+        1913095961,
+        3267480264,
+        4047486421,
+        1711066434,
+        3721518007,
+        1731370194,
+        2265070178,
+        2786218366,
+        2568820904,
+        1663246119,
+        269312135,
+        1133403455,
+        2451568608,
+        2245054157,
+        1252900215,
+        1933379095,
+        569562782,
+        1825225251,
+        3851695576,
+        2101260715,
+        3664273693,
+        359579659,
+        678557115,
+        376675832,
+        3144193431,
+        1452596462,
+        3217236853,
+        1706821454,
+        1947613349,
+        2184725285,
+        3927479538,
+        1755094869,
+        4133182092,
+        569386829,
+        3198536129,
+        3861712445,
+        2472250254
+    ],
+    "integrity": true
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Thu, 03 Sep 2026 16:39:17 GMT
+ * content-type: text/plain; charset=utf-8
+ * content-length: 1063
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * cache-control: max-age=0, private, must-revalidate
+ * x-request-id: GNHdCOLkjE2YdLIQrV2C
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 1063
+ * body logged_size: 1063
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "authinfo": {
+        "user": "UUID_3", // UUID-form identifier; variable UUID_3 (same token means same original value)
+        "device": "",
+        "key": "VALUE_7", // Sensitive value hidden; variable VALUE_7 (same token means same original value)
+        "recovery_token": "VALUE_4" // Sensitive value hidden; variable VALUE_4 (same token means same original value)
+    },
+    "session": "VALUE_8", // Sensitive value hidden; variable VALUE_8 (same token means same original value)
+    "resource_list": [
+        "device_capabilities",
+        "userdata",
+        "set_friends",
+        "set_friend_statues",
+        "online_friends",
+        "set_rank",
+        "currency",
+        "forge_rates",
+        "motd",
+        "outfit_defs",
+        "achievements",
+        "achievement_stats",
+        "relationship_defs",
+        "questionnaires",
+        "event_schedule",
+        "set_world_quests",
+        "iap_list",
+        "invite_list",
+        "unlocks",
+        "get_shop",
+        "spirit_shops",
+        "collectibles",
+        "wing_buffs",
+        "gift_messages",
+        "set_app_badge_number",
+        "get_consumable_defs",
+        "get_consumables",
+        "get_buff_defs",
+        "get_buffs",
+        "get_lootboxes",
+        "checkpoints",
+        "generic_shop_defs",
+        "external_account_friends",
+        "serendipity_matches",
+        "get_star_tag_defs",
+        "status_unlocks",
+        "free_gifts",
+        "get_map_defs",
+        "achievement_defs",
+        "achievement_stats_tracking",
+        "event_currency_defs",
+        "infractions",
+        "get_user_profile",
+        "emote_sequences",
+        "video_defs",
+        "radiance_spawn_defs",
+        "messages"
+    ],
+    "external_links": [
+        {
+            "type": "Steam",
+            "player_id": "VALUE_9", // Sensitive value hidden; variable VALUE_9 (same token means same original value)
+            "alias": "VALUE_10" // Sensitive value hidden; variable VALUE_10 (same token means same original value)
+        }
+    ],
+    "player_badge_type": 0
+}

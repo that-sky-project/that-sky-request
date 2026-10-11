@@ -1,0 +1,139 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ * UUID_3 = UUID-form identifier; original UUID hidden
+ */
+
+/*
+ * Request
+ * POST /account/get_remote_outfit HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 189
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.3.407106 (System Product Name; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: 48fNknl
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 189
+ * body logged_size: 189
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "target": "UUID_3" // UUID-form identifier; variable UUID_3 (same token means same original value)
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Tue, 11 Aug 2026 03:53:42 GMT
+ * content-type: text/plain; charset=utf-8
+ * content-length: 689
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * cache-control: max-age=0, private, must-revalidate
+ * x-request-id: GMqj6MGEs2vUMy8KraYC
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 689
+ * body logged_size: 689
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "result": "ok",
+    "get_remote_outfit": {
+        "wing": {
+            "tex": 0,
+            "pat": 0,
+            "mask": 0,
+            "id": 2038455273
+        },
+        "voice": 1,
+        "seed": 23571,
+        "scale": -0.05658108767401948,
+        "refreshversion": 1,
+        "prop": {
+            "tex": 0,
+            "pat": 0,
+            "mask": 0,
+            "id": 2035109393
+        },
+        "neck": {
+            "tex": 0,
+            "pat": 0,
+            "mask": 0,
+            "id": 3800884691
+        },
+        "mask": {
+            "tex": 0,
+            "pat": 0,
+            "mask": 0,
+            "id": 3663390882
+        },
+        "horn": {
+            "tex": 0,
+            "pat": 0,
+            "mask": 0,
+            "id": 3680499229
+        },
+        "height": 1.8200900059311609,
+        "hat": {
+            "tex": 0,
+            "pat": 0,
+            "mask": 0,
+            "id": 1470462579
+        },
+        "hair": {
+            "tex": 0,
+            "pat": 0,
+            "mask": 0,
+            "id": 2494409544
+        },
+        "feet": {
+            "tex": 0,
+            "pat": 0,
+            "mask": 0,
+            "id": 1532093990
+        },
+        "face": {
+            "tex": 0,
+            "pat": 0,
+            "mask": 0,
+            "id": 3599986885
+        },
+        "body": {
+            "tex": 0,
+            "pat": 0,
+            "mask": 0,
+            "id": 2432891829
+        },
+        "attitude": "0",
+        "arms": {
+            "id": 0
+        }
+    },
+    "serendipity_types": []
+}

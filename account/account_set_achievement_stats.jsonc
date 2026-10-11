@@ -1,0 +1,480 @@
+/*
+ * Redaction variables are scoped to this JSONC document; original sensitive values are omitted.
+ * Repeated variable names indicate identical original values; different names of the same type mean different values.
+ * IP_1 = IP address; original address hidden
+ * UUID_1 = UUID-form identifier; original UUID hidden
+ * UUID_2 = UUID-form identifier; original UUID hidden
+ * VALUE_1 = non-UUID sensitive value; original value hidden
+ */
+
+/*
+ * Request
+ * POST /account/set_achievement_stats HTTP/1.1
+ * host: <REDACTED_HOST>
+ * x-real-ip: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-for: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * remote-host: IP_1 // IP address; variable IP_1 (same token means same original value)
+ * x-forwarded-proto: https
+ * x-forwarded-port: 443
+ * content-length: 2212
+ * user-agent: Sky-Live-com.tgc.sky.win/0.34.3.407106 (System Product Name; win 10.0.19045; zh-Hans)
+ * x-session-id: UUID_1 // UUID-form identifier; variable UUID_1 (same token means same original value)
+ * content-type: application/json
+ * trace-id: iT9F7EN
+ * user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * session: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-user-id: UUID_2 // UUID-form identifier; variable UUID_2 (same token means same original value)
+ * x-session-token: VALUE_1 // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+ * x-sky-level-id: 3526133726
+ * 
+ * Captured request-body metadata:
+ * captured body type: json
+ * body size: 2212
+ * body logged_size: 2212
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Request
+{
+    "user": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "user_id": "UUID_2", // UUID-form identifier; variable UUID_2 (same token means same original value)
+    "session": "VALUE_1", // Sensitive value hidden; variable VALUE_1 (same token means same original value)
+    "achievement_stats": [
+        {
+            "type": "friend_count",
+            "value": 5
+        },
+        {
+            "type": "highest_friendship_level",
+            "value": 4
+        },
+        {
+            "type": "collectible_count",
+            "value": 2
+        },
+        {
+            "type": "emotes_used_count",
+            "value": 140
+        },
+        {
+            "type": "best_friend_count",
+            "value": 5
+        },
+        {
+            "type": "hand_hold_count",
+            "value": 1
+        },
+        {
+            "type": "cape_change_count",
+            "value": 53
+        },
+        {
+            "type": "mask_change_count",
+            "value": 2
+        },
+        {
+            "type": "horn_change_count",
+            "value": 3
+        },
+        {
+            "type": "neck_change_count",
+            "value": 3
+        },
+        {
+            "type": "feet_change_count",
+            "value": 3
+        },
+        {
+            "type": "prop_change_count",
+            "value": 9
+        },
+        {
+            "type": "runway_recording_shrine_view_count",
+            "value": 1
+        },
+        {
+            "type": "dawn_collectibles_collected_count",
+            "value": 1
+        },
+        {
+            "type": "night_collectibles_collected_count",
+            "value": 1
+        },
+        {
+            "type": "darkstone_melted_count",
+            "value": 54
+        },
+        {
+            "type": "join_1_player_count",
+            "value": 200
+        },
+        {
+            "type": "join_2_players_count",
+            "value": 127
+        },
+        {
+            "type": "join_3_players_count",
+            "value": 112
+        },
+        {
+            "type": "join_4_players_count",
+            "value": 89
+        },
+        {
+            "type": "join_5_players_count",
+            "value": 65
+        },
+        {
+            "type": "join_6_players_count",
+            "value": 4
+        },
+        {
+            "type": "join_7_players_count",
+            "value": 4
+        },
+        {
+            "type": "engine_activated_count",
+            "value": 2
+        },
+        {
+            "type": "use_teleport_to_home_count",
+            "value": 17
+        },
+        {
+            "type": "visit_day_koi_pond_count",
+            "value": 1
+        },
+        {
+            "type": "non_unique_hand_hold_count",
+            "value": 6
+        },
+        {
+            "type": "emotes_collected_count",
+            "value": 140
+        },
+        {
+            "type": "forged_candle_count",
+            "value": 15
+        },
+        {
+            "type": "received_gift_count",
+            "value": 9
+        },
+        {
+            "type": "wax_pickup_count",
+            "value": 987
+        },
+        {
+            "type": "light_candle_count",
+            "value": 226
+        },
+        {
+            "type": "avatar_charge_count",
+            "value": 128.32503
+        },
+        {
+            "type": "shroom_charge_count",
+            "value": 4
+        },
+        {
+            "type": "remote_avatar_charge_count",
+            "value": 1010.6265
+        },
+        {
+            "type": "new_acquaintance_count",
+            "value": 46
+        },
+        {
+            "type": "cherry_sappling_night_01_time",
+            "value": 60
+        },
+        {
+            "type": "visit_dawn_temple_exit",
+            "value": 1
+        },
+        {
+            "type": "highest_cape_level",
+            "value": 10
+        },
+        {
+            "type": "highest_flight_altitude",
+            "value": 214.27161
+        },
+        {
+            "type": "highest_carry_stack_count",
+            "value": 2
+        },
+        {
+            "type": "earn_10_wings_count",
+            "value": 56
+        },
+        {
+            "type": "bloom_harvesting",
+            "value": 1
+        },
+        {
+            "type": "nature_sculpture_piece_a_count",
+            "value": 10
+        },
+        {
+            "type": "nature_sculpture_piece_b_count",
+            "value": 10
+        },
+        {
+            "type": "nature_sculpture_piece_c_count",
+            "value": 10
+        }
+    ]
+}
+
+/*
+ * Response
+ * HTTP/1.1 200 OK
+ * date: Wed, 12 Aug 2026 01:53:59 GMT
+ * content-type: application/json; charset=utf-8
+ * content-length: 2993
+ * connection: keep-alive
+ * server: nginx/1.14.2
+ * 
+ * Captured response-body metadata:
+ * captured body type: json
+ * body size: 2993
+ * body logged_size: 2993
+ * body omitted_size: 0
+ * body truncated: false
+ */
+// Response
+{
+    "achievement_stats": [
+        {
+            "type": "emotes_used_count",
+            "value": 140,
+            "update": 1775158134
+        },
+        {
+            "type": "emotes_collected_count",
+            "value": 140,
+            "update": 1775158134
+        },
+        {
+            "type": "join_3_players_count",
+            "value": 112,
+            "update": 1786497873
+        },
+        {
+            "type": "visit_dawn_temple_exit",
+            "value": 1,
+            "update": 1696936754
+        },
+        {
+            "type": "friend_count",
+            "value": 4,
+            "update": 1775065140
+        },
+        {
+            "type": "join_4_players_count",
+            "value": 89,
+            "update": 1786497772
+        },
+        {
+            "type": "cape_change_count",
+            "value": 53,
+            "update": 1786496629
+        },
+        {
+            "type": "highest_carry_stack_count",
+            "value": 2,
+            "update": 1786499624
+        },
+        {
+            "type": "wax_pickup_count",
+            "value": 987,
+            "update": 1786497684
+        },
+        {
+            "type": "use_teleport_to_home_count",
+            "value": 17,
+            "update": 1777146436
+        },
+        {
+            "type": "remote_avatar_charge_count",
+            "value": 999.75153,
+            "update": 1786497772
+        },
+        {
+            "type": "darkstone_melted_count",
+            "value": 54,
+            "update": 1783759009
+        },
+        {
+            "type": "runway_recording_shrine_view_count",
+            "value": 1,
+            "update": 1733281564
+        },
+        {
+            "type": "prop_change_count",
+            "value": 9,
+            "update": 1777146322
+        },
+        {
+            "type": "night_collectibles_collected_count",
+            "value": 1,
+            "update": 1733282262
+        },
+        {
+            "type": "received_gift_count",
+            "value": 9,
+            "update": 1776660208
+        },
+        {
+            "type": "mask_change_count",
+            "value": 2,
+            "update": 1769758267
+        },
+        {
+            "type": "earn_10_wings_count",
+            "value": 56,
+            "update": 1775155580
+        },
+        {
+            "type": "join_1_player_count",
+            "value": 199,
+            "update": 1786497757
+        },
+        {
+            "type": "avatar_charge_count",
+            "value": 128.32503,
+            "update": 1769758752
+        },
+        {
+            "type": "highest_cape_level",
+            "value": 10,
+            "update": 1775155545
+        },
+        {
+            "type": "forged_candle_count",
+            "value": 15,
+            "update": 1775768715
+        },
+        {
+            "type": "dawn_collectibles_collected_count",
+            "value": 1,
+            "update": 1696936361
+        },
+        {
+            "type": "shroom_charge_count",
+            "value": 4,
+            "update": 1733282888
+        },
+        {
+            "type": "nature_sculpture_piece_c_count",
+            "value": 10,
+            "update": 1775939752
+        },
+        {
+            "type": "join_5_players_count",
+            "value": 65,
+            "update": 1771836012
+        },
+        {
+            "type": "join_7_players_count",
+            "value": 4,
+            "update": 1702606260
+        },
+        {
+            "type": "feet_change_count",
+            "value": 3,
+            "update": 1733280333
+        },
+        {
+            "type": "horn_change_count",
+            "value": 3,
+            "update": 1733280333
+        },
+        {
+            "type": "hand_hold_count",
+            "value": 1,
+            "update": 1771848471
+        },
+        {
+            "type": "nature_sculpture_piece_a_count",
+            "value": 10,
+            "update": 1775939752
+        },
+        {
+            "type": "collectible_count",
+            "value": 2,
+            "update": 1733282262
+        },
+        {
+            "type": "highest_friendship_level",
+            "value": 4,
+            "update": 1775155759
+        },
+        {
+            "type": "visit_day_koi_pond_count",
+            "value": 1,
+            "update": 1774310331
+        },
+        {
+            "type": "bloom_harvesting",
+            "value": 1,
+            "update": 1775155178
+        },
+        {
+            "type": "engine_activated_count",
+            "value": 2,
+            "update": 1768991606
+        },
+        {
+            "type": "join_2_players_count",
+            "value": 124,
+            "update": 1786499537
+        },
+        {
+            "type": "best_friend_count",
+            "value": 4,
+            "update": 1775065140
+        },
+        {
+            "type": "join_6_players_count",
+            "value": 4,
+            "update": 1702606313
+        },
+        {
+            "type": "light_candle_count",
+            "value": 226,
+            "update": 1786497614
+        },
+        {
+            "type": "new_acquaintance_count",
+            "value": 46,
+            "update": 1783759039
+        },
+        {
+            "type": "neck_change_count",
+            "value": 3,
+            "update": 1733280333
+        },
+        {
+            "type": "non_unique_hand_hold_count",
+            "value": 6,
+            "update": 1771848482
+        },
+        {
+            "type": "cherry_sappling_night_01_time",
+            "value": 60,
+            "update": 1775155172
+        },
+        {
+            "type": "nature_sculpture_piece_b_count",
+            "value": 10,
+            "update": 1775939752
+        },
+        {
+            "type": "highest_flight_altitude",
+            "value": 214.27161,
+            "update": 1786499624
+        }
+    ]
+}
